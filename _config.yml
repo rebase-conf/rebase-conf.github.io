@@ -1,0 +1,15 @@
+title: rebase-conf
+url: "rebase-conf.org" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: rebase-conf
+github_username:  rebase-conf
+
+# Build settings
+theme: minima
+exclude:
+  - .gem-cache
+  - .git
+  - .gitignore
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
