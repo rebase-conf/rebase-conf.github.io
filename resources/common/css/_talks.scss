@@ -1,0 +1,36 @@
+.talks {
+  @include section;
+  background: $color-background;
+  color: $color-paragraph;
+}
+
+.talks__list {
+  &:not(:last-child) {
+    margin-bottom: 120px;
+  }
+}
+
+
+.talks__list--keynote-speakers {
+  @include large-grid;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.talks__list--keynotes {
+  @include large-grid;
+}
+
+.talks__list--presentations {
+  @include small-grid;
+}
+
+.talks__talk {
+  max-width: none;
+}
+
+.talks__heading {
+  @extend .heading1;
+}

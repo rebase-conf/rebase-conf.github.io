@@ -1,0 +1,12 @@
+.organizers {
+  @include section;
+  background: $color-background;
+}
+
+.organizers__heading {
+  @extend .heading1;
+}
+
+.organizers__list {
+  @include small-grid;
+}

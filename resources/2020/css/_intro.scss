@@ -1,0 +1,31 @@
+.intro {
+  height: 100vh;
+  background: $color-background url(/resources/2020/img/skyline.svg) center no-repeat;
+  background-size: 100vw auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.intro__logo {
+  margin-bottom: 10px;
+}
+
+.intro__subheading {
+  @extend .heading2;
+  line-height: 1;
+  margin-bottom: calc(-1em - 10px - 15px);
+}
+
+.intro__next {
+  background: url(/resources/common/img/arrow.svg) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 24px;
+}

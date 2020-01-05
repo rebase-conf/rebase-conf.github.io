@@ -1,0 +1,136 @@
+.box {
+  background: darken($color: $color-background, $amount: 1.5);
+  height: 100%;
+  padding: 25px 30px;
+}
+
+.box--large {
+  padding: 30px 40px;
+}
+
+.box__text {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.box__text-heading {
+  font-family: $font-family-heading;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-heading;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .box--large & {
+    font-size: 32px;
+  }
+}
+
+.box__text-content {
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.box__text-links {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  a {
+    @extend .icon-link;
+    font-size: 20px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.box__people {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box__person {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.box__person--inline {
+  margin-bottom: 20px;
+  width: calc(50% - 15px);
+}
+
+.box__person-img {
+  border-radius: 50%;
+  width: 70px;
+  height: auto;
+  margin-right: 15px;
+
+  .box--large & {
+    width: 90px;
+    margin-right: 20px;
+  }
+}
+
+.box__person-name {
+  font-family: $font-family-heading;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none !important;
+  color: $color-heading;
+  margin: -5px 0 3px;
+
+  .box--large & {
+    font-size: 26px;
+  }
+}
+
+.box__person-affiliation {
+  font-family: $font-family-heading;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  color: $color-heading;
+
+  .box--large & {
+    font-size: 22px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 7px;
+  }
+}
+
+.box__person-links {
+  a {
+    @extend .icon-link;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

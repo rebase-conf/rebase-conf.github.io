@@ -1,0 +1,32 @@
+.heading1 {
+  font-family: $font-family-heading;
+  font-size: 46px;
+  font-weight: 700;
+  color: $color-heading;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.heading2 {
+  font-family: $font-family-heading;
+  font-size: 32px;
+  font-weight: 700;
+  color: $color-heading;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.icon-link {
+  font-family: $font-family-heading;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-active;
+
+  span {
+    margin-right: 5px;
+  }
+}

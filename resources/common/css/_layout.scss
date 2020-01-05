@@ -1,0 +1,26 @@
+@mixin section {
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
+
+@mixin large-grid {
+  display: grid;
+  grid-gap: 30px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@mixin small-grid {
+  display: grid;
+  grid-gap: 20px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

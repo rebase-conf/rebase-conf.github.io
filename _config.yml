@@ -13,3 +13,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Makefile
+
+sass:
+    sass_dir: resources

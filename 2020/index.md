@@ -1,3 +1,3 @@
 ---
-layout: 2020-landing-page
+layout: 2020/default
 ---
