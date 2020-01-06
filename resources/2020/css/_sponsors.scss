@@ -1,0 +1,31 @@
+.sponsors__group--silver .sponsors__sponsor {
+  &--droit img {
+    width: auto;
+    max-height: rem-calc(80px);
+
+    @include media-breakpoint-up(md) {
+      max-height: rem-calc(150px);
+    }
+  }
+}
+
+.sponsors__group--supporters .sponsors__sponsor {
+  &--thoughtworks {
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 36%;
+
+    @include media-breakpoint-up(md) {
+      width: 25%;
+    }
+  }
+
+  &--feenk {
+    margin-left: 8%;
+    margin-right: 8%;
+
+    @include media-breakpoint-up(md) {
+      width: 17%;
+    }
+  }
+}

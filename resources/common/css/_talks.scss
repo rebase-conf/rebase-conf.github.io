@@ -6,7 +6,7 @@
 
 .talks__list {
   &:not(:last-child) {
-    margin-bottom: 120px;
+    margin-bottom: rem-calc(120px);
   }
 }
 
@@ -14,7 +14,7 @@
 .talks__list--keynote-speakers {
   @include large-grid;
 
-  @media (min-width: 768px) {
+  @include media-breakpoint-up (md) {
     grid-template-columns: 1fr 1fr;
   }
 }

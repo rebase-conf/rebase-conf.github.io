@@ -1,3 +1,8 @@
+$supporter-margin: (
+  xs: rem_calc(50px),
+  md: rem_calc(70px)
+);
+
 .sponsors {
   @include section;
   background: $color-background-dark;
@@ -20,7 +25,11 @@
   width: 100%;
 
   &:not(:last-child) {
-    margin-bottom: 150px;
+    margin-bottom: rem-calc(120px);
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: rem-calc(150px);
+    }
   }
 }
 
@@ -37,7 +46,7 @@
   margin: 0 auto;
 
   img {
-    width: 800px;
+    width: rem-calc(800px);
   }
 }
 
@@ -46,12 +55,7 @@
   margin: 0 auto;
 
   img {
-    width: 600px;
-  }
-
-  &--droit img {
-    width: auto;
-    max-height: 150px;
+    width: rem-calc(600px);
   }
 }
 
@@ -60,18 +64,28 @@
   margin: 0 auto;
 
   img {
-    width: 500px;
+    width: rem-calc(500px);
   }
 }
 
 .sponsors__group--supporters {
-  justify-content: center;
-  margin-bottom: -70px;
+  justify-content: space-around;
+  margin-bottom: -#{map_get($supporter-margin, xs)};
+
+  @include media-breakpoint-up(md) {
+    justify-content: center;
+    margin-bottom: -#{map_get($supporter-margin, md)};
+  }
 }
 
 .sponsors__group--supporters .sponsors__sponsor {
-  width: 21%;
-  margin: 0 6% 70px;
+  width: 30%;
+  margin: 0 6% map_get($supporter-margin, xs);
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: map_get($supporter-margin, md);
+    width: 21%;
+  }
 
   img {
     width: 100%;
@@ -79,20 +93,11 @@
 
   // Uncomment this if you have one sponsor on the last line and want to
   // re-shuffle them to have two sponsors on the first two lines instead
+  // on medium screens and larger. Small screens already show two columns
   &:nth-child(-n + 4) {
-    // margin-left: 10%;
-    // margin-right: 10%;
-  }
-
-  &--thoughtworks {
-    width: 25%;
-    margin-left: 4%;
-    margin-right: 4%;
-  }
-
-  &--feenk {
-    width: 17%;
-    margin-left: 8%;
-    margin-right: 8%;
+    @include media-breakpoint-up(md) {
+      // margin-left: 10%;
+      // margin-right: 10%;
+    }
   }
 }

@@ -7,3 +7,12 @@ $color-heading: #ffffff;
 $color-paragraph: #abd1c6;
 $color-active: #f9bc60;
 $color-button-text: #001e1d;
+
+$global-font-size: 16px;
+
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);

@@ -2,5 +2,6 @@
 ---
 
 @import "common/css/app";
-// Not sure why "intro" only doesn't work (works in common/css/app.scss)
+// Not sure why relative paths do not work here (works in common/css/app.scss)
 @import "2020/css/intro";
+@import "2020/css/sponsors";

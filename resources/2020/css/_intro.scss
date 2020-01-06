@@ -3,6 +3,7 @@
   background: $color-background url(/resources/2020/img/skyline.svg) center no-repeat;
   background-size: 100vw auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -11,6 +12,8 @@
 
 .intro__logo {
   margin-bottom: 10px;
+  width: rem-calc(400px);
+  max-width: 80%;
 }
 
 .intro__subheading {
