@@ -2,6 +2,8 @@
 layout: default
 currentyear: "2020"
 ---
-<script type="text/javascript">
-  window.location.replace("{{ site.baseurl }}/{{ page.currentyear }}");
-</script>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0;url={{ site.baseurl }}/{{ page.currentyear }}/" />
+  </head>
+</html>

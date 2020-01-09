@@ -1,8 +1,56 @@
 .footer {
   background: $color-background-dark;
   padding: 50px 0;
+  color: white;
+
+  @include media-breakpoint-down(md) {
+    font-size: rem-calc(14px);
+  }
 }
 
 .footer__logo {
   max-width: 200px;
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: rem-calc(40px);
+  }
+}
+
+.footer__heading {
+  @include heading;
+
+  color: $color-heading;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  margin-bottom: rem-calc(15px);
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: rem-calc(30px);
+    font-size: rem-calc(26px);
+  }
+}
+
+.footer__links {
+  margin-bottom: rem-calc(50px);
+}
+
+.footer__links-item {
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  color: $color-active;
+}
+
+.footer__email-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer__twitter {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(/resources/2020/img/twitter.svg) center no-repeat;
+  background-size: contain;
 }
