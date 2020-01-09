@@ -12,10 +12,10 @@
 
 
 .talks__list--keynote-speakers {
-  @include large-grid;
+  @include small-grid;
 
-  @include media-breakpoint-up (md) {
-    grid-template-columns: 1fr 1fr;
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

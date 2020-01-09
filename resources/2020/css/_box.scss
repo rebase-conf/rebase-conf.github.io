@@ -118,6 +118,11 @@
 .box__person {
   display: flex;
   align-items: center;
+
+  .box--speaker & {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .box__person:not(:last-child),
@@ -155,6 +160,16 @@
       margin-right: rem-calc(20px);
     }
   }
+
+  .box--speaker & {
+    width: rem-calc(200px);
+    margin-right: 0;
+    margin-bottom: rem-calc(30px);
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: rem-calc(250px);
+  }
 }
 
 .box__person-name {
@@ -175,6 +190,15 @@
 
     @include media-breakpoint-up(md) {
       font-size: rem-calc(26px);
+    }
+  }
+
+  .box--speaker & {
+    font-size: rem-calc(26px);
+    margin-bottom: rem-calc(5px);
+
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(32px);
     }
   }
 }
@@ -209,9 +233,25 @@
   &:not(:last-child) {
     margin-bottom: rem-calc(7px);
   }
+
+  .box--speaker & {
+    font-size: rem-calc(22px);
+
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(26px);
+    }
+  }
 }
 
 .box__person-links {
+  .box--speaker & {
+    font-size: rem-calc(18px);
+
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(22px);
+    }
+  }
+
   a {
     @extend .icon-link;
 
