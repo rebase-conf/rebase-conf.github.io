@@ -10,6 +10,24 @@
   position: relative;
 }
 
+.intro__past-editions {
+  position: absolute;
+  top: rem-calc(15px);
+  right: rem-calc(15px);
+  font-family: $font-family-heading;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up (md) {
+    font-size: rem-calc(20px);
+  }
+
+  a {
+    color: $color-active;
+  }
+}
+
 .intro__logo {
   margin-bottom: 10px;
   width: rem-calc(400px);
