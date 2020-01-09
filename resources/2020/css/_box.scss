@@ -118,7 +118,7 @@
 
   &:not(:last-child) {
     padding-bottom: rem-calc(25px);
-    
+
     @include media-breakpoint-up(md) {
       padding-bottom: rem-calc(30px);
     }
@@ -283,7 +283,11 @@
   margin-bottom: rem-calc(20px);
 
   &:last-child {
-    margin-bottom: rem-calc(-5px);
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: rem-calc(-5px);
+    }
   }
 }
 
