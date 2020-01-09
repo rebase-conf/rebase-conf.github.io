@@ -2,6 +2,8 @@
   background: darken($color: $color-background, $amount: 1.5);
   height: 100%;
   padding: rem-calc(20px);
+  display: flex;
+  flex-direction: column;
 
   @include media-breakpoint-up(md) {
     padding: rem-calc(25px) rem-calc(30px);
@@ -106,7 +108,24 @@
   }
 }
 
-.box__people {
+.box__people:not(.box__people--inline) {
+  flex-grow: 1;
+  margin-bottom: rem-calc(-15px);
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: rem-calc(-20px);
+  }
+
+  &:not(:last-child) {
+    padding-bottom: rem-calc(25px);
+    
+    @include media-breakpoint-up(md) {
+      padding-bottom: rem-calc(30px);
+    }
+  }
+}
+
+.box__people--inline {
   @include media-breakpoint-up(md) {
     display: flex;
     flex-wrap: wrap;
@@ -118,6 +137,11 @@
 .box__person {
   display: flex;
   align-items: center;
+  margin-bottom: rem-calc(15px);
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: rem-calc(20px);
+  }
 
   .box--speaker & {
     flex-direction: column;
@@ -125,16 +149,7 @@
   }
 }
 
-.box__person:not(:last-child),
-.box__person--inline {
-  margin-bottom: rem-calc(15px);
-
-  @include media-breakpoint-up(md) {
-    margin-bottom: rem-calc(20px);
-  }
-}
-
-.box__person--inline {
+.box__people--inline .box__person {
   @include media-breakpoint-up(md) {
     width: calc(50% - #{rem-calc(15px)});
   }
@@ -165,10 +180,10 @@
     width: rem-calc(200px);
     margin-right: 0;
     margin-bottom: rem-calc(30px);
-  }
 
-  @include media-breakpoint-up(xl) {
-    width: rem-calc(250px);
+    @include media-breakpoint-up(xl) {
+      width: rem-calc(250px);
+    }
   }
 }
 
@@ -259,4 +274,19 @@
       margin-right: rem-calc(10px);
     }
   }
+}
+
+.box__talk-info {
+  display: flex;
+  color: white;
+  font-weight: bold;
+  margin-bottom: rem-calc(20px);
+
+  &:last-child {
+    margin-bottom: rem-calc(-5px);
+  }
+}
+
+.box__talk-datetime {
+  margin-left: rem-calc(20px);
 }
