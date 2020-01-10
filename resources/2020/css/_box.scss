@@ -79,6 +79,21 @@
       margin-bottom: rem-calc(15px);
     }
   }
+
+  h3 {
+    @include heading;
+    font-size: rem-calc(22px);
+    margin-top: rem-calc(15px);
+
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(26px);
+      margin-top: rem-calc(20px);
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }
 
 .box__text-links {
@@ -108,7 +123,7 @@
   }
 }
 
-.box__people:not(.box__people--inline) {
+.box:not(.box--overlay) .box__people {
   flex-grow: 1;
   margin-bottom: rem-calc(-15px);
 
@@ -125,7 +140,7 @@
   }
 }
 
-.box__people--inline {
+.box--overlay .box__people {
   @include media-breakpoint-up(md) {
     display: flex;
     flex-wrap: wrap;
@@ -149,7 +164,7 @@
   }
 }
 
-.box__people--inline .box__person {
+.box--overlay .box__person {
   @include media-breakpoint-up(md) {
     width: calc(50% - #{rem-calc(15px)});
   }
@@ -235,14 +250,6 @@
     @include media-breakpoint-up(md) {
       font-size: rem-calc(22px);
     }
-
-    &:not(:last-child) {
-      margin-bottom: rem-calc(7px);
-
-      @include media-breakpoint-up(md) {
-        margin-bottom: rem-calc(10px);
-      }
-    }
   }
 
   &:not(:last-child) {
@@ -255,15 +262,19 @@
     @include media-breakpoint-up(md) {
       font-size: rem-calc(26px);
     }
+
+    &:not(:last-child) {
+      margin-bottom: rem-calc(15px);
+    }
   }
 }
 
 .box__person-links {
   .box--speaker & {
-    font-size: rem-calc(18px);
+    font-size: rem-calc(16px);
 
     @include media-breakpoint-up(md) {
-      font-size: rem-calc(22px);
+      font-size: rem-calc(20px);
     }
   }
 

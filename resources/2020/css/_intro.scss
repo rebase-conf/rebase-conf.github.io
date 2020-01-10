@@ -1,6 +1,6 @@
 .intro {
   height: 100vh;
-  background: $color-background url(/resources/#{$year}/img/skyline.svg) center no-repeat;
+  background: $color-background url(#{$imgs_baseurl}/skyline.svg) center no-repeat;
   background-size: 100vw auto;
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@
 }
 
 .intro__next {
-  background: url(/resources/#{$year}/img/arrow.svg) center no-repeat;
+  background: url(#{$imgs_baseurl}/arrow.svg) center no-repeat;
   background-size: contain;
   position: absolute;
   bottom: 30px;

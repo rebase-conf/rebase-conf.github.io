@@ -1,0 +1,29 @@
+{% assign person = include.person %}
+{% assign photo_url = photos_baseurl | append: "/" | append: person.id %}
+<div class="box__person" data-id="{{ person.id }}">
+  <img src="{{ photo_url }}.jpg" srcset="{{ photo_url }}@2x.jpg 2x, {{ photo_url }}.jpg 1x" class="box__person-img" />
+  <div class="box__person-info">
+    <h3 class="box__person-name"><a href="#">{{ person.name }}</a></h3>
+    <p class="box__person-affiliation">{{ person.affiliation }}</p>
+    <p class="box__person-links">
+      {% if include.bio_link %}
+      <a href="#{{ person.id }}" data-overlay="person">
+        <span class="fa fa-user" aria-hidden="true"></span>
+        BIO
+      </a>
+      {% endif %}
+      {% if person.url %}
+      <a href="{{ person.url }}" target="_blank">
+        <span class="fas fa-globe" aria-hidden="true"></span>
+        WEB
+      </a>
+      {% endif %}
+      {% if person.twitter %}
+      <a href="https://twitter.com/{{ person.twitter }}" target="_blank">
+        <span class="fab fa-twitter" aria-hidden="true"></span>
+        Twitter
+      </a>
+      {% endif %}
+    </p>
+  </div>
+</div>

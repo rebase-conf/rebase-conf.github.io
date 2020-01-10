@@ -51,6 +51,6 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url(/resources/#{$year}/img/twitter.svg) center no-repeat;
+  background: url(#{$imgs_baseurl}/twitter.svg) center no-repeat;
   background-size: contain;
 }

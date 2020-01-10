@@ -5,6 +5,7 @@
 // directive in _config.yml needs to be set to /resources
 {% assign year = "2020" %}
 $year: "{{ year }}";
+$imgs_baseurl: "{{ site.baseurl }}/resources/{{ year }}/img";
 
 @import "{{ year }}/css/vendor/tinyreset.min";
 @import "{{ year }}/css/vendor/bootstrap-grid.min";
