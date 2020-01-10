@@ -1,6 +1,6 @@
 .intro {
   height: 100vh;
-  background: $color-background url(/resources/2020/img/skyline.svg) center no-repeat;
+  background: $color-background url(/resources/#{$year}/img/skyline.svg) center no-repeat;
   background-size: 100vw auto;
   display: flex;
   flex-direction: column;
@@ -8,6 +8,7 @@
   align-items: center;
   text-align: center;
   position: relative;
+  color: white;
 }
 
 .intro__past-editions {
@@ -16,7 +17,6 @@
   right: rem-calc(15px);
   font-family: $font-family-heading;
   font-weight: bold;
-  color: white;
   text-transform: uppercase;
 
   @include media-breakpoint-up (md) {
@@ -37,11 +37,19 @@
 .intro__subheading {
   @extend .heading2;
   line-height: 1;
-  margin-bottom: calc(-1em - 10px - 15px);
+  margin-bottom: rem-calc(45px);
+}
+
+.intro__text {
+  line-height: (26 / 20);
+
+  @include media-breakpoint-up (md) {
+    font-size: rem-calc(20px);
+  }
 }
 
 .intro__next {
-  background: url(/resources/2020/img/arrow.svg) center no-repeat;
+  background: url(/resources/#{$year}/img/arrow.svg) center no-repeat;
   background-size: contain;
   position: absolute;
   bottom: 30px;

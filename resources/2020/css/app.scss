@@ -3,19 +3,22 @@
 // I couldn't find any way how to use relative imports
 // and because we have multiple editions, the sass_dir
 // directive in _config.yml needs to be set to /resources
-@import "2020/css/vendor/tinyreset.min";
-@import "2020/css/vendor/bootstrap-grid.min";
+{% assign year = "2020" %}
+$year: "{{ year }}";
 
-@import "2020/css/variables";
-@import "2020/css/rem_calc";
-@import "2020/css/mixins";
-@import "2020/css/base";
-@import "2020/css/typography";
-@import "2020/css/layout";
-@import "2020/css/overlay";
-@import "2020/css/box";
-@import "2020/css/intro";
-@import "2020/css/talks";
-@import "2020/css/sponsors";
-@import "2020/css/organizers";
-@import "2020/css/footer";
+@import "{{ year }}/css/vendor/tinyreset.min";
+@import "{{ year }}/css/vendor/bootstrap-grid.min";
+
+@import "{{ year }}/css/variables";
+@import "{{ year }}/css/rem_calc";
+@import "{{ year }}/css/mixins";
+@import "{{ year }}/css/base";
+@import "{{ year }}/css/typography";
+@import "{{ year }}/css/layout";
+@import "{{ year }}/css/overlay";
+@import "{{ year }}/css/box";
+@import "{{ year }}/css/intro";
+@import "{{ year }}/css/talks";
+@import "{{ year }}/css/sponsors";
+@import "{{ year }}/css/organizers";
+@import "{{ year }}/css/footer";

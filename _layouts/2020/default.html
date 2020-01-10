@@ -1,41 +1,16 @@
 {% assign settings = site.data["2020"] %}
+{% assign year = settings.year %}
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Rebase 2020!</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/resources/2020/img/favicon.png" />
-
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,700&display=swap&subset=latin-ext"
-    rel="stylesheet">
-
-  <link rel="stylesheet" href="{{ site.baseurl }}/resources/2020/css/app.css" type="text/css" />
-
-  <!-- Fontawesome icons -->
-  <script src="https://kit.fontawesome.com/c6307dd4cb.js" crossorigin="anonymous"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151197123-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-151197123-1');
-  </script>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
-  <script src="{{ site.baseurl }}/resources/2020/js/app.js" defer></script>
-</head>
+{% include {{ year }}/header.html %}
 
 <body>
   <section class="intro">
-    <img src="{{ site.baseurl }}/resources/2020/img/logo-white.svg" alt="Rebase" class="intro__logo" />
-    <h2 class="intro__subheading">Berlin July 15 - 17<sup>th</sup> 2020</h2>
+    <img src="{{ site.baseurl }}/resources/{{ year }}/img/logo-white.svg" alt="Rebase" class="intro__logo" />
+    <h2 class="intro__subheading">{{ settings.city }} {{ settings.conference_dates }}</h2>
+    <p class="intro__text">
+      An unusual non-profit conference
+      connecting business and academia.</p>
     {% comment %}
     Displayed now for testing, use Liquid
     comment tags to hide until 2021 :-)
@@ -342,52 +317,52 @@
       <h3 class="sponsors__subheading">Gold & Party Sponsor</h3>
       <div class="sponsors__group sponsors__group--gold">
         <a href="#" class="sponsors__sponsor">
-          <img src="{{ site.baseurl }}/resources/2020/img/sponsors/nextjournal.svg" alt="Nextjournal" />
+          <img src="{{ site.baseurl }}/resources/{{ year }}/img/sponsors/nextjournal.svg" alt="Nextjournal" />
         </a>
       </div>
       <h3 class="sponsors__subheading">Silver Sponsor</h3>
       <div class="sponsors__group sponsors__group--silver">
         <a href="#" class="sponsors__sponsor sponsors__sponsor--droit">
-          <img src="{{ site.baseurl }}/resources/2020/img/sponsors/droit.png" alt="Droit" />
+          <img src="{{ site.baseurl }}/resources/{{ year }}/img/sponsors/droit.png" alt="Droit" />
         </a>
       </div>
       <h3 class="sponsors__subheading">Diversity Sponsor</h3>
       <div class="sponsors__group sponsors__group--diversity">
         <a href="#" class="sponsors__sponsor">
-          <img src="{{ site.baseurl }}/resources/2020/img/sponsors/permutive.svg" alt="Permutive" />
+          <img src="{{ site.baseurl }}/resources/{{ year }}/img/sponsors/permutive.svg" alt="Permutive" />
         </a>
       </div>
       <h3 class="sponsors__subheading">Supporters</h3>
       <div class="sponsors__group sponsors__group--supporters">
         <a href="#" class="sponsors__sponsor">
-          <img src="{{ site.baseurl }}/resources/2020/img/sponsors/google.svg" alt="Google" />
+          <img src="{{ site.baseurl }}/resources/{{ year }}/img/sponsors/google.svg" alt="Google" />
         </a>
         <a href="#" class="sponsors__sponsor">
-          <img src="{{ site.baseurl }}/resources/2020/img/sponsors/mozilla.svg" alt="Mozilla" />
+          <img src="{{ site.baseurl }}/resources/{{ year }}/img/sponsors/mozilla.svg" alt="Mozilla" />
         </a>
         <a href="#" class="sponsors__sponsor">
-          <img src="{{ site.baseurl }}/resources/2020/img/sponsors/oracle.png" alt="Oracle" />
+          <img src="{{ site.baseurl }}/resources/{{ year }}/img/sponsors/oracle.png" alt="Oracle" />
         </a>
         <a href="#" class="sponsors__sponsor">
-          <img src="{{ site.baseurl }}/resources/2020/img/sponsors/uber.svg" alt="Uber" />
+          <img src="{{ site.baseurl }}/resources/{{ year }}/img/sponsors/uber.svg" alt="Uber" />
         </a>
         <a href="#" class="sponsors__sponsor sponsors__sponsor--thoughtworks">
-          <img src="{{ site.baseurl }}/resources/2020/img/sponsors/thoughtworks.png" alt="Uber" />
+          <img src="{{ site.baseurl }}/resources/{{ year }}/img/sponsors/thoughtworks.png" alt="Uber" />
         </a>
         <a href="#" class="sponsors__sponsor">
-          <img src="{{ site.baseurl }}/resources/2020/img/sponsors/msr.svg" alt="Uber" />
+          <img src="{{ site.baseurl }}/resources/{{ year }}/img/sponsors/msr.svg" alt="Uber" />
         </a>
         <a href="#" class="sponsors__sponsor sponsors__sponsor--feenk">
-          <img src="{{ site.baseurl }}/resources/2020/img/sponsors/feenk.png" alt="Uber" />
+          <img src="{{ site.baseurl }}/resources/{{ year }}/img/sponsors/feenk.png" alt="Uber" />
         </a>
         <a href="#" class="sponsors__sponsor">
-          <img src="{{ site.baseurl }}/resources/2020/img/sponsors/goldman.svg" alt="Uber" />
+          <img src="{{ site.baseurl }}/resources/{{ year }}/img/sponsors/goldman.svg" alt="Uber" />
         </a>
         <a href="#" class="sponsors__sponsor">
-          <img src="{{ site.baseurl }}/resources/2020/img/sponsors/facebook.svg" alt="Uber" />
+          <img src="{{ site.baseurl }}/resources/{{ year }}/img/sponsors/facebook.svg" alt="Uber" />
         </a>
         <a href="#" class="sponsors__sponsor">
-          <img src="{{ site.baseurl }}/resources/2020/img/sponsors/iohk@2x.png" alt="Uber" />
+          <img src="{{ site.baseurl }}/resources/{{ year }}/img/sponsors/iohk@2x.png" alt="Uber" />
         </a>
       </div>
     </div>
@@ -400,8 +375,9 @@
           <div class="box">
             <div class="box__people">
               <div class="box__person">
-                <img src="{{ site.baseurl }}/resources/2020/img/organizers/jan.png" srcset="{{ site.baseurl }}/resources/2020/img/organizers/jan@2x.png 2x,
-                      {{ site.baseurl }}/resources/2020/img/organizers/jan.png 1x" class="box__person-img" />
+                <img src="{{ site.baseurl }}/resources/{{ year }}/img/organizers/jan.png" srcset="{{ site.baseurl }}/resources/{{ year }}/img/organizers/jan@2x.png 2x,
+                             {{ site.baseurl }}/resources/{{ year }}/img/organizers/jan.png 1x"
+                  class="box__person-img" />
                 <div class="box__person-info">
                   <h3 class="box__person-name"><a href="#">Jan Vitek</a></h3>
                   <p class="box__person-affiliation">Northeastern University</p>
@@ -420,8 +396,9 @@
           <article class="box">
             <div class="box__people">
               <div class="box__person">
-                <img src="{{ site.baseurl }}/resources/2020/img/organizers/filip_krikava.png" srcset="{{ site.baseurl }}/resources/2020/img/organizers/filip_krikava@2x.png 2x,
-                      {{ site.baseurl }}/resources/2020/img/organizers/filip_krikava.png 1x" class="box__person-img" />
+                <img src="{{ site.baseurl }}/resources/{{ year }}/img/organizers/filip_krikava.png" srcset="{{ site.baseurl }}/resources/{{ year }}/img/organizers/filip_krikava@2x.png 2x,
+                      {{ site.baseurl }}/resources/{{ year }}/img/organizers/filip_krikava.png 1x"
+                  class="box__person-img" />
                 <div class="box__person-info">
                   <h3 class="box__person-name"><a href="#">Filip Křikava</a></h3>
                   <p class="box__person-affiliation">Czech Technical University</p>
@@ -439,46 +416,7 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-md-5 col-xl-3">
-          <img src="{{ site.baseurl }}/resources/2020/img/logo-white.svg" alt="Rebase" class="footer__logo" />
-        </div>
-        <div class="col-md-3 col-xl-2">
-          <h3 class="footer__heading">Conference</h3>
-          <ul class="footer__links">
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Call for Presentations</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Sponsorships</a>
-            </li class="footer__links-item">
-          </ul>
-        </div>
-        <div class="col-md-3 col-xl-2">
-          <h3 class="footer__heading">Attending</h3>
-          <ul class="footer__links">
-            <li class="footer__links-item">
-              <a href="#" class="footer__link">Code of Conduct</a>
-            </li class="footer__links-item">
-            <li class="footer__links-item">
-              <a href="https://example.org/" class="footer__link" target="_blank">Venue</a>
-            </li class="footer__links-item">
-          </ul>
-        </div>
-      </div>
-      <div class="row align-items-center justify-content-between">
-        <div class="col-10 col-md-9">
-          <span class="footer__email-label">Contact:</span>
-          <a href="mailto:organizers@rebase-conf.org" class="footer__link">organizers@rebase-conf.org</a>
-        </div>
-        <div class="col-2 col-md-3 col-xl-2">
-          <a href="#" class="footer__twitter"></a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  {% include {{ year }}/footer.html %}
 </body>
 
 </html>
