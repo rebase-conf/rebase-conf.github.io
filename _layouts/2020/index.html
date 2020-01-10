@@ -61,7 +61,7 @@
         {% for talk in settings.keynotes %}
         <div class="talks__talk">
           <article class="box box--large" data-id="{{ talk.title | slugify }}">
-            {% include {{ year }}/talk.html %}
+            {% include {{ year }}/talk.html excerpt=true %}
           </article>
         </div>
         {% endfor %}
