@@ -97,13 +97,13 @@ layout: 2020/default
   {% for talk in talks %}
   talks['{{ talk.title | slugify }}'] = {
     abstract: {{ talk.abstract | markdownify | jsonify }},
-  speakers: [],
-    };
+    speakers: [],
+  };
   {% for speaker in talk.speakers %}
   talks['{{ talk.title | slugify }}'].speakers.push({
     name: '{{ speaker.name }}',
     bio: {{ speaker.bio | markdownify | jsonify }},
-      });
+  });
   {% endfor %}
   {% endfor %}
 </script>
