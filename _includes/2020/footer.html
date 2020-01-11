@@ -2,16 +2,18 @@
   <div class="container">
     <div class="row justify-content-between">
       <div class="col-md-5 col-xl-3">
-        <img src="{{ imgs_baseurl }}/logo-white.svg" alt="Rebase" class="footer__logo" />
+        <a href="/{{ year }}/">
+          <img src="{{ imgs_baseurl }}/logo-white.svg" alt="Rebase" class="footer__logo" />
+        </a>
       </div>
       <div class="col-md-3 col-xl-2">
         <h3 class="footer__heading">Conference</h3>
         <ul class="footer__links">
           <li class="footer__links-item">
-            <a href="#" class="footer__link">Call for Presentations</a>
+            <a href="/{{ year }}/call-for-presentations.html" class="footer__link">Call for Presentations</a>
           </li>
           <li class="footer__links-item">
-            <a href="#" class="footer__link">Sponsorships</a>
+            <a href="/{{ year }}/sponsorships.html" class="footer__link">Sponsorships</a>
           </li class="footer__links-item">
         </ul>
       </div>
@@ -19,7 +21,7 @@
         <h3 class="footer__heading">Attending</h3>
         <ul class="footer__links">
           <li class="footer__links-item">
-            <a href="#" class="footer__link">Code of Conduct</a>
+            <a href="/{{ year }}/code-of-conduct.html" class="footer__link">Code of Conduct</a>
           </li class="footer__links-item">
           <li class="footer__links-item">
             <a href="https://example.org/" class="footer__link" target="_blank">Venue</a>

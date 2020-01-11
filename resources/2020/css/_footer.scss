@@ -1,6 +1,6 @@
 .footer {
   background: $color-background-dark;
-  padding: 50px 0;
+  padding: rem-calc(50px) 0;
   color: white;
 
   @include media-breakpoint-down(md) {
@@ -9,9 +9,10 @@
 }
 
 .footer__logo {
-  max-width: 200px;
+  max-width: rem-calc(200px);
 
   @include media-breakpoint-down(md) {
+    max-width: rem-calc(150px);
     margin-bottom: rem-calc(40px);
   }
 }

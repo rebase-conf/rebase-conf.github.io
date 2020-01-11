@@ -1,0 +1,4 @@
+{% assign year = "2020" %}
+{% assign settings = site.data[year] %}
+{% capture imgs_baseurl %}{{ site.baseurl }}/resources/{{ year }}/img{% endcapture %}
+{% assign photos_baseurl = imgs_baseurl | append: "/people" %}<!DOCTYPE html>

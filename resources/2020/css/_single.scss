@@ -1,0 +1,16 @@
+.single {
+  @include section;
+  background: $color-background;
+  color: white;
+}
+
+.single__heading {
+  @extend .heading1;
+  margin-bottom: (40em / 46);
+}
+
+.single__content {
+  @include formatted-text;
+  max-width: 800px;
+  margin: 0 auto;
+}

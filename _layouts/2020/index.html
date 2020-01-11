@@ -1,107 +1,98 @@
-{% assign settings = site.data["2020"] %}
-{% assign year = settings.year %}
-{% capture imgs_baseurl %}{{ site.baseurl }}/resources/{{ year }}/img{% endcapture %}
-{% assign photos_baseurl = imgs_baseurl | append: "/people" %}
-<!DOCTYPE html>
-<html>
-{% include {{ year }}/header.html %}
-
-<body>
-  <section class="intro">
-    <img src="{{ imgs_baseurl }}/logo-white.svg" alt="Rebase" class="intro__logo" />
-    <h2 class="intro__subheading">{{ settings.city }} {{ settings.conference_dates }}</h2>
-    <p class="intro__text">
-      An unusual non-profit conference
-      connecting business and academia.
-    </p>
-    {% if settings.past_editions.size %}
-    <p class="intro__past-editions">
-      Past editions:
-      {% for edition in settings.past_editions %}
-      <a href="{{ site.baseurl }}/{{ edition }}">{{ edition }}</a>
-      {% endfor %}
-    </p>
-    {% endif %}
-    <a href="#talks" class="intro__next"></a>
+---
+layout: 2020/default
+---
+{% include 2020/variables.html %}
+<section class="intro">
+  <img src="{{ imgs_baseurl }}/logo-white.svg" alt="Rebase" class="intro__logo" />
+  <h2 class="intro__subheading">{{ settings.city }} {{ settings.conference_dates }}</h2>
+  <p class="intro__text">
+    An unusual non-profit conference
+    connecting business and academia.
+  </p>
+  {% if settings.past_editions.size %}
+  <p class="intro__past-editions">
+    Past editions:
+    {% for edition in settings.past_editions %}
+    <a href="{{ site.baseurl }}/{{ edition }}">{{ edition }}</a>
+    {% endfor %}
+  </p>
+  {% endif %}
+  <a href="#talks" class="intro__next"></a>
+</section>
+<div class="overlay overlay--person">
+  <section class="overlay__content">
+    <article class="box box--large">
+      <div class="box__person">
+      </div>
+      <div class="box__text">
+        <div class="box__text-content">
+        </div>
+    </article>
   </section>
-  <div class="overlay overlay--person">
-    <section class="overlay__content">
-      <article class="box box--large">
-        <div class="box__person">
-        </div>
-        <div class="box__text">
-          <div class="box__text-content">
-          </div>
+</div>
+<div class="overlay overlay--talk">
+  <section class="overlay__content">
+    <div class="overlay__content-scroll">
+      <article class="box box--large box--overlay">
       </article>
-    </section>
-  </div>
-  <div class="overlay overlay--talk">
-    <section class="overlay__content">
-      <div class="overlay__content-scroll">
-        <article class="box box--large box--overlay">
+    </div>
+  </section>
+</div>
+<section class="talks" id="talks">
+  <div class="container">
+    <h2 class="talks__heading">Keynote speakers</h2>
+    <div class="talks__list talks__list--keynote-speakers">
+      <div class="talks__talk">
+        {% for speaker in settings.keynote_speakers %}
+        <article class="box box--speaker">
+          {% include {{ year }}/person.html person=speaker bio_link=true %}
         </article>
-      </div>
-    </section>
-  </div>
-  <section class="talks" id="talks">
-    <div class="container">
-      <h2 class="talks__heading">Keynote speakers</h2>
-      <div class="talks__list talks__list--keynote-speakers">
-        <div class="talks__talk">
-          {% for speaker in settings.keynote_speakers %}
-          <article class="box box--speaker">
-            {% include {{ year }}/person.html person=speaker bio_link=true %}
-          </article>
-          {% endfor %}
-        </div>
-      </div>
-
-      <h2 class="talks__heading">Keynote talks</h2>
-      <div class="talks__list talks__list--keynotes">
-        {% for talk in settings.keynotes %}
-        <div class="talks__talk">
-          <article class="box box--large" data-id="{{ talk.title | slugify }}">
-            {% include {{ year }}/talk.html excerpt=true %}
-          </article>
-        </div>
-        {% endfor %}
-      </div>
-
-      <h2 class="talks__heading">Presentations</h2>
-      <div class="talks__list talks__list--presentations">
-        {% for talk in settings.presentations %}
-        <div class="talks__talk">
-          <article class="box" data-id="{{ talk.title | slugify }}">
-            {% include {{ year }}/talk.html excerpt=false %}
-          </article>
-        </div>
         {% endfor %}
       </div>
     </div>
-  </section>
-  {% include {{ year }}/sponsors.html %}
-  {% include {{ year }}/organizers.html %}
-  {% include {{ year }}/footer.html %}
-  <script>
-    var speakers = {};
-    {% for speaker in settings.keynote_speakers %}
-    speakers['{{ speaker.id }}'] = {{ speaker.bio | markdownify | jsonify }};
-    {% endfor %}
-    var talks = {};
-    {% assign talks = settings.keynotes | concat: settings.presentations %}
-    {% for talk in talks %}
-    talks['{{ talk.title | slugify }}'] = {
-      abstract: {{ talk.abstract | markdownify | jsonify }},
-      speakers: [],
-    };
-    {% for speaker in talk.speakers %}
-      talks['{{ talk.title | slugify }}'].speakers.push({
-        name: '{{ speaker.name }}',
-        bio: {{ speaker.bio | markdownify | jsonify }},
-      });
-    {% endfor %}
-    {% endfor %}
-  </script>
-</body>
 
-</html>
+    <h2 class="talks__heading">Keynote talks</h2>
+    <div class="talks__list talks__list--keynotes">
+      {% for talk in settings.keynotes %}
+      <div class="talks__talk">
+        <article class="box box--large" data-id="{{ talk.title | slugify }}">
+          {% include {{ year }}/talk.html excerpt=true %}
+        </article>
+      </div>
+      {% endfor %}
+    </div>
+
+    <h2 class="talks__heading">Presentations</h2>
+    <div class="talks__list talks__list--presentations">
+      {% for talk in settings.presentations %}
+      <div class="talks__talk">
+        <article class="box" data-id="{{ talk.title | slugify }}">
+          {% include {{ year }}/talk.html excerpt=false %}
+        </article>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% include {{ year }}/sponsors.html %}
+{% include {{ year }}/organizers.html %}
+<script>
+  var speakers = {};
+  {% for speaker in settings.keynote_speakers %}
+  speakers['{{ speaker.id }}'] = {{ speaker.bio | markdownify | jsonify }};
+  {% endfor %}
+  var talks = {};
+  {% assign talks = settings.keynotes | concat: settings.presentations %}
+  {% for talk in talks %}
+  talks['{{ talk.title | slugify }}'] = {
+    abstract: {{ talk.abstract | markdownify | jsonify }},
+  speakers: [],
+    };
+  {% for speaker in talk.speakers %}
+  talks['{{ talk.title | slugify }}'].speakers.push({
+    name: '{{ speaker.name }}',
+    bio: {{ speaker.bio | markdownify | jsonify }},
+      });
+  {% endfor %}
+  {% endfor %}
+</script>
