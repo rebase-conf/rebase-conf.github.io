@@ -19,6 +19,7 @@ $imgs_baseurl: "{{ site.baseurl }}/resources/{{ year }}/img";
 @import "{{ year }}/css/overlay";
 @import "{{ year }}/css/box";
 @import "{{ year }}/css/intro";
+@import "{{ year }}/css/about";
 @import "{{ year }}/css/talks";
 @import "{{ year }}/css/sponsors";
 @import "{{ year }}/css/organizers";

@@ -1,16 +1,14 @@
-.single {
+.about {
   @include section;
   background: $color-background;
   color: white;
 }
 
-.single__heading {
+.about__heading {
   @extend .heading1;
   margin-bottom: (40em / 46);
 }
 
-.single__content {
+.about__content {
   @include text-content;
-  max-width: 800px;
-  margin: 0 auto;
 }

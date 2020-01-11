@@ -121,3 +121,9 @@
     color: $color-active;
   }
 }
+
+@mixin text-content {
+  @include formatted-text;
+  max-width: 800px;
+  margin: 0 auto;
+}

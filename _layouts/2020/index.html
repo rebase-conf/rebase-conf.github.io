@@ -17,28 +17,20 @@ layout: 2020/default
     {% endfor %}
   </p>
   {% endif %}
-  <a href="#talks" class="intro__next"></a>
+  <a href="#about" class="intro__next"></a>
 </section>
-<div class="overlay overlay--person">
-  <section class="overlay__content">
-    <article class="box box--large">
-      <div class="box__person">
-      </div>
-      <div class="box__text">
-        <div class="box__text-content">
-        </div>
-    </article>
-  </section>
-</div>
-<div class="overlay overlay--talk">
-  <section class="overlay__content">
-    <div class="overlay__content-scroll">
-      <article class="box box--large box--overlay">
-      </article>
+<section class="about" id="about">
+  <div class="container">
+    <h2 class="about__heading">About Rebase</h2>
+    <div class="about__content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel sagittis mi. Cras aliquet leo in nisi
+        hendrerit maximus. Vivamus placerat bibendum commodo. Quisque in erat tincidunt nisi ultricies egestas.
+      </p>
     </div>
-  </section>
-</div>
-<section class="talks" id="talks">
+  </div>
+</section>
+<section class="talks">
   <div class="container">
     <h2 class="talks__heading">Keynote speakers</h2>
     <div class="talks__list talks__list--keynote-speakers">
@@ -76,6 +68,25 @@ layout: 2020/default
 </section>
 {% include {{ year }}/sponsors.html %}
 {% include {{ year }}/organizers.html %}
+<div class="overlay overlay--person">
+  <section class="overlay__content">
+    <article class="box box--large">
+      <div class="box__person">
+      </div>
+      <div class="box__text">
+        <div class="box__text-content">
+        </div>
+    </article>
+  </section>
+</div>
+<div class="overlay overlay--talk">
+  <section class="overlay__content">
+    <div class="overlay__content-scroll">
+      <article class="box box--large box--overlay">
+      </article>
+    </div>
+  </section>
+</div>
 <script>
   var speakers = {};
   {% for speaker in settings.keynote_speakers %}
