@@ -17,6 +17,7 @@ $imgs_baseurl: "{{ site.baseurl }}/resources/{{ year }}/img";
 @import "{{ year }}/css/typography";
 @import "{{ year }}/css/layout";
 @import "{{ year }}/css/overlay";
+@import "{{ year }}/css/button";
 @import "{{ year }}/css/box";
 @import "{{ year }}/css/intro";
 @import "{{ year }}/css/about";

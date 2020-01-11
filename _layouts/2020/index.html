@@ -9,6 +9,28 @@ layout: 2020/default
     An unusual non-profit conference
     connecting business and academia.
   </p>
+  <div class="intro__buttons">
+    {% if settings.cfp != "hidden" %}
+    <span class="intro__button">
+      <a href="{{ year }}/call-for-presentations.html" class="button {% if settings.cfp == "inactive" %}button--inactive{% endif %}">
+        Call for papers
+      </a>
+      {% if settings.cfp_date and settings.cfp == "inactive" %}
+        <span class="intro__button-date">starting {{ settings.cfp_date }}</span>
+      {% endif %}
+    </span>
+    {% endif %}
+    {% if settings.registration != "hidden" %}
+    <span class="intro__button">
+      <a href="#" class="button {% if settings.registration == "inactive" %}button--inactive{% endif %}">
+        Registration
+      </a>
+      {% if settings.registration_date and settings.registration == "inactive" %}
+        <span class="intro__button-date">starting {{ settings.registration_date }}</span>
+      {% endif %}
+    </span>
+    {% endif %}
+  </div>
   {% if settings.past_editions.size %}
   <p class="intro__past-editions">
     Past editions:
@@ -97,7 +119,7 @@ layout: 2020/default
   {% for talk in talks %}
   talks['{{ talk.title | slugify }}'] = {
     abstract: {{ talk.abstract | markdownify | jsonify }},
-    speakers: [],
+  speakers: [],
   };
   {% for speaker in talk.speakers %}
   talks['{{ talk.title | slugify }}'].speakers.push({

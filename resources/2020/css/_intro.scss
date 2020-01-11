@@ -19,7 +19,7 @@
   font-weight: bold;
   text-transform: uppercase;
 
-  @include media-breakpoint-up (md) {
+  @include media-breakpoint-up(md) {
     font-size: rem-calc(20px);
   }
 
@@ -43,9 +43,42 @@
 .intro__text {
   line-height: (26 / 20);
 
-  @include media-breakpoint-up (md) {
+  @include media-breakpoint-up(md) {
     font-size: rem-calc(20px);
   }
+
+  &:not(:last-child) {
+    margin-bottom: rem-calc(30px);
+  }
+}
+
+.intro__buttons {
+  @include media-breakpoint-down(md) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.intro__button {
+  display: inline-flex;
+  flex-direction: column;
+  
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin: 0 10px;
+  }
+}
+
+.intro__button-date {
+  text-align: center;
+  white-space: nowrap;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 10px;
 }
 
 .intro__next {

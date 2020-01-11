@@ -7,6 +7,14 @@ conference_dates: July 15 - 17<sup>th</sup> 2020
 #  - 2016
 #  - 2015
 
+# Possible states for cfp and registration: hidden, inactive, active
+# cfp_date and registration_date is displayed below the button if
+# present and the state is set to inactive
+cfp: inactive
+cfp_date: Feb 20th
+registration: hidden
+registration_date: Apr 20th
+
 keynote_speakers:
 - id: lars-bak
   name: "Lars Bak"

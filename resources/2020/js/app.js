@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  $('.button--inactive').click(function(e) {
+    e.preventDefault();
+  });
+
   $('.box__person-links [data-overlay=person]').click(function (e) {
     e.preventDefault();
     $personEl = $(this).closest('.box__person');
