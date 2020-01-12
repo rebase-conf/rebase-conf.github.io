@@ -1,28 +1,49 @@
+var scrollPosition;
+
 $(document).ready(function () {
   $('.button--inactive').click(function(e) {
     e.preventDefault();
+  });
+
+  $('.overlay__close').click(function(e) {
+    e.preventDefault();
+    closeOverlay();
   });
 
   $('.box__person-links [data-overlay=person]').click(function (e) {
     e.preventDefault();
     $personEl = $(this).closest('.box__person');
     fillPersonOverlay($personEl);
-    $('.overlay--person').toggleClass('overlay--active');
+    showOverlay('.overlay--person');
   });
 
   $('a[href="#abstract"]').click(function (e) {
     e.preventDefault();
     $talkEl = $(this).closest('.box');
     fillTalkOverlay($talkEl);
-    $('.overlay--talk').toggleClass('overlay--active');
+    showOverlay('.overlay--talk');
   });
 
   $('.overlay').click(function (e) {
     if (e.target === e.currentTarget) {
-      $(this).toggleClass('overlay--active');
+      closeOverlay();
     }
   });
 });
+
+closeOverlay = function() {
+  $('.overlay').removeClass('overlay--active');
+  $('body').removeClass('body--overlay-active').css({marginTop: 0});
+  $('html,body').scrollTop(scrollPosition);
+}
+
+showOverlay = function(overlay) {
+  var $overlay = $(overlay);
+  scrollPosition = $('html').scrollTop();
+  $overlay.addClass('overlay--active');
+  $('.overlay__content').scrollTop(0);
+  $('body').addClass('body--overlay-active').css({marginTop: -scrollPosition});
+};
 
 fillPersonOverlay = function ($personEl) {
   var $overlay = $('.overlay--person');
@@ -37,6 +58,7 @@ fillTalkOverlay = function($talkEl) {
   var $overlay = $('.overlay--talk');
   var $clone = $talkEl.clone();
   $clone.find('.box__text-links [data-overlay=talk]').remove();
+  $clone.find('.box__text-content').remove();
   var $box = $overlay.find('.box');
   $box.empty()
   $box.append($clone.children());

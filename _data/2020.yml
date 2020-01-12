@@ -43,10 +43,11 @@ keynotes:
 
     And paragraphs too!!!
   abstract: |
-    Lorem ipsum dolor sit amet ...\
-    With line breaks.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt dictum cursus. Nullam volutpat molestie erat, sit amet viverra elit pharetra ut. Aliquam in neque ut ex ullamcorper dignissim. Cras accumsan dui at tincidunt elementum. Fusce eget lorem a ipsum interdum ullamcorper. Donec mauris orci, pellentesque vitae tincidunt a, sagittis ut nulla. Nunc tincidunt fermentum suscipit. Cras euismod nisl libero, non euismod lacus euismod in. Vivamus egestas libero sit amet lobortis ullamcorper. Vestibulum tincidunt gravida orci ac accumsan. Suspendisse pellentesque cursus lorem a cursus. Aliquam vel purus sed tortor convallis tempor sit amet in erat. Nulla id pharetra ligula.
 
-    And paragraphs too!!!
+    Suspendisse quis nisl dignissim, cursus magna quis, finibus risus. Morbi risus magna, volutpat nec finibus nec, hendrerit vitae magna. Sed non erat ligula. Suspendisse tempor a leo quis hendrerit. Donec vitae efficitur arcu. Vestibulum malesuada felis a dui luctus, at congue metus porttitor. Vestibulum id ligula magna. Ut a diam ornare, commodo neque et, pharetra mi. Maecenas ullamcorper id nisl eu tincidunt. Sed scelerisque quis tortor eget egestas. Sed dapibus sem et dui mattis, non volutpat nibh iaculis. Pellentesque nec purus mi.
+
+    Duis mollis convallis nisi, eu vestibulum velit dapibus vel. Phasellus pharetra quam in eleifend viverra. Curabitur sit amet sagittis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi mauris, efficitur in dolor quis, lacinia vulputate ex. Nam odio ligula, gravida sit amet velit hendrerit, porttitor gravida felis. Aliquam sit amet neque et tellus laoreet ultrices eu viverra nisl. Vestibulum iaculis, enim vel malesuada iaculis, eros metus blandit felis, ut suscipit massa tortor quis libero. Sed dapibus, diam ut cursus efficitur, erat elit hendrerit dolor, eget iaculis ligula orci et velit. Curabitur mollis, ante ac porttitor cursus, turpis massa fringilla diam, id tristique sem tellus in felis.
   speakers:
     - id: "lars-bak"
       name: "Lars Bak"
