@@ -1,5 +1,4 @@
 ---
-layout: default
 current_year: 2020
 ---
 <html>

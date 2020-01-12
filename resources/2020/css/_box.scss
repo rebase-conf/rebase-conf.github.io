@@ -150,31 +150,36 @@
 .box__person-img {
   border-radius: 50%;
   width: rem-calc(65px);
-  height: auto;
+  height: rem-calc(65px);
   margin-right: rem-calc(10px);
 
   @include media-breakpoint-up(md) {
     width: rem-calc(70px);
+    height: rem-calc(70px);
     margin-right: rem-calc(15px);
   }
 
   .box--large & {
     width: rem-calc(70px);
+    height: rem-calc(70px);
     margin-right: rem-calc(15px);
 
     @include media-breakpoint-up(md) {
       width: rem-calc(90px);
+      height: rem-calc(90px);
       margin-right: rem-calc(20px);
     }
   }
 
   .box--speaker & {
     width: rem-calc(200px);
+    height: rem-calc(200px);
     margin-right: 0;
     margin-bottom: rem-calc(30px);
 
     @include media-breakpoint-up(xl) {
       width: rem-calc(250px);
+      height: rem-calc(250px);
     }
   }
 }

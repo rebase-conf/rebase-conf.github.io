@@ -1,5 +1,3 @@
-var scrollPosition;
-
 $(document).ready(function () {
   $('.button--inactive').click(function(e) {
     e.preventDefault();
@@ -12,37 +10,53 @@ $(document).ready(function () {
 
   $('[data-overlay=person]').click(function (e) {
     e.preventDefault();
-    $personEl = $(this).closest('.box__person');
+    var $this = $(this);
+    $personEl = $this.closest('.box__person');
     fillPersonOverlay($personEl);
-    showOverlay('.overlay--person');
+    showOverlay('.overlay--person', $this.attr('href'));
   });
 
   $('[data-overlay=talk]').click(function (e) {
     e.preventDefault();
-    $talkEl = $(this).closest('.box');
+    var $this = $(this);
+    $talkEl = $this.closest('.box');
     fillTalkOverlay($talkEl);
-    showOverlay('.overlay--talk');
+    showOverlay('.overlay--talk', $this.attr('href'));
   });
 
   $('.overlay').click(function (e) {
-    if ($(e.target).closest('.box').length === 0) {
+    var $target = $(e.target);
+    if (!$target.hasClass('overlay__close') && $(e.target).closest('.box').length === 0) {
       closeOverlay();
     }
   });
+
+  if(window.location.hash) {
+    var $overlayLink = $('[data-overlay][href="' + window.location.hash + '"]');
+    if($overlayLink.length) {
+      var $parent = $overlayLink.closest('.box');
+      $('html,body').scrollTop($parent.offset().top);
+      $overlayLink[0].click();
+    }
+  }
 });
 
 closeOverlay = function() {
   $('.overlay').removeClass('overlay--active');
-  $('body').removeClass('body--overlay-active').css({marginTop: 0});
+  var $body = $('body');
+  var scrollPosition = -1 * parseInt($body.css('marginTop'));
+  $body.removeClass('body--overlay-active').css({marginTop: 0});
   $('html,body').scrollTop(scrollPosition);
+  window.history.replaceState({}, null, window.location.pathname);
 }
 
-showOverlay = function(overlay) {
+showOverlay = function(overlay, href) {
   var $overlay = $(overlay);
   scrollPosition = $('html').scrollTop();
   $overlay.addClass('overlay--active');
   $('.overlay__content-scroll').scrollTop(0);
   $('body').addClass('body--overlay-active').css({marginTop: -scrollPosition});
+  window.history.replaceState({}, null, href);
 };
 
 fillPersonOverlay = function ($personEl) {
