@@ -1,6 +1,5 @@
 .box {
   background: darken($color: $color-background, $amount: 1.5);
-  height: 100%;
   padding: rem-calc(20px);
   display: flex;
   flex-direction: column;
@@ -8,11 +7,21 @@
   @include media-breakpoint-up(md) {
     padding: rem-calc(25px) rem-calc(30px);
   }
+
+  &:not(.box--overlay) {
+    height: 100%;
+  }
 }
 
 .box--large {
   @include media-breakpoint-up(md) {
     padding: rem-calc(30px) rem-calc(40px);
+  }
+}
+
+.box--overlay {
+  @include media-breakpoint-down(md) {
+    min-height: 100%;
   }
 }
 
@@ -41,13 +50,10 @@
   font-weight: 700;
   line-height: 1.2;
   color: $color-heading;
+  margin-bottom: 7px;
 
-  &:not(:last-child) {
-    margin-bottom: 7px;
-
-    @include media-breakpoint-up(md) {
-      margin-bottom: 10px;
-    }
+  @include media-breakpoint-up(md) {
+    margin-bottom: 10px;
   }
 
   @include media-breakpoint-up(md) {

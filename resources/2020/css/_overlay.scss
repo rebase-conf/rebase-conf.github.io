@@ -21,15 +21,14 @@
 
 .overlay__content {
   width: 100%;
-  max-height: 100%;
+  height: 100%;
   color: $color-paragraph;
-  overflow: auto;
   position: relative;
   overscroll-behavior: contain;
   -ms-scroll-chaining: none;
 
   @include media-breakpoint-up(md) {
-    max-height: 75%;
+    height: 75%;
     width: 90%;
     max-width: 800px;
   }
@@ -37,10 +36,15 @@
 
 .overlay__content-scroll {
   height: 100%;
+  overflow: auto;
+
+  @include media-breakpoint-down(md) {
+    background: darken($color: $color-background, $amount: 1.5);
+  }
 }
 
 .overlay__close {
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 10px;
   background: darken($color: $color-background, $amount: 1.5) url(#{$imgs_baseurl}/close.svg) center no-repeat;

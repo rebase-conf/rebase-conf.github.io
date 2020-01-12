@@ -6,9 +6,11 @@
     {% endfor %}
   </p>
   {% endif %}
-  <h3 class="box__text-heading">
-    {{ talk.title }}
-  </h3>
+  <a href="#{{ talk.title | slugify }}" data-overlay="talk">
+    <h3 class="box__text-heading">
+      {{ talk.title }}
+    </h3>
+  </a>
   {% if include.excerpt %}
   <div class="box__text-content">
     {{ talk.excerpt | markdownify }}

@@ -10,14 +10,14 @@ $(document).ready(function () {
     closeOverlay();
   });
 
-  $('.box__person-links [data-overlay=person]').click(function (e) {
+  $('[data-overlay=person]').click(function (e) {
     e.preventDefault();
     $personEl = $(this).closest('.box__person');
     fillPersonOverlay($personEl);
     showOverlay('.overlay--person');
   });
 
-  $('a[href="#abstract"]').click(function (e) {
+  $('[data-overlay=talk]').click(function (e) {
     e.preventDefault();
     $talkEl = $(this).closest('.box');
     fillTalkOverlay($talkEl);
@@ -25,7 +25,7 @@ $(document).ready(function () {
   });
 
   $('.overlay').click(function (e) {
-    if (e.target === e.currentTarget) {
+    if ($(e.target).closest('.box').length === 0) {
       closeOverlay();
     }
   });
@@ -41,14 +41,15 @@ showOverlay = function(overlay) {
   var $overlay = $(overlay);
   scrollPosition = $('html').scrollTop();
   $overlay.addClass('overlay--active');
-  $('.overlay__content').scrollTop(0);
+  $('.overlay__content-scroll').scrollTop(0);
   $('body').addClass('body--overlay-active').css({marginTop: -scrollPosition});
 };
 
 fillPersonOverlay = function ($personEl) {
   var $overlay = $('.overlay--person');
   var $clone = $personEl.clone();
-  $clone.find('.box__text-links [data-overlay=person]').remove();
+  $clone.find('.box__person-name').unwrap();
+  $clone.find('[data-overlay]').remove();
   $overlay.find('.box__person').replaceWith($clone);
   var speaker = speakers[$personEl.attr('data-id')];
   $overlay.find('.box__text-content').empty().append(speaker);
@@ -57,8 +58,9 @@ fillPersonOverlay = function ($personEl) {
 fillTalkOverlay = function($talkEl) {
   var $overlay = $('.overlay--talk');
   var $clone = $talkEl.clone();
-  $clone.find('.box__text-links [data-overlay=talk]').remove();
   $clone.find('.box__text-content').remove();
+  $clone.find('.box__text-heading').unwrap();
+  $clone.find('.box__text-links [data-overlay]').remove();
   var $box = $overlay.find('.box');
   $box.empty()
   $box.append($clone.children());

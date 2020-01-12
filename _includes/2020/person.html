@@ -3,7 +3,11 @@
 <div class="box__person" data-id="{{ person.id }}">
   <img src="{{ photo_url }}.jpg" srcset="{{ photo_url }}@2x.jpg 2x, {{ photo_url }}.jpg 1x" class="box__person-img" />
   <div class="box__person-info">
-    <h3 class="box__person-name"><a href="#">{{ person.name }}</a></h3>
+    {% if include.bio_link %}
+      <a href="#{{ person.id }}" data-overlay="person"><h3 class="box__person-name">{{ person.name }}</h3></a>
+    {% else %}
+      <h3 class="box__person-name">{{ person.name }}</h3>
+    {% endif %}
     <p class="box__person-affiliation">{{ person.affiliation }}</p>
     <p class="box__person-links">
       {% if include.bio_link %}

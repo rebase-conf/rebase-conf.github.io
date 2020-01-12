@@ -12,11 +12,12 @@ layout: 2020/default
   <div class="intro__buttons">
     {% if settings.cfp != "hidden" %}
     <span class="intro__button">
-      <a href="{{ year }}/call-for-presentations.html" class="button {% if settings.cfp == "inactive" %}button--inactive{% endif %}">
+      <a href="{{ year }}/call-for-presentations.html"
+        class="button {% if settings.cfp == "inactive" %}button--inactive{% endif %}">
         Call for papers
       </a>
       {% if settings.cfp_date and settings.cfp == "inactive" %}
-        <span class="intro__button-date">starting {{ settings.cfp_date }}</span>
+      <span class="intro__button-date">starting {{ settings.cfp_date }}</span>
       {% endif %}
     </span>
     {% endif %}
@@ -26,7 +27,7 @@ layout: 2020/default
         Registration
       </a>
       {% if settings.registration_date and settings.registration == "inactive" %}
-        <span class="intro__button-date">starting {{ settings.registration_date }}</span>
+      <span class="intro__button-date">starting {{ settings.registration_date }}</span>
       {% endif %}
     </span>
     {% endif %}
@@ -92,13 +93,15 @@ layout: 2020/default
 {% include {{ year }}/organizers.html %}
 <div class="overlay overlay--person">
   <section class="overlay__content">
-    <article class="box box--large">
-      <div class="box__person">
-      </div>
-      <div class="box__text">
-        <div class="box__text-content">
+    <div class="overlay__content-scroll">
+      <article class="box box--large box--overlay">
+        <div class="box__person">
         </div>
-    </article>
+        <div class="box__text">
+          <div class="box__text-content">
+          </div>
+      </article>
+    </div>
     <a href="#" class="overlay__close"></a>
   </section>
 </div>
