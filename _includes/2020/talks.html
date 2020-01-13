@@ -2,7 +2,7 @@
     <div class="container">
       <h2 class="talks__heading">Keynote speakers</h2>
       <div class="talks__list talks__list--keynote-speakers row">
-        {% for speaker in settings.keynote_speakers %}
+        {% for speaker in featured_speakers %}
         <div class="talks__talk col-md-6 col-lg-4">
           <article class="box box--speaker">
             {% include {{ year }}/person.html person=speaker bio_link=true %}
@@ -59,11 +59,10 @@
   </div>
   <script>
     var speakers = {};
-    {% for speaker in settings.keynote_speakers %}
+    {% for speaker in featured_speakers %}
     speakers['{{ speaker.id }}'] = {{ speaker.bio | markdownify | jsonify }};
     {% endfor %}
     var talks = {};
-    {% assign talks = settings.keynotes | concat: settings.presentations %}
     {% for talk in talks %}
     talks['{{ talk.title | slugify }}'] = {
       abstract: {{ talk.abstract | markdownify | jsonify }},

@@ -2,6 +2,14 @@
 layout: 2020/default
 ---
 {% include 2020/variables.html %}
+{% assign talks = settings.keynotes | concat: settings.presentations %}
+{% assign featured_speakers = settings.empty_array %}
+{% for talk in talks %}
+    {% for featured_speaker in settings.featured_speakers %}
+        {% assign speaker = talk.speakers | where: "id", featured_speaker %}
+        {% assign featured_speakers = featured_speakers | concat: speaker %}
+    {% endfor %}
+{% endfor %}
 <section class="intro">
   <img src="{{ imgs_baseurl }}/logo-white.svg" alt="Rebase" class="intro__logo" />
   <h2 class="intro__subheading">{{ settings.city }} {{ settings.conference_dates }}</h2>

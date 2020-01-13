@@ -17,10 +17,12 @@
   </div>
   {% endif %}
   <p class="box__text-links">
-    <a href="#">
+    {% if talk.youtube %}
+    <a href="{{ talk.youtube }}" target="_blank">
       <span class="fab fa-youtube" aria-hidden="true"></span>
       watch
     </a>
+    {% endif %}
     <a href="#{{ talk.title | slugify }}" data-overlay="talk">
       <span class="fab fa-readme" aria-hidden="true"></span>
       abstract

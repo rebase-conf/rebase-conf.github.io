@@ -24,18 +24,11 @@ show_organizers: true
 footer_email: organizers@rebase-conf.org
 footer_twitter: rebase-conf
 
-keynote_speakers:
-- id: lars-bak
-  name: "Lars Bak"
-  affiliation: "Toitware"
-  url: https://en.wikipedia.org/wiki/Lars_Bak_(computer_programmer)
-  bio: |
-    Lars Bak spent the last three decades designing and implementing object-oriented programming languages.
-    His passion for this area started in 1986 when implementing a runtime system for BETA.
-    Since then, Lars has left his mark on several software systems: Self, Strongtalk, JVM HotSpot, JVM CLDC HI, OOVM Smalltalk, V8, Dart, and lately Toit.
-    
-    In 2018, he received the Dahl-Nygaard prize for design and implementation of several object-oriented systems. Lars has a master’s degree in computer science at Aarhus University from 1988.
-    Lars founded Toitware with Kasper Lund in in early 2018."
+# Liquid can't create arrays
+empty_array: []
+
+featured_speakers:
+- lars-bak
 
 keynotes:
 - title: "The Making of a Secure and Robust IoT Development Platform"
@@ -43,6 +36,7 @@ keynotes:
   date: "Mon 17<sup>th</sup>"
   time: "16:00"
   location: Room 101
+  youtube: https://www.youtube.com/watch?v=_TfCgeYHiBE
   hashtags: 
     - talk
     - keynote
@@ -70,7 +64,6 @@ keynotes:
         
         In 2018, he received the Dahl-Nygaard prize for design and implementation of several object-oriented systems. Lars has a master’s degree in computer science at Aarhus University from 1988.
         Lars founded Toitware with Kasper Lund in in early 2018.
-  
 presentations:
 - title: "The Making of a Secure and Robust IoT Development Platform II"
   room: "101"
@@ -88,8 +81,9 @@ presentations:
 
     Duis mollis convallis nisi, eu vestibulum velit dapibus vel. Phasellus pharetra quam in eleifend viverra. Curabitur sit amet sagittis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi mauris, efficitur in dolor quis, lacinia vulputate ex. Nam odio ligula, gravida sit amet velit hendrerit, porttitor gravida felis. Aliquam sit amet neque et tellus laoreet ultrices eu viverra nisl. Vestibulum iaculis, enim vel malesuada iaculis, eros metus blandit felis, ut suscipit massa tortor quis libero. Sed dapibus, diam ut cursus efficitur, erat elit hendrerit dolor, eget iaculis ligula orci et velit. Curabitur mollis, ante ac porttitor cursus, turpis massa fringilla diam, id tristique sem tellus in felis.
   speakers:
-    - id: "lars-bak"
-      name: "Lars Bak"
-      affiliation: "Toitware"
-      url: "https://en.wikipedia.org/wiki/Lars_Bak_(computer_programmer)"
-      bio: "Lars Bak spent the last three decades designing and implementing object-oriented programming languages. His passion for this area started in 1986 when implementing a runtime system for BETA. Since then, Lars has left his mark on several software systems: Self, Strongtalk, JVM HotSpot, JVM CLDC HI, OOVM Smalltalk, V8, Dart, and lately Toit. In 2018, he received the Dahl-Nygaard prize for design and implementation of several object-oriented systems. Lars has a master’s degree in computer science at Aarhus University from 1988. Lars founded Toitware with Kasper Lund in in early 2018."
+    - id: "filip-krikava"
+      name: "Filip Krikava"
+      affiliation: "Lemurs"
+      url: "http://fikovniky.net/"
+      bio: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt dictum cursus. Nullam volutpat molestie erat, sit amet viverra elit pharetra ut. Aliquam in neque ut ex ullamcorper dignissim. Cras accumsan dui at tincidunt elementum. Fusce eget lorem a ipsum interdum ullamcorper. Donec mauris orci, pellentesque vitae tincidunt a, sagittis ut nulla. Nunc tincidunt fermentum suscipit. Cras euismod nisl libero, non euismod lacus euismod in. Vivamus egestas libero sit amet lobortis ullamcorper. Vestibulum tincidunt gravida orci ac accumsan. Suspendisse pellentesque cursus lorem a cursus. Aliquam vel purus sed tortor convallis tempor sit amet in erat. Nulla id pharetra ligula.
