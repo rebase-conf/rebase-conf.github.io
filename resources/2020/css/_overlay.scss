@@ -45,8 +45,8 @@
 
 .overlay__close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   background: darken($color: $color-background, $amount: 1.5) url(#{$imgs_baseurl}/close.svg) center no-repeat;
   background-size: 20px;
   width: 40px;

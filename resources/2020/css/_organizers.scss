@@ -8,5 +8,9 @@
 }
 
 .organizers__list {
-  @include small-grid;
+  margin-bottom: rem-calc(-30px);
+}
+
+.organizers__organizer {
+  margin-bottom: rem-calc(30px);
 }

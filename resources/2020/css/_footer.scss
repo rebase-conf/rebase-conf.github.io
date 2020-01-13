@@ -9,10 +9,10 @@
 }
 
 .footer__logo {
-  max-width: rem-calc(200px);
+  width: rem-calc(200px);
 
   @include media-breakpoint-down(md) {
-    max-width: rem-calc(150px);
+    width: rem-calc(150px);
     margin-bottom: rem-calc(40px);
   }
 }

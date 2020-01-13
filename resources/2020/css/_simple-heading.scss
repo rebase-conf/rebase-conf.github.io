@@ -8,9 +8,9 @@
 }
 
 .simple-heading__logo {
-  max-width: rem-calc(100px);
+  width: rem-calc(100px);
 
   @include media-breakpoint-up(md) {
-    max-width: rem-calc(150px);
+    width: rem-calc(150px);
   }
 }

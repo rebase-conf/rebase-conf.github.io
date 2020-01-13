@@ -1,20 +1,20 @@
 <section class="talks">
     <div class="container">
       <h2 class="talks__heading">Keynote speakers</h2>
-      <div class="talks__list talks__list--keynote-speakers">
-        <div class="talks__talk">
-          {% for speaker in settings.keynote_speakers %}
+      <div class="talks__list talks__list--keynote-speakers row">
+        {% for speaker in settings.keynote_speakers %}
+        <div class="talks__talk col-md-6 col-lg-4">
           <article class="box box--speaker">
             {% include {{ year }}/person.html person=speaker bio_link=true %}
           </article>
-          {% endfor %}
         </div>
+        {% endfor %}
       </div>
   
       <h2 class="talks__heading">Keynote talks</h2>
-      <div class="talks__list talks__list--keynotes">
+      <div class="row talks__list talks__list--keynotes row">
         {% for talk in settings.keynotes %}
-        <div class="talks__talk">
+        <div class="talks__talk col-lg-6">
           <article class="box box--large" data-id="{{ talk.title | slugify }}">
             {% include {{ year }}/talk.html excerpt=true %}
           </article>
@@ -23,9 +23,9 @@
       </div>
   
       <h2 class="talks__heading">Presentations</h2>
-      <div class="talks__list talks__list--presentations">
+      <div class="talks__list talks__list--presentations row">
         {% for talk in settings.presentations %}
-        <div class="talks__talk">
+        <div class="talks__talk col-md-6 col-xl-4">
           <article class="box" data-id="{{ talk.title | slugify }}">
             {% include {{ year }}/talk.html excerpt=false %}
           </article>

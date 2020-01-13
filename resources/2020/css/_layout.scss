@@ -7,25 +7,3 @@
     padding-bottom: rem-calc(150px);
   }
 }
-
-@mixin large-grid {
-  display: grid;
-  grid-gap: rem-calc(30px);
-
-  @include media-breakpoint-up(lg)  {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@mixin small-grid {
-  display: grid;
-  grid-gap: rem-calc(20px);
-
-  @include media-breakpoint-up(md) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @include media-breakpoint-up(xl) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
