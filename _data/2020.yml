@@ -15,6 +15,15 @@ cfp_date: Feb 20th
 registration: hidden
 registration_date: Apr 20th
 
+# Control different sections on the HP
+show_talks: true
+show_sponsors: true
+show_organizers: true
+
+# Footer contact details. Comment out to hide
+footer_email: organizers@rebase-conf.org
+footer_twitter: rebase-conf
+
 keynote_speakers:
 - id: lars-bak
   name: "Lars Bak"
@@ -33,6 +42,7 @@ keynotes:
   room: "101"
   date: "Mon 17<sup>th</sup>"
   time: "16:00"
+  location: Room 101
   hashtags: 
     - talk
     - keynote
@@ -66,6 +76,7 @@ presentations:
   room: "101"
   date: "Mon 17<sup>th</sup>"
   time: "16:00"
+  location: Room 102
   hashtags: 
     - talk
     - keynote

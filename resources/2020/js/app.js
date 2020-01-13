@@ -26,7 +26,7 @@ $(document).ready(function () {
 
   $('.overlay').click(function (e) {
     var $target = $(e.target);
-    if (!$target.hasClass('overlay__close') && $(e.target).closest('.box').length === 0) {
+    if (!$target.hasClass('overlay__close') && $target.closest('.box').length === 0) {
       closeOverlay();
     }
   });

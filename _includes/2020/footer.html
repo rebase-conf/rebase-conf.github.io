@@ -31,12 +31,20 @@
     </div>
     <div class="row align-items-center justify-content-between">
       <div class="col-10 col-md-9">
+        {% if settings.footer_email %}
         <span class="footer__email-label">Contact:</span>
-        <a href="mailto:organizers@rebase-conf.org" class="footer__link">organizers@rebase-conf.org</a>
+        <a href="mailto:{{ settings.footer_email }}" class="footer__link">{{ settings.footer_email }}</a>
+        {% endif %}
       </div>
       <div class="col-2 col-md-3 col-xl-2">
-        <a href="#" class="footer__twitter"></a>
+        {% if settings.footer_twitter %}
+        <a href="https://twitter.com/{{ settings.footer_email }}" class="footer__twitter"></a>
+        {% endif %}
       </div>
+    </div>
+    <div class="footer__credits">
+      Berlin skyline by 
+      <a href="https://www.freepik.com/free-photos-vectors/background" target="_blank">freepik - www.freepik.com</a>
     </div>
   </div>
 </footer>

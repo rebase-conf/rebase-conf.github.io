@@ -11,7 +11,7 @@ $imgs_baseurl: "{{ site.baseurl }}/resources/{{ year }}/img";
 @import "{{ year }}/css/vendor/bootstrap-grid.min";
 
 @import "{{ year }}/css/variables";
-@import "{{ year }}/css/rem_calc";
+@import "{{ year }}/css/rem-calc";
 @import "{{ year }}/css/mixins";
 @import "{{ year }}/css/base";
 @import "{{ year }}/css/typography";
