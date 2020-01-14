@@ -44,7 +44,7 @@ keynotes:
     - another-hashtag
   excerpt: |
     Lorem ipsum dolor sit amet ...\
-    With line breaks.
+    With line breaks, **bold text** and *italic style*.
 
     And paragraphs too!!!
   abstract: |
