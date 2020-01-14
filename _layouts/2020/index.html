@@ -2,7 +2,7 @@
 layout: 2020/default
 ---
 {% include 2020/variables.html %}
-{% assign talks = settings.keynotes | concat: settings.presentations %}
+{% assign talks = data.keynotes | concat: data.presentations %}
 {% assign featured_speakers = settings.empty_array %}
 {% for talk in talks %}
     {% for featured_speaker in settings.featured_speakers %}
