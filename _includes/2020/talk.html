@@ -17,8 +17,8 @@
   </div>
   {% endif %}
   <p class="box__text-links">
-    {% if talk.youtube %}
-    <a href="{{ talk.youtube }}" target="_blank">
+    {% if talk.video %}
+    <a href="{{ talk.video }}" target="_blank">
       <span class="fab fa-youtube" aria-hidden="true"></span>
       watch
     </a>
@@ -34,13 +34,15 @@
   {% include {{ year }}/person.html person=speaker %}
   {% endfor %}
 </div>
+{% if talk.room && talk.date %}
 <div class="box__talk-info">
   <span class="box__talk-room">
     <span class="far fa-building"></span>
-    {{ talk.location }}
+    {{ talk.room }}
   </span>
   <span class="box__talk-datetime">
     <span class="far fa-clock"></span>
     {{ talk.date }} {{ talk.time }}
   </span>
 </div>
+{% endif  %%}

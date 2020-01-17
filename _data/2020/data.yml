@@ -1,57 +1,1464 @@
-keynotes:
-- title: "The Making of a Secure and Robust IoT Development Platform"
-  room: "101"
-  date: "Mon 17<sup>th</sup>"
-  time: "16:00"
-  location: Room 101
-  youtube: https://www.youtube.com/watch?v=_TfCgeYHiBE
-  hashtags: 
-    - talk
-    - keynote
-    - another-hashtag
-  excerpt: |
-    Lorem ipsum dolor sit amet ...\
-    With line breaks, **bold text** and *italic style*.
-
-    And paragraphs too!!!
-  abstract: |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt dictum cursus. Nullam volutpat molestie erat, sit amet viverra elit pharetra ut. Aliquam in neque ut ex ullamcorper dignissim. Cras accumsan dui at tincidunt elementum. Fusce eget lorem a ipsum interdum ullamcorper. Donec mauris orci, pellentesque vitae tincidunt a, sagittis ut nulla. Nunc tincidunt fermentum suscipit. Cras euismod nisl libero, non euismod lacus euismod in. Vivamus egestas libero sit amet lobortis ullamcorper. Vestibulum tincidunt gravida orci ac accumsan. Suspendisse pellentesque cursus lorem a cursus. Aliquam vel purus sed tortor convallis tempor sit amet in erat. Nulla id pharetra ligula.
-
-    Suspendisse quis nisl dignissim, cursus magna quis, finibus risus. Morbi risus magna, volutpat nec finibus nec, hendrerit vitae magna. Sed non erat ligula. Suspendisse tempor a leo quis hendrerit. Donec vitae efficitur arcu. Vestibulum malesuada felis a dui luctus, at congue metus porttitor. Vestibulum id ligula magna. Ut a diam ornare, commodo neque et, pharetra mi. Maecenas ullamcorper id nisl eu tincidunt. Sed scelerisque quis tortor eget egestas. Sed dapibus sem et dui mattis, non volutpat nibh iaculis. Pellentesque nec purus mi.
-
-    Duis mollis convallis nisi, eu vestibulum velit dapibus vel. Phasellus pharetra quam in eleifend viverra. Curabitur sit amet sagittis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi mauris, efficitur in dolor quis, lacinia vulputate ex. Nam odio ligula, gravida sit amet velit hendrerit, porttitor gravida felis. Aliquam sit amet neque et tellus laoreet ultrices eu viverra nisl. Vestibulum iaculis, enim vel malesuada iaculis, eros metus blandit felis, ut suscipit massa tortor quis libero. Sed dapibus, diam ut cursus efficitur, erat elit hendrerit dolor, eget iaculis ligula orci et velit. Curabitur mollis, ante ac porttitor cursus, turpis massa fringilla diam, id tristique sem tellus in felis.
+talks:
+- id: 1
+  title: The Making of a Secure and Robust IoT Development Platform
+  type: keynote
+  time: 9:15-10:15
+  date: Monday
+  room: Mancy
+  hashtags:
+  - Beta
+  - Dart
+  video: https://www.youtube.com/watch?v=mPna6D21Eqg
+  abstract: 'Generic small IoT devices are cheap and computational powerful. However,
+    we found that current software stacks and development tools make it hard to develop
+    safe and robust applications. Lack of memory protection, limited resources, only
+    a thin layer of operating system support and slow development cycles render IoT
+    devices unattractive to programmers, stifling innovation. To address this vacuum,
+    we have designed Toit, a new software platform that turns IoT devices into ‘real’
+    robust computers: easy to program, safe execution environment, flexible, upgradeable,
+    and recoverable. My talk starts with motivating a new programming language and
+    demonstrates how our platform makes IoT devices accessible to high-level programmers.
+    I will conclude with a demo of Toit orchestrating a fleet of IoT devices.'
+  excerpt: Generic small IoT devices are cheap and computational powerful. However,
+    we found that current software stacks and development tools make it hard to develop
+    safe and robust applications. Lack of memory protection, limited resources, only
+    a thin layer...
   speakers:
-    - id: "lars-bak"
-      name: "Lars Bak"
-      affiliation: "Toitware"
-      url: "https://en.wikipedia.org/wiki/Lars_Bak_(computer_programmer)"
-      bio: |
-        Lars Bak spent the last three decades designing and implementing object-oriented programming languages.
-        His passion for this area started in 1986 when implementing a runtime system for BETA.
-        Since then, Lars has left his mark on several software systems: Self, Strongtalk, JVM HotSpot, JVM CLDC HI, OOVM Smalltalk, V8, Dart, and lately Toit.
-        
-        In 2018, he received the Dahl-Nygaard prize for design and implementation of several object-oriented systems. Lars has a master’s degree in computer science at Aarhus University from 1988.
-        Lars founded Toitware with Kasper Lund in in early 2018.
-presentations:
-- title: "The Making of a Secure and Robust IoT Development Platform II"
-  room: "101"
-  date: "Mon 17<sup>th</sup>"
-  time: "16:00"
-  location: Room 102
-  hashtags: 
-    - talk
-    - keynote
-    - another-hashtag
-  abstract: |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt dictum cursus. Nullam volutpat molestie erat, sit amet viverra elit pharetra ut. Aliquam in neque ut ex ullamcorper dignissim. Cras accumsan dui at tincidunt elementum. Fusce eget lorem a ipsum interdum ullamcorper. Donec mauris orci, pellentesque vitae tincidunt a, sagittis ut nulla. Nunc tincidunt fermentum suscipit. Cras euismod nisl libero, non euismod lacus euismod in. Vivamus egestas libero sit amet lobortis ullamcorper. Vestibulum tincidunt gravida orci ac accumsan. Suspendisse pellentesque cursus lorem a cursus. Aliquam vel purus sed tortor convallis tempor sit amet in erat. Nulla id pharetra ligula.
-
-    Suspendisse quis nisl dignissim, cursus magna quis, finibus risus. Morbi risus magna, volutpat nec finibus nec, hendrerit vitae magna. Sed non erat ligula. Suspendisse tempor a leo quis hendrerit. Donec vitae efficitur arcu. Vestibulum malesuada felis a dui luctus, at congue metus porttitor. Vestibulum id ligula magna. Ut a diam ornare, commodo neque et, pharetra mi. Maecenas ullamcorper id nisl eu tincidunt. Sed scelerisque quis tortor eget egestas. Sed dapibus sem et dui mattis, non volutpat nibh iaculis. Pellentesque nec purus mi.
-
-    Duis mollis convallis nisi, eu vestibulum velit dapibus vel. Phasellus pharetra quam in eleifend viverra. Curabitur sit amet sagittis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi mauris, efficitur in dolor quis, lacinia vulputate ex. Nam odio ligula, gravida sit amet velit hendrerit, porttitor gravida felis. Aliquam sit amet neque et tellus laoreet ultrices eu viverra nisl. Vestibulum iaculis, enim vel malesuada iaculis, eros metus blandit felis, ut suscipit massa tortor quis libero. Sed dapibus, diam ut cursus efficitur, erat elit hendrerit dolor, eget iaculis ligula orci et velit. Curabitur mollis, ante ac porttitor cursus, turpis massa fringilla diam, id tristique sem tellus in felis.
+  - id: lars_bak
+    name: Lars Bak
+    affiliation: Toitware
+    url: ~
+    bio: 'Lars Bak spent the last three decades designing and implementing object-oriented
+      programming languages. His passion for this area started in 1986 when implementing
+      a runtime system for BETA. Since then, Lars has left his mark on several software
+      systems: Self, Strongtalk, JVM HotSpot, JVM CLDC HI, OOVM Smalltalk, V8, Dart,
+      and lately Toit. In 2018, he received the Dahl-Nygaard prize for design and
+      implementation of several object-oriented systems. Lars has a master’s degree
+      in computer science at Aarhus University from 1988. Lars founded Toitware with
+      Kasper Lund in in early 2018.'
+    website: https://en.wikipedia.org/wiki/Lars_Bak_(computer_programmer)
+- id: 2
+  title: Logo, A Computer Language to Grow With
+  type: keynote
+  time: 9:15-10:16
+  date: Monday
+  room: Avize
+  hashtags: Logo
+  video: https://www.youtube.com/watch?v=MyF8QY2ySTA
+  abstract: Logo was the first computer language designed for children. It became
+    a banner for changing the way we think about children as learners. They could
+    design, create and debug projects based on their own procedural thinking. They
+    also saw themselves as teachers as they taught computers how to do things. I was
+    part of the initial design team shaping Logo for learning and teaching. Another
+    factor in Logo’s history was that its growth took place in research labs focused
+    on making machines think like humans. My chief mentors were Seymour Papert and
+    Marvin Minsky, then co-directors of the MIT Artificial Intelligence Lab. My work
+    was continually enhanced by their contributions as together we gave breadth and
+    depth to the Logo Computer Culture.
+  excerpt: Logo was the first computer language designed for children. It became a
+    banner for changing the way we think about children as learners. They could design,
+    create and debug projects based on their own procedural thinking. They also saw
+    themselves as ...
   speakers:
-    - id: "filip-krikava"
-      name: "Filip Krikava"
-      affiliation: "Lemurs"
-      url: "http://fikovniky.net/"
-      bio: |
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt dictum cursus. Nullam volutpat molestie erat, sit amet viverra elit pharetra ut. Aliquam in neque ut ex ullamcorper dignissim. Cras accumsan dui at tincidunt elementum. Fusce eget lorem a ipsum interdum ullamcorper. Donec mauris orci, pellentesque vitae tincidunt a, sagittis ut nulla. Nunc tincidunt fermentum suscipit. Cras euismod nisl libero, non euismod lacus euismod in. Vivamus egestas libero sit amet lobortis ullamcorper. Vestibulum tincidunt gravida orci ac accumsan. Suspendisse pellentesque cursus lorem a cursus. Aliquam vel purus sed tortor convallis tempor sit amet in erat. Nulla id pharetra ligula.
+  - id: cynthia_solomon
+    name: Cynthia Solomon
+    url: ~
+    bio: Cynthia Solomon is an American computer scientist known for her work in artificial
+      intelligence and popularizing computer science for students. She is a pioneer
+      in the fields of artificial intelligence, computer science, and educational
+      computing. While working as a researcher at Massachusetts Institute of Technology,
+      Dr. Solomon took it upon herself to understand and program in the programming
+      language Lisp. As she began learning this language she realized the need for
+      a programming language that was more accessible and understandable for children.
+      Throughout her research studies in education, Dr. Solomon worked full-time as
+      a computer teacher in elementary and secondary schools. Her work has mainly
+      focused on research on human-computer interaction and children as designers.
+      While working at Bolt, Beranek and Newman, she created the first programming
+      language for children, Logo, with Wally Feurzeig and Seymour Papert.
+    website: https://en.wikipedia.org/wiki/Cynthia_Solomon
+- id: 3
+  title: Bringing WebAssembly outside the web with WASI
+  type: keynote
+  time: 9:15-10:17
+  date: Monday
+  room: Morangis
+  video: https://www.youtube.com/watch?v=Bi7IV-8e2uA
+  abstract: Earlier this year, we announced WASI, the WebAssembly system interface.
+    With this system interface, WebAssembly can be used outside the browser in a portable
+    and safe way. As Solomon Hykes said, "If WASM+WASI existed in 2008, we wouldn't
+    have needed to create Docker. That's how important it is. Webassembly on the server
+    is the future of computing."  But WASI will be useful for so many other use cases,
+    too. In this talk, we'll explain how WASI works and explore how different use
+    cases can benefit from it.
+  excerpt: Earlier this year, we announced WASI, the WebAssembly system interface.
+    With this system interface, WebAssembly can be used outside the browser in a portable
+    and safe way. As Solomon Hykes said, "If WASM+WASI existed in 2008, we wouldn't
+    have needed ...
+  speakers:
+  - id: lin_clark
+    name: Lin Clark
+    affiliation: Mozilla
+    url: ~
+    bio: _Lin Clark_ makes code cartoons and is a Principal Research Engineer on Mozilla's
+      Advanced Development team, focusing on WebAssembly and Rust.
+    twitter: linclark
+    website: https://code-cartoons.com
+  - id: till_schneidereit
+    name: Till Schneidereit
+    affiliation: Mozilla
+    url: ~
+    bio: _Till Schneidereit_ directs the WebAssembly tooling and runtime, and the
+      Rust efforts at Mozilla. His team is responsible for Mozilla’s contributions
+      to the Rust programming language; driving the Rust to WebAssembly compilation
+      efforts; the Cranelift WebAssembly code generator; the Wasmtime WebAssembly
+      runtime; and other projects around WebAssembly development and deployment. He’s
+      also a delegate to the language standardization bodies for both JavaScript and
+      WebAssembly.
+    twitter: tschneidereit
+    website: https://github.com/tschneidereit/
+- id: 4
+  title: 'Glean: facts about code'
+  type: keynote
+  time: 9:15-10:18
+  date: Thursday
+  room: Morangis
+  hashtags: Haskell
+  abstract: |-
+    Semantic information about source code is a central requirement for
+    searching, navigating, and analysing code, all of which are important
+    tools in a developer's workflow.  As the size of the codebase grows,
+    collecting and maintaining accurate semantic information about the
+    code becomes harder; meanwhile our tools demand richer and richer
+    information.  In this talk I'll describe a system called Glean that
+    we're building at Facebook to address these problems. Glean is a
+    datalog-inspired storage and query engine that collects facts about
+    code from language-specific analysers and allows tools to query the
+    facts. Glean also supports automatically deriving facts so that
+    information can be presented at different levels of abstraction, from
+    very detailed language-specific information needed by analysers, to
+    the high-level language-independent relationships typically needed by
+    IDEs.
+  excerpt: |-
+    Semantic information about source code is a central requirement for
+    searching, navigating, and analysing code, all of which are important
+    tools in a developer's workflow.  As the size of the codebase grows,
+    collecting and maintaining accurate semanti...
+  speakers:
+  - id: simon_marlow
+    name: Simon Marlow
+    affiliation: Facebook
+    url: ~
+    bio: Simon Marlow is a Software Engineer at Facebook in London.  He has previously
+      worked on Haxl, a Haskell-based domain-specific language that is used by the
+      teams fighting abuse on Facebook, and he is currently working on Glean, a system
+      to store and query metadata about source code at scale. Simon is a co-author
+      of the Glasgow Haskell Compiler, author of the book “Parallel and Concurrent
+      Programming in Haskell”, and has a string of research publications in functional
+      programming, language design, compilers, and language implementation.
+    twitter: simonmar
+    website: https://simonmar.github.io
+- id: 5
+  title: 'The future of DSLs: functions and formal methods'
+  type: talk
+  video: https://www.youtube.com/watch?v=Ud5OQN6e4as
+  abstract: I have used domain-specific languages to empower non-programmers in healthcare,
+    finance, aerospace, automotive and public administration for years. My approach
+    relies on growing the DSL from a functional programming core, combining the flexibility
+    and power of an algorithmic language with domain-specific constructs that range
+    from temporal data types, state machines and data models to polymorphic dispatch
+    between versions of calculation rules. I rely on the open source MPS workbench
+    to define the languages and their IDE. I am looking to incremental model transformations
+    to desugar domain-specific constructs back to a minimal core language in realtime.
+    That core language will have an interpreter for in-IDE execution and a compiler
+    for deployment. The language will be integrated with formal methods to verify
+    properties of programs, enabling advanced analyses for DSL users. In this talk,
+    I will demo some existing DSLs, provide an illustration of how they are built,
+    and demo prototypes of the future approach while discussing their integration
+    with formal methods.
+  excerpt: I have used domain-specific languages to empower non-programmers in healthcare,
+    finance, aerospace, automotive and public administration for years. My approach
+    relies on growing the DSL from a functional programming core, combining the flexibility
+    an...
+  speakers:
+  - id: markus_volter
+    name: Markus Völter
+    affiliation: Independent
+    url: ~
+    bio: Markus Voelter works as a language engineer, bridging the gap from industry,
+      business and science domains to software systems. He designs user-friendly languages,
+      implements analyses, tools and IDEs, and  architects backends based on interpreters
+      and generators. He also workson meta-tools for language engineering. Markus
+      publishes papers and books on the subject and regularly speaks at conferences
+      world-wide. Markus has a diploma in technical physics from FH Ravensburg-Weingarten
+      and a PhD in computer science from TU Delft.
+    twitter: markusvoelter
+    website: http://voelter.de
+- id: 6
+  title: 'The Correct Cloud: Logic and Languages'
+  type: talk
+  abstract: 'What do the topics of data center configuration, device drivers, cryptography,
+    message parsers and protocols have in common? In  three words: logic and languages!
+    In this talk, I’ll describe how Microsoft Research has developed and applied logic
+    engines, such as Z3, and new languages, such as Ivy and F\*, to the specification,
+    proof and testing of critical subsystems of Microsoft Azure. F\*, Ivy, and Z3
+    are all open source technologies.'
+  excerpt: 'What do the topics of data center configuration, device drivers, cryptography,
+    message parsers and protocols have in common? In  three words: logic and languages!
+    In this talk, I’ll describe how Microsoft Research has developed and applied logic
+    engi...'
+  speakers:
+  - id: tom_ball
+    name: Tom Ball
+    affiliation: Microsoft Research
+    url: ~
+    bio: Thomas (Tom) Ball is a principal researcher and manager at Microsoft Research.
+      In 1999, He initiated the influential SLAM software model-checking project with
+      Sriram Rajamani, which led to the creation of the Static Driver Verifier tool
+      for finding defects in Windows device drivers. Tom is a 2011 ACM Fellow for
+      ‘contributions to software analysis and defect detection’. As a manager, he
+      has nurtured research areas such as automated theorem proving, program testing/verification
+      and empirical software engineering. His current focus is the Microsoft MakeCode
+      platform for programming with physical computers (www.makecode.com).
+    twitter: tballmsft
+    website: https://www.microsoft.com/en-us/research/people/tball/
+- id: 7
+  title: Asynchronous streams in direct style with and without macros
+  type: talk
+  abstract: Scala-async is a macro for simplifying the use of futures. This talk presents
+    an extension of scala-async which additionally enables writing producers and consumers
+    of asynchronous streams using familiar straight-line, blocking-style code while
+    using efficient non-blocking, event-based concurrency under the hood. Building
+    on the Reactive Streams standard enables integrating with many stream-based Scala
+    libraries and frameworks. The second part of the talk shows how OpenJDK Project
+    Loom fibers can be used to implement extended scala-async without the use of Scala's
+    deprecated macro system.
+  excerpt: Scala-async is a macro for simplifying the use of futures. This talk presents
+    an extension of scala-async which additionally enables writing producers and consumers
+    of asynchronous streams using familiar straight-line, blocking-style code while
+    using...
+  speakers:
+  - id: philipp_haller
+    name: Philipp Haller
+    affiliation: KTH
+    url: ~
+    bio: Philipp Haller is an associate professor in the department of computer science
+      at KTH Royal Institute of Technology in Stockholm, the leading technical university
+      in Sweden. Philipp is co-author of Scala's async/await extension for asynchronous
+      programming, and one of the lead designers of Scala's futures library. Main
+      author of the book "Actors in Scala," he created Scala's first widely-used actor
+      library. Previously, Philipp held positions at Typesafe, Stanford University,
+      and EPFL.
+    twitter: philippkhaller
+    website: http://www.csc.kth.se/~phaller/
+- id: 8
+  title: |-
+    Dragging Unix into the 1980s (and beyond?): liveness and
+    source-level reflection
+  type: talk
+  abstract: 'Most software continues not to be soft. Most software, perhaps not coincidentally,
+    is built atop Unix-like abstractions originating in the 1970s. To surmount this,
+    instead of treating our Unix-like core as a black box (as language VMs do) or
+    throwing it away (as the world has steadfastly refused to do) we can choose to
+    evolve these abstractions, compatibly. Done right, this can give new 1980s-style
+    superpowers (or things even more futuristic still!) to all software, not just
+    new software built with new systems or languages. I''ll talk about some new support
+    for "live" change I''m prototyping within a commodity Linux userspace: object
+    motion via pointer tracking, source-in-situ (borrowing the best properties of
+    Smalltalk images), and reflection down to the source level. Along the way, we''ll
+    visit some of the murkier corners of the Unix userland, such as what goes on during
+    dynamic linking, how debugging works and doesn''t (currently), and why linking
+    and garbage collection amount to the same problem.'
+  excerpt: Most software continues not to be soft. Most software, perhaps not coincidentally,
+    is built atop Unix-like abstractions originating in the 1970s. To surmount this,
+    instead of treating our Unix-like core as a black box (as language VMs do) or
+    throwing...
+  speakers:
+  - id: stephen_kell
+    name: Stephen Kell
+    affiliation: University of Kent
+    url: ~
+    bio: |-
+      Stephen Kell does practical research on programming systems. His
+      interests span most aspects of how we build software. and his research
+      goal is to create infrastructure that makes quality software more
+      cost-effective to create -- where the costs in question are primarily
+      human, not about machine resources. The systems he builds sit mostly on
+      the boundary between operating systems and language runtimes, between
+      which he sees only a very fluid boundary.
+
+      Some past and present research topics include: building software out of
+      heterogeneous "found" components; robust dynamic analysis on the JVM;
+      cross-language interoperability; realistic formal and metaprogrammable
+      specifications of operating systems' linking, loading and system call
+      interfaces; reflective run-time services in Unix-like processes; and
+      using the latter to provide new kinds of dynamic checking in C and other
+      [traditionally] unsafe languages.
+
+      Currently he is a Lecturer at the University of Kent.
+    twitter: stephenrkell
+    website: https://www.cs.kent.ac.uk/people/staff/srk21/#publications
+- id: 9
+  title: Moldable development
+  type: talk
+  video: https://www.youtube.com/watch?v=Pot9GnHFOVU
+  abstract: Software is data. Data is shapeless. We, humans, need a shape to reason
+    about anything. Tools provide the shape of data. So, we argue that tools are essential
+    in software engineering and we show how controlling the shape of our tools can
+    fundamentally change our perspective on software. Specifically, we argue that
+    every problem in software can be exhibited in a way that a human can relate to
+    and address. We introduce moldable development as a systematic discipline of creating
+    custom tools to capture the context of software problems, and we exemplify the
+    message through concrete demos based on Glamorous Toolkit (gtoolkit.com).
+  excerpt: Software is data. Data is shapeless. We, humans, need a shape to reason
+    about anything. Tools provide the shape of data. So, we argue that tools are essential
+    in software engineering and we show how controlling the shape of our tools can
+    fundamentall...
+  speakers:
+  - id: tudor_girba
+    name: Tudor Girba
+    affiliation: feenk gmbh
+    url: ~
+    bio: Tudor Gîrba is a software environmentalist and co-founder of feenk.com where
+      he works with an amazing team on Glamorous Toolkit, the moldable development
+      environment (gtoolkit.com). He built all sorts of projects like the Moose platform
+      for software and data analysis (moosetechnology.org), and he authored a couple
+      of methods like humane assessment (humane-assessment.com). In 2014, he won the
+      prestigious Dahl-Nygaard Junior Prize for his research (aito.org). This was
+      particularly unusual as he is the only recipient of that prize that was not
+      a university professor, even if he does hold a PhD from the University of Bern
+      from a previous life. These days he likes to talk about moldable development.
+    twitter: girba
+    website: http://www.tudorgirba.com
+- id: 10
+  title: 'GraphicsFuzz: Metamorphic Testing for Graphics Shader Compilers'
+  type: talk
+  abstract: 'Graphics drivers are hard to build and hard to test, yet their correct
+    operation is critical: a mobile device that is functioning perfectly well with
+    the exception of its display is not very useful!  In this talk I will describe
+    our experience building and using GraphicsFuzz, an automated testing tool for
+    graphics drivers based on metamorphic testing.  GraphicsFuzz originated as a research
+    project at Imperial College London, which led to the GraphicsFuzz spin-out company
+    that was acquired by Google in 2018.  GraphicsFuzz is now a central line of defence
+    in ensuring the quality of graphics drivers for the Android platform.  GraphicsFuzz
+    focuses on finding bugs in shader compilers.  GraphicsFuzz automatically finds
+    cases where a shader compiler has generated wrong code by: (1) starting with an
+    original, high-value shader (e.g. captured from a game); (2) applying semantics-preserving
+    transformations to this original shader to produce a family of equivalent shaders
+    that should render identical or very similar images to the original shader when
+    executed on the same GPU; (3) calling out compiler bugs by identifying significant
+    mismatch between images; (4) homing in on the root causes of bugs by automatically
+    reducing a transformed shader for which a mismatch occurs until the difference
+    between the original and transformed shaders is as small as possible whilst still
+    preserving the mismatch.  As well as providing technical details of how the approach
+    works and showcasing some example bugs found by the technique, I will discuss
+    some of the main open problems and opportunities related to applying metamorphic
+    testing automatically at scale, including how to cope with potential false alarms
+    related to round-off error associated with floating-point computation, how to
+    automatically triage and de-duplicate bug reports, and how to test the metamorphic
+    testing tool itself.'
+  excerpt: 'Graphics drivers are hard to build and hard to test, yet their correct
+    operation is critical: a mobile device that is functioning perfectly well with
+    the exception of its display is not very useful!  In this talk I will describe
+    our experience buildi...'
+  speakers:
+  - id: alastair_donaldson
+    name: Alastair Donaldson
+    affiliation: Google
+    url: ~
+    bio: Alastair Donaldson is a Software Engineer working in the Android Graphics
+      Tools team at Google, where he leads the GraphicsFuzz project on automated graphics
+      driver testing.  Alastair is also a Reader in the Department of Computing at
+      Imperial College London, which is where the research behind GraphicsFuzz originated;
+      this research led to a start-up company (of the same name) that was acquired
+      by Google in 2018.  His research and engineering work focuses on novel techniques
+      and tools to support programming, testing and reasoning about highly parallel
+      systems.  He was the recipient of the 2017 BCS Roger Needham Award and an EPSRC
+      Early Career Fellowship, and has published 80+ articles on programming languages,
+      formal verification, software testing and parallel programming.  Alastair was
+      previously a Visiting Researcher at Microsoft Research Redmond, an EPSRC Postdoctoral
+      Research Fellow at the University of Oxford and a Research Engineer at Codeplay
+      Software Ltd.  He holds a PhD from the University of Glasgow, and is a Fellow
+      of the British Computer Society.
+    twitter: afd_icl
+    website: http://multicore.doc.ic.ac.uk
+- id: 11
+  title: Plutus and Marlowe
+  type: talk
+  abstract: |-
+    Plutus and Marlowe are two smart contract languages being developed by
+    IOHK for Cardano. Plutus is a library built on top of Haskell. Unique
+    among smart contract languages, Plutus uses metaprogramming to
+    integrate off-chain and on-chain code. On-chain code compiles to
+    Plutus Core, based on System F-omega, an unusual application of theory
+    to practice. Marlowe is a domain-specific language, based on the
+    financial contracts work of Peyton Jones, Eberd, and Seward. You can
+    try Plutus and Marlowe on the web:
+
+    - [https://testnet.iohkdev.io/plutus/tools/playground/](https://testnet.iohkdev.io/plutus/tools/playground/)
+    - [https://testnet.iohkdev.io/marlowe/tools/meadow/](https://testnet.iohkdev.io/marlowe/tools/meadow/)
+  excerpt: |-
+    Plutus and Marlowe are two smart contract languages being developed by
+    IOHK for Cardano. Plutus is a library built on top of Haskell. Unique
+    among smart contract languages, Plutus uses metaprogramming to
+    integrate off-chain and on-chain code. On-chai...
+  speakers:
+  - id: phil_wadler
+    name: Phil Wadler
+    affiliation: University of Edinburgh & IOHK
+    url: ~
+    bio: |-
+      Philip Wadler is Professor of Theoretical Computer Science at the
+      University of Edinburgh and Senior Research Fellow at IOHK.  He is an
+      ACM Fellow, a Fellow of the Royal Society of Edinburgh, and
+      editor-in-chief of Proceedings of the ACM for Programming Languages.
+      He is past chair of ACM SIGPLAN, past holder of a Royal
+      Society-Wolfson Research Merit Fellowship, winner of the SIGPLAN
+      Distinguished Service Award, and a winner of the POPL Most Influential
+      Paper Award.  Previously, he worked or studied at Stanford, Xerox
+      Parc, CMU, Oxford, Chalmers, Glasgow, Bell Labs, and Avaya Labs, and
+      visited as a guest professor in Copenhagen, Sydney, and Paris.  He has
+      an h-index of 66 with more than 24,000 citations to his work,
+      according to Google Scholar.  He contributed to the designs of
+      Haskell, Java, and XQuery, and is co-author of Introduction to
+      Functional Programming (Prentice Hall, 1988), XQuery from the
+      Experts (Addison Wesley, 2004), Generics and Collections in
+      Java (O'Reilly, 2006), and Programming Language Foundations
+      in Agda (2018). He has delivered invited talks in locations
+      ranging from Aizu to Zurich.
+    website: http://homepages.inf.ed.ac.uk/wadler/
+- id: 12
+  title: Checkpointing for Java
+  type: talk
+  abstract: |-
+    Java has evolved significantly in the past 20+ years. Users still want to
+    run highly scalable monolithic applications, but now they also want to run
+     in the cloud with fast startup and a small footprint. Checkpointing will
+     solve at least half of that problem.
+
+     In this session, we'll show you how to checkpoint your Java application and
+     then restore it on a different machine—or several different machines. An
+     application that might take minutes to warm up can be warmed up, garbage
+    collected, etc., and then checkpointed. Users can restore Java processes in
+     ms. We'll also give an overview of CRIU (checkpoint restore in userspace) a
+    Linux utility that Java checkpointing is based on, present the proposed
+    Java API, and then discuss some interesting use cases.
+  excerpt: |-
+    Java has evolved significantly in the past 20+ years. Users still want to
+    run highly scalable monolithic applications, but now they also want to run
+     in the cloud with fast startup and a small footprint. Checkpointing will
+     solve at least half of tha...
+  speakers:
+  - id: christine_flood
+    name: Christine Flood
+    affiliation: RedHat
+    url: ~
+    bio: "Christine H. Flood is a software developer at Red Hat working on OpenJDK.
+      \ She's committed \nto bringing new programming language design features to
+      Java so that it remains relevant for \nanother 20 years."
+    website: https://www.linkedin.com/in/christine-flood-1a88a81/
+- id: 13
+  title: 'Julia: A Compiler for the Future'
+  type: talk
+  abstract: Compiler research offers lots of challenges. We want our languages to
+    be faster, more flexible, catching more errors all while being fully dynamic.
+    In addition, Machine Learning researchers realize the need for sophisticated compiler
+    support, raising completely new challenges. This is not exclusive to ML. The scientific
+    computing community, with its need to run complex algorithms at top speed, has
+    been pushing compiler design for a long time and is not slowing down. I will discuss
+    how the combination of Python and C++ was highly successful in these areas, combining
+    great performance with an outstanding usability and how this combination is fundamentally
+    unfit for the challenges of the future. Google's bold move to rewrite TensorFlow
+    (Python, C++) in Swift is just one symptom, other symptoms include ML frameworks
+    implementing their own IR and compilers on their quest to offer both flexibility
+    and performance (TensorFlow-MLIR, Google-XLA, Pytorch-GLOW). After establishing
+    where Python fails, I will explain how the Julia Language combines the best of
+    Python and C++, in both compiler technology and language design.
+  excerpt: Compiler research offers lots of challenges. We want our languages to be
+    faster, more flexible, catching more errors all while being fully dynamic. In
+    addition, Machine Learning researchers realize the need for sophisticated compiler
+    support, raising...
+  speakers:
+  - id: simon_danisch
+    name: Simon Danisch
+    affiliation: Nextjournal
+    url: ~
+    bio: While studying Cognitive Science, Simon developed a great interest for Machine
+      Learning and Computer Vision. During his one-year stay at the the Volkswagen
+      Research lab in San Francisco, he was working on computer vision in C++. Looking
+      for better alternatives to a cumbersome language like C++ or a slow language
+      like Python got him interested in language design. This quickly led him to pick
+      up Julia, where he supported work by the Julia MIT lab and authored a number
+      of open source libraries for plotting, GPU acceleration and Machine Learning.
+      Today, Simon is a researcher at Nextjournal, where he is responsible for making
+      Julia easily accessible.
+    twitter: SimonDanisch
+    website: https://github.com/SimonDanisch
+- id: 14
+  title: 'Getafix: Learning to fix bugs automatically'
+  type: talk
+  abstract: Developers spend a significant amount of their time fixing bugs. Fixes
+    often are repetitive, so it appears that some portion of this work should be automated.
+    Indeed, some recent approaches offer automation, but these typically explore a
+    large space of potential fixes by making varying combinations of mutations, trying
+    them all until one that passes the test suite. This is not only computationally
+    expensive, but the suggested may not look natural to a developer. We present Getafix,
+    a tool that offers readable bug fixes without requiring massive computational
+    resources. Getafix leaarns from your bug fix history. It extracts past code changes
+    that fixed bugs and learns, in an off-line phase, a set of templates from those
+    fixes. As new bug reports appear, Getafix uses these templates to create and rank
+    a set of suggestions in mere seconds, as well as offer fixes that resemble human-made
+    fixes.  At Facebook, Getafix has been used to suggest fixes for bugs reported
+    by Infer.
+  excerpt: Developers spend a significant amount of their time fixing bugs. Fixes
+    often are repetitive, so it appears that some portion of this work should be automated.
+    Indeed, some recent approaches offer automation, but these typically explore a
+    large space ...
+  speakers:
+  - id: andrew_scott
+    name: Andrew Scott
+    affiliation: Facebook
+    url: ~
+    bio: _Andrew Scott_ graduated from Harvey Mudd College in 2017 with a BS in computer
+      science. Since then I've been working at Facebook to study how developers change
+      code, particularly the Getafix project which I'm presenting.
+  - id: johannes_bader
+    name: Johannes Bader
+    affiliation: Facebook
+    url: ~
+    bio: _Johannes Bader_ is a software engineer at Facebook. He works on the Getafix
+      project, which attempts to automate predictable engineering work by finding
+      patterns in human code changes. From 2016 to 2018 he worked at Microsoft on
+      the open source tool AutoRest, which auto-generates natural code in several
+      programming languages from REST API specifications. He received his MS in computer
+      science from Karlsruhe Institute of Technology in 2016 and wrote his thesis
+      on gradual program verification at Carnegie Mellon University.
+  - id: satish_chandra
+    name: Satish Chandra
+    affiliation: Facebook
+    url: ~
+    bio: _Satish Chandra_ obtained jis PhD from the University of Wisconsin-Madison
+      in 1997, and a B.Tech. from the Indian Institute of Technology-Kanpur in 1991,
+      both in computer science. From 1997 to 2002, he was a member of technical staff
+      at Bell Laboratories, where his research focused on program analysis, domain-specific
+      languages, and data-communication protocols. From 2002 to 2013, he was a research
+      staff member at IBM Research, where his research focused on bug finding and
+      verification, software synthesis, and test automation. From 2013 to 2016, he
+      worked at Samsung Research America, where he led the advanced programming tools
+      research team. In 2016, he started working at Facebook. He is an ACM Distinguished
+      Scientist.
+- id: 15
+  title: 'Safely Sharing Data: Reference Capabilities in the Pony Programming Language'
+  type: talk
+  abstract: Many frustrating concurrency bugs arise from unsafely sharing data. But
+    the Pony programming language rules out data races and many of these concurrency
+    bugs at compile time, allowing the developer to build systems without worrying
+    about them. In this talk, I'll explain the general conditions that make sharing
+    data unsafe. Starting from simple concepts, I'll then explain reference capabilities,
+    Pony's answer to data safety, which ensure that data is shared safely without
+    having to give up mutability and without resorting to locks. This talk will assume
+    no familiarity with Pony.
+  excerpt: Many frustrating concurrency bugs arise from unsafely sharing data. But
+    the Pony programming language rules out data races and many of these concurrency
+    bugs at compile time, allowing the developer to build systems without worrying
+    about them. In thi...
+  speakers:
+  - id: john_mumm
+    name: John Mumm
+    affiliation: Wallaroo Labs
+    url: ~
+    bio: John Mumm is a Netherlands-based lead software engineer at Wallaroo Labs,
+      where he works on an open source high-performance framework for building stateful
+      distributed applications. John holds a PhD in philosophy.
+    twitter: jtfmumm
+    website: http://jtfmumm.com
+- id: 16
+  title: Using ML for Code Discovery at Facebook
+  type: talk
+  abstract: 'For developers working with large codebases, finding the relevant code
+    or APIs for a given task is a challenge. Sites like Stack Overflow are not very
+    helpful for questions pertaining to proprietary code. To solve this challenge,
+    we created two techniques that apply machine learning to code discovery problems:
+    Neural Code Search (NCS) and Aroma. NCS is a natural-language code search engine.
+    A developer expresses their intent in natural language, and NCS retrieves closely-related
+    code directly from an unannotated codebase. NCS overcomes the limitations of purely
+    text-based searches, and also, it does not assume the availability of an aligned
+    corpus of code fragments and their descriptions for training.  NCS instead uses
+    a combination of word embeddings and information-retrieval techniques to carry
+    out search. Aroma is a code recommendation tool. Given a code snippet as query,
+    Aroma finds the most similar code in the repository, then creates clusters of
+    similar code that contain additional usage patterns, and returns a code recommendation
+    from each cluster. Aroma helps developers cross-check their code against similar
+    code written by others and helps them write better, production-ready code.'
+  excerpt: For developers working with large codebases, finding the relevant code
+    or APIs for a given task is a challenge. Sites like Stack Overflow are not very
+    helpful for questions pertaining to proprietary code. To solve this challenge,
+    we created two techn...
+  speakers:
+  - id: frank_luan
+    name: Frank Luan
+    affiliation: Facebook
+    url: ~
+    bio: _Frank Luan_ is a software engineer at Facebook. He works in the Big Code
+      team to apply machine learning techniques to build intelligent assistants that
+      help developers write code. He graduated from the University of Chicago in 2017
+      with a B.S. in Computer Science and a B.A. in Statistics.
+  - id: celeste_barnaby
+    name: Celeste Barnaby
+    affiliation: Facebook
+    url: ~
+    bio: _Celeste Barnaby_ is a software engineer at Facebook. She works in the Big
+      Code team to apply machine learning techniques to build intelligent assistants
+      that help developers write code. She graduated from Wesleyan University in 2018
+      with a B.A. in Computer Science and a B.A. in Mathematics.
+  - id: koushik_sen
+    name: Koushik Sen
+    affiliation: UC Berkeley
+    url: ~
+    bio: '_Koushik Sen_ is a professor in the Department of Electrical Engineering
+      and Computer Sciences at the University of California, Berkeley. His research
+      interest lies in Software Engineering, Programming Languages, and Formal methods.
+      He is interested in developing software tools and methodologies that improve
+      programmer productivity and software quality. He is best known for his work
+      on “DART: Directed Automated Random Testing” and concolic testing. He has received
+      a NSF CAREER Award in 2008, a Haifa Verification Conference (HVC) Award in 2009,
+      a IFIP TC2 Manfred Paul Award for Excellence in Software: Theory and Practice
+      in 2010, a Sloan Foundation Fellowship in 2011, a Professor R. Narasimhan Lecture
+      Award in 2014, an Okawa Foundation Research Grant in 2015, and an ACM SIGSOFT
+      Impact Paper Award in 2019. He has won several ACM SIGSOFT Distinguished Paper
+      Awards. He received the C.L. and Jane W-S. Liu Award in 2004, the C. W. Gear
+      Outstanding Graduate Award in 2005, and the David J. Kuck Outstanding Ph.D.
+      Thesis Award in 2007, and a Distinguished Alumni Educator Award in 2014 from
+      the UIUC Department of Computer Science. He holds a B.Tech from Indian Institute
+      of Technology, Kanpur, and M.S. and Ph.D. in CS from University of Illinois
+      at Urbana-Champaign.'
+  - id: satish_chandra
+    name: Satish Chandra
+    affiliation: Facebook
+    url: ~
+    bio: _Satish Chandra_ obtained jis PhD from the University of Wisconsin-Madison
+      in 1997, and a B.Tech. from the Indian Institute of Technology-Kanpur in 1991,
+      both in computer science. From 1997 to 2002, he was a member of technical staff
+      at Bell Laboratories, where his research focused on program analysis, domain-specific
+      languages, and data-communication protocols. From 2002 to 2013, he was a research
+      staff member at IBM Research, where his research focused on bug finding and
+      verification, software synthesis, and test automation. From 2013 to 2016, he
+      worked at Samsung Research America, where he led the advanced programming tools
+      research team. In 2016, he started working at Facebook. He is an ACM Distinguished
+      Scientist.
+- id: 17
+  title: The search for fundamental software engineering principles
+  type: talk
+  abstract: Many fundamental ideas in theoretical computer science will still be true
+    and important in 100 years. The halting problem will be undecidable and appending
+    to the end of a linked list will have O(n) complexity. Finding fundamental ideas
+    about software engineering is much harder. We will have some development methodology,
+    but it will likely differ from Waterfall or Agile. We will likely have  modelling
+    tools, but they will not be based on UML, DDD or event sourcing. Are there any
+    fundamental ideas about software engineering, or do we just keep re-inventing
+    different-shaped wheels?  I argue that fundamental principles of software engineering
+    are of a different kind than principles in theoretical CS. Rather than alluding
+    to mathematics, we need to critically reflect on the history. I will look at past
+    development methodologies, debates in the field and important milestones such
+    as the 1968 NATO Conference on Software Engineering. I hope to convince you that
+    critical reflection on those is a fundamental kind of knowledge about software
+    engineering that will remain relevant in 100 years and can offer a new way of
+    bringing industry and academia together.
+  excerpt: Many fundamental ideas in theoretical computer science will still be true
+    and important in 100 years. The halting problem will be undecidable and appending
+    to the end of a linked list will have O(n) complexity. Finding fundamental ideas
+    about softwar...
+  speakers:
+  - id: tomas_petricek
+    name: Tomas Petricek
+    affiliation: University of Kent
+    url: ~
+    bio: Tomas is an academic, open-source developer and a book author. He is a lecturer
+      at University of Kent and is interested in making programming easier and data
+      science more accessible. He also studies history of programming and writes about
+      it from a philosophical perspective. Tomas wrote a popular F# book "Real-World
+      Functional Programming", helped to create a number of F# open-source libraries
+      such as F# Data and created coeffects, a theory of context aware programming
+      languages. His most recent work includes programming tools for data journalism,
+      but also three essays that understand programming concepts such as types, monads
+      and errors from philosophical perspective.
+    twitter: tomaspetricek
+    website: http://tomasp.net
+- id: 18
+  title: 'No Hands on Deck: Automation @Uber'
+  type: talk
+  abstract: At Uber we operate at a scale that rivals some of the largest engineering
+    organizations in the industry. In particular, we concurrently develop multiple
+    mobile applications cumulatively spanning millions code lines, with hundreds of
+    engineers often pushing thousands of changes to our main applications repository
+    (aka monorepo) each day. Under these circumstances, it is absolutely crucial to
+    minimize manual effort required to build, refactor, and optimize our applications.
+    In this talk you will learn how we automate various aspects of application development
+    using both novel techniques and tools developed at Uber and by adapting existing
+    solutions to operate at Uber's scale. First I will describe the SubmitQueue, a
+    fully automated component of Uber's application build pipeline that supports thousands
+    of daily commits while maintaining an "always green" master branch of the monorepo
+    that always successfully compiles and passes all the tests. Then I will present
+    Piranha, an automated source code cleanup tool removing dead code guarded by stale
+    feature flags. Finally, I will share lessons learned from automating deployment
+    of already existing application optimizations, using as an example what we believe
+    is the first non-Facebook production deployment of Facebook's ReDex bytecode optimizer.
+  excerpt: At Uber we operate at a scale that rivals some of the largest engineering
+    organizations in the industry. In particular, we concurrently develop multiple
+    mobile applications cumulatively spanning millions code lines, with hundreds of
+    engineers often p...
+  speakers:
+  - id: adam_welc
+    name: Adam Welc
+    affiliation: Uber
+    url: ~
+    bio: Adam Welc is a Senior Engineer at Uber's Programming Systems Team, where
+      he currently works on application analysis and performance tuning as well as
+      on developing tools to improve developers' experience. More generally, his professional
+      interests are in the area of programming language design, implementation, and
+      tooling with specific focus on run-time system and compiler optimizations. Adam
+      has over ten years of experience working with with different types of virtual
+      machines, compilers, and other large and complicated frameworks and systems.
+      He holds a PhD in Computer Science from Purdue University.
+- id: 19
+  title: 'Idris 2: Type-driven Development of Idris'
+  type: talk
+  hashtags:
+  - dependent types
+  - idris
+  video: https://www.youtube.com/watch?v=DRq2NgeFcO0&t=86s
+  abstract: We've been having lots of fun over the last couple of years investigating
+    the possibilities and limitations of type-driven development in Idris. As we write
+    larger programs, though, we're finding the implementation of Idris is showing
+    the strain - such is the nature of "research quality software" - and recently
+    I decided the time was right to start again, and implement Idris 2 in Idris. In
+    this talk, I'll give an introduction to type-driven development (in Idris 2) and
+    report on progress so far, showing off the most interesting features which the
+    new design enables (notably, linear types and better type inference). I will show
+    what is possible with modern type systems, and share what I've learned by implementing
+    a larger system using type-driven development - including where it has worked
+    well and where it has worked less well. I also aim to convince the audience that
+    a modern sophisticated type system doesn't have to be hard to use, and suggest
+    ways in which people can contribute to the new implementation of Idris.
+  excerpt: We've been having lots of fun over the last couple of years investigating
+    the possibilities and limitations of type-driven development in Idris. As we write
+    larger programs, though, we're finding the implementation of Idris is showing
+    the strain - su...
+  speakers:
+  - id: edwin_brady
+    name: Edwin Brady
+    affiliation: University of St Andrews
+    url: ~
+    bio: Edwin is a Lecturer in Computer Science at the University of St Andrews in
+      Scotland, interested in type-driven development, domain specific languages and
+      reasoning about effectful programs. When he's not doing that, he might be playing
+      Go, watching cricket, or wandering around Scotland's countryside.
+    twitter: edwinbrady
+    website: https://eb.host.cs.st-andrews.ac.uk/
+- id: 21
+  title: Run, actor, run
+  type: talk
+  abstract: 'The actor paradigm has been proposed as a natural approach to the development
+    of concurrent programs. It has lead to the development of several actor-based
+    languages, each representing different points in the language design space.  But
+    how do these languages perform? The Savina collection of micro benchmarks attempts
+    to approach this question, with multiple programs exercising different design
+    aspects. In our work to understand actor language performance, we want to run
+    as many of the Savina programs as possible in as many actor languages as possible
+    on increasingly capable configurations. In this talk we compare three actor-based
+    languages representing different ends in the design spectrum: Akka, CAF and Pony.
+    We ran them on two architectures and using 2, 4, … 64 logical cores. We will show
+    the results in beautiful plots. Be prepared for considerable disparity in the
+    scaling behaviour across languages and programs.  And what conclusions can we
+    draw from this disparity?  We will propose criteria describing the programs’ profiles
+    and their performance profiles. We want to gauge your opinion as to how intuitive
+    and predictive such profiles are, and what else they should include. . We will
+    then  attempt to correlate program profiles, scaling shapes with the implementation
+    choices, again inviting your views on expected outcomes or co-relations to be
+    considered.'
+  excerpt: The actor paradigm has been proposed as a natural approach to the development
+    of concurrent programs. It has lead to the development of several actor-based
+    languages, each representing different points in the language design space.  But
+    how do these ...
+  speakers:
+  - id: sebastian_blessing
+    name: Sebastian Blessing
+    affiliation: Digital Frontier GmbH
+    url: ~
+    bio: From a young age, _Sebastian Blessing_ has dreamt of engineering a programming
+      language. After his MSc at Imperial College, he joined the team of Sylvan Clebsch,
+      Andy McNeil, and Sophia Drossopoulou, which designed and implemented the first
+      version of the Pony language. He is now working part-time on his PhD devoted
+      to transparent distributed actor based programming, while also working full-time
+      at the Digital Frontier GmbH and ABS on the development of custom solutions
+      for ERP and data analytics, and applying his programming and engineering philosophy
+      on a daily basis.
+    twitter: scblessing
+    website: https://www.doc.ic.ac.uk/~scb12/
+  - id: tobias_wrigstad
+    name: Tobias Wrigstad
+    affiliation: Uppsala University
+    url: ~
+    bio: _Tobias Wrigstad_  is an associate professor at Uppsala University in Sweden
+      working on Programming Languages and Software Engineering. He is currently most
+      passionate about Type Systems, Garbage Collection and managed language runtimes
+      – preferably all at the same time.
+    twitter: tobiaswrigstad
+    website: http://wrigstad.com/
+  - id: sophia_drossopoulou
+    name: Sophia Drossopoulou
+    affiliation: Imperial College London
+    url: ~
+    bio: _Sophia Drossopoulou_ is a Professor at Imperial College London, working
+      on Programming Languages, Program Verification and Specification, and Object
+      Capabilities. She is optimistic that most things have reasons, and is passionate
+      about finding and formulating  the most elegant, succinct and precise explanations.
+    twitter: SophiaGoulimis
+    website: https://wp.doc.ic.ac.uk/sd/
+- id: 22
+  title: 'Dynamic Languages and Parallelism: How to Go from Broken or Slow to Safe
+    and Efficient?'
+  type: talk
+  abstract: In a world of microservices and horizontal scaling, why would we need
+    parallelism beyond that? Indeed, it's not for everyone, and perhaps that is one
+    of the reasons why it is not generally efficient yet. Though, did you ever wish
+    you could experiment with data processing, heavy computations, or possibly machine
+    learning by simply writing some plain Ruby or Python code? This talk is going
+    to look into how we can make this possible. Python and Ruby-like languages have
+    shared memory and threads. This means they got the basic ingredients for textbook-style
+    parallelism. Unfortunately, none of the various Python or Ruby implementations
+    provide us with fast or safe parallel execution. While PyPy and JRuby promise
+    us fast execution of Python or Ruby programs, they either restrict parallelism
+    by some global lock, or expose us to race conditions we never knew existed. To
+    give sufficient context, this talk gives an overview over some of the tricks  modern
+    dynamic language implementations pull to make execution as fast as for statically-typed
+    languages. These tricks, while necessary, unfortunately are the origin of much
+    of the trouble with parallel execution. However, we got a solution that enables
+    classic textbook parallelism as well as what we consider modern dynamic-style
+    parallel computations, and I'll try to convince you that safe and efficient parallelism
+    is possible.
+  excerpt: In a world of microservices and horizontal scaling, why would we need parallelism
+    beyond that? Indeed, it's not for everyone, and perhaps that is one of the reasons
+    why it is not generally efficient yet. Though, did you ever wish you could experiment...
+  speakers:
+  - id: stefan_marr
+    name: Stefan Marr
+    affiliation: University of Kent
+    url: ~
+    bio: Stefan Marr is a Lecturer (Assistant Professor) at the University of Kent.
+      He is interested in concurrency, parallelism, language implementation, and optimization.
+      Unfortunately, all these things make programming even more unintuitive. Thus,
+      he also investigates how to enable better tooling and debugging to allow us
+      to understand what our applications actually do.
+    twitter: smarr
+    website: https://stefan-marr.de/
+- id: 23
+  title: Declarative - The paradigm that didn't get mentioned
+  type: talk
+  abstract: 'Declarative programming is a programming paradigm that allows you describe
+    what you want to achieve rather than exactly how to achieve it. Our experience
+    has shown that it saves at least an order of magnitude in programming time and
+    costs. The first public computer was installed in 1957 in Norwich, England. That
+    was also the time that the first mainstream programming languages were designed,
+    Cobol, Fortran, Algol, Lisp. At that time, computers were immensely expensive;
+    so expensive that most companies leased them rather than buying. As part of the
+    leasing deal, the computer would typically come with some programmers who knew
+    how to program it already, at no extra cost. The economic realtionship was that
+    compared with computers, programmers were essentially free.  It was in that atmosphere
+    that the first programming languages were designed: it was less important if it
+    took a long time to program, as long as the program ran fast, and so were born
+    procedural programming methods, where you tell the computer step-by-step how to
+    achieve the solution. Slowly but surely, and largely unnoticed, Moore''s Switch
+    happened: computers became cheap, and programmers expensive, giving exactly the
+    opposite position: compared to programmers, computers are essentially free. And
+    yet that relationship hasn''t yet had an effect on the design of programming languages:
+    we are still telling the computers what do to, rather than what we are trying
+    to achieve. This is why documentation is so essential in programming, because
+    the program has only a very tenuous relationship with the problem domain. XForms
+    (the name refers to the Form in "Form and Content") is a Turing-complete declarative
+    programming language, standardised at W3C, and in use around the world. This talk
+    will explain the benefits of declarative programming in more detail.'
+  excerpt: Declarative programming is a programming paradigm that allows you describe
+    what you want to achieve rather than exactly how to achieve it. Our experience
+    has shown that it saves at least an order of magnitude in programming time and
+    costs. The first ...
+  speakers:
+  - id: steven_pemberton
+    name: Steven Pemberton
+    affiliation: CWI, Amsterdam
+    url: ~
+    bio: Steven Pemberton is a researcher at CWI Amsterdam, the Dutch national research
+      centre for mathematics and informatics. His research is in interaction, and
+      how the underlying software architecture can support users. He co-designed the
+      ABC programming language that formed the basis for Python and was one of the
+      first handful of people on the open internet in Europe, when the CWI set it
+      up in 1988. Involved with the Web from the beginning, he organised two workshops
+      at the first Web Conference in 1994. For the best part of a decade he chaired
+      the W3C HTML working group, and has co-authored many web standards, including
+      HTML, XHTML, CSS, XForms and RDFa. He now chairs the W3C XForms group, and was
+      until recently a member of the ODF (Open Document Format) technical committee.
+      More details at http://www.cwi.nl/~steven
+    twitter: stevenpemberton
+    website: http://www.cwi.nl/~steven
+- id: 24
+  title: One VM to Rule Them All? Lessons Learned with GraalVM
+  type: talk
+  abstract: Goldman Sachs has an in-house programming language, Slang, used for its
+    critical pricing and risk applications (SecDb). I will share my team's experiences
+    of using Truffle and Graal as we headed along the path to turn it into a JVM language.
+    I will showcase how we have approached modernising and speeding-up our Slang interpreter
+    and tooling whilst not breaking our complex dynamic type system, our 25 year-old,
+    native C++ code base and more than 150 million lines of (often mission-critical)
+    Slang code.
+  excerpt: Goldman Sachs has an in-house programming language, Slang, used for its
+    critical pricing and risk applications (SecDb). I will share my team's experiences
+    of using Truffle and Graal as we headed along the path to turn it into a JVM language.
+    I will s...
+  speakers:
+  - id: dhruv_makwana
+    name: Dhruv Makwana
+    affiliation: Goldman Sachs
+    url: ~
+    bio: Dhruv is an Indian-Scot working as a Software Engineer at Goldman Sachs,
+      on the SecDb Architecture team. He recently graduated with a Masters in Computer
+      Science from Trinity College at the University of Cambridge, where he specialised
+      in verification and programming languages. When not coding or thinking about
+      coding, he can be found reading fairy-tales, learning about philosophy, dancing
+      to Hindi film songs or teaching a new generation of CompScis on the joys of
+      PL research.
+    website: https://dhruvmakwana.com
+- id: 25
+  title: Conflict resolution
+  type: talk
+  abstract: 'How is a Git branch like a database transaction? Git, like a database,
+    is designed to let multiple clients concurrently edit a set of records -- the
+    files in your project. Despite their apparent differences, they both solve a similar
+    fundamental problem: with concurrent edits, how do you avoid two people unknowingly
+    overwriting one another''s updates? In this talk, we''ll look at what happens
+    during a Git merge, what causes conflicts to happen, and how Git prevents users
+    in a distributed network from losing each other''s changes. We''ll learn how this
+    relates to the broader theory of concurrent editing in distributed systems, providing
+    a deeper understanding of many other data systems beyond version control.'
+  excerpt: How is a Git branch like a database transaction? Git, like a database,
+    is designed to let multiple clients concurrently edit a set of records -- the
+    files in your project. Despite their apparent differences, they both solve a similar
+    fundamental prob...
+  speakers:
+  - id: james_coglan
+    name: James Coglan
+    url: ~
+    bio: James is the author of several open-source tools for Ruby and JavaScript,
+      including the Faye WebSocket messaging system and the parsing toolkit Canopy.
+      He is the author of "Building Git", a book about the computer science behind
+      Git.
+- id: 26
+  title: 'Say What You Mean: Exploring Declarative Computation in Art'
+  type: talk
+  abstract: '"Say What You Mean" parallels the production of art with approaches to
+    exploratory programming. 20th century art practices were clearly influenced by
+    the milieu of computational thought. Expressionist artists like Jackson Pollock
+    declared intent with few implementation details in mind. Pollock''s paintings
+    have since been proven fractal in nature. Conceptual artists like Sol LeWitt wrote
+    imperative instructions where "the idea becomes the machine that makes the work."
+    The results of both artists are computational in nature, but very different in
+    quality. This is partially due to approach. This talk examines creative approaches
+    to exploring unknown or open-ended domains. It emphasizes declarative programming
+    and the tried-and-true techniques of abstraction and composition. Rather than
+    showing a sliver of a sprawling codebase, approaches are illustrated more immediately
+    through computational art. Parallel code examples are written in Clojure.'
+  excerpt: '"Say What You Mean" parallels the production of art with approaches to
+    exploratory programming. 20th century art practices were clearly influenced by
+    the milieu of computational thought. Expressionist artists like Jackson Pollock
+    declared intent with...'
+  speakers:
+  - id: david_schmudde
+    name: David Schmudde
+    affiliation: Nextjournal
+    url: ~
+    bio: D. Schmüdde is a computational artist who creates experiences that examine
+      the everyday realities of our post-digital society. Over the last fifteen years,
+      he has installed interactive work at the Center for Holographic Arts in New
+      York City, projected video art in the Schusev Museum of Architecture in Moscow,
+      performed at the Chicago Museum of Contemporary Art, screened at the Chinese
+      Theater in Los Angeles, and given talks around the world. He holds a bachelor's
+      degree in computer science, a masters in music technology, and currently teaches
+      science and technology studies at Stevens Institute of Technology while building
+      a next generation computational notebook at Nextjournal. He's always ready to
+      discuss big ideas - find him at http://schmud.de.
+    twitter: dschmudde
+    website: http://schmud.de/
+- id: 27
+  title: 'Formal Methods and Computer Networks: A Match Made in Heaven?'
+  type: talk
+  abstract: Computer networks provide the essential communication fabric that underpins
+    almost all modern computing systems. Yet today, most networks are built and operated
+    in an ad hoc manner and require frequent interventions from human experts to remain
+    functional. This talk will make the case for bringing ideas from the formal methods
+    community to bear on practical problems in networking. Starting with the network
+    forwarding plane, we will show how to model network behavior in a way that is
+    amenable to mostly-automated formal reasoning. We will then show how these lower-level
+    models can be used to guide efforts to verify higher layers of the stack, such
+    as the network control planes and even application-level functions.
+  excerpt: Computer networks provide the essential communication fabric that underpins
+    almost all modern computing systems. Yet today, most networks are built and operated
+    in an ad hoc manner and require frequent interventions from human experts to remain
+    funct...
+  speakers:
+  - id: nate_foster
+    name: Nate Foster
+    affiliation: Cornell University & Barefoot Networks
+    url: ~
+    bio: Nate Foster is an Associate Professor of Computer Science at Cornell University
+      and a Principal Research Engineer at Barefoot Networks. The goal of his research
+      is to develop languages and tools that make it easy for programmers to build
+      secure and reliable systems. His current work focuses on the design and implementation
+      of languages for programming software-defined networks. In the past he has also
+      worked on bidirectional languages (also known as "lenses"), database query languages,
+      data provenance, type systems, mechanized proof, and formal semantics. He received
+      a PhD in Computer Science from the University of Pennsylvania. His honors include
+      a Sloan Research Fellowship, an NSF CAREER Award, a Most Influential POPL Paper
+      Award, and the SIGCOMM Rising Star Award.
+    twitter: natefoster
+    website: https://www.cs.cornell.edu/~jnfoster/
+- id: 28
+  title: Walking In The Garden Of Forking Paths
+  type: talk
+  abstract: This talk will explore different ways in which thoughts can bring things
+    into existence, and the importance of tools in this process. We will try to look
+    critically at the current state of programming, and try to imagine different futures
+    through experiments and demos. This talk will cover ideas ranging from visual
+    programming languages and notebooks, through custom tooling and DSLs, to using
+    gradient descent for running programs “backwards”. We will mainly focus on making
+    tools, and their impact on building things, mainly in the context of computer
+    art and sketching in code. We will look at both high-level ideas, and implementation
+    details of the presented demos, and examine them through the lens of their usefulness
+    when teaching, playing, making art or writing code.
+  excerpt: This talk will explore different ways in which thoughts can bring things
+    into existence, and the importance of tools in this process. We will try to look
+    critically at the current state of programming, and try to imagine different futures
+    through exp...
+  speakers:
+  - id: szymon_kaliski
+    name: Szymon Kaliski
+    url: ~
+    bio: I'm a toolmaker, researcher, technologist and artist from Poznań, Poland.
+      I hold masters in Computer Science from Poznań University of Technology, and
+      I also studied Interactive Media at Adam Mickiewicz University. My main focus
+      is building digital tools for creative expression, data-driven interfaces and
+      visualizations I work on professional projects through a boutique creative technology
+      studio called flow/control I created complex ui & data visualizations for the
+      Mayor of London, huge generative data-art for Google, tools to help Humanitarian
+      OpenStreetMaps team track their progress, wrote low-level software for Raspberry
+      Pi/Arduino addons, and more. I also consult on technical projects, speak at
+      conferences, give workshops and teach (currently at School of Form in Poznań).
+    twitter: szymon_k
+    website: https://szymonkaliski.com
+- id: 29
+  title: 'Finite-State Machines: All models are wrong but this one is useful'
+  type: talk
+  abstract: At N26, we are building a bank the world loves to use. As we expanded
+    to the UK, we faced a challenge.  We needed to extract a payment workflow evolved
+    over years of operation in the Eurozone, mix it with the arcane rules of the British
+    banking system and produce a robust and extensible service. At all times, we had
+    to be able to reconstruct and explain the history of every single payment. We
+    had to move fast and not break things. Our solution? A well-worn formalism - finite-state
+    machines! Our team used the meta-language of states and transitions as a common
+    frame of reference. Everyone, from product owner, to programmer, to the person
+    on the business end of the support pager, shared this vocabulary. This talk is
+    an experience report from N26 and ThoughtWorks. We share how in 2018 we built
+    the payment system for the UK Market using finite-state machines as a unifying
+    conceptual notation. We will explain how this approach informed our analysis,
+    documentation, implementation, resilience and observability. We will discuss the
+    design decisions we made and the tricks we used to make our lives easier.
+  excerpt: At N26, we are building a bank the world loves to use. As we expanded to
+    the UK, we faced a challenge.  We needed to extract a payment workflow evolved
+    over years of operation in the Eurozone, mix it with the arcane rules of the British
+    banking syste...
+  speakers:
+  - id: raj_saxena
+    name: Raj Saxena
+    affiliation: N26
+    url: ~
+    bio: _Raj_ is part of the core banking team at N26 and has lead the work of building
+      the UK payment platform. He is a polyglot programmer having experience building
+      JVM based backend systems and frontend apps. He likes to build systems and understands
+      that one of the biggest challenge in building software is to take the team along.  He
+      is thrilled by new technologies, best practices and promotes them. He can often
+      be found playing devil's advocate in discussions. Very good at pretending to
+      be an adult.
+    twitter: therajsaxena
+  - id: chris_ford
+    name: Chris Ford
+    affiliation: ThoughtWorks
+    url: ~
+    bio: _Chris_ has coded both correct and incorrect programs for many years, though
+      he prefers the former. He has also coded both correct and incorrect musical
+      compositions for many years, though he doesn’t really mind which. As well as
+      a longstanding interest in TDD, types and continuous delivery, Chris is always
+      interested in learning better ways to write programs that do what they are supposed
+      to do. He is Head of Technology for ThoughtWorks Spain and is based in Barcelona.
+    twitter: ctford
+    website: https://github.com/ctford
+- id: 30
+  title: A vision for debugging distributed applications
+  type: talk
+  abstract: 'Many applications today can be analysed and debugged from a single node
+    (or even single thread) perspective. This gives you a global view of the whole
+    system and an ability to diagnose applications at the appropriate layer of abstraction.
+    But what happens when your programs are distributed by nature? This talk will
+    do a census of the existing state of the art and then leverage Hadean''s experience
+    in distributed computing (especially our EVE: Aether Wars tech demo) to identify
+    key characteristics of a distributed debugging tool and share the vision we have
+    in this space.'
+  excerpt: Many applications today can be analysed and debugged from a single node
+    (or even single thread) perspective. This gives you a global view of the whole
+    system and an ability to diagnose applications at the appropriate layer of abstraction.
+    But what ha...
+  speakers:
+  - id: aidan_hobson_sayers
+    name: Aidan Hobson Sayers
+    affiliation: Hadean Supercomputing Ltd.
+    url: ~
+    bio: Aidan works at Hadean in London to create a platform for distributed computing
+      and key libraries on top. His previous experience was in devops and in his spare
+      time participates in the Rust Infrastructure and Core Teams.
+    twitter: aidanhs
+- id: 31
+  title: Gradual typing for Ruby at Scale with Sorbet
+  type: talk
+  abstract: Stripe maintains an extremely large and growing Ruby code base in which
+    ~3/4 of Stripe's engineers do most of their work. Continuing to scale development
+    in that code base is one of the most critical tasks to maintaining product velocity
+    and the productivity of Stripe engineering. Based on a wide range of experiences,
+    we believe that adding static types for a significant subset of that codebase
+    helps developers understand code better, write code with more confidence, and
+    detect+prevent significant classes of bugs. This talk shares experience of Stripe
+    successfully been building a typechecker for internal use, including core design
+    decisions made in early days of the project and how they withstood reality of
+    production use.
+  excerpt: Stripe maintains an extremely large and growing Ruby code base in which
+    ~3/4 of Stripe's engineers do most of their work. Continuing to scale development
+    in that code base is one of the most critical tasks to maintaining product velocity
+    and the prod...
+  speakers:
+  - id: dmitry_petrashko
+    name: Dmitry Petrashko
+    affiliation: Stripe
+    url: ~
+    bio: Dmitry works on developer productivity at Stripe, Making it easy to confidently
+      write maintainable, fast, and reliable code at Stripe by improving language,
+      core abstractions, tools and educational materials. Before this, Dmitry co-architected
+      Dotty, the compiler slated to become Scala3.
+    twitter: darkdimius
+- id: 32
+  title: 'Beyond the Paper: End-to-End Program Analysis'
+  type: talk
+  abstract: Automated program analysis is responsible for a majority of vulnerability
+    discoveries in modern programming languages, but program analysis tools are usually
+    run on only a handful of projects. Authors must manually approach developers with
+    a few high signal results which at best lead to changes in a smaller number of
+    programs. Once research has been published, the tools are rarely run again by
+    anyone, authors included. Even when a few use the work again, industry rarely
+    benefits from these tools and research. We can all do better. We introduce r2c,
+    a platform for ecosystem-wide program analysis. r2c allows authors to test program
+    analysis against entire ecosystems of code, such as npm, getting results on hundreds
+    of thousands of projects per hour. r2c includes tools to triage and filter results,
+    label data sets, and reuse the labeled data and results from other program analysis
+    projects. r2c is currently in use by more than 50 researchers at 8 universities
+    and growing quickly. We present a case study of the kind of work made uniquely
+    possible by r2c and how the results of such program analysis can be integrated
+    with community developer tools, helping program analysis tools to live beyond
+    the paper and to change the way we write software. This talk will include a live
+    demonstration of the r2c platform, measuring program features across millions
+    of commits in the span of the talk.
+  excerpt: Automated program analysis is responsible for a majority of vulnerability
+    discoveries in modern programming languages, but program analysis tools are usually
+    run on only a handful of projects. Authors must manually approach developers with
+    a few high...
+  speakers:
+  - id: cam_tenny
+    name: Cam Tenny
+    affiliation: r2c
+    url: ~
+    bio: Before joining r2c to lead program analysis, Cam worked on compilers and
+      build systems at Microsoft, Facebook, and Instagram. Prior to that, he left
+      PL research at MIT for the siren song of silicon valley. In his spare time,
+      he maintains a motley crew of wheeled vehicles in advanced stages of decomposition
+      and lives with his elderly cat.
+    website: https://r2c.dev
+- id: 33
+  title: The Tricks of Game Programming in a Pure Functional Language
+  type: talk
+  abstract: Do you want to play your own levels in Boulder Dash? Well, you actually
+    can! And I can tell you how it is made. This combination of gaming, functional
+    programming, and a nip of nostalgia will give us an interesting and addictive
+    result where you can unleash all your creativity. In this talk, we will discuss
+    how you can apply the tricks of game programming to make a funny game in Elm.
+    As kind of a fun experiment, I recreated the game Boulder Dash with my love of
+    game programming to better learn Elm. The experiment got “a bit out of hand” and
+    the game turned more into a game engine. Not only can we play Boulder Dash, but
+    we can also watch the Game of Life and solve the challenge of day 15 of the Advent
+    of Code 2018. Because why not? I would like to share my enthusiasm for the project
+    and share how things are done. How are some challenges solved functionally? And
+    how can you create your own games using JSON? The goal is to inspire people and
+    to also make something funny
+  excerpt: Do you want to play your own levels in Boulder Dash? Well, you actually
+    can! And I can tell you how it is made. This combination of gaming, functional
+    programming, and a nip of nostalgia will give us an interesting and addictive
+    result where you can ...
+  speakers:
+  - id: jordy_moos
+    name: Jordy Moos
+    affiliation: PB Web Media
+    url: ~
+    bio: Jordy Moos is a self-taught developer with a broad scale of interests but
+      mainly passionate about databases, reactive-, functional- and game- programming.
+      At the age of 12 he started with php and Javascript and at the age of 14 he
+      built a text based browser game. At the moment he works at high traffic company
+      PB Web Media were he increases his programming skills by combining multiple
+      disciplines using Couchbase, Elasticsearch, Scala and many others. Next to work
+      he spent most of his time Kite Surfing and building useless stuff with Arduino
+      and Raspberry Pi.
+    twitter: JordyMoos
+    website: https://github.com/jordymoos
+- id: 34
+  title: Carp—A Language for the 21st Century
+  type: talk
+  abstract: 'The last few years have been exciting for programming languages enthusiasts.
+    Rust freed us from the chains of garbage collection. Functional languages such
+    as Haskell, Idris, and Agda have given us expressive type systems. Lisps come
+    back into the mainstream consciousness, and they are bringing macros. In my talk
+    “Carp: A Language for the 21st century” I want to introduce you to an exciting
+    new programming language that aims to unify multiple branches of this development.
+    Carp is a Lisp that combines macros, a modern type system, and an adaption of
+    the Rust borrow checker to get rid of garbage collection. We will talk a bit about
+    the ideas and concepts behind the language before diving into a playful hands-on
+    demo, with the aim of empowering the audience to start working with Carp themselves.
+    In a blatant disregard of conference best practices, there will be live-coding!
+    To get our feet back on the ground afterwards, we will also take a brief and honest
+    look at the state of the language and ecosystem, and cover how you could get involved!'
+  excerpt: The last few years have been exciting for programming languages enthusiasts.
+    Rust freed us from the chains of garbage collection. Functional languages such
+    as Haskell, Idris, and Agda have given us expressive type systems. Lisps come
+    back into the ma...
+  speakers:
+  - id: veit_heller
+    name: Veit Heller
+    affiliation: Port Zero
+    url: ~
+    bio: Veit is one of the core maintainers of Carp. As his day job, he is the CTO
+      of Port Zero, a small consultancy based in Berlin. He does a lot of open source
+      work and likes to build programs for domains he knows nothing about.
+    website: https://veitheller.de
+- id: 35
+  title: Write your own Container in Rust!
+  type: talk
+  abstract: You might have seen a few cool looking charts in various presentations
+    about  Docker where you get a quick "Docker uses namespaces, cgroups, chroot,
+    etc." to create containers. But why does it take all these pieces to create a
+    contaienr? Why is it not a simple syscall and it's all done for me? In this talk,
+    we will dispel the magic behind containers and write our own in Rust!
+  excerpt: You might have seen a few cool looking charts in various presentations
+    about  Docker where you get a quick "Docker uses namespaces, cgroups, chroot,
+    etc." to create containers. But why does it take all these pieces to create a
+    contaienr? Why is it no...
+  speakers:
+  - id: gargi_sharma
+    name: Gargi Sharma
+    affiliation: Recurse Center
+    url: ~
+    bio: Gargi is a Software Engineer who is currently at the Recurse Center. Gargi
+      loves everything about Systems Programming, shady syscalls and Modern Art. In
+      her spare time, Gargi loves bouldering, hiking and travelling.
+    twitter: gawwrgi
+- id: 36
+  title: Mental models for critiquing design of interactive development environments
+  type: talk
+  abstract: 'Mental models are the mind''s ''mechanisms'' for explaining and predicting
+    phenomena, originating with Craik and elaborated by Johnson-Laird. This is not
+    the same thing as modelling phenomena in mathematics or in computer programs -
+    such simulation models are expressions in external languages, unlike mental models,
+    which are private to our minds: interconnected, fluid, faulty and ultimately unknowable.
+    Five such mental models are identified in this talk, relating to problem comprehension,
+    programming language, notional machine, microworld/domain and interactive development
+    environment itself. In spite of our inability to know them in detail, their existence
+    is a useful notion, and they are discussed here to critique the design of interactive
+    development environments.'
+  excerpt: Mental models are the mind's 'mechanisms' for explaining and predicting
+    phenomena, originating with Craik and elaborated by Johnson-Laird. This is not
+    the same thing as modelling phenomena in mathematics or in computer programs -
+    such simulation mode...
+  speakers:
+  - id: richard_millwood
+    name: Richard Millwood
+    affiliation: Core Education UK & Trinity College Dublin
+    url: ~
+    bio: Dr Richard Millwood is director of Core Education UK and a researcher in
+      the School of Computer Science & Statistics, Trinity College Dublin. Current
+      research interests include learning programming and computational thinking and
+      in relation to this, he is currently engaged in the development of a community
+      of practice for computer science teachers in Ireland and also creating workshops
+      for families to develop creative use of computers together. He gained a BSc
+      in Mathematics & Physics at King's College London in 1976 and first became a
+      secondary school teacher. From 1980 to 1990 he led the software development
+      of educational simulations in the Computers in the Curriculum Project at Chelsea
+      College London. He then worked with Professor Stephen Heppell to create Ultralab,
+      the learning technology research centre at Anglia Polytechnic University, acting
+      as head from 2005 to 2007. He researched innovation in online higher education
+      in the Institute for Educational Cybernetics at the University of Bolton until
+      2013, gaining a PhD by Practice 'The Design of Learner-centred, Technology-enhanced
+      Education'. Until September 2017, he was Assistant Professor for four years
+      directing the MSc in Technology & Learning and supervising six PhD students.
+    twitter: richardmillwood
+    website: http://richardmillwood.net
+- id: 37
+  title: Fabulous - Functional programming for cross-platform mobile apps
+  type: talk
+  abstract: I will describe Fabulous, a thin framework for using functional programming
+    to build cross-platform mobile apps using F#. I will look at the principles of
+    Model-View-Update programming, their origin in Elm and Elmish, and how they differ
+    from Model-View-ViewModel (MVVM).  I'll also describe opportunities for academic
+    compiler research in this area.
+  excerpt: I will describe Fabulous, a thin framework for using functional programming
+    to build cross-platform mobile apps using F#. I will look at the principles of
+    Model-View-Update programming, their origin in Elm and Elmish, and how they differ
+    from Model-V...
+  speakers:
+  - id: don_syme
+    name: Don Syme
+    affiliation: Microsoft
+    url: ~
+    bio: Don is an Australian computer scientist researcher working for Microsoft,
+      based in London.  He is the BDFL for the F# programming language and contributes
+      regularly to its design and tooling.
+- id: 38
+  title: Getting everything wrong without doing anything right! On the perils of large-scale
+    analysis of Github data
+  type: talk
+  abstract: |-
+    Github has a wealth of data, trying to mine those data for
+    insights about the software development process is irresistible.
+    This talk is a cautionary tale of what can go wrong if care
+    and healthy skepticism are not applied to the results obtained
+    from data torture.
+
+    I will tell you about a study that aimed to link the choice
+    of programming language to software defect and how that study
+    failed at more or less every juncture.  This talk will touch
+    on how reproduction studies can help us regain trust in the
+    results we cite and on how to make your work reproducible.
+  excerpt: |-
+    Github has a wealth of data, trying to mine those data for
+    insights about the software development process is irresistible.
+    This talk is a cautionary tale of what can go wrong if care
+    and healthy skepticism are not applied to the results obtained
+    fro...
+  speakers:
+  - id: jan_vitek
+    name: Jan Vitek
+    affiliation: Northeastern University
+    url: ~
+    bio: Jan Vitek is a Professor of Computer Science at Northeastern University.
+      He holds degrees from the University of Geneva (PhD'99, BS'89) and University
+      of Victoria (MS'95). Professor Vitek works on topics related to the design and
+      implementation of programming languages. In the Ovm project, he led the implementation
+      of the first real-time Java virtual machine to be successfully flight-tested.
+      Together with Noble and Potter, he proposed a concept that became known as Ownership
+      Types. Prof Vitek was one of the designers of the Thorn language. He works on
+      gaining a better understanding of the JavaScript language and is now looking
+      at supporting scalable data analysis in R. Prof. Vitek chaired ACM SIGPLAN;
+      he was the Chief Scientist at Fiji Systems and part of the founding team at
+      H2O.ai, a vice chair of AITO; a vice chair of IFIP WG 2.4. He chaired SPLASH,
+      PLDI, ECOOP, ISMM and LCTES and was program chair of ESOP, ECOOP, VEE, Coordination,
+      and TOOLS. Vitek has started a number of successful workshop series, including
+      MOS on Mobile Objects, IWACO, STOP, and TRANSACT. He is/was on the steering
+      committees of ECOOP, JTRES, TRANSACT, ICFP, OOPSLA, POPL, PLDI and LCTES.
+    twitter: j_v_66
+    website: http://janvitek.org
+- id: 39
+  title: 'Loom: Bringing Lightweight Threads and Delimited Continuations to the JVM'
+  type: talk
+  abstract: Various asynchronous programming techniques, from simple callbacks, through
+    so-called reactive APIs, to specialized language constructs such as async/await,
+    are growing in popularity. Requirements for concurrent applications under heavy
+    load are the reason for this growth in popularity. Traditional programming technique
+    based on blocking IO operations do not scale because OS kernel threads — the software
+    unit of concurrency — are too heavyweight to directly represent fine-grained domain
+    units of concurrency, such as the user session or the transaction. These techniques
+    come at a great cost and do not integrate at all smoothly with the core ideas
+    of imperative programming languages — they require built-in constructs to be reimplemented
+    in DSLs, lose important context, and make interoperation with existing code very
+    difficult. Therefore, instead of abandoning the abstraction most natural for imperative
+    code — the thread and blocking operations — we have decided to provide a lightweight
+    implementation of threads, in the runtime rather than the OS, in the JDK, as part
+    of Project Loom. This talk will present the work done in Project Loom, from delimited
+    continuations, through fibers, to structured concurrency, explain why we believe
+    this is the correct approach for the JDK, and discuss some of the peculiar challenges
+    of implementing lightweight threads in the JVM.
+  excerpt: Various asynchronous programming techniques, from simple callbacks, through
+    so-called reactive APIs, to specialized language constructs such as async/await,
+    are growing in popularity. Requirements for concurrent applications under heavy
+    load are the ...
+  speakers:
+  - id: ron_pressler
+    name: Ron Pressler
+    affiliation: Oracle
+    url: ~
+    bio: Ron works on OpenJDK in Oracle's Java Platform Group as the technical lead
+      of Project Loom.
+    twitter: pressron
+    website: https://pron.github.io
+- id: 40
+  title: Microservice architecture, a programming languages perspective
+  type: talk
+  abstract: Microservice architectures have taken over the industry, and with the
+    rise of cluster schedulers and serverless the envelope is being pushed even further.
+    However while tools like microservices, containers, and schedulers were designed
+    to solve problems associated with the systems of old, they introduce many others
+    like API migrations, service dependencies, and deployment automation. In this
+    talk we will explore these new challenges and see how curiously, these system-level
+    concerns can be tackled with some inspiration from the programming languages community,
+    viewing the world of microservices through the lens of type systems and language
+    runtimes.
+  excerpt: Microservice architectures have taken over the industry, and with the rise
+    of cluster schedulers and serverless the envelope is being pushed even further.
+    However while tools like microservices, containers, and schedulers were designed
+    to solve probl...
+  speakers:
+  - id: adelbert_chang
+    name: Adelbert Chang
+    affiliation: Target
+    url: ~
+    bio: Adelbert Chang is a Lead Data Engineer at Target where he works on deployment
+      infrastructure for the Data Science and Optimization team. Previously he worked
+      at U.C. Santa Barbara doing research in large-scale graph querying and modeling,
+      and in industry on machine learning systems, rule engines, and developer tools.
+      Recently he has been exploring the intersection of functional programming and
+      system design. He is an active open source contributor, speaker, and writer
+      for projects spanning the areas of functional programming, type systems, graph
+      analysis, tooling, and infrastructure. He received his Computer Science degree
+      through the College of Creative Studies at U.C. Santa Barbara in 2014.
+    twitter: adelbertchang
+    website: https://adelbertc.github.io/
+- id: 41
+  title: A compact bytecode format for JavaScriptCore
+  type: talk
+  abstract: 'JavaScriptCore (JSC) is the multi-tiered JavaScript virtual machine in
+    WebKit. The bytecode is a central piece in JSC: it’s executed by the interpreter
+    and the source of truth for all of JSC’s compilers. In this talk we’ll look at
+    the recent redesign of our bytecode format, which cut its size in half and enabled
+    persisting the bytecode on disk without impacting the overall performance of the
+    system.'
+  excerpt: 'JavaScriptCore (JSC) is the multi-tiered JavaScript virtual machine in
+    WebKit. The bytecode is a central piece in JSC: it’s executed by the interpreter
+    and the source of truth for all of JSC’s compilers. In this talk we’ll look at
+    the recent redesign...'
+  speakers:
+  - id: tadeu_zagallo
+    name: Tadeu Zagallo
+    affiliation: Apple
+    url: ~
+    bio: I’m a Software Engineer at Apple, working on JavaScriptCore. I like to spend
+      my spare time studying about programming languages, type systems and virtual
+      machines.
+    twitter: tadeuzagallo
+    website: https://tadeuzagallo.com
