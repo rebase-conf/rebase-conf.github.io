@@ -26,7 +26,7 @@ footer_email: organizers@rebase-conf.org
 footer_twitter: rebase-conf
 
 featured_speakers:
-- lars-bak
+- lars_bak
 
 # Liquid can't create arrays
 empty_array: []
