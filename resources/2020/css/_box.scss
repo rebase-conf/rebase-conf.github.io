@@ -67,6 +67,10 @@
       font-size: rem-calc(32px);
     }
   }
+
+  .box--overlay & {
+    padding-right: rem-calc(40px);
+  }
 }
 
 .box__text-content {
