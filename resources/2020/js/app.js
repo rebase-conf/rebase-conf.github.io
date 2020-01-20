@@ -49,6 +49,7 @@ $(document).ready(function () {
   });
 });
 
+// Opening/closing the overlay is a bit complicated only to prevent overscroll in it
 closeOverlay = function() {
   $('.overlay').removeClass('overlay--active');
   var $body = $('body');
@@ -68,24 +69,35 @@ showOverlay = function(overlay, href) {
 };
 
 fillPersonOverlay = function ($personEl) {
-  var $overlay = $('.overlay--person');
+  var $box = $('.overlay--person .box');
   var $clone = $personEl.clone();
+
+  // Remove elements we do not want to see in the overlay
   $clone.find('.box__person-name').unwrap();
   $clone.find('[data-overlay]').remove();
-  $overlay.find('.box__person').replaceWith($clone);
+
+  // Replace the overlay content
+  $box.find('.box__person').replaceWith($clone);
+
+  // Append speaker's bio
   var speaker = speakers[$personEl.attr('data-id')];
-  $overlay.find('.box__text-content').empty().append(speaker);
+  $box.find('.box__text-content').empty().append(speaker);
 };
 
 fillTalkOverlay = function($talkEl) {
-  var $overlay = $('.overlay--talk');
   var $clone = $talkEl.clone();
+  var $box = $('.overlay--talk .box');
+
+  // Remove elements we do not want to see in the overlay
   $clone.find('.box__text-content').remove();
   $clone.find('.box__text-heading').unwrap();
   $clone.find('.box__text-links [data-overlay]').remove();
-  var $box = $overlay.find('.box');
+
+  // Empty the overlay box and append cloned node to it
   $box.empty()
   $box.append($clone.children());
+
+  // Append text data (abstract and speakrs' bios)
   $text = $('<div class="box__text-content"></div>');
   talk = talks[$talkEl.attr('data-id')];
   $text.append('<h3>Abstract</h3>');

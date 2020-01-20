@@ -30,6 +30,26 @@ To build incrementally using BrowserSync, run:
 
 There is also a `Makefile` that automates the above tasks.
 
+## Expanding and tweaking the theme
+
+### Basic theming
+- Colors and fonts are defined using SCSS variables in `resources/<year>/css/_variables.scss`. Try changing `$color-background:` and check what happens!
+
+### (S)CSS
+- The theme uses Bootstrap v4 grid together with media query mixins mimicking `media-breakpoint-up` and `media-breakpoint-down` Bootstrap mixins. Breakpooints also correspond with Bootstrap v4 but can be changed in `resources/<year>/css/_variables.scss`.
+- CSS class names follow [BEM methodology](http://getbem.com/introduction/).
+- All SCSS files are imported to `resources/<year>/css/app.scss`.
+- SCSS mixins are the preferred way of re-using CSS properties between elements. Re-using CSS classes should be avoided.
+
+### JavaScript
+- To avoid generating a single page for every presentation, overlays are filled with content using existing elements + text content generated into
+JS arrays. DOM manipulation uses [jQuery](https://jquery.com/). Please see `resources/<year>/js/app.js` for source code.
+- Overlays use [History API](https://developer.mozilla.org/en-US/docs/Web/API/History) to manipulate browser location and allow sharing links to overlays. In case a location hash corresponding to a talk or a keynote speaker is detected, the overlay is opened automatically.
+
+### New sections
+- The easiest way is to duplicate a section similar to an existing section (e.g. About for a new text section).
+- Every section should have a corresponding SCSS file in `resources/<year>/css/`.
+
 ## Content
 
 - `_data/2020.yml` contains an example conference configuration including comments.
