@@ -49,11 +49,8 @@
 }
 
 .footer__twitter {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url(#{$imgs_baseurl}/twitter.svg) center no-repeat;
-  background-size: contain;
+  color: $color-active;
+  font-size: 20px;
 }
 
 .footer__credits {

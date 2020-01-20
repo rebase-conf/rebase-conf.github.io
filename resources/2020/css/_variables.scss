@@ -1,5 +1,5 @@
-$font-family-default: "Open Sans";
-$font-family-heading: "Open Sans Condensed";
+$font-family-default: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$font-family-heading: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
 $color-background: #004643;
 $color-background-dark: darken($color: $color-background, $amount: 5);
