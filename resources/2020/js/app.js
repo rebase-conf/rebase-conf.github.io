@@ -39,6 +39,14 @@ $(document).ready(function () {
       $overlayLink[0].click();
     }
   }
+
+  $('[rel=smooth-scroll]').click(function(e) {
+    e.preventDefault();
+    var $target = $($(this).attr('href'));
+    if ($target.length) {
+      $('html, body').animate({scrollTop: $target.offset().top});
+    }
+  });
 });
 
 closeOverlay = function() {
