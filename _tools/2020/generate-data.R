@@ -9,11 +9,10 @@ library(tidyr)
 library(yaml)
 
 # input spreadsheet
-SHEET_NAME <- "Rebase Website Test"
-SHEET_ID <- "1_FQ8UyDII11dCrHKhKhnmwbD1Yu4uzIEYBznX1vpeoc"
+SHEET_ID <- "1q3lo8kQEsPcPWbOb-Y6t097WA5doMpfX-v3EbWHCKdA"
 
 # where the images should go
-DATA_FILE <- "_data/2020/data.yml"
+DATA_FILE <- file.path(system2("git", c("rev-parse", "--show-toplevel"), stdout=TRUE), "_data/2020/data.yml")
 
 make_speaker_id <- function(name) {
     name %>%
