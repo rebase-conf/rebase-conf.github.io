@@ -21,3 +21,22 @@ talks:
       Learn TLA+, a free online resource in the same vein. He blogs on a mix
       of deep dives into formal methods and programming topics he finds
       interesting.'
+- id: 2
+  title: Taming Complexity of C++
+  type: talk
+  time: 9:15-10:15
+  date: Monday
+  room: Mancy
+  hashtags:
+  - C++
+  video: ~
+  abstract: 'Taming complexity of C++.'
+  excerpt: Taming complexity of C++.
+  speakers:
+  - id: nicolai-josuttis
+    name: Nicolai M. Josuttis
+    affiliation: Independent Consultant
+    website: http://www.josuttis.com
+    bio: 'Nicolai Josuttis is a technical manager, systems architect, senior
+      consultant for system integration, and senior programmer. He has written
+      many books on C++.'
