@@ -90,8 +90,8 @@
     @extend .icon-link;
     font-size: rem-calc(16px);
 
-    @include media-breakpoint-up(md) {
-      font-size: rem-calc(20px);
+    &.youtube {
+      color: $color-active-secondary;
     }
 
     &:not(:last-child) {
