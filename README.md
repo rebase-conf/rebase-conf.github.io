@@ -34,6 +34,7 @@ There is also a `Makefile` that automates the above tasks.
 
 ### Basic theming
 - Colors and fonts are defined using SCSS variables in `resources/<year>/css/_variables.scss`. Try changing `$color-background:` and check what happens!
+- Font sizes are set individual for every element. The easiest way to tweak them is to use your the browser developer tools to use the corresponding CSS class.
 
 ### (S)CSS
 - The theme uses Bootstrap v4 grid together with media query mixins mimicking `media-breakpoint-up` and `media-breakpoint-down` Bootstrap mixins. Breakpooints also correspond with Bootstrap v4 but can be changed in `resources/<year>/css/_variables.scss`.
