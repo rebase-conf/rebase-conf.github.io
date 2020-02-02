@@ -42,20 +42,20 @@ $supporter-margin: (
 }
 
 .sponsors__group--gold .sponsors__sponsor {
-  max-width: 80%;
-  margin: 0 auto;
-
-  img {
-    width: rem-calc(800px);
-  }
-}
-
-.sponsors__group--silver .sponsors__sponsor {
   max-width: 70%;
   margin: 0 auto;
 
   img {
-    width: rem-calc(600px);
+    width: rem-calc(700px);
+  }
+}
+
+.sponsors__group--silver .sponsors__sponsor {
+  max-width: 60%;
+  margin: 0 auto;
+
+  img {
+    width: rem-calc(500px);
   }
   
   &--droit img {
@@ -73,7 +73,7 @@ $supporter-margin: (
   margin: 0 auto;
 
   img {
-    width: rem-calc(500px);
+    width: rem-calc(400px);
   }
 }
 
@@ -98,6 +98,10 @@ $supporter-margin: (
 
   img {
     width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 80%;
+    }
   }
 
   // Uncomment this if you have one sponsor on the last line and want to
