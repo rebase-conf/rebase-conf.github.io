@@ -1,5 +1,5 @@
 .footer {
-  background: $color-background-dark;
+  background: $color-background;
   padding: rem-calc(50px) 0;
   color: $color-heading;
 
@@ -11,9 +11,16 @@
 .footer__logo {
   width: rem-calc(200px);
 
+  @media (min-width: #{map_get($breakpoints, lg)}) and (max-width: #{map_get($breakpoints, xl) - 1px}) {
+    max-width: 80%;
+  }
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: rem-calc(40px);
+  }
+
   @include media-breakpoint-down(md) {
     width: rem-calc(150px);
-    margin-bottom: rem-calc(40px);
   }
 }
 
