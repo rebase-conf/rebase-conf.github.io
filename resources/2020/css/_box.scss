@@ -275,7 +275,7 @@
 
 .box__talk-info {
   display: flex;
-  color: white;
+  color: $color-paragraph-secondary;
   font-weight: bold;
   margin-bottom: rem-calc(20px);
   @include media-breakpoint-down(sm) {

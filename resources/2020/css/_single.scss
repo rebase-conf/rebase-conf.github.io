@@ -1,16 +1,17 @@
 .single {
   @include section;
   background: $color-background;
-  color: white;
 }
 
 .single__heading {
   @extend .heading1;
   margin-bottom: (40em / 46);
+  color: $color-heading;
 }
 
 .single__content {
   @include text-content;
   max-width: 800px;
   margin: 0 auto;
+  color: $color-paragraph-secondary;
 }

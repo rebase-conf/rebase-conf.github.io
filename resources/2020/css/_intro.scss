@@ -8,7 +8,6 @@
   align-items: center;
   text-align: center;
   position: relative;
-  color: white;
 }
 
 .intro__past-editions {
@@ -38,10 +37,12 @@
   @extend .heading2;
   line-height: 1;
   margin-bottom: rem-calc(45px);
+  color: $color-heading;
 }
 
 .intro__text {
   line-height: (26 / 20);
+  color: $color-paragraph-secondary;
 
   @include media-breakpoint-up(md) {
     font-size: rem-calc(20px);
@@ -76,7 +77,7 @@
   text-align: center;
   white-space: nowrap;
   font-weight: bold;
-  color: white;
+  color: $color-paragraph-secondary;
   text-transform: uppercase;
   margin-top: 10px;
 }

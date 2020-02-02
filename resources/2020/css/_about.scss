@@ -1,14 +1,15 @@
 .about {
   @include section;
   background: $color-background;
-  color: white;
 }
 
 .about__heading {
   @extend .heading1;
   margin-bottom: (40em / 46);
+  color: $color-heading;
 }
 
 .about__content {
   @include text-content;
+  color: $color-paragraph-secondary;
 }

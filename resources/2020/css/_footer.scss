@@ -1,7 +1,7 @@
 .footer {
   background: $color-background-dark;
   padding: rem-calc(50px) 0;
-  color: white;
+  color: $color-heading;
 
   @include media-breakpoint-down(md) {
     font-size: rem-calc(14px);
