@@ -2,18 +2,7 @@
 {% assign presentations = data.talks | where: "type", "talk" %}
 <section class="talks">
     <div class="container">
-      <h2 class="talks__heading">Keynote speakers</h2>
-      <div class="talks__list talks__list--keynote-speakers row">
-        {% for speaker in featured_speakers %}
-        <div class="talks__talk col-md-6 col-lg-4">
-          <article class="box box--speaker">
-            {% include {{ year }}/person.html person=speaker bio_link=true %}
-          </article>
-        </div>
-        {% endfor %}
-      </div>
-  
-      <h2 class="talks__heading">Keynote talks</h2>
+      <h2 class="talks__heading">Highlights</h2>
       <div class="row talks__list talks__list--keynotes row">
         {% for talk in keynotes %}
         <div class="talks__talk col-lg-6">
@@ -31,7 +20,7 @@
         {% endfor %}
       </div>
   
-      <h2 class="talks__heading">Presentations</h2>
+      <h2 class="talks__heading">Talks</h2>
       <div class="talks__list talks__list--presentations row">
         {% for talk in presentations %}
         <div class="talks__talk col-md-6 col-xl-4">
