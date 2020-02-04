@@ -3,22 +3,28 @@ layout: 2020/single
 heading: Call for Presentations
 title: Call for Presentations | Rebase Conf 2020
 ---
-After five successful years, we have decided to broaden the scope of the event co-located with ECOOP and to join forces with another major academic conference, namely SPLASH, to create Rebase — a spin off of CurryOn.  We started with Rebase:Athens in 2019, and will hold Rebase:Berlin in July and Rebase:Chicago in October.
 
-As before Rebase is a conference for practitioners interested in cutting edge technologies ranging from functional programming all the way to data science. Rebase will have three categories of talks:
+After five successful years, the scope of the conference formerly known as
+*Curry On* is expending.
 
-- Master classes:  lectures on programming with functions, objects & data frames
-- Edgy rants: discussions on technology, arts, ethics, education and mental health...
-- Time capsules: talks on computing history 
+*Rebase* is a new conference for and by practitioners who want to talk with
+academics about tomorrow's technologies while fondly remembering the
+achievements of yesterday.
 
-We will also organize topical huddles to network and meet up. The location is the Scandic Potsdamer Platz Hotel in Berlin. The dates are July 15 - 17th 2020.
+*Rebase* is also a forum for exploring the impact of technology on society,
+ethics, and arts.
 
-## What I would like from you is
+*Rebase* invites talks in three broad categories
 
-- Affiliation:
-- Photo URL:
-- Web page:
-- Bio: (short paragraph for practitioners)
-- Talk title: (something descriptive/provocative/amusing — can be changed later)
-- Abstract: (optional, if it is too much work now, send me the other information)
-- Dates: (if you have preferences on when to speak between 15th - 17th of July)
+  - _Master classes_  are lectures on aspect of  programming
+
+  - _Edgy rants_ discuss the impact of technology on arts, ethics, education
+     and health
+
+  - _Time capsules_ invite us to look back at the ideas that shaped the
+    field
+
+All talks are 45 minutes. *Rebase* features a combination of invited and
+contributed talks. All speakers are granted free registration to the event.
+
+

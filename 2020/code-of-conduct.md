@@ -4,31 +4,24 @@ heading: Code of Conduct
 title: Code of Conduct | Rebase Conf 2020
 ---
 
-Nobody likes a jerk, so please show respect for those around you. This applies
-to both in-person and online behavior.
+_Be respectful of those around you, physical and online_
 
-The central goal of a conference is to encourage the open exchange of ideas
-through free expression. This requires an environment that enables all to
-participate without fear of harassment.
+_Rebase encourages open exchange of ideas in an environment where
+you need not fear of harassment_
 
-Curry On is dedicated to providing a harassment-free conference experience for
-everyone, regardless of gender, gender identity and expression, sexual
-orientation, disability, physical appearance, body size, race, age or religion
-(or lack thereof).
+_Rebase is for everyone, regardless of gender, sexual identity,
+disability, physical appearance, race, age, religion or lack thereof_
 
-All communication should be appropriate for a technical audience, including
-people of many different backgrounds. Sexual language, innuendo, and imagery
-is not appropriate for any conference venue, including talks.
+_All communication must be appropriate for people of many different
+backgrounds_
 
-Participants violating these rules may be sanctioned or expelled from the
-conference without a refund at the discretion of the conference organizers.
+_Sexual language, innuendo, and imagery is not appropriate_
 
-If you are being harassed, notice that someone else is being harassed, or have
-any other concerns, please contact a member of conference staff immediately.
-Conference staff will be happy to help participants contact hotel/venue
-security or local law enforcement, provide escorts, or otherwise assist those
-experiencing harassment to feel safe for the duration of the conference. We
-value your attendance.
+_Violating these rules may get one expelled without a refund_
 
-Our Code of Conduct is derived with thanks from the Codes of Conduct produced
-by the ACM, SNAPL, PNW Scala, NE Scala, and the Geek Feminism Wiki.
+_If you see something untowards, contact a member of staff.  Staff can call
+security or law enforcement, provide escorts, or otherwise assist you feel
+safe_
+
+_We value your attendance_
+
