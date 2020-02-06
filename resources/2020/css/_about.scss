@@ -12,4 +12,5 @@
 .about__content {
   @include text-content;
   color: $color-paragraph-secondary;
+  font-size: 1.15rem;
 }

@@ -35,7 +35,7 @@ layout: 2020/default
         Registration
       </a>
       {% if settings.registration_date and settings.registration == "inactive" %}
-      <span class="intro__button-date">starting {{ settings.registration_date }}</span>
+      <span class="intro__button-date">{{ settings.registration_date }}</span>
       {% elsif settings.registration == "sold_out" %}
       <span class="intro__button-date">sold out</span>
       {% endif %}
@@ -57,18 +57,29 @@ layout: 2020/default
     <h2 class="about__heading">About Rebase</h2>
     <div class="about__content">
       <p>
-	After five successful years, the scope of the conference formerly
-	known as <it>Curry On</it> is expending...<p>
+        After five successful years, the scope of the conference formerly
+        known as <em>Curry On</em> is expending.
+      </p>
 
-	<b>Rebase</b> is a new conference for and by practitioners who want
-	to engage academics about tomorrow's technologies while fondly
-	recalling the achievements of yesterday..<p>
+      <!-- TODO can we make the rebase text "ff-market-web",cursive; or something like that? -->
+      <p>
+        <strong>Rebase</strong> is a new conference for and by practitioners who want
+        to engage academics about tomorrow's technologies while fondly
+        recalling the achievements of yesterday.
+      </p>
 
-	<b>Rebase</b> is also a forum to explore the impact of technology on
-	society, ethics, and arts...<p>
-
-	<b>Rebase</b> is a non-profit aimed at supporting attendance by
-	minorities and students...
+      <p>
+        <strong>Rebase</strong> is also a forum to explore the impact of technology on
+        society, ethics, and arts.
+      </p>
+      <p>
+        <strong>Rebase</strong> is a non-profit aimed at supporting attendance by
+        minorities and students.
+      </p>
+      <p>
+        This year, <strong>Rebase</strong> is co-located with
+        <!-- Add the ECOOP logo  with link to https://2020.ecoop.org/ -->
+        Europe’s longest-standing annual Programming Languages conference.
       </p>
     </div>
   </div>
