@@ -13,4 +13,16 @@
   @include text-content;
   color: $color-paragraph-secondary;
   font-size: 1.15rem;
+
+  strong {
+    font-family: $font-family-heading-alternative;
+    font-weight: 600;
+    font-style: italic;
+  }
+}
+
+.about__ecoop {
+  width: rem-calc(300px);
+  max-width: 100%;
+  margin: rem-calc(20px) 0;
 }
