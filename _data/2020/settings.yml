@@ -1,6 +1,6 @@
 city: Berlin
 year: 2020
-conference_dates: July 2020
+conference_dates: July 15 - 16<sup>th</sup> 2020
 venue_url: https://2020.ecoop.org/venue/ecoop-2020-venue
 #past_editions:
 #  - 2018
@@ -18,13 +18,13 @@ registration: inactive
 registration_date: Opening soon
 
 # Control different sections on the HP
-show_talks: true
-show_sponsors: true
+show_talks: false
+show_sponsors: false
 show_organizers: true
 
 # Footer contact details. Comment out to hide
-footer_email: organizers@rebase-conf.org
-footer_twitter: rebase-conf
+footer_email: rebaseconf@gmail.com
+footer_twitter: rebase_conf
 
 featured_speakers:
 - lars_bak
