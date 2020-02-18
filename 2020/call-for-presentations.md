@@ -5,7 +5,7 @@ title: Call for Presentations | Rebase Conf 2020
 ---
 
 After five successful years, the scope of the conference formerly known as
-*Curry On* is expending.
+*Curry On* is expanding.
 
 *Rebase* is a new conference for and by practitioners who want to talk with
 academics about tomorrow's technologies while fondly remembering the
