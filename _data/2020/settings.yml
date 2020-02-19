@@ -18,7 +18,7 @@ registration: inactive
 registration_date: Opening soon
 
 # Control different sections on the HP
-show_talks: false
+show_talks: true
 show_sponsors: false
 show_organizers: true
 
