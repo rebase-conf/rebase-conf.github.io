@@ -1,42 +1,187 @@
 talks:
-- id: 1
-  title: Comparing Software Engineering and Traditional Engineering
+- id: 3
+  title: Back to the Future! UI History through Trends and Mass Culture
   type: talk
-  time: 9:15-10:15
-  date: Monday
-  room: Mancy
-  hashtags:
-  - Software Engineering
-  - Traditional Engineering
-  video: ~
-  abstract: 'Edgy rant comparing software and traditional engineering.'
-  excerpt: Edgy rant comparing software and traditional engineering.
+  hashtags: UI
   speakers:
-  - id: hillel-wayne
+  - id: paola_bisogno
+    name: Paola Bisogno
+    url: ~
+    bio: Paola is an italian digital product designer with more than 15 years of experience.
+      She started as a web master in the early 00s, building web 1.0 sites. After
+      years in digital agencies, she switched to focus on user experience and interface
+      design. She now works as UX/UI Designer at Dove.it, Italy's most innovative
+      real estate company. Her tech team built the product interface and design system
+      from scratch. She worries about usability, design patterns, engineering design
+      process, heuristic evaluation, information architecture and cognitive design.
+      She is on the jury of the international design and development awards CSS Design
+      Awards.
+    twitter: paobi_
+    website: https://www.paobi.it/
+- id: 4
+  title: Miniaturize All States!
+  type: talk
+  hashtags: Haskell
+  abstract: 'Like science, software is in reproducibility crisis. All too often, "steps
+    to reproduce" in bug reports don''t work or are too long and complicated. They
+    shouldn''t be necessary to begin with. Fleets of servers suffer from constant
+    "configuration drift", making any incremental change to their state hazardous.
+    Will an upgrade that worked yesterday work today? Will it work for you if it worked
+    for me? We''re never quite sure. Lack of reproducibility hinders sharing, from
+    lab reports to bug reports to build instructions to software packages to cloud
+    infrastructure. The solution: miniaturizing the inputs to your lab experiment
+    and to your build bots, the state of your laptop and of your resources in the
+    cloud, using precise, shareable, composable declarative specifications.'
+  speakers:
+  - id: mathieu_boespflug
+    name: Mathieu Boespflug
+    affiliation: Tweag io
+    url: ~
+    bio: Mathieu is the CEO of Tweag I/O, an independent industrial lab helping startups
+      and research groups within the enterprise boldly ship high-risk, high-reward
+      digital products. He was involved in European initiatives for exascale storage,
+      worked on build systems, programming language interop and compilers. In a previous
+      life, Mathieu was a researcher in formal methods and programming language design.
+      He has a PhD from École Polytechnique.
+    twitter: mboesp
+    website: https://www.linkedin.com/in/mboes
+- id: 5
+  title: Are we Really Engineers?
+  type: talk
+  hashtags: TLA+
+  speakers:
+  - id: hillel_wayne
     name: Hillel Wayne
-    affiliation: Independent Consultant
-    website: https://www.hillelwayne.com
-    bio: 'Hillel specializes in formal methods for businesses. He is the author
-      of Practical TLA+, a guide to FM written for industry programmers, and
-      Learn TLA+, a free online resource in the same vein. He blogs on a mix
-      of deep dives into formal methods and programming topics he finds
-      interesting.'
-- id: 2
-  title: Taming Complexity of C++
+    url: ~
+    bio: Hillel Wayne is a formal verification consultant and the author of Practical
+      TLA+. In his free time, he juggles and makes chocolate. He’s legally allowed
+      to deliver babies in Illinois.
+    twitter: hillelogram
+    website: www.hillelwayne.com
+- id: 7
+  title: Reliable stack traces, myth or reality?
   type: talk
-  time: 9:15-10:15
-  date: Monday
-  room: Mancy
-  hashtags:
-  - C++
-  video: ~
-  abstract: 'Taming complexity of C++.'
-  excerpt: Taming complexity of C++.
+  abstract: Debug information, usually encoded in the DWARF format, is a hidden and
+    obscure component of our computing infrastructure. Debug information is obviously
+    used by debuggers, but it also plays a key role in program analysis tools, and,
+    most surprisingly, it can be relied upon by the runtime of high-level programming
+    languages. For instance the C++ runtime leverages DWARF stack unwind tables to
+    implement exceptions! Alas, generating debug information adds significant burden
+    to compiler implementations, and the debug information itself can be pervaded
+    by subtle bugs, making the whole infrastructure unreliable. Additionally, interpreting
+    the debug tables is time consuming and for applications as sampling profilers
+    it is a performance bottle-neck.
   speakers:
-  - id: nicolai-josuttis
-    name: Nicolai M. Josuttis
-    affiliation: Independent Consultant
-    website: http://www.josuttis.com
-    bio: 'Nicolai Josuttis is a technical manager, systems architect, senior
-      consultant for system integration, and senior programmer. He has written
-      many books on C++.'
+  - id: francesco_zappa_nardelli
+    name: Francesco Zappa Nardelli
+    affiliation: Facebook
+    url: ~
+    bio: Francesco is a research scientist in FLaRr, the Facebook Language Research
+      group. His work is at boundaries between programming languages, system programming,
+      and computer architectures. It ranges from understanding hardware relaxed memory
+      models, to identifying subtle concurrent compilation bugs in the gcc optimisers,
+      from reverse engineering the Julia subtype algorithm, to designing type systems
+      for the efficient integration of typed and untyped code, with the overall goal
+      is to produce systems which are better-understood, more robust, and more secure.
+    twitter: francescozappan
+    website: https://fzn.fr
+- id: 11
+  title: 'Technology Today: A Paucity of Integrity and Imagination'
+  type: talk
+  abstract: Judging by the experiences of Robert Grimm and a close confidante, both
+    academe and industry have long given up even trying to conduct their business
+    in an ethical fashion. In this talk, the author will detail some of the most egregious
+    instances of deeply unethical if not outright criminal behavior across their career,
+    will argue that they are representative of elites acting in a deeply irresponsible
+    and self-serving manner, causally tie that misbehavior to the rise of nativist
+    nationalism across the western world, and contrast it all against the civilization-ending
+    threat of climate change. This talk sounds the alarm as much as it identifies
+    our last best hope for survival. It’s up to us!
+  speakers:
+  - id: robert_grimm
+    name: Robert Grimm
+    affiliation: Self
+    url: ~
+    bio: Robert Grimm has two degrees in Computer Science and Engineering from MIT
+      and the University of Washington, served as Associate Professor at NYU, received
+      a National Science Foundation CAREER award, and was selected for a junior fellowship
+      at NYU’s Center for Teaching Excellence. He also worked as a member of the team
+      maintaining Goldman Sachs’s mission-critical trade and risk management platform.
+      But none of these qualifications and accomplishments are as relevant to technology
+      today as his mother’s schooling on the history of the Shoah, him somehow surviving
+      the years of the plague, and, more recently, coming within days of ending his
+      life.
+    twitter: apparebit
+    website: https://apparebit.com
+- id: 14
+  title: Performance Really Matters
+  type: talk
+  hashtags:
+  - Hoard
+  - DieHarder
+  - Coz
+  speakers:
+  - id: emery_berger
+    name: Emery Berger
+    affiliation: University of Massachussetts, Amherst
+    url: ~
+    bio: Emery is a Professor at the University of Massachusetts Amherst. He researches
+      languages, runtime systems, and operating systems, with a particular focus on
+      systems that transparently improve reliability, security, and performance. Emery
+      and friends have created Hoard, the first scalable memory manager (malloc),
+      on which the Mac OS X memory manager is based; DieHard, an error-avoiding memory
+      manager that directly influenced the design of the Windows 7 Fault-Tolerant
+      Heap; DieHarder, a secure memory manager that was an inspiration for hardening
+      changes made to the Windows 8 heap; the Coz profiler, which ships with modern
+      Linux distros; and more. He was named an ACM Fellow in 2019.
+    twitter: emeryberger
+    website: https://emeryberger.com/
+- id: 15
+  title: 'Raku: glue as language'
+  type: talk
+  hashtags: Raku
+  abstract: Let's review key features and implementation challenges of Raku, a modern,
+    multi-paradigm language developed by the Perl community. Perl found success in
+    its ability to glue disparate things together, a role it plays to this day. Perl
+    also attracted criticism - some deserved, some overplayed. Raku shares values
+    with Perl, but - in response to lessons learned and a changing industry - realizes
+    them differently. The language brings tasteful trade-offs between dynamic and
+    static, a new regex syntax, integrated grammars for tackling parsing far beyond
+    what regexes can do, a grapheme level Unicode representation, "await" without
+    "async", first-class syntax for reactive stream processing, the opportunity to
+    participate in compile time - and more. A common refrain during the design process
+    was to "torture the language implementor for the sake of the language user". The
+    challenges this approach created - both solved and still being solved - will be
+    explored along with the language features.
+  speakers:
+  - id: jonathan_worthington
+    name: Jonathan Worthington
+    affiliation: Edument
+    url: ~
+    bio: Jonathan is a software developer and architect with an interest in compilers,
+      runtimes, language design, and concurrency. His work has largely focused on
+      the Raku language, its compiler ("Rakudo"), and its most used runtime ("MoarVM").
+      At the language level, Jonathan contributed to the design of the meta-object
+      system as well as the concurrency; he also carried out much of the compiler
+      implementation work of these features. He is the founder of MoarVM, and his
+      work there focuses on runtime optimization. He also leads development of Comma,
+      a Raku IDE based on the IntelliJ platform.
+    twitter: jnthnwrthngtn
+    website: https://jnthn.net/
+- id: 16
+  title: Developing the Wolfram Language Compiler
+  type: talk
+  hashtags: Mathematica
+  speakers:
+  - id: tom_wickham-jones
+    name: Tom Wickham-Jones
+    affiliation: Wolfram Research, Inc.
+    url: ~
+    bio: Tom Wickham-Jones is the Director of Kernel Technology at Wolfram Research.
+      He has worked on Mathematica for over 30 years and recently on implementing
+      the Wolfram Compiler. He has worked on Mathematica's internal data structures,
+      graphics, compilation, performance and integration with new technologies. For
+      the past five years, he has co-architected the Wolfram Compiler, a project that
+      integrates modern compiler knowledge and technologies to compile the Wolfram
+      Language. An initial version of the compiler was released in April 2019 with
+      Mathematica 12.
