@@ -1,7 +1,7 @@
 {% assign person = include.person %}
 {% assign photo_url = photos_baseurl | append: "/" | append: person.id %}
 <div class="box__person" data-id="{{ person.id }}">
-  <img src="{{ photo_url }}.jpeg" srcset="{{ photo_url }}@2x.jpeg 2x, {{ photo_url }}.jpeg 1x" class="box__person-img" />
+  <img src="{{ photo_url }}.jpg" srcset="{{ photo_url }}@2x.jpg 2x, {{ photo_url }}.jpg 1x" class="box__person-img" />
   <div class="box__person-info">
     {% if include.bio_link %}
       <a href="#{{ person.id }}" data-overlay="person"><h3 class="box__person-name">{{ person.name }}</h3></a>
