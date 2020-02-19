@@ -2,24 +2,24 @@
 {% assign presentations = data.talks | where: "type", "talk" %}
 <section class="talks">
     <div class="container">
-      <h2 class="talks__heading">Highlights</h2>
-      <div class="row talks__list talks__list--keynotes row">
-        {% for talk in keynotes %}
-        <div class="talks__talk col-lg-6">
-          {% comment %}
-            Add class like box--fancy-talk and then add
-            .box--fancy-talk {
-              background-color: #fc0fc0;
-            }
-            to resources/2020/css/_box.scss
-          {% endcomment %}
-          <article class="box box--large" data-id="{{ talk.title | slugify }}">
-            {% include {{ year }}/talk.html excerpt=true %}
-          </article>
-        </div>
-        {% endfor %}
-      </div>
-  
+        <!-- <h2 class="talks__heading">Highlights</h2>
+             <div class="row talks__list talks__list--keynotes row">
+             {% for talk in keynotes %}
+             <div class="talks__talk col-lg-6">
+             {% comment %}
+             Add class like box--fancy-talk and then add
+             .box--fancy-talk {
+             background-color: #fc0fc0;
+             }
+             to resources/2020/css/_box.scss
+             {% endcomment %}
+             <article class="box box--large" data-id="{{ talk.title | slugify }}">
+             {% include {{ year }}/talk.html excerpt=true %}
+             </article>
+             </div>
+             {% endfor %}
+             </div> -->
+
       <h2 class="talks__heading">Talks</h2>
       <div class="talks__list talks__list--presentations row">
         {% for talk in presentations %}
