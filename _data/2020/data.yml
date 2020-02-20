@@ -105,7 +105,7 @@ talks:
     twitter: mboesp
     website: https://www.linkedin.com/in/mboes
 - id: 20
-  title: The Functional Era – Why Functional Programming is More Relevant Than Ever
+  title: The Functional Era – FP More Than Ever
   type: talk
   hashtags: F#
   abstract: Drawing on my experience with F# and applied functional programming over
