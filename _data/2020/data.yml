@@ -1,95 +1,5 @@
 talks:
-- id: 3
-  title: Back to the Future! UI History through Trends and Mass Culture
-  type: talk
-  hashtags: UI
-  speakers:
-  - id: paola_bisogno
-    name: Paola Bisogno
-    affiliation: dove.it
-    url: ~
-    bio: Paola is an italian digital product designer with more than 15 years of experience.
-      She started as a web master in the early 00s, building web 1.0 sites. After
-      years in digital agencies, she switched to focus on user experience and interface
-      design. She now works as UX/UI Designer at Dove.it, Italy's most innovative
-      real estate company. Her tech team built the product interface and design system
-      from scratch. She worries about usability, design patterns, engineering design
-      process, heuristic evaluation, information architecture and cognitive design.
-      She is on the jury of the international design and development awards CSS Design
-      Awards.
-    twitter: paobi_
-    website: https://www.paobi.it/
-- id: 4
-  title: Miniaturize All States!
-  type: talk
-  hashtags: Haskell
-  abstract: 'Like science, software is in reproducibility crisis. All too often, "steps
-    to reproduce" in bug reports don''t work or are too long and complicated. They
-    shouldn''t be necessary to begin with. Fleets of servers suffer from constant
-    "configuration drift", making any incremental change to their state hazardous.
-    Will an upgrade that worked yesterday work today? Will it work for you if it worked
-    for me? We''re never quite sure. Lack of reproducibility hinders sharing, from
-    lab reports to bug reports to build instructions to software packages to cloud
-    infrastructure. The solution: miniaturizing the inputs to your lab experiment
-    and to your build bots, the state of your laptop and of your resources in the
-    cloud, using precise, shareable, composable declarative specifications.'
-  speakers:
-  - id: mathieu_boespflug
-    name: Mathieu Boespflug
-    affiliation: Tweag I/O
-    url: ~
-    bio: Mathieu is the CEO of Tweag I/O, an independent industrial lab helping startups
-      and research groups within the enterprise boldly ship high-risk, high-reward
-      digital products. He was involved in European initiatives for exascale storage,
-      worked on build systems, programming language interop and compilers. In a previous
-      life, Mathieu was a researcher in formal methods and programming language design.
-      He has a PhD from École Polytechnique.
-    twitter: mboesp
-    website: https://www.linkedin.com/in/mboes
-- id: 5
-  title: Are we Really Engineers?
-  type: talk
-  hashtags: TLA+
-  speakers:
-  - id: hillel_wayne
-    name: Hillel Wayne
-    url: ~
-    bio: Hillel Wayne is a formal verification consultant and the author of Practical
-      TLA+. In his free time, he juggles and makes chocolate. He’s legally allowed
-      to deliver babies in Illinois.
-    twitter: hillelogram
-    website: www.hillelwayne.com
-- id: 7
-  title: Reliable stack traces, myth or reality?
-  type: talk
-  hashtags:
-  - DWARF
-  - Performance
-  abstract: Debug information, usually encoded in the DWARF format, is a hidden and
-    obscure component of our computing infrastructure. Debug information is obviously
-    used by debuggers, but it also plays a key role in program analysis tools, and,
-    most surprisingly, it can be relied upon by the runtime of high-level programming
-    languages. For instance the C++ runtime leverages DWARF stack unwind tables to
-    implement exceptions! Alas, generating debug information adds significant burden
-    to compiler implementations, and the debug information itself can be pervaded
-    by subtle bugs, making the whole infrastructure unreliable. Additionally, interpreting
-    the debug tables is time consuming and for applications as sampling profilers
-    it is a performance bottle-neck.
-  speakers:
-  - id: francesco_zappa_nardelli
-    name: Francesco Zappa Nardelli
-    affiliation: Facebook
-    url: ~
-    bio: Francesco is a research scientist in FLaRr, the Facebook Language Research
-      group. His work is at boundaries between programming languages, system programming,
-      and computer architectures. It ranges from understanding hardware relaxed memory
-      models, to identifying subtle concurrent compilation bugs in the gcc optimisers,
-      from reverse engineering the Julia subtype algorithm, to designing type systems
-      for the efficient integration of typed and untyped code, with the overall goal
-      is to produce systems which are better-understood, more robust, and more secure.
-    twitter: francescozappan
-    website: https://fzn.fr
-- id: 11
+- id: 1
   title: 'Technology Today: A Paucity of Integrity and Imagination'
   type: talk
   hashtags: Ethics
@@ -118,28 +28,94 @@ talks:
       life.
     twitter: apparebit
     website: https://apparebit.com
-- id: 12
-  title: Move semantics for Nim
+- id: 2
+  title: Back to the Future! A History of UIs through Trends and Mass Culture
   type: talk
-  hashtags: Nim
-  abstract: This talk explains Nim's move semantics and their connection to reference
-    counting, how Nim's model differs from C++/Rust and why move semantics can offer
-    superior performance. It is explained how to leverage this technology to make
-    multi-threading safer. Nim with deterministic memory management never has been
-    easier.
+  hashtags: UI
   speakers:
-  - id: andreas_rumpf
-    name: Andreas Rumpf
-    affiliation: Freelancer
+  - id: paola_bisogno
+    name: Paola Bisogno
+    affiliation: dove.it
     url: ~
-    bio: Andreas is the designer of the Nim programming language, which he develops
-      full-time with a team of developers and the help of an enthusiastic open source
-      community. He has programmed in various languages over the years (including
-      quite obscure ones) without being satisfied with any of them. Andreas holds
-      a degree in Computer Science which he obtained from University of Kaiserslautern.
-    twitter: nim_lang
-    website: https://nim-lang.org/
-- id: 14
+    bio: Paola is an italian digital product designer with more than 15 years of experience.
+      She started as a web master in the early 00s, building web 1.0 sites. After
+      years in digital agencies, she switched to focus on user experience and interface
+      design. She now works as UX/UI Designer at Dove.it, Italy's most innovative
+      real estate company. Her tech team built the product interface and design system
+      from scratch. She worries about usability, design patterns, engineering design
+      process, heuristic evaluation, information architecture and cognitive design.
+      She is on the jury of the international design and development awards CSS Design
+      Awards.
+    twitter: paobi_
+    website: https://www.paobi.it/
+- id: 4
+  title: 'Exercises in Dataflow and Array Programming: Into the Future with Neural
+    Networks'
+  type: talk
+  hashtags: Aspects
+  abstract: Dataflow programs are networks of connected nodes representing operations
+    on the data that flows through them. Array programs support powerful, parallelizable
+    operations on fixed-size data. Dataflow and array languages have been around for
+    many decades, but relegated to niche engineering fields. Covering a new part of
+    the 2nd edition of the speaker's book "Exercises in Programming Style", this talk
+    revisits old ideas in the context of the brave new world of deep learning.
+  speakers:
+  - id: cristina_lopes
+    name: Cristina Lopes
+    affiliation: University of California, Irvine
+    url: ~
+    bio: Cristina (Crista) Lopes is a Professor at University of California, Irvine,
+      with interests in Programming Languages, Software Engineering, Distributed Virtual
+      Environments, and just about anything that relates to the art of programming.
+      She is an IEEE Fellow, an ACM Distinguished Scientist, a twice-elected member
+      of the SIGPLAN Executive Committee, and Editor in Chief of The Art, Science,
+      and Engineering of Programming. She is the recipient of the 2016 Pizzigati Prize
+      for Software in the Public Interest for her work in the OpenSimulator virtual
+      world platform. Her book "Exercises in Programming Style" has gained rave reviews,
+      including being chosen as "Notable Book"  by the ACM Best of Computing reviews.
+    twitter: cristalopes
+    website: https://www.ics.uci.edu/~lopes/
+- id: 15
+  title: Miniaturize All States!
+  type: talk
+  hashtags: Haskell
+  abstract: 'Like science, software is in reproducibility crisis. All too often, "steps
+    to reproduce" in bug reports don''t work or are too long and complicated. They
+    shouldn''t be necessary to begin with. Fleets of servers suffer from constant
+    "configuration drift", making any incremental change to their state hazardous.
+    Will an upgrade that worked yesterday work today? Will it work for you if it worked
+    for me? We''re never quite sure. Lack of reproducibility hinders sharing, from
+    lab reports to bug reports to build instructions to software packages to cloud
+    infrastructure. The solution: miniaturizing the inputs to your lab experiment
+    and to your build bots, the state of your laptop and of your resources in the
+    cloud, using precise, shareable, composable declarative specifications.'
+  speakers:
+  - id: mathieu_boespflug
+    name: Mathieu Boespflug
+    affiliation: Tweag I/O
+    url: ~
+    bio: Mathieu is the CEO of Tweag I/O, an independent industrial lab helping startups
+      and research groups within the enterprise boldly ship high-risk, high-reward
+      digital products. He was involved in European initiatives for exascale storage,
+      worked on build systems, programming language interop and compilers. In a previous
+      life, Mathieu was a researcher in formal methods and programming language design.
+      He has a PhD from École Polytechnique.
+    twitter: mboesp
+    website: https://www.linkedin.com/in/mboes
+- id: 21
+  title: Are we Really Engineers?
+  type: talk
+  hashtags: TLA+
+  speakers:
+  - id: hillel_wayne
+    name: Hillel Wayne
+    url: ~
+    bio: Hillel Wayne is a formal verification consultant and the author of Practical
+      TLA+. In his free time, he juggles and makes chocolate. He’s legally allowed
+      to deliver babies in Illinois.
+    twitter: hillelogram
+    website: www.hillelwayne.com
+- id: 22
   title: Performance Really Matters
   type: talk
   hashtags:
@@ -162,8 +138,81 @@ talks:
       Linux distros; and more. He was named an ACM Fellow in 2019.
     twitter: emeryberger
     website: https://emeryberger.com/
-- id: 15
-  title: 'Raku: glue as language'
+- id: 23
+  title: Developing the Wolfram Language Compiler
+  type: talk
+  hashtags: Mathematica
+  speakers:
+  - id: tom_wickham-jones
+    name: Tom Wickham-Jones
+    affiliation: Wolfram Research, Inc.
+    url: ~
+    bio: Tom Wickham-Jones is the Director of Kernel Technology at Wolfram Research.
+      He has worked on Mathematica for over 30 years and recently on implementing
+      the Wolfram Compiler. He has worked on Mathematica's internal data structures,
+      graphics, compilation, performance and integration with new technologies. For
+      the past five years, he has co-architected the Wolfram Compiler, a project that
+      integrates modern compiler knowledge and technologies to compile the Wolfram
+      Language. An initial version of the compiler was released in April 2019 with
+      Mathematica 12.
+- id: 25
+  title: Reliable Stack Traces, the Reality of Myth
+  type: talk
+  hashtags:
+  - DWARF
+  - Performance
+  abstract: Debug information is a hidden and obscure component of our computing infrastructure
+    obviously used by debuggers, but also playing a key role in program analysis tools,
+    and, most surprisingly, in the runtime of programming languages. For instance
+    C++ leverages DWARF stack unwind tables to implement exceptions!  Alas, generating
+    debug information adds significant burden to compilers, and the debug info itself
+    can be pervaded by subtle bugs, making the whole infrastructure unreliable.  Additionally,
+    interpreting the debug tables is a bottleneck. My talk focuses on the DWARF unwind
+    table, that enables stack unwinding in absence of frame-pointer information.  I
+    show two techniques to perform validation and synthesis of unwinding tables, and
+    their implementation for x86_64. Our validator has proven effective for compiler
+    and inline assembly testing, while the synthesis tool can generate unwind tables
+    for arbitrary binaries lacking debug information.  Additionally, I will report
+    on a technique to precompile unwind tables into native x86_64 code, which we have
+    implemented and integrated into libunwind, resulting in a 25x DWARF-based unwind
+    speedup.
+  speakers:
+  - id: francesco_zappa_nardelli
+    name: Francesco Zappa Nardelli
+    affiliation: Facebook
+    url: ~
+    bio: Francesco is a research scientist in FLaRr, the Facebook Language Research
+      group. His work is at boundaries between programming languages, system programming,
+      and computer architectures. It ranges from understanding hardware relaxed memory
+      models, to identifying subtle concurrent compilation bugs in the gcc optimisers,
+      from reverse engineering the Julia subtype algorithm, to designing type systems
+      for the efficient integration of typed and untyped code, with the overall goal
+      is to produce systems which are better-understood, more robust, and more secure.
+    twitter: francescozappan
+    website: https://fzn.fr
+- id: 30
+  title: Move Semantics for Nim
+  type: talk
+  hashtags: Nim
+  abstract: This talk explains Nim's move semantics and their connection to reference
+    counting, how Nim's model differs from C++/Rust and why move semantics can offer
+    superior performance. It is explained how to leverage this technology to make
+    multi-threading safer. Nim with deterministic memory management never has been
+    easier.
+  speakers:
+  - id: andreas_rumpf
+    name: Andreas Rumpf
+    affiliation: Freelancer
+    url: ~
+    bio: Andreas is the designer of the Nim programming language, which he develops
+      full-time with a team of developers and the help of an enthusiastic open source
+      community. He has programmed in various languages over the years (including
+      quite obscure ones) without being satisfied with any of them. Andreas holds
+      a degree in Computer Science which he obtained from University of Kaiserslautern.
+    twitter: nim_lang
+    website: https://nim-lang.org/
+- id: 32
+  title: 'Raku: Glue as Language'
   type: talk
   hashtags: Raku
   abstract: Let's review key features and implementation challenges of Raku, a modern,
@@ -194,20 +243,24 @@ talks:
       a Raku IDE based on the IntelliJ platform.
     twitter: jnthnwrthngtn
     website: https://jnthn.net/
-- id: 16
-  title: Developing the Wolfram Language Compiler
+- id: 33
+  title: 'V8: A JavaScript Performance Tale'
   type: talk
-  hashtags: Mathematica
+  hashtags: JavaScript
+  abstract: This talk will tell the tale of the performance paradigm shift in the
+    V8 JavaScript virtual machine from peak performance to real-world performance
+    and design decisions made on the way.
   speakers:
-  - id: tom_wickham-jones
-    name: Tom Wickham-Jones
-    affiliation: Wolfram Research, Inc.
+  - id: hannes_payer
+    name: Hannes Payer
+    affiliation: Google
     url: ~
-    bio: Tom Wickham-Jones is the Director of Kernel Technology at Wolfram Research.
-      He has worked on Mathematica for over 30 years and recently on implementing
-      the Wolfram Compiler. He has worked on Mathematica's internal data structures,
-      graphics, compilation, performance and integration with new technologies. For
-      the past five years, he has co-architected the Wolfram Compiler, a project that
-      integrates modern compiler knowledge and technologies to compile the Wolfram
-      Language. An initial version of the compiler was released in April 2019 with
-      Mathematica 12.
+    bio: Hannes leads the V8 JavaScript virtual machine team at Google. The V8 team
+      is known for its virtual machine innovations and once in a while they distill
+      a research paper out of it. Prior to V8, Hannes worked on various virtual machine
+      projects like Google's Dart virtual machine and the Maxine Java research virtual
+      machine from Sun Labs. Hannes received a PhD from the University of Salzburg
+      in 2012 where he was the principal investigator of the Scal project which traded
+      off concurrent data structure semantics for performance.
+    twitter: PayerHannes
+    website: https://research.google/people/HannesPayer/
