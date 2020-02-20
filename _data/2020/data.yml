@@ -114,6 +114,27 @@ talks:
       life.
     twitter: apparebit
     website: https://apparebit.com
+- id: 12
+  title: Move semantics for Nim
+  type: talk
+  hashtags: Nim
+  abstract: This talk explains Nim's move semantics and their connection to reference
+    counting, how Nim's model differs from C++/Rust and why move semantics can offer
+    superior performance. It is explained how to leverage this technology to make
+    multi-threading safer. Nim with deterministic memory management never has been
+    easier.
+  speakers:
+  - id: andreas_rumpf
+    name: Andreas Rumpf
+    affiliation: Freelancer
+    url: ~
+    bio: Andreas is the designer of the Nim programming language, which he develops
+      full-time with a team of developers and the help of an enthusiastic open source
+      community. He has programmed in various languages over the years (including
+      quite obscure ones) without being satisfied with any of them. Andreas holds
+      a degree in Computer Science which he obtained from University of Kaiserslautern.
+    twitter: nim_lang
+    website: https://nim-lang.org/
 - id: 14
   title: Performance Really Matters
   type: talk
