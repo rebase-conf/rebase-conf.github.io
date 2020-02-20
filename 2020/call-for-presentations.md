@@ -27,4 +27,4 @@ ethics, and arts.
 All talks are 45 minutes. *Rebase* features a combination of invited and
 contributed talks. All speakers are granted free registration to the event.
 
-
+*Rebase* talk proposals can be submitted <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4-GLOcJwqmJBv4vk7WzLIziXZDn6hHmbBaShqJ85SsHeptQ/viewform?usp=sf_link">here</a>.
