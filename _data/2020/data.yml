@@ -52,7 +52,9 @@ talks:
   title: 'Exercises in Dataflow and Array Programming: Into the Future with Neural
     Networks'
   type: talk
-  hashtags: Aspects
+  hashtags:
+  - Aspects
+  - OpenSim
   abstract: Dataflow programs are networks of connected nodes representing operations
     on the data that flows through them. Array programs support powerful, parallelizable
     operations on fixed-size data. Dataflow and array languages have been around for
@@ -102,6 +104,27 @@ talks:
       He has a PhD from École Polytechnique.
     twitter: mboesp
     website: https://www.linkedin.com/in/mboes
+- id: 20
+  title: The Functional Era – Why Functional Programming is More Relevant Than Ever
+  type: talk
+  hashtags: F#
+  abstract: Drawing on my experience with F# and applied functional programming over
+    20 years, I’ll describe why functional programming and its ways of thinking are
+    relevant to every part of modern software development. Along the way I’ll challenge
+    some of our shibboleths and talk about how tensions in language design and delivery
+    have been resolved in F#.
+  speakers:
+  - id: don_syme
+    name: Don Syme
+    affiliation: Microsoft
+    url: ~
+    bio: Don is the designer of the F# language, and an F# community contributor.
+      He works with researchers and open source communities to make better programming
+      technologies, and, through that, make people more productive and happier. His
+      work has helped transform the programming languages landscape towards functional
+      programming with C#/F# Generics, async/await programming, F# 1.0-5.0 and more.
+    twitter: dsymetweets
+    website: https://www.microsoft.com/en-us/research/people/dsyme/
 - id: 21
   title: Are we Really Engineers?
   type: talk
