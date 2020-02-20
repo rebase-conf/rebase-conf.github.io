@@ -20,7 +20,7 @@ layout: 2020/default
   <div class="intro__buttons">
     {% if settings.cfp != "hidden" %}
     <span class="intro__button">
-      <a href="{{ year }}/call-for-presentations.html"
+      <a href="{{ settings.cfp_form }}"
         class="button {% if settings.cfp != "active" %}button--inactive{% endif %}">
         Call for presentations
       </a>
