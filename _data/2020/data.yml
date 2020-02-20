@@ -6,6 +6,7 @@ talks:
   speakers:
   - id: paola_bisogno
     name: Paola Bisogno
+    affiliation: dove.it
     url: ~
     bio: Paola is an italian digital product designer with more than 15 years of experience.
       She started as a web master in the early 00s, building web 1.0 sites. After
@@ -35,7 +36,7 @@ talks:
   speakers:
   - id: mathieu_boespflug
     name: Mathieu Boespflug
-    affiliation: Tweag io
+    affiliation: Tweag I/O
     url: ~
     bio: Mathieu is the CEO of Tweag I/O, an independent industrial lab helping startups
       and research groups within the enterprise boldly ship high-risk, high-reward
