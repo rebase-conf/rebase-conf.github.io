@@ -291,7 +291,7 @@ talks:
   title: 'Probabilistic Programming: The What, Why and How'
   type: talk
   hashtags: ProbabilisticProgramming
-  abstract: (x) = y, but y = 5. What's the probability that x =1? Probabilistic programming
+  abstract: f(x) = y, but y = 5. What's the probability that x =1? Probabilistic programming
     is the idea of describing probabilistic models as programs, to then automatically
     infer how our beliefs about model parameters change given observed data. In recent
     years, probabilistic programming languages (such as Stan) have demonstrated the
