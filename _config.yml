@@ -1,6 +1,6 @@
 title: rebase-conf
 url: "rebase-conf.org" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: rebase-conf
+twitter_username: rebase_conf
 github_username:  rebase-conf
 
 # Build settings
