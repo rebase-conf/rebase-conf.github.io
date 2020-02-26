@@ -48,6 +48,29 @@ talks:
       Awards.
     twitter: paobi_
     website: https://www.paobi.it/
+- id: 3
+  title: Even More Modern C++
+  type: talk
+  hashtags: C++
+  abstract: 'More than 20 years after its first standardization, C++ is a success
+    story again. With the introduction of new features of C++11 and C++14, C++ has
+    become the number one programming language when performance really matters. And
+    the evolution continues: with C++17 and C++20 we finish the development of the
+    "Modern C++ era" and open a new era of "even more Modern C++". Time to look at
+    what''s coming up.'
+  speakers:
+  - id: nicolai_josuttis
+    name: Nicolai Josuttis
+    url: ~
+    bio: 'Nicolai Josuttis is well known in the programming community because he not
+      only speaks and writes with authority (being the (co-)author of world-wide best
+      sellers: [*The C++ Standard Library*](http://www.cppstdlib.com), [*C++ Templates*](http://www.tmplbook.com),
+      [*C++17 - The Complete Guide*](http://www.cppstd17.com), and [*C++ Move Semantics*](http://www.cppmove.com)),
+      but is also an innovative presenter, having talked at various conferences and
+      events. He is an independent trainer, system architect, technical manager, author,
+      and consultant.'
+    twitter: NicoJosuttis
+    website: http://www.josuttis.com
 - id: 4
   title: 'Exercises in Dataflow and Array Programming: Into the Future with Neural
     Networks'
