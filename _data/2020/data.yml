@@ -77,6 +77,37 @@ talks:
       including being chosen as "Notable Book"  by the ACM Best of Computing reviews.
     twitter: cristalopes
     website: https://www.ics.uci.edu/~lopes/
+- id: 5
+  title: Quantitative Types in Idris 2
+  type: talk
+  hashtags: Idris
+  abstract: Dependent types allow us to express precisely *what* a function is intended
+    to do.  Recent work on Quantitative Type Theory (QTT) extends dependent type systems
+    with *linearity*, also allowing precision in expressing *when* a function can
+    run. This is promising, because it suggests the ability to design and reason about
+    resource usage protocols, such as we might find in distributed and concurrent
+    programming, where the state of a communication channel changes throughout program
+    execution.  Up to now, however, there has not been a full-scale programming language
+    with which to experiment with these ideas.  Idris 2 is a new version of the dependently
+    typed language Idris, with a new core language based on QTT, supporting linear
+    and dependent types. In this talk I will show the benfits of QTT in Idris 2, in
+    particular how it improves interactive program development by reducing the search
+    space for type-driven program synthesis; and, how resource tracking in the type
+    system leads to type-safe concurrent programming with session types.
+  speakers:
+  - id: edwin_brady
+    name: Edwin Brady
+    affiliation: St Andrews
+    url: ~
+    bio: I am a Lecturer in Computer Science at the University of St. Andrews, interested
+      in type theory, dependently typed functional programming, compilers and metaprogramming.
+      I am currently working on a new implementation of Idris, a dependently typed
+      functional programming language. When I’m not doing that, you might find me
+      playing Go (I’m about 2 kyu), exploring Scotland's countryside, or watching
+      a game of cricket. I’m afraid I also perpetrated the Whitespace programming
+      language.
+    twitter: edwinbrady
+    website: https://edwinb.wordpress.com/
 - id: 15
   title: Miniaturize All States!
   type: talk
