@@ -408,3 +408,27 @@ talks:
       programming for her final year project.
     twitter: migorinova
     website: http://homepages.inf.ed.ac.uk/s1207807/
+- id: 44
+  title: Reprogramming Biology with F#
+  type: talk
+  hashtags: Computational Biology
+  abstract: If we could program biology as effectively as we program digital computers,
+    we could make fundamental breakthroughs in the treatment of disease and the biofabrication
+    of materials, while gaining insight into the workings of life itself. I'll talk
+    about how we use F# to explore this and I’ll also show demos of our public tools
+    on [molecular programming via DNA strand displacement](https://www.microsoft.com/en-us/research/project/programming-dna-circuits/),
+    [reasoning about stem cell decision making](https://www.microsoft.com/en-us/research/project/reasoning-engine-for-interaction-networks-rein/)
+    and [enginering biology efforts in Station B](https://www.microsoft.com/en-us/research/project/stationb/).
+  speakers:
+  - id: colin_gravill
+    name: Colin Gravill
+    affiliation: Microsoft Research
+    url: ~
+    bio: I’m a software developer working in the Biological Computation group at Microsoft
+      Research, Cambridge. I have a background in industrial automation and building
+      analytical devices in materials, pharmaceuticals, and aerospace industries.
+      I’m applying this to building reproducible and effective systems in our wet
+      lab to validate our biological designs. I also assist in the optimisation of
+      our computational methods to run far more efficiently, and then conveniently
+      scaling over many machines on cloud infrastructure.
+    website: http://aka.ms/colingravill
