@@ -131,6 +131,46 @@ talks:
       language.
     twitter: edwinbrady
     website: https://www.type-driven.org.uk/edwinb/
+- id: 11
+  title: Herding Cats
+  type: talk
+  hashtags: Concurrency
+  abstract: "Concurrent programming is hard - picture a mob of musicians in an auditorium
+    and the possible interactions between them. How to orchestrate them? The orchestration
+    in the case of multiprocessor systems for example is given in the technical documents
+    which accompany those systems. Unfortunately, most of those documents have historically
+    been quite sparse in the area of concurrency, and relatively obscure. This is
+    partly due to the fact that those documentations are written in prose, which sadly
+    can be prone to ambiguity.  For the last decade, I have worked on models of the
+    concurrency aspects of CPUs, as well as GPUs and more recently operating systems.
+    Along the way we have developed tools which have assisted and informed our understanding
+    and the design of our models: \n- the herd tool takes as input a concurrency model
+    and a litmus test, and returns the architecturally permissible behaviors of that
+    test under that model;\n- the diy tool generates systematic families of litmus
+    tests;\n- the litmus tool runs those tests on hardware.\nThose tools are driven
+    by a domain-specific language called cat, whose semantics we have formalised with
+    the help of Patrick Cousot. We initially developed cat to make communicating our
+    models faster and\neasier. But to our delight it has grown into much more than
+    a mere convenience. What makes cat powerful is two-fold:\n- a syntax to describe
+    concurrency models concisely and uniformly;\n- a formal semantics which means
+    that anyone writing a model in cat is assured that their model has a well defined
+    and coherent meaning.\nAdditionally, the fact that the cat language is implemented
+    within the herd tool ensures that a cat model is machine-readable and executable.
+    In turn this means that one can check their understanding of the concurrency aspects
+    of a given system, and generate tests to probe the differences between what the
+    model prescribes and what the concrete systems exhibit. In other words, we have
+    come quite a long way from the prose definitions of ten years ago. Encouragingly,
+    various organisations have now officially adopted cat as a mean to describe their
+    concurrency model, including Arm and the Linux kernel."
+  speakers:
+  - id: jade_alglave
+    name: Jade Alglave
+    affiliation: Arm
+    url: ~
+    bio: Jade is part of the architecture group at Arm, where she is in charge of
+      the memory model, and other concurrency related areas. She is a professor of
+      Computer Science at University College London.
+    website: http://www0.cs.ucl.ac.uk/staff/j.alglave/
 - id: 15
   title: Miniaturize All States!
   type: talk
@@ -186,6 +226,7 @@ talks:
   speakers:
   - id: hillel_wayne
     name: Hillel Wayne
+    affiliation: Self
     url: ~
     bio: Hillel Wayne is a formal verification consultant and the author of Practical
       TLA+. In his free time, he juggles and makes chocolate. He’s legally allowed
@@ -235,9 +276,7 @@ talks:
 - id: 25
   title: Reliable Stack Traces, the Reality of Myth
   type: talk
-  hashtags:
-  - DWARF
-  - Performance
+  hashtags: Performance
   abstract: Debug information is a hidden and obscure component of our computing infrastructure
     obviously used by debuggers, but also playing a key role in program analysis tools,
     and, most surprisingly, in the runtime of programming languages. For instance
@@ -344,7 +383,7 @@ talks:
 - id: 43
   title: 'Probabilistic Programming: The What, Why and How'
   type: talk
-  hashtags: ProbabilisticProgramming
+  hashtags: Probabilistic Prog.
   abstract: f(x) = y, but y = 5. What's the probability that x =1? Probabilistic programming
     is the idea of describing probabilistic models as programs, to then automatically
     infer how our beliefs about model parameters change given observed data. In recent
