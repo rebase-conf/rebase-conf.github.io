@@ -171,6 +171,28 @@ talks:
       the memory model, and other concurrency related areas. She is a professor of
       Computer Science at University College London.
     website: http://www0.cs.ucl.ac.uk/staff/j.alglave/
+- id: 12
+  title: Speculation in Smart Contracts
+  type: talk
+  hashtags: SmartContracts
+  abstract: This talk will give an overview of Algorand's smart contract strategy.
+  speakers:
+  - id: maurice_herlihy
+    name: Maurice Herlihy
+    affiliation: Brown University
+    url: ~
+    bio: Maurice Herlihy has an A.B. in Mathematics from Harvard University, and a
+      Ph.D. in Computer Science from M.I.T. He has served on the faculty of Carnegie
+      Mellon University and the staff of DEC Cambridge Research Lab. He is the recipient
+      of the 2003 Dijkstra Prize in Distributed Computing, the 2004 Gödel Prize in
+      theoretical computer science, the 2008 ISCA influential paper award, the 2012
+      Edsger W. Dijkstra Prize, and the 2013 Wallace McDowell award. He received a
+      2012 Fulbright Distinguished Chair in the Natural Sciences and Engineering Lecturing
+      Fellowship, and he is fellow of the ACM, a fellow of the National Academy of
+      Inventors, the National Academy of Engineering, and the National Academy of
+      Arts and Sciences.
+    twitter: mpherlihy
+    website: http://cs.brown.edu/~mph/
 - id: 15
   title: Miniaturize All States!
   type: talk
@@ -476,4 +498,3 @@ talks:
       no one will ever use.
     twitter: jimmyhmiller
     website: https://jimmyhmiller.github.io/
-    twitter: jimmyhmiller
