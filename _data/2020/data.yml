@@ -380,6 +380,31 @@ talks:
       off concurrent data structure semantics for performance.
     twitter: PayerHannes
     website: https://research.google/people/HannesPayer/
+- id: 42
+  title: 'Project Verona: A Programming language for safely building infrastructure.'
+  type: talk
+  hashtags: Verona
+  abstract: In this talk, I will discuss Project Verona, a research project to build
+    a new _infrastructure programming language_, that is mid-high-level systems programming.
+    Verona is targeted at high-scale, high-performance and high-security, but not
+    for building the lowest level of a system such as the concurrency primitives,
+    schedulers and memory managers. This focus enables us to change the rules of the
+    game compared to languages that allow low-level systems programming, such as C++
+    and Rust. I will present the aims and motivations of the project, its current
+    status, and demo the existing prototype.
+  speakers:
+  - id: matthew_parkinson
+    name: Matthew Parkinson
+    affiliation: Microsoft Research
+    url: ~
+    bio: Matthew Parkinson has worked at Microsoft Research for the last decade, and
+      is part of the Confidential Computing research group. His research has focussed
+      on memory safety and concurrent data structures, with publications ranging from
+      programming languages and runtime design through to software verification.  He
+      has co-developed a memory manager, [snmalloc](https://github.com/microsoft/snmalloc),
+      and is currently working on [Project Verona](https://github.com/microsoft/verona).
+    twitter: ParkyMatthew
+    website: https://www.microsoft.com/en-us/research/people/mattpark
 - id: 43
   title: 'Probabilistic Programming: The What, Why and How'
   type: talk
@@ -449,5 +474,6 @@ talks:
       data transformation and analysis systems. In his spare time he enjoys exploring
       programming language theory, reading analytic philosophy, and writing code that
       no one will ever use.
+    twitter: jimmyhmiller
     website: https://jimmyhmiller.github.io/
     twitter: jimmyhmiller
