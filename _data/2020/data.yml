@@ -282,6 +282,10 @@ talks:
   title: Developing the Wolfram Language Compiler
   type: talk
   hashtags: Mathematica
+  abstract: |-
+    The Wolfram Language is a high level computation language used in many technical, scientific, engineering, mathematical, and computing fields. It is widely used in practice and, in particular, it is the foundation of Wolfram Mathematica and Wolfram Alpha.
+
+    This talk describes the Wolfram Language Compiler; a long term project for compilation of Wolfram programs. The talk will show how clever use of parametric types, code specialization, and optimization techniques allow compilation of  Wolfram Language programs to achieve performance that rivals hand-tuned C code.  It will show how the compiler enables features for scientific computation (such as automatic differentiation) and how it provides a key new implementation layer for future development of the language. It will also show how the type system allows disambiguating and optimizing function calls despite seemingly ambiguous input.  Finally, it will demonstrate how the Wolfram compiler is used to target specialized output such as WebAssembly) or accelerators (e.g. CUDA or FPGAs).
   speakers:
   - id: tom_wickham-jones
     name: Tom Wickham-Jones
