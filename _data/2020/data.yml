@@ -353,6 +353,34 @@ talks:
       a degree in Computer Science which he obtained from University of Kaiserslautern.
     twitter: nim_lang
     website: https://nim-lang.org/
+- id: 31
+  title: Building a Polyglot Language VM in Java
+  type: talk
+  hashtags:
+  - Truffle
+  - Graal
+  abstract: In this talk, I will introduce the concepts behind GraalVM that allow
+    us to build composable high-performance language implementations and tools. Most
+    high-performance language virtual machines duplicate language semantics in the
+    interpreter, compiler, and runtime system. This violates the principle to not
+    repeat yourself. In contrast, with Truffle, languages are defined solely by writing
+    an interpreter. The runtime system composes interpreter nodes of multiple languages
+    in one compilation unit to support polyglot interoperability and compilation.
+    By treating the host language as just another language, we can reuse embeddings
+    across languages. A language agnostic instrumentation mechanism enables us to
+    build tools that attach cross-cutting concerns to applications with zero overhead.
+  speakers:
+  - id: christian_humer
+    name: Christian Humer
+    affiliation: Oracle Labs Zurich
+    url: ~
+    bio: Christian Humer is a researcher at Oracle Labs in Zurich, working on the
+      GraalVM project. He develops the Truffle framework which aims to make all programming
+      languages fast, composable and embeddable. His research interests include virtual
+      machines, partial evaluation, and domain-specific languages. He is the main
+      author of Truffle DSL, a domain-specific language to simplify the development
+      of Truffle interpreters.
+    twitter: grashalm_
 - id: 32
   title: 'Raku: Glue as Language'
   type: talk
