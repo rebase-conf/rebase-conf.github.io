@@ -354,21 +354,14 @@ talks:
     twitter: nim_lang
     website: https://nim-lang.org/
 - id: 31
-  title: Building a Polyglot Language VM in Java
+  title: 'Towards the tower of Babel: a Polyglot Language VM in Java'
   type: talk
   hashtags:
   - Truffle
   - Graal
-  abstract: In this talk, I will introduce the concepts behind GraalVM that allow
-    us to build composable high-performance language implementations and tools. Most
-    high-performance language virtual machines duplicate language semantics in the
-    interpreter, compiler, and runtime system. This violates the principle to not
-    repeat yourself. In contrast, with Truffle, languages are defined solely by writing
-    an interpreter. The runtime system composes interpreter nodes of multiple languages
-    in one compilation unit to support polyglot interoperability and compilation.
-    By treating the host language as just another language, we can reuse embeddings
-    across languages. A language agnostic instrumentation mechanism enables us to
-    build tools that attach cross-cutting concerns to applications with zero overhead.
+  abstract: |-
+    Meet the GraalVM, a technology you can use to build composable high-performance language implementations and tools. Most production-level virtual machines duplicate their target language's semantics in the interpreter, in the compiler, and in the runtime system. This violates DRY and is hell on the maintainers as the target evolves. In contrast, Truffle lets you define languages by simply writing their interpreter.
+    That interpreter can be seamlessly combined with interpreters of different languages in a single just-in-time compilation unit. By treating the host language as just another language, you can reuse embeddings across languages. A language agnostic instrumentation mechanism enables us to build tools that attach cross-cutting concerns to applications with zero overhead.
   speakers:
   - id: christian_humer
     name: Christian Humer
