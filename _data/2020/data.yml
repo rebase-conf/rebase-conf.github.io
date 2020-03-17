@@ -523,3 +523,29 @@ talks:
       no one will ever use.
     twitter: jimmyhmiller
     website: https://jimmyhmiller.github.io/
+- id: 46
+  title: The Rust Compiler - A Deep Dive
+  type: talk
+  hashtags: Rust
+  abstract: Have you been using Rust for some time and find yourself wondering how
+    Rust works underneath the hood? Are you new to Rust and want a better understanding
+    of how the language does the things it does? Come to this talk for an overview
+    of the Rust compiler and what makes it special. Then we will take a deep dive
+    into the Borrow Checker - borrowing is one of the most unique parts of the Rust
+    language and the Borrow Checker is what allows you to do it safely! Walk away
+    understanding exactly what the Borrow Checker is, how it works, and how you can
+    harness its power to take your code and your applications to new heights.
+  speakers:
+  - id: nell_shamrell-harrington
+    name: Nell Shamrell-Harrington
+    affiliation: Mozilla
+    url: ~
+    bio: Nell Shamrell-Harrington is a Senior Staff Research Engineer on the Rust
+      team at Mozilla. Previously she was a Principal Software Development Engineer
+      and Community Engineering Lead at Chef. Additionally, she is a member of the
+      Board of Directors of Operation Code, a non-profit dedicated to teaching military
+      veterans software engineering skills. She specializes in Open Source, Rust,
+      Ruby, Rails, Regular Expressions, and DevOps and has traveled the world speaking
+      on these topics. She is a very proud parent to two rabbits.
+    twitter: nellshamrell
+    website: https://www.nellshamrell.com
