@@ -427,6 +427,35 @@ talks:
       off concurrent data structure semantics for performance.
     twitter: PayerHannes
     website: https://research.google/people/HannesPayer/
+- id: 35
+  title: 'A Ray of Hope: Array Programming for the 21st Century'
+  type: talk
+  hashtags: NewSpeak
+  abstract: "The ideas of APL and its successors, the array programming languages,
+    \nwere two generations ahead of their time.  These languages are based on \nthe
+    notion that everything is a tensor, and all operations are \nrank-polymorphic:
+    they extend automatically to tensors of any rank. \nThese ideas are perfectly
+    suited to an era of machine learning, large \nscale data, GPUs and other accelerators.
+    Building on recent academic \nresearch, we are building ShapeRank, a new statically
+    typed, purely \nfunctional language for industrial use, that extends rank-polymorphism
+    \nto streams.\nWe'll introduce the key ideas and show how they are realized in
+    ShapeRank."
+  speakers:
+  - id: gilad_bracha
+    name: Gilad Bracha
+    affiliation: F5 Networks
+    url: ~
+    bio: Gilad Bracha is the creator of the Newspeak programming language and a well
+      known researcher in the area of object-oriented programming languages. He was
+      awarded the senior Dahl-Nygaard prize in 2017. Previously, he has worked at
+      Google, as a VP at SAP Labs in Palo Alto, a Distinguished Engineer at Cadence,
+      and a Computational Theologist and Distinguished Engineer at Sun. He has authored
+      or co-authored several books including the Java Language and Virtual Machine
+      Specifications, and the Dart Programming Language. Prior to joining Sun, he
+      worked on Strongtalk, the Animorphic Smalltalk System. He received his B.Sc
+      in Mathematics and Computer Science from Ben Gurion University in Israel and
+      a Ph.D. in Computer Science from the University of Utah.
+    website: https://bracha.org
 - id: 42
   title: 'Project Verona: A Programming language for safely building infrastructure.'
   type: talk
