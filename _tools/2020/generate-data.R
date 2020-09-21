@@ -77,7 +77,7 @@ create_talk <- function(x) {
     discard(is_empty_string)
 }
 
-talks_raw <- sheets_read(SHEET_ID, trim_ws=T, na="")
+talks_raw <- sheets_read(SHEET_ID, trim_ws=T, na="???")
 
 options(dplyr.width = Inf)
 
@@ -87,7 +87,6 @@ talks_df <-
     mutate_all(replace_na, replace="") %>%
     mutate(
         show=if_else(show == "yes", TRUE, FALSE),
-        active=if_else(active == "", TRUE, isTRUE(active)),
         session_id=map_chr(title, make_session_id),
         speaker_id=map_chr(name, make_speaker_id),
         talk_id=as.integer(talk_id),
