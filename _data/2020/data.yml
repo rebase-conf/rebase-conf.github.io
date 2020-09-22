@@ -672,35 +672,21 @@ talks:
   time: PST
   room: ~
   hashtags: Hotspot
-  abstract: Cliff Click was the CTO and Co-Founder of H2O, makers of H2O, the open
-    source math and machine learning engine for Big Data. Cliff wrote his first compiler
-    when he was 15 (Pascal to TRS Z-80!), although Cliff’s most famous compiler is
-    the HotSpot Server Compiler (the Sea of Nodes IR). Cliff helped Azul Systems build
-    an 864 core pure-Java mainframe that keeps GC pauses on 500Gb heaps to under 10ms,
-    and worked on all aspects of that JVM. Before that he worked on HotSpot at Sun
-    Microsystems, and was at least partially responsible for bringing Java into the
-    mainstream. Cliff is invited to speak regularly at industry and academic conferences
-    and has published many papers about HotSpot technology. He holds a PhD in Computer
-    Science from Rice University and about 20 patents.
   speakers:
   - id: cliff_click
     name: Cliff Click
     affiliation: Self
     url: ~
-    bio: Cliff Click was the CTO of Neurensic, and CTO and Co-Founder of h2o.ai (formerly
-      0xdata), a firm dedicated to creating a new way to think about web-scale data
-      storage and real-time analytics. I wrote my first compiler when I was 15 (Pascal
-      to TRS Z-80!), although my most famous compiler is the HotSpot Server Compiler
-      (the Sea of Nodes IR). I helped Azul Systems build an 864 core pure-Java mainframe
-      that keeps GC pauses on 500Gb heaps to under 10ms, and worked on all aspects
-      of that JVM. Before that I worked on HotSpot at Sun Microsystems, and am at
-      least partially responsible for bringing Java into the mainstream. Previously
-      I was with Motorola where I helped deliver industry leading SpecInt2000 scores
-      on PowerPC chips, and before that I researched compiler technology at HP Labs.
-      I am invited to speak regularly at industry and academic conferences including
-      JavaOne, JVM, ECOOP and VEE; I’ve served on the Program Committee of many conferences
-      (including PLDI and OOPSLA); and have published many papers about HotSpot technology.
-      I hold a PhD in Computer Science from Rice University and about 20 patents.
+    bio: Cliff Click was the CTO and Co-Founder of H2O, makers of H2O, the open source
+      math and machine learning engine for Big Data. Cliff wrote his first compiler
+      when he was 15 (Pascal to TRS Z-80!), although Cliff’s most famous compiler
+      is the HotSpot Server Compiler (the Sea of Nodes IR). Cliff helped Azul Systems
+      build an 864 core pure-Java mainframe that keeps GC pauses on 500Gb heaps to
+      under 10ms, and worked on all aspects of that JVM. Before that he worked on
+      HotSpot at Sun Microsystems, and was at least partially responsible for bringing
+      Java into the mainstream. Cliff is invited to speak regularly at industry and
+      academic conferences and has published many papers about HotSpot technology.
+      He holds a PhD in Computer Science from Rice University and about 20 patents.
     twitter: cliff_click
     website: http://cliffc.org/blog/
 - id: 25
