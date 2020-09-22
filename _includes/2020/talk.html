@@ -24,8 +24,10 @@
     </a>
     {% endif %}
     <a href="#{{ talk.title | slugify }}" data-overlay="talk">
-      <span class="fab fa-readme" aria-hidden="true"></span>
-      abstract
+      {% if talk.abstract %}
+        <span class="fab fa-readme" aria-hidden="true"></span>
+        abstract
+      {% endif  %}
     </a>
   </p>
 </div>
