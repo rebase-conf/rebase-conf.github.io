@@ -2,6 +2,9 @@ talks:
 - id: 1
   title: 'Technology Today: A Paucity of Integrity and Imagination'
   type: talk
+  time: PST
+  date: '17'
+  room: ~
   hashtags: Ethics
   abstract: Judging by the experiences of Robert Grimm and a close confidante, both
     academe and industry have long given up even trying to conduct their business
@@ -31,6 +34,7 @@ talks:
 - id: 2
   title: Back to the Future! A History of UIs through Trends and Mass Culture
   type: talk
+  room: ~
   hashtags: UI
   speakers:
   - id: paola_bisogno
@@ -49,60 +53,94 @@ talks:
     twitter: paobi_
     website: https://www.paobi.it/
 - id: 3
-  title: Even More Modern C++
+  title: Speculation in Smart Contracts
   type: talk
-  hashtags: C++
-  abstract: 'More than 20 years after its first standardization, C++ is a success
-    story again. With the introduction of new features of C++11 and C++14, C++ has
-    become the number one programming language when performance really matters. And
-    the evolution continues: with C++17 and C++20 we finish the development of the
-    "Modern C++ era" and open a new era of "even more Modern C++". Time to look at
-    what''s coming up.'
+  time: EST
+  date: '17,18'
+  room: ~
+  hashtags: SmartContracts
+  abstract: I will give an overview of Algorand's smart contract strategy.
   speakers:
-  - id: nicolai_josuttis
-    name: Nicolai Josuttis
+  - id: maurice_herlihy
+    name: Maurice Herlihy
+    affiliation: Brown University
     url: ~
-    bio: 'Nicolai Josuttis is well known in the programming community because he not
-      only speaks and writes with authority (being the (co-)author of world-wide best
-      sellers: [*The C++ Standard Library*](http://www.cppstdlib.com), [*C++ Templates*](http://www.tmplbook.com),
-      [*C++17 - The Complete Guide*](http://www.cppstd17.com), and [*C++ Move Semantics*](http://www.cppmove.com)),
-      but is also an innovative presenter, having talked at various conferences and
-      events. He is an independent trainer, system architect, technical manager, author,
-      and consultant.'
-    twitter: NicoJosuttis
-    website: http://www.josuttis.com
+    bio: Maurice Herlihy has an A.B. in Mathematics from Harvard University, and a
+      Ph.D. in Computer Science from M.I.T. He has served on the faculty of Carnegie
+      Mellon University and the staff of DEC Cambridge Research Lab. He is the recipient
+      of the 2003 Dijkstra Prize in Distributed Computing, the 2004 Gödel Prize in
+      theoretical computer science, the 2008 ISCA influential paper award, the 2012
+      Edsger W. Dijkstra Prize, and the 2013 Wallace McDowell award. He received a
+      2012 Fulbright Distinguished Chair in the Natural Sciences and Engineering Lecturing
+      Fellowship, and he is fellow of the ACM, a fellow of the National Academy of
+      Inventors, the National Academy of Engineering, and the National Academy of
+      Arts and Sciences.
+    twitter: mpherlihy
+    website: http://cs.brown.edu/~mph/
 - id: 4
-  title: 'Exercises in Dataflow and Array Programming: Into the Future with Neural
-    Networks'
+  title: 'APIs are Illness and Cure: The Software Heterogeneity Problem in Web Programming'
   type: talk
-  hashtags:
-  - Aspects
-  - OpenSim
-  abstract: Dataflow programs are networks of connected nodes representing operations
-    on the data that flows through them. Array programs support powerful, parallelizable
-    operations on fixed-size data. Dataflow and array languages have been around for
-    many decades, but relegated to niche engineering fields. Covering a new part of
-    the 2nd edition of the speaker's book "Exercises in Programming Style", this talk
-    revisits old ideas in the context of the brave new world of deep learning.
+  room: ~
+  hashtags: APIs
+  abstract: It is easier than ever before to build complex web applications. But developer
+    tooling for understanding, testing, and maintaining these systems has not caught
+    up. Something I heard over and over again when starting Akita was that developers
+    could log, measure, monitor, but they have a hard time understanding what was
+    really going on with their software systems. A major challenge comes from the
+    fact that modern web applications run across many heterogenous components, often
+    communicating via remote procedure calls. Current software analysis methods do
+    not work here, as network calls across heterogeneous components subvert language-level
+    modelings. And using network tools alone do not yield the full picture. The result
+    is that developers end up piecing the whole story together through reading code,
+    logs, and documentation. At Akita, we observe that network-based application programming
+    interfaces (APIs) are both a root cause of what we call the Software Heterogeneity
+    Problem—and also the key to the solution. The proliferation of APIs for both internal
+    and external use, with the rise of service-oriented architectures and the growth
+    of the API economy, have made it easy to quickly build applications that are amalgams
+    of cross-service network calls. At the same time, there is consolidation around
+    a handful of interface definition languages for web APIs. This makes it possible
+    for us to address the Software Heterogeneity problem by applying programming languages
+    techniques at the API layer. In this talk, I will introduce the Software Heterogeneity
+    Problem, show how we at Akita are solving this problem at the API layer, and outline
+    API-level PL problems we can solve as a community.
   speakers:
-  - id: cristina_lopes
-    name: Cristina Lopes
-    affiliation: University of California, Irvine
+  - id: jean_yang
+    name: Jean Yang
+    affiliation: Akita Software
     url: ~
-    bio: Cristina (Crista) Lopes is a Professor at University of California, Irvine,
-      with interests in Programming Languages, Software Engineering, Distributed Virtual
-      Environments, and just about anything that relates to the art of programming.
-      She is an IEEE Fellow, an ACM Distinguished Scientist, a twice-elected member
-      of the SIGPLAN Executive Committee, and Editor in Chief of The Art, Science,
-      and Engineering of Programming. She is the recipient of the 2016 Pizzigati Prize
-      for Software in the Public Interest for her work in the OpenSimulator virtual
-      world platform. Her book "Exercises in Programming Style" has gained rave reviews,
-      including being chosen as "Notable Book"  by the ACM Best of Computing reviews.
-    twitter: cristalopes
-    website: https://www.ics.uci.edu/~lopes/
+    bio: 'Hi there. I’m Jean. I started Akita because I wanted to build practical,
+      principled tooling for modern software systems. I’ve spent my career in pursuit
+      of better software tools. I grew up programming—and it felt like magic that
+      a kid like me could just conjure software. In college, I fell in love with programming
+      tools: helping people make magic faster felt like pretty much the coolest thing
+      a person could do. This was why I got my PhD in programming languages, at MIT.
+      After that, I was a tenure-track professor at Carnegie Mellon University.  The
+      whole time I was in research, I wanted to build tools that could majorly help
+      practicing software developers. Early in my PhD, I got obsessed with two problems
+      around this that I couldn’t solve using application-level techniques. First,
+      the legacy software problem: you can’t just easily port most code to a fancy
+      new language or type system. And even if you could, you run into the second
+      problem: the heterogeneity of software systems. Modern software is an ecosystem,
+      with your data stores, data streams, services, and third-party APIs. This is
+      how I became obsessed with APIs: APIs let you encapsulate any code written in
+      any language—and you can apply language design principles, just one zoom level
+      up. This is why, while at CMU, I started doing research about APIs. This takes
+      us to Spring 2018. Cambridge Analytica happened. GDPR was just about to come
+      out. I realized that we were entering into a new era of software, where people
+      were realizing that not having visibility or control over your software can
+      hold you back in a major way. I called everyone on my LinkedIn who would talk
+      to me and asked them about their tooling needs. When I realized there were big
+      and interesting problems I was uniquely positioned to solve with my API tooling
+      ideas, I just couldn’t miss out on the action. I took leave from CMU, sold my
+      furniture, and drove across the country to the Bay Area to start Akita.'
+    twitter: jeanqasaur
+    website: http://jeanyang.com
 - id: 5
   title: Quantitative Types in Idris 2
   type: talk
+  time: Not ASIA
+  date: '17,19'
+  room: ~
   hashtags: Idris
   abstract: Dependent types allow us to express precisely *what* a function is intended
     to do.  Recent work on Quantitative Type Theory (QTT) extends dependent type systems
@@ -131,71 +169,274 @@ talks:
       language.
     twitter: edwinbrady
     website: https://www.type-driven.org.uk/edwinb/
+- id: 6
+  type: talk
+  time: PST
+  date: any
+  room: ~
+  hashtags: Github
+  speakers:
+  - id: oege_de_moor
+    name: Oege de Moor
+    affiliation: Github
+    url: ~
+    bio: Oege de Moor is the CEO and Co-Founder of Semmle. Prior to founding Semmle,
+      he spent 21 years as a Professor of Computer Science at Oxford. During a sabbatical
+      from Oxford, he joined Microsoft as a Visiting Researcher, working with Charles
+      Simonyi (the original creator of Word and Excel) on a new type of programming
+      environment. While at Microsoft, he became interested in how software was becoming
+      increasingly more complex, and how this contributed to security vulnerabilities
+      and other bugs being extremely hard to identify and eradicate.  When Oege returned
+      to Oxford, he decided to found Semmle to start cracking this problem, leaning
+      on numerous insights and years of experience working with security-forward companies.
+      Under Oege's leadership, the Semmle team built the QL engine behind its LGTM
+      platform to find vulnerability variants, leaning on insights from its community
+      of 700,000 developers, and extend any company's security research team.
+    twitter: oegerikus
+    website: https://blog.semmle.com/authors/oege-de-moor/
+- id: 7
+  type: talk
+  room: ~
+  hashtags: GoogleBrain
+  speakers:
+  - id: matthew_johnson
+    name: Matthew Johnson
+    affiliation: Google
+    url: ~
+    twitter: SingularMattrix
+    website: https://people.csail.mit.edu/mattjj/
+- id: 8
+  title: On the Future of Flight Software
+  type: talk
+  time: PST - afternoon
+  date: '19'
+  room: ~
+  hashtags: NASA
+  abstract: 'In recent years, mishaps in commercial aviation have been predominantly
+    due to software; meanwhile software continues to grow more complex. Combining
+    this with the on-going trend toward converting aviation hardware and mechanical
+    systems to software, and the popular claim that aircraft are already more than
+    half software, it is clear that the future of flight software faces a formidable
+    challenge. The FAA provides regulations through documents such as DO-333, but
+    little guidance as to how to achieve them. In short: for software to be certified
+    to fly, the chance of a safety-critical failure must be less than one in a billion.
+    So how do we do that? Particularly how do we achieve a sustainable, scalable schema
+    for future avionics? We will overview the difficulties that face fabricating formidable
+    flight software, break out the challenges facing future flight software, and pose
+    possibilities for boldly going where no software has gone before.'
+  speakers:
+  - id: kristin_yvonne_rozier
+    name: Kristin Yvonne Rozier
+    affiliation: Iowa State
+    url: ~
+    bio: NSF CAREER Award winner and recipient of the Inaugural Initiative-Inspiration-Impact
+      Award from Women in Aerospace, Kristin Yvonne Rozier joined the faculty of the
+      Aerospace Engineering and CS in Fall, 2016. Previous to that she spent 14 years
+      as a Research Scientist at NASA. She contributed research to the Aeroacoustics,
+      and Safety-Critial Avionics groups and to the Robust Software Engineering, and
+      Discovery and Systems Health groups in the Intelligent Systems Division. Most
+      recently, Rozier was a primary contributing researcher to the Next Generation
+      Air Transportation System (NextGen) Air Traffic Management project of the Airspace
+      Systems Program at NASA. She also served as Principal Investigator of an ARMD
+      Seedling project advancing System and Safety Health Management for Unmanned
+      Aerial Systems (UAS).
+    twitter: YvonneRozier
+    website: https://www.aere.iastate.edu/kyrozier/
+- id: 9
+  type: talk
+  room: ~
+  hashtags: Python
+  speakers:
+  - id: joe_pamer
+    name: Joe Pamer
+    affiliation: Facebook
+    url: ~
+    bio: Joe Pamer has spent the last two decades developing cutting-edge compilers,
+      programming languages, and IDEs across industry and academia. Before joining
+      Facebook to help lead their programming language efforts, he was instrumental
+      in the design and development of the F#, TypeScript, and Swift programming languages,
+      and has contributed to many other major developer technologies ranging from
+      .NET to VSCode to Clang. His current mission is to radically improve the way
+      we approach developer tooling and infrastructure by applying machine learning
+      techniques to every link in the developer toolchain.
+    twitter: jopamer
+    website: http://noteven.org
+- id: 10
+  title: 'PL and HCI: Better Together'
+  type: talk
+  time: EST
+  date: '19'
+  room: ~
+  hashtags: HCI
+  abstract: 'Programming Languages (PL), Human-Computer Interaction (HCI), and Software
+    Engineering (SE) have a key overlapping interest: getting computers to do what
+    we want. Each field has a different balance of methods and beneficiaries, from
+    novice programmers to professional programmers. This talk will highlight the overlaps
+    between HCI and PL, a powerful but under-explored pairing with much mutual benefit.
+    HCI is concerned with creating new ways of interacting with computers and using
+    computers to enhance human-to-human interaction, as well as studying how existing
+    systems impact individuals and society. PL is concerned with the theory, design,
+    and implementation of programming languages, program analyses, and program transformations.
+    I will highlight several existing systems that demonstrate how PL and HCI are
+    better together, as well as dispel common misconceptions and lay out some promising
+    future research directions.'
+  speakers:
+  - id: elena_glassman
+    name: Elena Glassman
+    affiliation: Harvard
+    url: ~
+    bio: Elena Glassman is a the Stanley A. Marks and William H. Marks Assistant Professor
+      at the Radcliffe Institute and a professor of computer science at the Harvard
+      Paulson School of Engineering and Applied Sciences specializing in human-computer
+      interaction. She designs, builds and evaluates systems for comprehending and
+      interacting with intelligent systems and population-level structure in large
+      code and data corpora. Prior to joining Harvard as an assistant professor, Glassman
+      earned BS, MEng and PhD degrees from MIT EECS and served as a postdoctoral scholar
+      at the University of California, Berkeley EECS department and Berkeley Institute
+      for Design.
+    twitter: roboticwrestler
+    website: https://glassmanlab.seas.harvard.edu
 - id: 11
-  title: Herding Cats
+  title: Co-Design for High-Performance Computing Software Systems
   type: talk
-  hashtags: Concurrency
-  abstract: "Concurrent programming is hard - picture a mob of musicians in an auditorium
-    and the possible interactions between them. How to orchestrate them? The orchestration
-    in the case of multiprocessor systems for example is given in the technical documents
-    which accompany those systems. Unfortunately, most of those documents have historically
-    been quite sparse in the area of concurrency, and relatively obscure. This is
-    partly due to the fact that those documentations are written in prose, which sadly
-    can be prone to ambiguity.  For the last decade, I have worked on models of the
-    concurrency aspects of CPUs, as well as GPUs and more recently operating systems.
-    Along the way we have developed tools which have assisted and informed our understanding
-    and the design of our models: \n- the herd tool takes as input a concurrency model
-    and a litmus test, and returns the architecturally permissible behaviors of that
-    test under that model;\n- the diy tool generates systematic families of litmus
-    tests;\n- the litmus tool runs those tests on hardware.\nThose tools are driven
-    by a domain-specific language called cat, whose semantics we have formalised with
-    the help of Patrick Cousot. We initially developed cat to make communicating our
-    models faster and\neasier. But to our delight it has grown into much more than
-    a mere convenience. What makes cat powerful is two-fold:\n- a syntax to describe
-    concurrency models concisely and uniformly;\n- a formal semantics which means
-    that anyone writing a model in cat is assured that their model has a well defined
-    and coherent meaning.\nAdditionally, the fact that the cat language is implemented
-    within the herd tool ensures that a cat model is machine-readable and executable.
-    In turn this means that one can check their understanding of the concurrency aspects
-    of a given system, and generate tests to probe the differences between what the
-    model prescribes and what the concrete systems exhibit. In other words, we have
-    come quite a long way from the prose definitions of ten years ago. Encouragingly,
-    various organisations have now officially adopted cat as a mean to describe their
-    concurrency model, including Arm and the Linux kernel."
+  time: EST
+  date: '15,20'
+  room: ~
+  hashtags: HPC
+  abstract: High-performance computing (HPC) systems are designed for pursuing extreme-scale
+    parallelism and computational power to accelerate various computational-expensive
+    applications in scientific computing. HPC software stack is deep and wide, mainly
+    due to the complex computational requirements from various domain-specific algorithms
+    and the diverse capacities provided by the underlying hardware architecture. For
+    instance, domain-specific language or multi-layer runtime library is a common
+    approach for developers to decouple the complex scientific algorithms from parallel
+    programming (i.e., deep). To fully utilize different hardware components, different
+    parallel programming models and runtime subsystems often coexist in an application
+    software stack such as the popular MPI + “X” programming model (i.e., wide). Although
+    abstraction allows developers and researchers to isolate innovations for different
+    software components, experiences have indicated that co-design is the key strategy
+    to achieve exascale computing and beyond. Co-design across the deep and wide HPC
+    software stack is a very challenging task. However, the potential performance
+    gain can be significant. In this talk, I will share the experiences and insights
+    from several projects that explored the co-design approach across applications
+    and parallel runtime subsystems.
   speakers:
-  - id: jade_alglave
-    name: Jade Alglave
-    affiliation: Arm
+  - id: min_si
+    name: Min Si
+    affiliation: Argonne
     url: ~
-    bio: Jade is part of the architecture group at Arm, where she is in charge of
-      the memory model, and other concurrency related areas. She is a professor of
-      Computer Science at University College London.
-    website: http://www0.cs.ucl.ac.uk/staff/j.alglave/
+    bio: Dr. Min Si is an Assistant Computer Scientist at Argonne National Laboratory
+      working with the Programming Models and Runtime Systems group. Min’s research
+      interests include communication runtime in high-performance computing and parallel
+      programming models. Min was previously an Enrico Fermi Postdoctoral Scholar
+      of Argonne National Laboratory. She received the Ph.D. degree in computer science
+      from the University of Tokyo. Her doctoral dissertation focused on the optimization
+      of high performance message passing communication on massively parallel multi-/many-core
+      architectures. Min is the recipient of the 2018 IEEE-CS Technical Consortium
+      on High Performance Computing (TCHPC) Early Career Researchers Award for Excellence
+      in High Performance Computing, and won the Karsten Schwan Best Paper Award at
+      HPDC 2018.
+    twitter: N/A
+    website: https://www.mcs.anl.gov/~minsi/
 - id: 12
-  title: Speculation in Smart Contracts
+  title: Intermittent Computer Systems on Earth and in Space
   type: talk
-  hashtags: SmartContracts
-  abstract: This talk will give an overview of Algorand's smart contract strategy.
+  time: EST
+  date: '17,19,20'
+  room: ~
+  hashtags: Architecture
+  abstract: 'Intermittent computing is an emerging computational model that allows
+    software to operate reliably on devices that harvest energy from their environment.  Energy-harvesting
+    frees devices from the need for batteries, battery replacements, tethered power,
+    and regular maintenance, enabling deployment to far remote installations, such
+    as in civil infrastructure and outer space. This does not come for free: power
+    failures impede progress and can leave a system''s memory and execution state
+    inconsistent.  Unpredictable future energy availability, and the difficulty of
+    precisely characterizing device power consumption makes building a reliable intermittent
+    system a challenge.   I describe our experience with intermittent computing.  I
+    describe our recent efforts to mathematically formalize the behavior of intermittent
+    software execution, and lessons learned from these formal modeling efforts.  I
+    discuss concrete incarnations of our intermittent and energy-harvesting computing
+    results: a terrestrial, long-range batteryless camera system with the ability
+    to do on-device machine learning and transmit over 10km distances with no batteries
+    and two tiny, intermittent computing nanosatellites that sense, compute on sensor
+    data, and communicate with Earth.'
   speakers:
-  - id: maurice_herlihy
-    name: Maurice Herlihy
-    affiliation: Brown University
+  - id: brandon_lucia
+    name: Brandon Lucia
+    affiliation: CMU
     url: ~
-    bio: Maurice Herlihy has an A.B. in Mathematics from Harvard University, and a
-      Ph.D. in Computer Science from M.I.T. He has served on the faculty of Carnegie
-      Mellon University and the staff of DEC Cambridge Research Lab. He is the recipient
-      of the 2003 Dijkstra Prize in Distributed Computing, the 2004 Gödel Prize in
-      theoretical computer science, the 2008 ISCA influential paper award, the 2012
-      Edsger W. Dijkstra Prize, and the 2013 Wallace McDowell award. He received a
-      2012 Fulbright Distinguished Chair in the Natural Sciences and Engineering Lecturing
-      Fellowship, and he is fellow of the ACM, a fellow of the National Academy of
-      Inventors, the National Academy of Engineering, and the National Academy of
-      Arts and Sciences.
-    twitter: mpherlihy
-    website: http://cs.brown.edu/~mph/
+    bio: 'Brandon is a Professor at Carnegie Mellon University working on hardware
+      and software computer systems to answer the question: "How capable can a computing
+      system be, given physical restrictions on its form factor, input power, energy
+      storage, or other resource constraints?"  His research has been recognized with
+      8 best paper  awards, the 2019 IEEE TCCA Young Computer Architect Award and
+      the 2015 Bell Labs Prize.'
+    twitter: blucia0a
+    website: https://brandonlucia.com
+- id: 13
+  type: talk
+  time: EST
+  date: any
+  room: ~
+  hashtags: Julia
+  speakers:
+  - id: jeff_bezanson
+    name: Jeff Bezanson
+    affiliation: Julia Computing
+    url: ~
+    bio: Jeff is one of the creators of Julia, co-founding the project at MIT in 2009
+      and eventually receiving a Ph.D. related to the language in 2015. He continues
+      to work on the compiler and system internals, while also working to expand Julia’s
+      commercial reach as a co-founder of Julia Computing, Inc.
+    twitter: JeffBezanson
+    website: https://github.com/JeffBezanson
+- id: 14
+  title: 'Gillian: a Multi-language Platform for Compositional Symbolic Analysis'
+  type: talk
+  time: EU
+  date: '15,17,18'
+  room: ~
+  hashtags: Logic
+  abstract: 'This talk will give a general introduction to Gillian, a multi-language
+    platform for symbolic program analysis being developed by my team at Imperial
+    College London. Gillian currently supports three types of analysis: whole-program
+    symbolic testing; full verification based on separation logic; and automatic compositional
+    testing based on bi-abduction. It uses a core symbolic execution engine, with
+    strong mathematical foundations, that unifies bug catching and verification. To
+    instantiate Gillian to a new target language (TL), the tool developer must provide:
+    a compiler from the TL to GIL, an intermediate representation which is parametric
+    on the TL memory model: that is, on the set of basic actions capturing the ways
+    in which TL programs fundamentally interact with their memories; an OCaml implementation
+    of the TL memory model using the basic actions; proofs of simple lemmas for the
+    TL basic actions, if interested in correctness guarantees. So far, we have instantiated
+    Gillian to JavaScript and C. These instantiations have been used to: find bugs
+    in the real-world data-structure libraries Buckets.js and Collections-C; find
+    bugs and prove bounded correctness results for a real-world jQuery-like library,
+    cash; and verify the deserialisation function of the AWS Encryption SDK messaging
+    system.'
+  speakers:
+  - id: philippa_gardner
+    name: Philippa Gardner
+    affiliation: Imperial College London
+    url: ~
+    bio: Philippa Gardner professes at Imperial College and holds a UK Research and
+      Innovation Established Fellowship.  She is known for her work on program specification
+      and verification. Her group is credited with bringing logical abstraction and
+      logical atomicity to modern concurrent separation logics, and is currently developing
+      the Gillian platform for building symbolic  analysis tools for languages such
+      as C and JavaScript.  Gardner completed her PhD thesis, supervised by Gordon
+      Plotkin before moving to Cambridge to work with Robin Milner. Philippa directs
+      the Research Institute on Verified Trustworthy Software Systems and organizes
+      the Isaac Newton Institute six-week summer programme on `Verified Software’.
+    twitter: N/A
+    website: https://www.doc.ic.ac.uk/~pg/
 - id: 15
   title: Miniaturize All States!
   type: talk
+  time: EU
+  date: any
+  room: ~
   hashtags: Haskell
   abstract: 'Like science, software is in reproducibility crisis. All too often, "steps
     to reproduce" in bug reports don''t work or are too long and complicated. They
@@ -220,48 +461,162 @@ talks:
       He has a PhD from École Polytechnique.
     twitter: mboesp
     website: https://www.linkedin.com/in/mboes
+- id: 16
+  title: 'Probabilistic Programming: The What, Why and How'
+  type: talk
+  time: EU/EST
+  date: 15,16-20
+  room: ~
+  hashtags: Probabilistic
+  abstract: f(x) = y, but y = 5. What's the probability that x =1? Probabilistic programming
+    is the idea of describing probabilistic models as programs, to then automatically
+    infer how our beliefs about model parameters change given observed data. In recent
+    years, probabilistic programming languages (such as Stan) have demonstrated the
+    power of this approach by becoming the underlying tool behind numerous projects
+    in social science, biology, genetics, astrophysics, and engineering. But why haven't
+    such languages been more widely adopted yet? In this talk, Maria will talk about
+    the nuts and bolts of probabilistic programming languages, addressing the challenges
+    behind making these languages general-purpose, automatic, and efficient.
+  speakers:
+  - id: maria_gorinova
+    name: Maria Gorinova
+    affiliation: University of Edinburgh
+    url: ~
+    bio: Maria is a Data Science PhD student at the University of Edinburgh, where
+      she works on improving the expressivity and efficiency of probabilistic programming
+      languages. In particular, she is interested in applying program-analysis techniques
+      to existing probabilistic languages, such as Stan, and she is also part of Stan's
+      development team. Previously, Maria worked as a Research Assistant in the Graphics
+      and Interaction Group at the University of Cambridge, where she also received
+      her BA, developing an interactive development environment for probabilistic
+      programming for her final year project.
+    twitter: migorinova
+    website: http://homepages.inf.ed.ac.uk/s1207807/
+- id: 18
+  type: talk
+  room: ~
+  hashtags: Julia
+  speakers:
+  - id: matt_bauman
+    name: Matt Bauman
+    affiliation: Julia Computing
+    url: ~
+    bio: Matt Bauman is a Senior Research Scientist at JuliaComputing's Chicago outpost,
+      where he spends lots of time working on arrays and broadcasting. He’s been contributing
+      to both the core language and multiple packages since 2014. At his previous
+      position as a Data Science Fellow at the University of Chicago’s Center for
+      Data Science and Public Policy, he longed for dot-broadcasting in Python while
+      working with local governments to use data science for social good. He recently
+      defended his PhD dissertation in Bioengineering from the University of Pittsburgh,
+      focusing on neural prosthetics.
+    twitter: _mbauman
+    website: https://github.com/mbauman
+- id: 19
+  title: Relational Reasoning in Object-based Programs
+  type: talk
+  time: EST
+  date: 15—0500 – 0800; 16 – 0500 – 1200; 1300 – 1700;  17 – 0500 – 1200; 1300 – 1700;
+    18 – 0500 – 1200; 1600 – 1700; 19 – 0500 – 1200; 1300 – 1700; 20 – 0500 – 1100;
+    1500 -- 1700
+  room: ~
+  abstract: 'Relational properties arise in many settings: relating two versions of
+    a program that use different data representations, noninterference properties
+    for security, conditional equivalence in program transformations, etc. How might
+    one reason about such relational properties? The talk reports on current investigations
+    of a logic based on novel syntax that weaves together product programs to express
+    alignment of control flow points at which relational formulas are asserted. Correctness
+    judgments feature hypotheses with relational specifications, discharged by a rule
+    for the linking of procedure implementations. The logic supports reasoning about
+    program-pairs containing both similar and dissimilar control and data structures.
+    Reasoning about dynamically allocated objects is supported by a frame rule based
+    on frame conditions amenable to SMT provers.'
+  speakers:
+  - id: anindya_banerjee
+    name: Anindya Banerjee
+    affiliation: NSF
+    url: ~
+    bio: Anindya Banerjee is a Program Director at the National Science Foundation
+      in the CISE Directorate in the Division of Computing and Communication Foundations
+      (CCF) where he focuses on the issues of Software and Hardware Foundations; Exploiting
+      Parallelism for Scalability; Cyber-physical Systems; Research Experience for
+      Undergraduates; CISE Research Initiation Initiatives. Banerjee’s research interests
+      span software security, software verification, probabilistic programming, semantics
+      and logics of programs, abstract interpretation, program analysis and program
+      transformation. He received his Ph.D. from Kansas State University, USA, in
+      1995. After his Ph.D., Anindya was a postdoctoral researcher, first in the Labaratoire
+      d’Informatique (LIX) of Ecole Polytechnique, Paris and subsequently at the University
+      of Aarhus. He joined the IMDEA Software Institute in February 2009 as Full Professor.
+      Immediately prior to this position, Anindya was Full Professor of Computing
+      and Information Sciences at Kansas State University, USA. He was an Academic
+      Visitor in the Advanced Programming Tools group, IBM T. J. Watson Research Center
+      in 2007 and a Visiting Researcher in the Programming Languages and Methodology
+      group at Microsoft Research in 2007–2008. He was a recipient of the Career Award
+      of the US National Science Foundation in 2001.
+    twitter: N/A
+    website: https://www.nsf.gov/staff/staff_bio.jsp?lan=abanerje&org=NSF&from_org=NSF
 - id: 20
-  title: The Functional Era – FP More Than Ever
+  title: Paparazzi, an open source UAV for research
   type: talk
-  hashtags: F#
-  abstract: Drawing on my experience with F# and applied functional programming over
-    20 years, I’ll describe why functional programming and its ways of thinking are
-    relevant to every part of modern software development. Along the way I’ll challenge
-    some of our shibboleths and talk about how tensions in language design and delivery
-    have been resolved in F#.
+  time: EU
+  date: 16--18
+  room: ~
+  hashtags: UAV
+  abstract: Unmanned Aerial Systems have rapidly reached the maturity allowing them
+    to be used in many civil applications. Open-source communities and research laboratories
+    have played an important role to this breakthrough in aviation history. I will
+    present the Paparazzi UAV system, a research oriented fully open-source hardware
+    and software project dedicated to mini and micro drones. Through its rich history
+    of collaborations, I will show how our laboratory and our community have been
+    able to contribute to various HMI innovations, rich flight plan concepts, novel
+    aerodynamic designs, efficient and robust control algorithms and many multi-disciplinary
+    applications spreading the usage of drones in various scientific fields. This
+    has been made possible by seeking the right balance between innovations, experimental
+    needs, real world operations and more fundamental contributions. Finally, I will
+    point to some of the future challenges for light UAV systems.
   speakers:
-  - id: don_syme
-    name: Don Syme
-    affiliation: Microsoft
+  - id: gautier_hattenberger
+    name: Gautier Hattenberger
+    affiliation: ENAC
     url: ~
-    bio: Don is the designer of the F# language, and an F# community contributor.
-      He works with researchers and open source communities to make better programming
-      technologies, and, through that, make people more productive and happier. His
-      work has helped transform the programming languages landscape towards functional
-      programming with C#/F# Generics, async/await programming, F# 1.0-5.0 and more.
-    twitter: dsymetweets
-    website: https://www.microsoft.com/en-us/research/people/dsyme/
+    twitter: N/A
+    website: https://blog.paparazziuav.org/author/gautierhattenberger/
 - id: 21
-  title: Are we Really Engineers?
+  title: 'Enterprise-scale static analysis: A Pinpoint experience'
   type: talk
-  hashtags: TLA+
+  time: ASIA
+  date: 15--17,19,20
+  room: ~
+  hashtags: Analysis
+  abstract: Despite years of research and practice, modern static analysis techniques
+    still cannot detect oldest and extremely well understood software bugs such as
+    the Heartbleed, one of the most "spectacular" security flaws of the recent decade.
+    A remedy, as what we have attempted through the successful commercialization of
+    the Pinpoint platform (PLDI 18), is to make static program analysis aware of the
+    basic characteristics of the modern enterprise-scale software system. The talk
+    focuses on discussing these characteristics and how Pinpoint addresses them pragmatically
+    as well as its future directions. Pinpoint is a LLVM-based cross-language static
+    analysis platform and deployed in major Chinese tech companies such as Tencent,
+    Baidu, Huawei, and Alibaba.
   speakers:
-  - id: hillel_wayne
-    name: Hillel Wayne
-    affiliation: Self
+  - id: charles_zhang
+    name: Charles Zhang
+    affiliation: HKUST/sourcebrella
     url: ~
-    bio: Hillel Wayne is a formal verification consultant and the author of Practical
-      TLA+. In his free time, he juggles and makes chocolate. He’s legally allowed
-      to deliver babies in Illinois.
-    twitter: hillelogram
-    website: www.hillelwayne.com
+    bio: My general research interest centers around the use of both static and dynamic
+      programm analysis techniques for making complex software systems more secure
+      and reliable.   I'm an Associate Professor and direct of the Cybersecurity Lab
+      at HKUST. I received an ICSE and a PLDI distinguished paper award, as well as
+      the ACM SIGSOFT Doctoral Dissertation Award, and IBM PhD fellowships.  I co-founded
+      and served as the chairman of Sourcebrella Inc, a static analysis tool vendor.
+    twitter: N/A
+    website: http://www.cse.ust.hk/~charlesz
 - id: 22
   title: Performance Really Matters
   type: talk
-  hashtags:
-  - Hoard
-  - DieHarder
-  - Coz
+  time: EST
+  date: '20'
+  room: ~
+  hashtags: Coz
   speakers:
   - id: emery_berger
     name: Emery Berger
@@ -281,27 +636,79 @@ talks:
 - id: 23
   title: Developing the Wolfram Language Compiler
   type: talk
+  time: EU
+  date: '16,17,18'
+  room: ~
   hashtags: Mathematica
-  abstract: |-
-    The Wolfram Language is a high level computation language used in many technical, scientific, engineering, mathematical, and computing fields. It is widely used in practice and, in particular, it is the foundation of Wolfram Mathematica and Wolfram Alpha.
-
-    This talk describes the Wolfram Language Compiler; a long term project for compilation of Wolfram programs. The talk will show how clever use of parametric types, code specialization, and optimization techniques allow compilation of  Wolfram Language programs to achieve performance that rivals hand-tuned C code.  It will show how the compiler enables features for scientific computation (such as automatic differentiation) and how it provides a key new implementation layer for future development of the language. It will also show how the type system allows disambiguating and optimizing function calls despite seemingly ambiguous input.  Finally, it will demonstrate how the Wolfram compiler is used to target specialized output such as WebAssembly) or accelerators (e.g. CUDA or FPGAs).
+  abstract: The Wolfram Language is a high level computation language used in many
+    technical, scientific, engineering, mathematical, and computing fields. It is
+    widely used in practice and, in particular, it is the foundation of Wolfram Mathematica
+    and Wolfram Alpha. This talk describes the Wolfram Language Compiler; a long term
+    project for compilation of Wolfram programs. The talk will show how clever use
+    of parametric types, code specialization, and optimization techniques allow compilation
+    of  Wolfram Language programs to achieve performance that rivals hand-tuned C
+    code.  It will show how the compiler enables features for scientific computation
+    (such as automatic differentiation) and how it provides a key new implementation
+    layer for future development of the language. It will also show how the type system
+    allows disambiguating and optimizing function calls despite seemingly ambiguous
+    input.  Finally, it will demonstrate how the Wolfram compiler is used to target
+    specialized output such as WebAssembly) or accelerators (e.g. CUDA or FPGAs).
   speakers:
   - id: tom_wickham-jones
     name: Tom Wickham-Jones
     affiliation: Wolfram Research, Inc.
     url: ~
-    bio: Tom Wickham-Jones is the Director of Kernel Technology at Wolfram Research.
-      He has worked on Mathematica for over 30 years and recently on implementing
-      the Wolfram Compiler. He has worked on Mathematica's internal data structures,
-      graphics, compilation, performance and integration with new technologies. For
-      the past five years, he has co-architected the Wolfram Compiler, a project that
-      integrates modern compiler knowledge and technologies to compile the Wolfram
-      Language. An initial version of the compiler was released in April 2019 with
-      Mathematica 12.
+    bio: 'Tom Wickham-Jones has worked for Wolfram Research on the implementation
+      of Mathematica since 1990. He is currently the Director of Kernel Technology.
+      He has worked on many details of the Mathematica programming language, as well
+      as other areas such as graphics. In addition he is the architect of webMathematica
+      and Wolfram Workbench. In 1992 he published the book Mathematica Graphics: Techniques
+      and Applications. His most recent work has focused on the Mathematica compiler
+      and parallel computation.'
+    twitter: N/A
+    website: https://www.linkedin.com/in/tom-wickham-jones-a452777/?originalSubdomain=uk
+- id: 24
+  type: talk
+  time: PST
+  room: ~
+  hashtags: Hotspot
+  abstract: Cliff Click was the CTO and Co-Founder of H2O, makers of H2O, the open
+    source math and machine learning engine for Big Data. Cliff wrote his first compiler
+    when he was 15 (Pascal to TRS Z-80!), although Cliff’s most famous compiler is
+    the HotSpot Server Compiler (the Sea of Nodes IR). Cliff helped Azul Systems build
+    an 864 core pure-Java mainframe that keeps GC pauses on 500Gb heaps to under 10ms,
+    and worked on all aspects of that JVM. Before that he worked on HotSpot at Sun
+    Microsystems, and was at least partially responsible for bringing Java into the
+    mainstream. Cliff is invited to speak regularly at industry and academic conferences
+    and has published many papers about HotSpot technology. He holds a PhD in Computer
+    Science from Rice University and about 20 patents.
+  speakers:
+  - id: cliff_click
+    name: Cliff Click
+    affiliation: Self
+    url: ~
+    bio: Cliff Click was the CTO of Neurensic, and CTO and Co-Founder of h2o.ai (formerly
+      0xdata), a firm dedicated to creating a new way to think about web-scale data
+      storage and real-time analytics. I wrote my first compiler when I was 15 (Pascal
+      to TRS Z-80!), although my most famous compiler is the HotSpot Server Compiler
+      (the Sea of Nodes IR). I helped Azul Systems build an 864 core pure-Java mainframe
+      that keeps GC pauses on 500Gb heaps to under 10ms, and worked on all aspects
+      of that JVM. Before that I worked on HotSpot at Sun Microsystems, and am at
+      least partially responsible for bringing Java into the mainstream. Previously
+      I was with Motorola where I helped deliver industry leading SpecInt2000 scores
+      on PowerPC chips, and before that I researched compiler technology at HP Labs.
+      I am invited to speak regularly at industry and academic conferences including
+      JavaOne, JVM, ECOOP and VEE; I’ve served on the Program Committee of many conferences
+      (including PLDI and OOPSLA); and have published many papers about HotSpot technology.
+      I hold a PhD in Computer Science from Rice University and about 20 patents.
+    twitter: cliff_click
+    website: http://cliffc.org/blog/
 - id: 25
   title: Reliable Stack Traces, the Reality of Myth
   type: talk
+  time: EU
+  date: any
+  room: ~
   hashtags: Performance
   abstract: Debug information is a hidden and obscure component of our computing infrastructure
     obviously used by debuggers, but also playing a key role in program analysis tools,
@@ -335,6 +742,9 @@ talks:
 - id: 30
   title: Move Semantics for Nim
   type: talk
+  time: EST
+  date: '15'
+  room: ~
   hashtags: Nim
   abstract: This talk explains Nim's move semantics and their connection to reference
     counting, how Nim's model differs from C++/Rust and why move semantics can offer
@@ -356,12 +766,20 @@ talks:
 - id: 31
   title: 'Towards the tower of Babel: a Polyglot Language VM in Java'
   type: talk
-  hashtags:
-  - Truffle
-  - Graal
-  abstract: |-
-    Meet the GraalVM, a technology you can use to build composable high-performance language implementations and tools. Most production-level virtual machines duplicate their target language's semantics in the interpreter, in the compiler, and in the runtime system. This violates DRY and is hell on the maintainers as the target evolves. In contrast, Truffle lets you define languages by simply writing their interpreter.
-    That interpreter can be seamlessly combined with interpreters of different languages in a single just-in-time compilation unit. By treating the host language as just another language, you can reuse embeddings across languages. A language agnostic instrumentation mechanism enables us to build tools that attach cross-cutting concerns to applications with zero overhead.
+  time: EU
+  date: 17--20
+  room: ~
+  hashtags: Graal
+  abstract: Meet the GraalVM, a technology you can use to build composable high-performance
+    language implementations and tools. Most production-level virtual machines duplicate
+    their target language's semantics in the interpreter, in the compiler, and in
+    the runtime system. This violates DRY and is hell on the maintainers as the target
+    evolves. In contrast, Truffle lets you define languages by simply writing their
+    interpreter. That interpreter can be seamlessly combined with interpreters of
+    different languages in a single just-in-time compilation unit. By treating the
+    host language as just another language, you can reuse embeddings across languages.
+    A language agnostic instrumentation mechanism enables us to build tools that attach
+    cross-cutting concerns to applications with zero overhead.
   speakers:
   - id: christian_humer
     name: Christian Humer
@@ -374,72 +792,22 @@ talks:
       author of Truffle DSL, a domain-specific language to simplify the development
       of Truffle interpreters.
     twitter: grashalm_
-- id: 32
-  title: 'Raku: Glue as Language'
-  type: talk
-  hashtags: Raku
-  abstract: Let's review key features and implementation challenges of Raku, a modern,
-    multi-paradigm language developed by the Perl community. Perl found success in
-    its ability to glue disparate things together, a role it plays to this day. Perl
-    also attracted criticism - some deserved, some overplayed. Raku shares values
-    with Perl, but - in response to lessons learned and a changing industry - realizes
-    them differently. The language brings tasteful trade-offs between dynamic and
-    static, a new regex syntax, integrated grammars for tackling parsing far beyond
-    what regexes can do, a grapheme level Unicode representation, "await" without
-    "async", first-class syntax for reactive stream processing, the opportunity to
-    participate in compile time - and more. A common refrain during the design process
-    was to "torture the language implementor for the sake of the language user". The
-    challenges this approach created - both solved and still being solved - will be
-    explored along with the language features.
-  speakers:
-  - id: jonathan_worthington
-    name: Jonathan Worthington
-    affiliation: Edument
-    url: ~
-    bio: Jonathan is a software developer and architect with an interest in compilers,
-      runtimes, language design, and concurrency. His work has largely focused on
-      the Raku language, its compiler ("Rakudo"), and its most used runtime ("MoarVM").
-      At the language level, Jonathan contributed to the design of the meta-object
-      system as well as the concurrency; he also carried out much of the compiler
-      implementation work of these features. He is the founder of MoarVM, and his
-      work there focuses on runtime optimization. He also leads development of Comma,
-      a Raku IDE based on the IntelliJ platform.
-    twitter: jnthnwrthngtn
-    website: https://jnthn.net/
-- id: 33
-  title: 'V8: A JavaScript Performance Tale'
-  type: talk
-  hashtags: JavaScript
-  abstract: This talk will tell the tale of the performance paradigm shift in the
-    V8 JavaScript virtual machine from peak performance to real-world performance
-    and design decisions made on the way.
-  speakers:
-  - id: hannes_payer
-    name: Hannes Payer
-    affiliation: Google
-    url: ~
-    bio: Hannes leads the V8 JavaScript virtual machine team at Google. The V8 team
-      is known for its virtual machine innovations and once in a while they distill
-      a research paper out of it. Prior to V8, Hannes worked on various virtual machine
-      projects like Google's Dart virtual machine and the Maxine Java research virtual
-      machine from Sun Labs. Hannes received a PhD from the University of Salzburg
-      in 2012 where he was the principal investigator of the Scal project which traded
-      off concurrent data structure semantics for performance.
-    twitter: PayerHannes
-    website: https://research.google/people/HannesPayer/
+    website: https://labs.oracle.com/pls/apex/f?p=LABS:bio:0:2137
 - id: 35
   title: 'A Ray of Hope: Array Programming for the 21st Century'
   type: talk
+  time: PST
+  date: '15,17,20'
+  room: ~
   hashtags: NewSpeak
-  abstract: "The ideas of APL and its successors, the array programming languages,
-    \nwere two generations ahead of their time.  These languages are based on \nthe
-    notion that everything is a tensor, and all operations are \nrank-polymorphic:
-    they extend automatically to tensors of any rank. \nThese ideas are perfectly
-    suited to an era of machine learning, large \nscale data, GPUs and other accelerators.
-    Building on recent academic \nresearch, we are building ShapeRank, a new statically
-    typed, purely \nfunctional language for industrial use, that extends rank-polymorphism
-    \nto streams.\nWe'll introduce the key ideas and show how they are realized in
-    ShapeRank."
+  abstract: 'The ideas of APL and its successors, the array programming languages,
+    were two generations ahead of their time.  These languages are based on  the notion
+    that everything is a tensor, and all operations are  rank-polymorphic: they extend
+    automatically to tensors of any rank.  These ideas are perfectly suited to an
+    era of machine learning, large  scale data, GPUs and other accelerators. Building
+    on recent academic  research, we are building ShapeRank, a new statically typed,
+    purely  functional language for industrial use, that extends rank-polymorphism  to
+    streams. We''ll introduce the key ideas and show how they are realized in ShapeRank.'
   speakers:
   - id: gilad_bracha
     name: Gilad Bracha
@@ -455,92 +823,73 @@ talks:
       worked on Strongtalk, the Animorphic Smalltalk System. He received his B.Sc
       in Mathematics and Computer Science from Ben Gurion University in Israel and
       a Ph.D. in Computer Science from the University of Utah.
+    twitter: Gilad_Bracha
     website: https://bracha.org
-- id: 42
-  title: 'Project Verona: A Programming language for safely building infrastructure.'
+- id: 41
+  title: Herding Nulls in Dart
   type: talk
-  hashtags: Verona
-  abstract: In this talk, I will discuss Project Verona, a research project to build
-    a new _infrastructure programming language_, that is mid-high-level systems programming.
-    Verona is targeted at high-scale, high-performance and high-security, but not
-    for building the lowest level of a system such as the concurrency primitives,
-    schedulers and memory managers. This focus enables us to change the rules of the
-    game compared to languages that allow low-level systems programming, such as C++
-    and Rust. I will present the aims and motivations of the project, its current
-    status, and demo the existing prototype.
+  time: EU
+  date: any
+  room: ~
+  hashtags: Dart
+  abstract: The programming language Dart is about to introduce sound null safety,
+    which involves a bundle of language mechanisms associated with null as a typing
+    property. This talk presents these mechanisms, including nullable types, late
+    variables, type promotion, null shorting, and the handling of programs with both
+    legacy and null safe libraries.
   speakers:
-  - id: matthew_parkinson
-    name: Matthew Parkinson
-    affiliation: Microsoft Research
+  - id: erik_ernst
+    name: Erik Ernst
+    affiliation: Google
     url: ~
-    bio: Matthew Parkinson has worked at Microsoft Research for the last decade, and
-      is part of the Confidential Computing research group. His research has focussed
-      on memory safety and concurrent data structures, with publications ranging from
-      programming languages and runtime design through to software verification.  He
-      has co-developed a memory manager, [snmalloc](https://github.com/microsoft/snmalloc),
-      and is currently working on [Project Verona](https://github.com/microsoft/verona).
-    twitter: ParkyMatthew
-    website: https://www.microsoft.com/en-us/research/people/mattpark
-- id: 43
-  title: 'Probabilistic Programming: The What, Why and How'
-  type: talk
-  hashtags: Probabilistic Prog.
-  abstract: f(x) = y, but y = 5. What's the probability that x =1? Probabilistic programming
-    is the idea of describing probabilistic models as programs, to then automatically
-    infer how our beliefs about model parameters change given observed data. In recent
-    years, probabilistic programming languages (such as Stan) have demonstrated the
-    power of this approach by becoming the underlying tool behind numerous projects
-    in social science, biology, genetics, astrophysics, and engineering. But why haven't
-    such languages been more widely adopted yet? In this talk, Maria will talk about
-    the nuts and bolts of probabilistic programming languages, addressing the challenges
-    behind making these languages general-purpose, automatic, and efficient.
-  speakers:
-  - id: maria_gorinova
-    name: Maria Gorinova
-    affiliation: University of Edinburgh
-    url: ~
-    bio: Maria is a Data Science PhD student at the University of Edinburgh, where
-      she works on improving the expressivity and efficiency of probabilistic programming
-      languages. In particular, she is interested in applying program-analysis techniques
-      to existing probabilistic languages, such as Stan, and she is also part of Stan's
-      development team. Previously, Maria worked as a Research Assistant in the Graphics
-      and Interaction Group at the University of Cambridge, where she also received
-      her BA, developing an interactive development environment for probabilistic
-      programming for her final year project.
-    twitter: migorinova
-    website: http://homepages.inf.ed.ac.uk/s1207807/
-- id: 44
-  title: Reprogramming Biology with F#
-  type: talk
-  hashtags: Computational Biology
-  abstract: If we could program biology as effectively as we program digital computers,
-    we could make fundamental breakthroughs in the treatment of disease and the biofabrication
-    of materials, while gaining insight into the workings of life itself. I'll talk
-    about how we use F# to explore this and I’ll also show demos of our public tools
-    on [molecular programming via DNA strand displacement](https://www.microsoft.com/en-us/research/project/programming-dna-circuits/),
-    [reasoning about stem cell decision making](https://www.microsoft.com/en-us/research/project/reasoning-engine-for-interaction-networks-rein/)
-    and [enginering biology efforts in Station B](https://www.microsoft.com/en-us/research/project/stationb/).
-  speakers:
-  - id: colin_gravill
-    name: Colin Gravill
-    affiliation: Microsoft Research
-    url: ~
-    bio: I’m a software developer working in the Biological Computation group at Microsoft
-      Research, Cambridge. I have a background in industrial automation and building
-      analytical devices in materials, pharmaceuticals, and aerospace industries.
-      I’m applying this to building reproducible and effective systems in our wet
-      lab to validate our biological designs. I also assist in the optimisation of
-      our computational methods to run far more efficiently, and then conveniently
-      scaling over many machines on cloud infrastructure.
-    website: http://aka.ms/colingravill
+    bio: rik Ernst is a member of the Dart language team at Google, maintaining the
+      language specification. He has been an associate professor at Aarhus University.
+      He has published research on virtual classes, establishing that they can be
+      statically safe. He introduced family polymorphism, which is foundational for
+      path dependent types, and he contributed to the introduction of generics is
+      Java.
+    twitter: N/A
+    website: N/A
 - id: 45
-  title: 'Giving up on Functions: Direct Data Manipulation as a Basis for Programming'
+  title: 'Paradigms Without Progress: Kuhnian Reflections on Programming Practice'
   type: talk
-  hashtags: Data Transformation
-  abstract: |-
-    Learning functional programming is an incredibly eye opening experience. No longer is our code lost in a sea of loops. No longer is our data scattered, hiding in objects, only accessible obliquely. Instead our code consists of a straight forward pipeline of functions manipulating data. At least this is the story we tell ourselves, but the reality is quite different. Lost in a web of nested pipelines, the shape of our data becomes obscured; our code becomes hard to follow. We wind up, yet again, needing to play computer in our heads.
-
-    In this talk we will explore a different model of programming based on direct data manipulation. We will begin by showing how this approach can tackle problems ranging from day to day industry programming to writing a complex compiler. Next we will explore the capabilities this model unlocks when applied at the language level. Finally, we will look further into the future, discussing how we can take this model from dream to reality.
+  time: EST
+  date: 17--20
+  room: ~
+  hashtags: Transformers
+  abstract: "Borrowing from Thomas Kuhn's definition of a paradigm, Robert Floyd introduced
+    the notion of a programming paradigm in his 1978 Turing Award acceptance speech.
+    Ever since, this idea has infected the software world, becoming an organizing
+    principle for jobs, conferences, and research. But further than that, it has become
+    a ground for interminable debate and disagreement. \n\nIn order to help us understand
+    this unfortunate situation, we will explore Thomas Kuhn's notion of a paradigm.
+    Kuhn's paradigm is much richer than our ordinary everyday understanding; it is
+    not merely a way of approaching problems, but is itself the system in which problems
+    are made intelligible. We will discover the ways in which paradigm is apt for
+    discussing the activities of the software world, and the ways in which our usage
+    of the word deviates from its history. We will then explore these insights showing
+    how they might apply in specific circumstances not typically considered. Finally,
+    we will talk about philosophy's place in computer science's practice and possible
+    avenues for further exploration.\n\n## What you will learn\n\nWe will not focus
+    on the substance of debate between the various partisans of programming paradigms
+    (object oriented, functional, and imperative being the most popular). Nor will
+    we try to bridge the gap, finding some synthesis to make all parties agree. Instead
+    we will explore the philosophy of science background that gave rise to these ideas.
+    Focusing primarily on Thomas Kuhn, we will explore the notion of a paradigm and
+    the ways in which paradigms are created, maintained, and discarded. \n\nNext we
+    will evalute the ways in which our usage of paradigm aligns with Kuhn's. We will
+    consider the ways in which this alignment impacts these programming paradigms
+    debates and further consider Kuhn's notion of incommensurability. Can we borrow
+    insights from the history of science to better understand our own practices? Can
+    find a compelling reason for why these interminable debates seem to plague the
+    software world at large? Next, we will consider ways in which our usage of paradigm
+    diverge from that of Kuhn and consider other areas of software practice where
+    Kuhn's ideas may apply more directly.\n\nFinally we will consider philosophy's
+    impact on programming. Setting aside the ever popular discussions around Artificial
+    Intelligence, we will begin by exploring how philosophy shaped foundational elements
+    of computer science. We will explore under appreciated applications, especially
+    those insights from Turing Award winner Peter Naur. Finally, we will look at areas
+    where further insights may be gained in the future."
   speakers:
   - id: jimmy_miller
     name: Jimmy Miller
@@ -552,29 +901,32 @@ talks:
       no one will ever use.
     twitter: jimmyhmiller
     website: https://jimmyhmiller.github.io/
-- id: 46
-  title: The Rust Compiler - A Deep Dive
+- id: 47
+  title: Inside Every Calculus Is A Little Algebra Waiting To Get Out
   type: talk
-  hashtags: Rust
-  abstract: Have you been using Rust for some time and find yourself wondering how
-    Rust works underneath the hood? Are you new to Rust and want a better understanding
-    of how the language does the things it does? Come to this talk for an overview
-    of the Rust compiler and what makes it special. Then we will take a deep dive
-    into the Borrow Checker - borrowing is one of the most unique parts of the Rust
-    language and the Borrow Checker is what allows you to do it safely! Walk away
-    understanding exactly what the Borrow Checker is, how it works, and how you can
-    harness its power to take your code and your applications to new heights.
+  time: PST
+  date: 15, 16, 18, 19
+  room: ~
+  hashtags: ML
+  abstract: Because of deep learning, there has been a surge in interest in automatic
+    differentiation, especially from the functional programming community. As a result
+    there are many recent papers that look at AD from a Category Theory perspective.
+    However, Category Theorists have already been looking at differentiation and calculus
+    in general since the late 60’s in the context of Synthetic Differential Geometry,
+    but it seems that this work is largely ignored by those interested in AD. In this
+    talk, we will provide a gentle introduction to the ideas of SDG, by relating them
+    to dual numbers, and show how it provides a simple and purely algebraic approach
+    to (automatic) differentiation.
   speakers:
-  - id: nell_shamrell-harrington
-    name: Nell Shamrell-Harrington
-    affiliation: Mozilla
+  - id: erik_meijer
+    name: Erik Meijer
+    affiliation: Facebook
     url: ~
-    bio: Nell Shamrell-Harrington is a Senior Staff Research Engineer on the Rust
-      team at Mozilla. Previously she was a Principal Software Development Engineer
-      and Community Engineering Lead at Chef. Additionally, she is a member of the
-      Board of Directors of Operation Code, a non-profit dedicated to teaching military
-      veterans software engineering skills. She specializes in Open Source, Rust,
-      Ruby, Rails, Regular Expressions, and DevOps and has traveled the world speaking
-      on these topics. She is a very proud parent to two rabbits.
-    twitter: nellshamrell
-    website: https://www.nellshamrell.com
+    bio: Erik Meijer has been trying to bridge the ridge between theory and practice
+      for most of his career. He is perhaps best known for his work on, amongst others,
+      Haskell, C#, Visual Basic, and Dart programming languages, as well as for his
+      contributions to LINQ and the Reactive Framework (Rx). Most recently he is on
+      a quest to make uncertainty a first-class citizen in mainstream programming
+      languages.
+    twitter: headinthebox
+    website: https://en.wikipedia.org/wiki/Erik_Meijer_(computer_scientist)
