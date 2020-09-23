@@ -23,6 +23,7 @@ $supporter-margin: (
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
+  justify-content: center;
 
   &:not(:last-child) {
     margin-bottom: rem-calc(120px);
