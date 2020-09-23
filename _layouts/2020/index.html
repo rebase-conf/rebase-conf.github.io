@@ -30,7 +30,7 @@ layout: 2020/default
     {% endif %}
     {% if settings.registration != "hidden" %}
     <span class="intro__button">
-      <a href="#" class="button {% if settings.registration != "active" %}button--inactive{% endif %}">
+      <a href="{{ settings.registration_url }}" class="button {% if settings.registration != "active" %}button--inactive{% endif %}">
         Registration
       </a>
       {% if settings.registration_date and settings.registration == "inactive" %}
@@ -53,31 +53,30 @@ layout: 2020/default
 </section>
 <section class="about" id="about">
   <div class="container">
-    <h2 class="about__heading">About Rebase</h2>
+    <!-- <h2 class="about__heading">About</h2> -->
     <div class="about__content">
       <!-- TODO can we make the rebase text "ff-market-web",cursive; or something like that? -->
       <p>
-        <strong>Rebase</strong> is a new conference for and by practitioners who want
-        to engage academics about tomorrow's technologies while fondly
-        recalling the achievements of yesterday.
+        <strong>Rebase</strong> is a new conference for and by practitioners who want to engage academics about tomorrow's technologies while fondly recalling the achievements of yesterday.
       </p>
-
+      <br/>
       <p>
-        <strong>Rebase</strong> is also a forum to explore the impact of technology on
-        society, ethics, and arts.
+        This year, <strong>Rebase</strong> was planned to occur twice, once in Berlin
+        with the <a href="https://2020.ecoop.org/">ECOOP</a> conference and
+        once in Chicago with the <a href="https://2020.splashcon.org/">SPLASH</a> conference.
+        Due to outside forces, there will be a single virtual event.
       </p>
+      <br/>
       <p>
-        <strong>Rebase</strong> is a non-profit aimed at supporting attendance by
-        minorities and students.
+        <strong>Rebase</strong> will use the Clowdr platform for interaction,
+        registration allows attendees to ask questions and meet with each other
+        and with speaker. Registration also give access to all of the
+        <a href="https://2020.splashcon.org/">SPLASH</a> co-located events.
       </p>
+      <br/>
       <p>
-        This year, <strong>Rebase</strong> is co-located with
-        <br />
-        <a href="https://2020.ecoop.org/" target="_blank">
-          <img src="{{ imgs_baseurl }}/ECOOP-2020-logo-white.png" class="about__ecoop" alt="ECOOP" />
-        </a>
-        <br />
-        Europe’s longest-standing annual Programming Languages conference.
+        <strong>Rebase is free, all talks will be streamed on <i class="fab fa-youtube"></i>&nbsp;YouTube live.</strong>
+        <a href="https://2020.splashcon.org/attending/Registration">Register</a> to support the conference and to join the conversation and mingle with the speakers.
       </p>
     </div>
   </div>

@@ -12,12 +12,16 @@
 .about__content {
   @include text-content;
   color: $color-paragraph-secondary;
-  font-size: 1.15rem;
+  font-size: 1.45rem;
+  text-align: justify;
 
   strong {
+    letter-spacing: 0.1em;
     font-family: $font-family-heading-alternative;
-    font-weight: 600;
-    font-style: italic;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
   }
 }
 
