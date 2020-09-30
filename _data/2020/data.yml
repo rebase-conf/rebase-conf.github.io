@@ -34,12 +34,25 @@ talks:
 - id: 2
   title: Back to the Future! A History of UIs through Trends and Mass Culture
   type: talk
+  time: EU
   room: ~
   hashtags: UI
+  abstract: 'Digital interfaces have changed a lot since the good old days of CERN''s
+    first webpage. UI design has evolved in a very unpredictable way, generating new
+    trends year after year always based on the needs and expectations of users. Also,
+    in popular culture, we can find more and more user interfaces: TV shows, movies,
+    comics and video clips are full of digital systems and it is very interesting
+    to see how the media industry perceives the "shape" of technology and how it is
+    used. From the colorful (and pixelated) iframe-based websites in the 90s to the
+    minimalist and pretentious interfaces of 2020, we will take a journey through
+    the trends, patterns and perception of mass culture of user interfaces, trying
+    to understand how and why. they evolved in this way. Furthermore, we will try
+    to understand why hackers in TV shows are able to break into the FBI''s servers
+    by simply clicking a button.'
   speakers:
   - id: paola_bisogno
     name: Paola Bisogno
-    affiliation: dove.it
+    affiliation: Casavo
     url: ~
     bio: Paola is an italian digital product designer with more than 15 years of experience.
       She started as a web master in the early 00s, building web 1.0 sites. After
@@ -80,6 +93,7 @@ talks:
 - id: 4
   title: 'APIs are Illness and Cure: The Software Heterogeneity Problem in Web Programming'
   type: talk
+  time: PST
   room: ~
   hashtags: APIs
   abstract: It is easier than ever before to build complex web applications. But developer
@@ -195,14 +209,37 @@ talks:
     twitter: oegerikus
     website: https://blog.semmle.com/authors/oege-de-moor/
 - id: 7
+  title: 'JAX: accelerated machine learning research via composable function transformations
+    in Python'
   type: talk
+  time: PST
+  date: 18--20
   room: ~
   hashtags: GoogleBrain
+  abstract: JAX is a system for high-performance machine learning research and numerical
+    computing. It offers the familiarity of Python+NumPy together with hardware acceleration,
+    and it enables the definition and composition of user-wielded function transformations
+    useful for machine learning programs. These transformations include automatic
+    differentiation, automatic batching, end-to-end compilation (via XLA), parallelizing
+    over multiple accelerators, and more. Composing these transformations is the key
+    to JAX's power and simplicity. JAX had its initial open-source release in December
+    2018 (https://github.com/google/jax). It’s used by researchers for a wide range
+    of advanced applications, from studying training dynamics of neural networks,
+    to probabilistic programming, to scientific applications in physics and biology.
   speakers:
   - id: matthew_johnson
     name: Matthew Johnson
     affiliation: Google
     url: ~
+    bio: Matt Johnson is a research scientist at Google Brain interested in software
+      systems powering machine learning research. When moonlighting as a machine learning
+      researcher, he works on composing graphical models with neural networks, automatically
+      recognizing and exploiting conjugacy structure, and model-based reinforcement
+      learning from pixels. Matt was a postdoc with Ryan Adams at the Harvard Intelligent
+      Probabilistic Systems Group and Bob Datta in the Datta Lab at the Harvard Medical
+      School. His Ph.D. is from MIT in EECS, where he worked with Alan Willsky on
+      Bayesian time series models and scalable inference. He was an undergrad at UC
+      Berkeley (Go Bears!).
     twitter: SingularMattrix
     website: https://people.csail.mit.edu/mattjj/
 - id: 8
@@ -265,7 +302,7 @@ talks:
   title: 'PL and HCI: Better Together'
   type: talk
   time: EST
-  date: '19'
+  date: '19,20'
   room: ~
   hashtags: HCI
   abstract: 'Programming Languages (PL), Human-Computer Interaction (HCI), and Software
@@ -437,7 +474,7 @@ talks:
   time: EU
   date: any
   room: ~
-  hashtags: Haskell
+  hashtags: Nix
   abstract: 'Like science, software is in reproducibility crisis. All too often, "steps
     to reproduce" in bug reports don''t work or are too long and complicated. They
     shouldn''t be necessary to begin with. Fleets of servers suffer from constant
@@ -578,6 +615,16 @@ talks:
     name: Gautier Hattenberger
     affiliation: ENAC
     url: ~
+    bio: Gautier Hattenberger is an assistant-professor at the French Civil Aviation
+      University (ENAC) in Toulouse, France. As a member of the UAV Research Program,
+      he is working on flight dynamics and control of micro-UAVs, modeling and simulation,
+      architecture of embedded systems, trajectory planing and formation flight. Most
+      of his work is based on the Open-Source UAV system "Paparazzi", for which he
+      is now one of the head developer. He graduate from the French national engineering
+      school of aeronautical construction in 2004 and received his Ph.D Degree at
+      the Robotic department of the Laboratory for Analysis and Architecture of Systems
+      (LAAS-CNRS, Toulouse), for his work on formation flight control and planing
+      of UAVs in 2008.
     twitter: N/A
     website: https://blog.paparazziuav.org/author/gautierhattenberger/
 - id: 21
@@ -668,10 +715,15 @@ talks:
     twitter: N/A
     website: https://www.linkedin.com/in/tom-wickham-jones-a452777/?originalSubdomain=uk
 - id: 24
+  title: 'Tales from the Frontlines: Startup War Stories'
   type: talk
   time: PST
   room: ~
   hashtags: Hotspot
+  abstract: One can build the Hotspot VM, the Azul GC and the H20 big data engine
+    without getting into the occasional battle and making a mistake or two. This talk
+    distill the lessons of success and wrings wisdom out of failures over three decades
+    in the industy.
   speakers:
   - id: cliff_click
     name: Cliff Click
