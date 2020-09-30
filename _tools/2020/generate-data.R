@@ -77,7 +77,7 @@ create_talk <- function(x) {
     discard(is_empty_string)
 }
 
-talks_raw <- sheets_read(SHEET_ID, trim_ws=T, na="???")
+talks_raw <- sheets_read(SHEET_ID, sheet="Speakers", trim_ws=T, na="???")
 
 options(dplyr.width = Inf)
 
