@@ -720,8 +720,8 @@ talks:
   time: PST
   room: ~
   hashtags: Hotspot
-  abstract: One can build the Hotspot VM, the Azul GC and the H20 big data engine
-    without getting into the occasional battle and making a mistake or two. This talk
+  abstract: Can one build the Hotspot VM, the Azul GC and the H20 big data engine
+    without getting into the occasional battle and making a mistake or two? This talk
     distill the lessons of success and wrings wisdom out of failures over three decades
     in the industy.
   speakers:
