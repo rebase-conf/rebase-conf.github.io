@@ -184,11 +184,24 @@ talks:
     twitter: edwinbrady
     website: https://www.type-driven.org.uk/edwinb/
 - id: 6
+  title: Variant analysis
   type: talk
   time: PST
   date: any
   room: ~
-  hashtags: Github
+  hashtags: CodeQL
+  abstract: In security, ‘variant analysis’ is the process of searching for variants
+    of known vulnerabilities. This used to be done with grep and painstaking manual
+    code audits, but it can be automated with a powerful semantic query language like
+    CodeQL. The idea of such a query language had been around in academic research
+    for a long time, but we had to create a startup named Semmle to make CodeQL reality.
+    Semmle was acquired by GitHub in September 2019. I’ll show with a few in-depth
+    examples how security researchers have used the CodeQL product to find and fix
+    many vulnerabilities in popular open source projects. I’ll also discuss why the
+    focus on variant analysis was a critical step in making Semmle a successful startup
+    company. Finally, I’ll explain why the experience of creating Semmle and CodeQL
+    convinced me that blue skies research goes fastest with user needs driving the
+    research agenda.
   speakers:
   - id: oege_de_moor
     name: Oege de Moor
@@ -280,22 +293,47 @@ talks:
     twitter: YvonneRozier
     website: https://www.aere.iastate.edu/kyrozier/
 - id: 9
+  title: Lies we tell ourselves about developer infrastructure
   type: talk
   room: ~
   hashtags: Python
+  abstract: Over the past decade "developer infrastructure" teams have become an increasingly
+    common presence in industry. Focused on serving the unique needs of an organization's
+    engineers, their responsibilities can be as modest as build script support or
+    as ambitious as developing new general-purpose programming languages. As a practitioner
+    they can be a wonderful place to work; a perfect environment to apply state of
+    the art techniques to real world problems and invest in new ideas, all while keeping
+    a tight feedback loop with a potentially massive user base. But with great power
+    comes great responsibility, and the potential for waste is real.  How many build
+    systems, UI frameworks, code review tools, and bespoke IDEs have been developed
+    in industry because of “unique needs”? Of those, how many actually improved the
+    state of the art or eventually provided a return on their investment? Why does
+    conventional wisdom — or common sense — so seldom apply when we choose to pursue
+    these sorts of projects? (Why is it so often easier to get funding to develop
+    a new programming language than it is to make critical improvements to an aging
+    but essential piece of infrastructure?) The truth is that we often build new developer
+    tools not because they’re necessary, but because personally meaningful, easy to
+    rationalize, and fun. While fun is great – I’m a big fan of it – we have a professional
+    obligation to be honest about our intentions, use resources responsibly, and go
+    into our work with open eyes. In this talk I aim to call out the most common sources
+    of irrational exuberance when it comes to developer infrastructure, and the lies
+    I've been told (or told others) to justify certain classes of projects. Where
+    appropriate I'll provide cautionary tales from my last two decades working in
+    the field (names will be changed to protect the innocent), sensible alternatives
+    for those wiser than I was, and advice for those foolhardy enough to try and build
+    that better wheel. (Because I guarantee you – whatever mistake you’re thinking
+    of making, I’ve either made it myself or know someone who did.)
   speakers:
   - id: joe_pamer
     name: Joe Pamer
     affiliation: Facebook
     url: ~
-    bio: Joe Pamer has spent the last two decades developing cutting-edge compilers,
-      programming languages, and IDEs across industry and academia. Before joining
-      Facebook to help lead their programming language efforts, he was instrumental
-      in the design and development of the F#, TypeScript, and Swift programming languages,
-      and has contributed to many other major developer technologies ranging from
-      .NET to VSCode to Clang. His current mission is to radically improve the way
-      we approach developer tooling and infrastructure by applying machine learning
-      techniques to every link in the developer toolchain.
+    bio: Joe Pamer is an Engineering Director at Instagram, where he serves as their
+      Head of Infrastructure, Feed, and ML. Before joining Facebook to help lead their
+      programming language efforts, he was instrumental in the design and development
+      of the F#, TypeScript, and Swift programming languages, and has contributed
+      to many other major developer technologies ranging from .NET to VS Code to Clang.
+      He currently resides in Brooklyn, New York.
     twitter: jopamer
     website: http://noteven.org
 - id: 10
@@ -412,11 +450,15 @@ talks:
     twitter: blucia0a
     website: https://brandonlucia.com
 - id: 13
+  title: 'Julia: past, present and future'
   type: talk
   time: EST
   date: any
   room: ~
   hashtags: Julia
+  abstract: This talk will tell the story of the creation of the Julia language and
+    its ecosystem. We review the state of Julia as of 2020 and discuss prospects and
+    challenges ahead.
   speakers:
   - id: jeff_bezanson
     name: Jeff Bezanson
@@ -530,9 +572,21 @@ talks:
     twitter: migorinova
     website: http://homepages.inf.ed.ac.uk/s1207807/
 - id: 18
+  title: 'The impact of differentiable programming: how ∂P is enabling new science
+    in Julia'
   type: talk
   room: ~
   hashtags: Julia
+  abstract: Fully incorporating differentiable programming (∂P) into the Julia language
+    has enabled composability between modern machine learning techniques and existing
+    high performance computing (HPC) modeling and simulation without sacrificing expressivity.
+    Most notably, this has meant that small neural networks can be embedded within
+    larger models whose other behaviors are fully understood and can be concretely
+    represented. Smaller neural networks, in turn, are easier to train and interpret.
+    It has also enabled complex computations to be embedded within cost functions
+    for fast and robust reinforcement learning. In this talk, we’ll walk through several
+    concrete examples and demonstrate how the combination of ∂P with Julia’s generic
+    programming has enabled powerful and expressive new models.
   speakers:
   - id: matt_bauman
     name: Matt Bauman
@@ -556,6 +610,7 @@ talks:
     18 – 0500 – 1200; 1600 – 1700; 19 – 0500 – 1200; 1300 – 1700; 20 – 0500 – 1100;
     1500 -- 1700
   room: ~
+  hashtags: OOP
   abstract: 'Relational properties arise in many settings: relating two versions of
     a program that use different data representations, noninterference properties
     for security, conditional equivalence in program transformations, etc. How might
@@ -664,6 +719,32 @@ talks:
   date: '20'
   room: ~
   hashtags: Coz
+  abstract: Performance clearly matters to users. For example, the most common software
+    update on the AppStore is "Bug fixes and performance enhancements." Now that Moore's
+    Law has ended, programmers have to work hard to get high performance for their
+    applications. But why is performance hard to deliver? I will first explain why
+    current approaches to evaluating and optimizing performance don't work. I'll show
+    how complicated performance has become on modern systems, and how compiler optimizations
+    have essentially run out of steam. Next, I'll introduce two radically new performance
+    profilers that guide programmers directly to the code they need to change to improve
+    application performance. The first is Coz, a new "causal profiler" for C/C++/Rust
+    that lets programmers optimize for throughput or latency, and which pinpoints
+    and accurately predicts the impact of optimizations via what we call "virtual
+    speedup" experiments. Coz's approach unlocks previously unknown optimization opportunities.
+    Guided by Coz, we improved the performance of applications by as much as 68%;
+    in most cases, this involved modifying less than 10 lines of code and took under
+    half an hour (without any prior understanding of the programs!). Coz now ships
+    as part of standard Linux distros. The second is Scalene, a "scripting-language
+    aware" profiler for Python. Scalene runs orders of magnitude faster than other
+    profilers while delivering far more detailed information -- information that's
+    especially valuable to Python programmers. Via a combination of sampling, inference,
+    and disassembly of byte-codes, Scalene efficiently and precisely attributes execution
+    time and memory usage to Python, which developers can optimize, or library code,
+    which they cannot. Its novel sampling memory allocator efficiently reports line-level
+    memory consumption and trends with low overhead, helping developers reduce footprints
+    and identify leaks. Finally, Scalene reports a new metric, copy volume, that helps
+    developers root out insidious copying costs across the Python/library boundary,
+    which can drastically degrade performance. Scalene is available on PyPi.
   speakers:
   - id: emery_berger
     name: Emery Berger
