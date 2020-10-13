@@ -12,8 +12,8 @@ jekyll:
    docker run \
       --name $(CONTAINER_NAME) \
       --rm \
-      -v "$$PWD/$(GEM_CACHE_DIR):/usr/local/bundle" \
-      -v "$$PWD:/srv/jekyll" \
+      -v "$(CURDIR)/$(GEM_CACHE_DIR):/usr/local/bundle" \
+      -v "$(CURDIR):/srv/jekyll" \
       -p 4000:4000 \
       jekyll/jekyll \
       jekyll $(TASK); \
