@@ -1049,3 +1049,32 @@ talks:
       languages.
     twitter: headinthebox
     website: https://en.wikipedia.org/wiki/Erik_Meijer_(computer_scientist)
+- id: 51
+  title: 'SQLancer: Automatically Finding Bugs in Database Management Systems'
+  type: talk
+  room: ~
+  hashtags: SQL
+  abstract: This talk presents our work on automatic testing of Database Management
+    Systems (DBMS), part of which we found over 400 bugs in widely-used DBMS such
+    as SQLite, MySQL, and PostgreSQL. While crash bugs in DBMS can be detected via
+    fuzzers such as AFL, we aim to detect correctness bugs, which cause a DBMS to
+    produce an incorrect result set for a given query. These bugs are more difficult
+    to detect, since it is unclear how an effective test oracle could be created that
+    could judge whether a given result set is correct. We designed three practical
+    approaches for finding correctness bugs that we implemented as a tool called SQLancer.
+    Besides providing a general overview of the bug-finding techniques, we will also
+    present a number of interesting and surprising bugs that we found in the DBMS
+    that we tested.
+  speakers:
+  - id: manuel_rigger
+    name: Manuel Rigger
+    affiliation: ETHZ
+    url: ~
+    bio: Manuel Rigger is a postdoctoral researcher in the Advanced Software Technologies
+      (AST) Lab at ETH Zurich, mentored by Zhendong Su. He is working on programming
+      language implementation, software reliability, and systems. In his recent work,
+      he has been focusing on automatically testing Database Management Systems, part
+      of which he found over 400 bugs in widely-used systems such as SQLite, MySQL,
+      PostgreSQL, MariaDB, and CockroachDB.
+    twitter: RiggerManuel
+    website: https://www.manuelrigger.at/
