@@ -28,6 +28,13 @@ layout: 2020/default
       {% endif %}
     </span>
     {% endif %}
+    {% if settings.show_talks %}
+    <span class="intro__button">
+      <a href="#talks" class="button" rel="smooth-scroll">
+        Talks
+      </a>
+    </span>
+    {% endif %}
     {% if settings.registration != "hidden" %}
     <span class="intro__button">
       <a href="{{ settings.registration_url }}" class="button {% if settings.registration != "active" %}button--inactive{% endif %}">

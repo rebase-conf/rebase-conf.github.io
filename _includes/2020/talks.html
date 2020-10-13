@@ -1,6 +1,6 @@
 {% assign keynotes = data.talks | where: "type", "keynote" %}
 {% assign presentations = data.talks | where: "type", "talk" | sort: "id" %}
-<section class="talks">
+<section class="talks" id="talks">
     <div class="container">
         <!-- <h2 class="talks__heading">Highlights</h2>
              <div class="row talks__list talks__list--keynotes row">
