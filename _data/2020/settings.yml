@@ -23,6 +23,7 @@ registration_date: Open
 show_talks: true
 show_sponsors: true
 show_organizers: true
+show_schedule: true
 
 # Footer contact details. Comment out to hide
 footer_email: rebaseconf@gmail.com

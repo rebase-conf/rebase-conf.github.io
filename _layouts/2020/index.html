@@ -47,6 +47,14 @@ layout: 2020/default
       {% endif %}
     </span>
     {% endif %}
+    {% if settings.show_schedule %}
+    <span class="intro__button">
+      <a href="https://2020.splashcon.org/program/program-splash-2020?room=Rebase" class="button">
+        Schedule
+      </a>
+      <span class="intro__button-date">on splashcon.org</span>
+    </span>
+    {% endif %}
   </div>
   {% if settings.past_editions.size %}
   <p class="intro__past-editions">
