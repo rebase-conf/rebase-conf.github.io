@@ -36,15 +36,16 @@
   {% include {{ year }}/person.html person=speaker %}
   {% endfor %}
 </div>
-{% if talk.room && talk.date %}
+{% if talk.time1 %}
 <div class="box__talk-info">
-  <span class="box__talk-room">
-    <span class="far fa-building"></span>
-    {{ talk.room }}
-  </span>
   <span class="box__talk-datetime">
     <span class="far fa-clock"></span>
-    {{ talk.date }} {{ talk.time }}
+    {{ talk.time1 | normalize_whitespace | replace: " ", "&nbsp;" }}
+{% if talk.time2 %}
+    <br/>
+    <span class="far fa-clock"></span>
+    {{ talk.time2 | normalize_whitespace | replace: " ", "&nbsp;" }}
+{% endif  %%}
   </span>
 </div>
 {% endif  %%}

@@ -2,9 +2,8 @@ talks:
 - id: 1
   title: 'Technology Today: A Paucity of Integrity and Imagination'
   type: talk
-  time: PST
-  date: '17'
-  room: ~
+  time1: Tue 11/17  6pm EST
+  time2: Wed 11/18  6am EST
   hashtags: Ethics
   abstract: Judging by the experiences of Robert Grimm and a close confidante, both
     academe and industry have long given up even trying to conduct their business
@@ -34,8 +33,7 @@ talks:
 - id: 2
   title: Back to the Future! A History of UIs through Trends and Mass Culture
   type: talk
-  time: EU
-  room: ~
+  time1: Sun 11/15 12pm EST
   hashtags: UI
   abstract: 'Digital interfaces have changed a lot since the good old days of CERN''s
     first webpage. UI design has evolved in a very unpredictable way, generating new
@@ -67,9 +65,8 @@ talks:
 - id: 3
   title: Speculation in Smart Contracts
   type: talk
-  time: EST
-  date: '17,18'
-  room: ~
+  time1: Wed 11/18  4pm EST
+  time2: Thu 11/19  4am EST
   hashtags: SmartContracts
   abstract: I will give an overview of Algorand's smart contract strategy.
   speakers:
@@ -92,8 +89,8 @@ talks:
 - id: 4
   title: 'APIs are Illness and Cure: The Software Heterogeneity Problem in Web Programming'
   type: talk
-  time: PST
-  room: ~
+  time1: Sun 11/15 6pm EST
+  time2: Mon 11/16  6am EST
   hashtags: APIs
   abstract: It is easier than ever before to build complex web applications. But developer
     tooling for understanding, testing, and maintaining these systems has not caught
@@ -151,9 +148,8 @@ talks:
 - id: 5
   title: Quantitative Types in Idris 2
   type: talk
-  time: Not ASIA
-  date: '17,19'
-  room: ~
+  time1: Tue 11/17  4pm EST
+  time2: Wed 11/18  4am EST
   hashtags: Idris
   abstract: Dependent types allow us to express precisely *what* a function is intended
     to do.  Recent work on Quantitative Type Theory (QTT) extends dependent type systems
@@ -185,9 +181,8 @@ talks:
 - id: 6
   title: Variant analysis
   type: talk
-  time: PST
-  date: any
-  room: ~
+  time1: Fri 11/20  2pm EST
+  time2: Sat 11/21  2am EST
   hashtags: CodeQL
   abstract: In security, ‘variant analysis’ is the process of searching for variants
     of known vulnerabilities. This used to be done with grep and painstaking manual
@@ -224,9 +219,7 @@ talks:
   title: 'JAX: accelerated machine learning research via composable function transformations
     in Python'
   type: talk
-  time: PST
-  date: 18--20
-  room: ~
+  time1: Thu 11/19  2pm EST
   hashtags: GoogleBrain
   abstract: JAX is a system for high-performance machine learning research and numerical
     computing. It offers the familiarity of Python+NumPy together with hardware acceleration,
@@ -257,9 +250,7 @@ talks:
 - id: 8
   title: On the Future of Flight Software
   type: talk
-  time: PST - afternoon
-  date: '19'
-  room: ~
+  time1: Thu 11/19  4pm EST
   hashtags: NASA
   abstract: 'In recent years, mishaps in commercial aviation have been predominantly
     due to software; meanwhile software continues to grow more complex. Combining
@@ -294,7 +285,8 @@ talks:
 - id: 9
   title: Lies we tell ourselves about developer infrastructure
   type: talk
-  room: ~
+  time1: Mon 11/16  6pm EST
+  time2: Tue 11/17  2am EST
   hashtags: Python
   abstract: Over the past decade "developer infrastructure" teams have become an increasingly
     common presence in industry. Focused on serving the unique needs of an organization's
@@ -338,9 +330,8 @@ talks:
 - id: 10
   title: 'PL and HCI: Better Together'
   type: talk
-  time: EST
-  date: '19,20'
-  room: ~
+  time1: Fri 11/20  8am EST
+  time2: Fri 11/20  8pm EST
   hashtags: HCI
   abstract: 'Programming Languages (PL), Human-Computer Interaction (HCI), and Software
     Engineering (SE) have a key overlapping interest: getting computers to do what
@@ -373,9 +364,8 @@ talks:
 - id: 11
   title: Co-Design for High-Performance Computing Software Systems
   type: talk
-  time: EST
-  date: '15,20'
-  room: ~
+  time1: Fri 11/20  12pm EST
+  time2: Sat 11/21  12am EST
   hashtags: HPC
   abstract: High-performance computing (HPC) systems are designed for pursuing extreme-scale
     parallelism and computational power to accelerate various computational-expensive
@@ -415,9 +405,7 @@ talks:
 - id: 12
   title: Intermittent Computer Systems on Earth and in Space
   type: talk
-  time: EST
-  date: '17,19,20'
-  room: ~
+  time1: Thu 11/19  2pm EST
   hashtags: Architecture
   abstract: 'Intermittent computing is an emerging computational model that allows
     software to operate reliably on devices that harvest energy from their environment.  Energy-harvesting
@@ -451,9 +439,7 @@ talks:
 - id: 13
   title: 'Julia: past, present and future'
   type: talk
-  time: EST
-  date: any
-  room: ~
+  time1: Mon 11/16  4pm EST
   hashtags: Julia
   abstract: This talk will tell the story of the creation of the Julia language and
     its ecosystem. We review the state of Julia as of 2020 and discuss prospects and
@@ -472,9 +458,8 @@ talks:
 - id: 14
   title: 'Gillian: a Multi-language Platform for Compositional Symbolic Analysis'
   type: talk
-  time: EU
-  date: '15,17,18'
-  room: ~
+  time1: Mon 11/16  6am EST
+  time2: Tue 11/17  10am EST
   hashtags: Logic
   abstract: 'This talk will give a general introduction to Gillian, a multi-language
     platform for symbolic program analysis being developed by my team at Imperial
@@ -512,9 +497,8 @@ talks:
 - id: 15
   title: Miniaturize All States!
   type: talk
-  time: EU
-  date: any
-  room: ~
+  time1: Wed 11/18  8am EST
+  time2: Wed 11/18  8pm EST
   hashtags: Nix
   abstract: 'Like science, software is in reproducibility crisis. All too often, "steps
     to reproduce" in bug reports don''t work or are too long and complicated. They
@@ -542,9 +526,8 @@ talks:
 - id: 16
   title: 'Probabilistic Programming: The What, Why and How'
   type: talk
-  time: EU/EST
-  date: 15,16-20
-  room: ~
+  time1: Sun 11/15 2pm EST
+  time2: Mon 11/16 12am EST
   hashtags: Probabilistic
   abstract: f(x) = y, but y = 5. What's the probability that x =1? Probabilistic programming
     is the idea of describing probabilistic models as programs, to then automatically
@@ -574,7 +557,7 @@ talks:
   title: 'The impact of differentiable programming: how ∂P is enabling new science
     in Julia'
   type: talk
-  room: ~
+  time1: Fri 11/20  4pm EST
   hashtags: Julia
   abstract: Fully incorporating differentiable programming (∂P) into the Julia language
     has enabled composability between modern machine learning techniques and existing
@@ -604,11 +587,8 @@ talks:
 - id: 19
   title: Relational Reasoning in Object-based Programs
   type: talk
-  time: EST
-  date: 15—0500 – 0800; 16 – 0500 – 1200; 1300 – 1700;  17 – 0500 – 1200; 1300 – 1700;
-    18 – 0500 – 1200; 1600 – 1700; 19 – 0500 – 1200; 1300 – 1700; 20 – 0500 – 1100;
-    1500 -- 1700
-  room: ~
+  time1: Thu 11/19  10am EST
+  time2: Thu 11/19  10pm EST
   hashtags: OOP
   abstract: 'Relational properties arise in many settings: relating two versions of
     a program that use different data representations, noninterference properties
@@ -648,9 +628,7 @@ talks:
 - id: 20
   title: Paparazzi, an open source UAV for research
   type: talk
-  time: EU
-  date: 16--18
-  room: ~
+  time1: Mon 11/16  12pm EST
   hashtags: UAV
   abstract: Unmanned Aerial Systems have rapidly reached the maturity allowing them
     to be used in many civil applications. Open-source communities and research laboratories
@@ -684,9 +662,8 @@ talks:
 - id: 21
   title: 'Enterprise-scale static analysis: A Pinpoint experience'
   type: talk
-  time: ASIA
-  date: 15--17,19,20
-  room: ~
+  time1: Thu 11/19  6pm EST
+  time2: Fri 11/20  6am EST
   hashtags: Analysis
   abstract: Despite years of research and practice, modern static analysis techniques
     still cannot detect oldest and extremely well understood software bugs such as
@@ -714,9 +691,8 @@ talks:
 - id: 22
   title: Performance Really Matters
   type: talk
-  time: EST
-  date: '20'
-  room: ~
+  time1: Fri 11/20  10am EST
+  time2: Fri 11/20  10pm EST
   hashtags: Coz
   abstract: Performance clearly matters to users. For example, the most common software
     update on the AppStore is "Bug fixes and performance enhancements." Now that Moore's
@@ -763,9 +739,8 @@ talks:
 - id: 23
   title: Developing the Wolfram Language Compiler
   type: talk
-  time: EU
-  date: '16,17,18'
-  room: ~
+  time1: Tue 11/17  2pm EST
+  time2: Wed 11/18  2am EST
   hashtags: Mathematica
   abstract: The Wolfram Language is a high level computation language used in many
     technical, scientific, engineering, mathematical, and computing fields. It is
@@ -797,8 +772,8 @@ talks:
 - id: 24
   title: 'Tales from the Frontlines: Startup War Stories'
   type: talk
-  time: PST
-  room: ~
+  time1: Wed 11/18  6pm EST
+  time2: Thu 11/19  6am EST
   hashtags: Hotspot
   abstract: Can one build the Hotspot VM, the Azul GC and the H20 big data engine
     without getting into the occasional battle and making a mistake or two? This talk
@@ -824,9 +799,8 @@ talks:
 - id: 25
   title: Reliable Stack Traces, the Reality of Myth
   type: talk
-  time: EU
-  date: any
-  room: ~
+  time1: Mon 11/16  8am EST
+  time2: Mon 11/16  8pm EST
   hashtags: Performance
   abstract: Debug information is a hidden and obscure component of our computing infrastructure
     obviously used by debuggers, but also playing a key role in program analysis tools,
@@ -860,9 +834,7 @@ talks:
 - id: 30
   title: Move Semantics for Nim
   type: talk
-  time: EST
-  date: '15'
-  room: ~
+  time1: Sun 11/15 10am EST
   hashtags: Nim
   abstract: This talk explains Nim's move semantics and their connection to reference
     counting, how Nim's model differs from C++/Rust and why move semantics can offer
@@ -884,9 +856,8 @@ talks:
 - id: 31
   title: 'Towards the tower of Babel: a Polyglot Language VM in Java'
   type: talk
-  time: EU
-  date: 17--20
-  room: ~
+  time1: Tue 11/17  12pm EST
+  time2: Thu 11/19  8am EST
   hashtags: Graal
   abstract: Meet the GraalVM, a technology you can use to build composable high-performance
     language implementations and tools. Most production-level virtual machines duplicate
@@ -914,9 +885,8 @@ talks:
 - id: 35
   title: 'A Ray of Hope: Array Programming for the 21st Century'
   type: talk
-  time: PST
-  date: '15,17,20'
-  room: ~
+  time1: Sun 11/15 4pm EST
+  time2: Mon 11/16 2am EST
   hashtags: NewSpeak
   abstract: 'The ideas of APL and its successors, the array programming languages,
     were two generations ahead of their time.  These languages are based on  the notion
@@ -946,9 +916,8 @@ talks:
 - id: 41
   title: Herding Nulls in Dart
   type: talk
-  time: EU
-  date: any
-  room: ~
+  time1: Mon 11/16  2pm EST
+  time2: Tue 11/17  12am EST
   hashtags: Dart
   abstract: The programming language Dart is about to introduce sound null safety,
     which involves a bundle of language mechanisms associated with null as a typing
@@ -971,9 +940,7 @@ talks:
 - id: 45
   title: 'Paradigms Without Progress: Kuhnian Reflections on Programming Practice'
   type: talk
-  time: EST
-  date: 17--20
-  room: ~
+  time1: Wed 11/18  12pm EST
   hashtags: Transformers
   abstract: "Borrowing from Thomas Kuhn's definition of a paradigm, Robert Floyd introduced
     the notion of a programming paradigm in his 1978 Turing Award acceptance speech.
@@ -1022,9 +989,7 @@ talks:
 - id: 47
   title: Inside Every Calculus Is A Little Algebra Waiting To Get Out
   type: talk
-  time: PST
-  date: 15, 16, 18, 19
-  room: ~
+  time1: Wed 11/18  2pm EST
   hashtags: ML
   abstract: Because of deep learning, there has been a surge in interest in automatic
     differentiation, especially from the functional programming community. As a result
@@ -1051,7 +1016,7 @@ talks:
 - id: 51
   title: 'SQLancer: Automatically Finding Bugs in Database Management Systems'
   type: talk
-  room: ~
+  time1: Tue 11/17  4am EST
   hashtags: SQL
   abstract: This talk presents our work on automatic testing of Database Management
     Systems (DBMS), part of which we found over 400 bugs in widely-used DBMS such

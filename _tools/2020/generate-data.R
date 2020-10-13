@@ -65,9 +65,8 @@ create_talk <- function(x) {
       id=f$talk_id,
       title=f$title,
       type=f$type,
-      time=f$time,
-      date=f$date,
-      room=f$room,
+      time1=f$first,
+      time2=f$second,
       hashtags=create_hashtags(f$hashtags),
       video=f$video,
       abstract=f$abstract,
@@ -78,6 +77,7 @@ create_talk <- function(x) {
 }
 
 talks_raw <- sheets_read(SHEET_ID, sheet="Speakers", trim_ws=T, na="???")
+schedule_raw <- sheets_read(SHEET_ID, sheet="Schedule", trim_ws=T, na="???")
 
 options(dplyr.width = Inf)
 
@@ -94,8 +94,27 @@ talks_df <-
         type="talk"
     ) %>%
     filter(show) %>%
-    arrange(type, session_id) %>%
-    print()
+    arrange(type, session_id)
+
+schedule_df <-
+  schedule_raw %>%
+    # from some reason the na argument at sheets_read does not work
+    mutate_all(replace_na, replace="") %>%
+    transmute(
+      name=Name,
+      first=`First talk`,
+      second=`Second talk`
+    )
+
+talks_df <-
+  left_join(talks_df, schedule_df, by="name")
+
+missing <- filter(talks_df, is.na(first))
+if (nrow(missing) != 0) {
+  message("Missing schedule for:")
+  cat(missing$name, sep="\n")
+  q(status=1, save=FALSE)
+}
 
 # convert the data frame into a list where each element is a nested list with
 # speakers
