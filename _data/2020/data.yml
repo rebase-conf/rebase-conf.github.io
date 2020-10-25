@@ -68,7 +68,18 @@ talks:
   time1: Wed 11/18  4pm EST
   time2: Thu 11/19  4am EST
   hashtags: SmartContracts
-  abstract: I will give an overview of Algorand's smart contract strategy.
+  abstract: 'A *smart contract* is a script that controls the transfer of electronic
+    assets within a distributed ledger. Existing smart contract architectures suffer
+    from a *bottleneck* problem: contract calls place arbitrary user code right in
+    the ledger''s critical path, so relatively complex contract executions delay processing
+    for all transactions, especially simple payments and transfers that could otherwise
+    be cleared quickly. This talk describes an alternative smart contract architecture
+    that executes user code speculatively off the blockchain''s critical path. A secure
+    committee validates and votes on each such computation, certifying the computation''s
+    preconditions and its effects, and forwarding the certified results to a different
+    committee controlling the blockchain. The paper focuses on the authors'' experience
+    integrating this smart contract architecture with an existing commercial blockchain
+    and an existing language virtual machine.'
   speakers:
   - id: maurice_herlihy
     name: Maurice Herlihy
@@ -405,7 +416,7 @@ talks:
 - id: 12
   title: Intermittent Computer Systems on Earth and in Space
   type: talk
-  time1: Thu 11/19  2pm EST
+  time1: Thu 11/19  12pm EST
   hashtags: Architecture
   abstract: 'Intermittent computing is an emerging computational model that allows
     software to operate reliably on devices that harvest energy from their environment.  Energy-harvesting
@@ -458,7 +469,7 @@ talks:
 - id: 14
   title: 'Gillian: a Multi-language Platform for Compositional Symbolic Analysis'
   type: talk
-  time1: Mon 11/16  6am EST
+  time1: Mon 11/16  4am EST
   time2: Tue 11/17  10am EST
   hashtags: Logic
   abstract: 'This talk will give a general introduction to Gillian, a multi-language
