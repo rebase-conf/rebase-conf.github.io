@@ -448,24 +448,33 @@ talks:
     twitter: blucia0a
     website: https://brandonlucia.com
 - id: 13
-  title: 'Julia: past, present and future'
+  title: Non-local compiler transformations in the presence of dynamic dispatch
   type: talk
   time1: Mon 11/16  4pm EST
   hashtags: Julia
-  abstract: This talk will tell the story of the creation of the Julia language and
-    its ecosystem. We review the state of Julia as of 2020 and discuss prospects and
-    challenges ahead.
+  abstract: Non-local, semantic compiler transformations such as Automatic Differentiation
+    and certain Bayesian Inference algorithms pose particular challenges for dynamic
+    dispatch systems, where non-local information may not necessarily be computable
+    at compile time. In this talk, I will describe how we approach these problems
+    in Julia while retaining performance scalability all the way from completely dynamic
+    information situations to the semi-static case. Along the way, I will introduce
+    optical constructions, a recent result from Category Theory that provides a useful
+    guide when choosing abstractions for this class of transformations.
   speakers:
-  - id: jeff_bezanson
-    name: Jeff Bezanson
+  - id: keno_fischer
+    name: Keno Fischer
     affiliation: Julia Computing
     url: ~
-    bio: Jeff is one of the creators of Julia, co-founding the project at MIT in 2009
-      and eventually receiving a Ph.D. related to the language in 2015. He continues
-      to work on the compiler and system internals, while also working to expand Julia’s
-      commercial reach as a co-founder of Julia Computing, Inc.
-    twitter: JeffBezanson
-    website: https://github.com/JeffBezanson
+    bio: Keno Fischer is a core developer of the Julia programming language and co-founder
+      and CTO at Julia Computing. Keno has been working on Julia for most of the past
+      8 years, contributing major parts of the compiler, REPL and binary package management
+      infrastructure, as well as the Julia Machine Learning stack. In his research,
+      Keno likes to push the boundaries of possibilities for programming systems,
+      from exascale computation to practical systems for homomorphicencryption. Keno
+      holds an AM degree in Physics from Harvard University and was recognized by
+      Forbes as one of their"30 under 30".
+    twitter: KenoFischer
+    website: https://github.com/Keno
 - id: 14
   title: 'Gillian: a Multi-language Platform for Compositional Symbolic Analysis'
   type: talk
