@@ -23,6 +23,7 @@ $imgs_baseurl: "{{ site.baseurl }}/resources/{{ year }}/img";
 @import "{{ year }}/css/about";
 @import "{{ year }}/css/talks";
 @import "{{ year }}/css/sponsors";
+@import "{{ year }}/css/stream";
 @import "{{ year }}/css/footer";
 @import "{{ year }}/css/simple-heading";
 @import "{{ year }}/css/single";

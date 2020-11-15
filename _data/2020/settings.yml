@@ -21,6 +21,7 @@ registration_date: Open
 
 # Control different sections on the HP
 show_talks: true
+show_stream: true
 show_sponsors: true
 show_organizers: true
 show_schedule: true

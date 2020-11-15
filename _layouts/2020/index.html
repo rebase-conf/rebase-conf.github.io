@@ -35,6 +35,13 @@ layout: 2020/default
       </a>
     </span>
     {% endif %}
+    {% if settings.show_stream %}
+    <span class="intro__button">
+      <a href="#stream" class="button" rel="smooth-scroll">
+        Live Stream
+      </a>
+    </span>
+    {% endif %}
     {% if settings.registration != "hidden" %}
     <span class="intro__button">
       <a href="{{ settings.registration_url }}" class="button {% if settings.registration != "active" %}button--inactive{% endif %}">
@@ -90,12 +97,15 @@ layout: 2020/default
       </p>
       <br/>
       <p>
-        <strong>Rebase is free, all talks will be streamed on <i class="fab fa-youtube"></i>&nbsp;YouTube live.</strong>
+        <strong>Rebase is free, all talks will be streamed on <a href="https://youtu.be/ajF4URRhHrE"><i class="fab fa-youtube"></i>&nbsp;YouTube live</a>.</strong>
         <a href="https://2020.splashcon.org/attending/Registration">Register</a> to support the conference and to join the conversation and mingle with the speakers.
       </p>
     </div>
   </div>
 </section>
+{% if settings.show_stream %}
+  {% include {{ year }}/stream.html %}
+{% endif %}
 {% if settings.show_talks %}
   {% include {{ year }}/talks.html %}
 {% endif %}
