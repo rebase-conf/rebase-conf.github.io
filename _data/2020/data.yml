@@ -5,6 +5,7 @@ talks:
   time1: Tue 11/17  6pm EST
   time2: Wed 11/18  6am EST
   hashtags: Ethics
+  video_id: EnMfP8HLrOk
   abstract: Judging by the experiences of Robert Grimm and a close confidante, both
     academe and industry have long given up even trying to conduct their business
     in an ethical fashion. In this talk, the author will detail some of the most egregious
@@ -18,7 +19,6 @@ talks:
   - id: robert_grimm
     name: Robert Grimm
     affiliation: Self
-    url: ~
     bio: Robert Grimm has two degrees in Computer Science and Engineering from MIT
       and the University of Washington, served as Associate Professor at NYU, received
       a National Science Foundation CAREER award, and was selected for a junior fellowship
@@ -35,6 +35,7 @@ talks:
   type: talk
   time1: Sun 11/15 12pm EST
   hashtags: UI
+  video_id: qn3_HvTBftg
   abstract: 'Digital interfaces have changed a lot since the good old days of CERN''s
     first webpage. UI design has evolved in a very unpredictable way, generating new
     trends year after year always based on the needs and expectations of users. Also,
@@ -51,7 +52,6 @@ talks:
   - id: paola_bisogno
     name: Paola Bisogno
     affiliation: Casavo
-    url: ~
     bio: Paola is an italian digital product designer with more than 15 years of experience.
       She started as a web master in the early 00s, building web 1.0 sites. After
       years in digital agencies, she switched to focus on user experience and interface
@@ -68,6 +68,7 @@ talks:
   time1: Wed 11/18  4pm EST
   time2: Thu 11/19  4am EST
   hashtags: SmartContracts
+  video_id: bmUxwdxpXA0
   abstract: 'A *smart contract* is a script that controls the transfer of electronic
     assets within a distributed ledger. Existing smart contract architectures suffer
     from a *bottleneck* problem: contract calls place arbitrary user code right in
@@ -84,7 +85,6 @@ talks:
   - id: maurice_herlihy
     name: Maurice Herlihy
     affiliation: Brown University
-    url: ~
     bio: Maurice Herlihy has an A.B. in Mathematics from Harvard University, and a
       Ph.D. in Computer Science from M.I.T. He has served on the faculty of Carnegie
       Mellon University and the staff of DEC Cambridge Research Lab. He is the recipient
@@ -101,8 +101,8 @@ talks:
   title: 'APIs are Illness and Cure: The Software Heterogeneity Problem in Web Programming'
   type: talk
   time1: Sun 11/15 6pm EST
-  time2: Mon 11/16  6am EST
   hashtags: APIs
+  video_id: 5WN6Z1kHHIE
   abstract: It is easier than ever before to build complex web applications. But developer
     tooling for understanding, testing, and maintaining these systems has not caught
     up. Something I heard over and over again when starting Akita was that developers
@@ -128,7 +128,6 @@ talks:
   - id: jean_yang
     name: Jean Yang
     affiliation: Akita Software
-    url: ~
     bio: 'Hi there. I’m Jean. I started Akita because I wanted to build practical,
       principled tooling for modern software systems. I’ve spent my career in pursuit
       of better software tools. I grew up programming—and it felt like magic that
@@ -179,7 +178,6 @@ talks:
   - id: edwin_brady
     name: Edwin Brady
     affiliation: St Andrews
-    url: ~
     bio: I am a Lecturer in Computer Science at the University of St. Andrews, interested
       in type theory, dependently typed functional programming, compilers and metaprogramming.
       I am currently working on a new implementation of Idris, a dependently typed
@@ -211,7 +209,6 @@ talks:
   - id: oege_de_moor
     name: Oege de Moor
     affiliation: Github
-    url: ~
     bio: Oege de Moor is the CEO and Co-Founder of Semmle. Prior to founding Semmle,
       he spent 21 years as a Professor of Computer Science at Oxford. During a sabbatical
       from Oxford, he joined Microsoft as a Visiting Researcher, working with Charles
@@ -246,7 +243,6 @@ talks:
   - id: matthew_johnson
     name: Matthew Johnson
     affiliation: Google
-    url: ~
     bio: Matt Johnson is a research scientist at Google Brain interested in software
       systems powering machine learning research. When moonlighting as a machine learning
       researcher, he works on composing graphical models with neural networks, automatically
@@ -279,7 +275,6 @@ talks:
   - id: kristin_yvonne_rozier
     name: Kristin Yvonne Rozier
     affiliation: Iowa State
-    url: ~
     bio: NSF CAREER Award winner and recipient of the Inaugural Initiative-Inspiration-Impact
       Award from Women in Aerospace, Kristin Yvonne Rozier joined the faculty of the
       Aerospace Engineering and CS in Fall, 2016. Previous to that she spent 14 years
@@ -297,8 +292,8 @@ talks:
   title: Lies we tell ourselves about developer infrastructure
   type: talk
   time1: Mon 11/16  6pm EST
-  time2: Tue 11/17  2am EST
   hashtags: Python
+  video_id: rPjybmePfdY
   abstract: Over the past decade "developer infrastructure" teams have become an increasingly
     common presence in industry. Focused on serving the unique needs of an organization's
     engineers, their responsibilities can be as modest as build script support or
@@ -329,7 +324,6 @@ talks:
   - id: joe_pamer
     name: Joe Pamer
     affiliation: Facebook
-    url: ~
     bio: Joe Pamer is an Engineering Director at Instagram, where he serves as their
       Head of Infrastructure, Feed, and ML. Before joining Facebook to help lead their
       programming language efforts, he was instrumental in the design and development
@@ -360,7 +354,6 @@ talks:
   - id: elena_glassman
     name: Elena Glassman
     affiliation: Harvard
-    url: ~
     bio: Elena Glassman is a the Stanley A. Marks and William H. Marks Assistant Professor
       at the Radcliffe Institute and a professor of computer science at the Harvard
       Paulson School of Engineering and Applied Sciences specializing in human-computer
@@ -399,7 +392,6 @@ talks:
   - id: min_si
     name: Min Si
     affiliation: Argonne
-    url: ~
     bio: Dr. Min Si is an Assistant Computer Scientist at Argonne National Laboratory
       working with the Programming Models and Runtime Systems group. Min’s research
       interests include communication runtime in high-performance computing and parallel
@@ -438,7 +430,6 @@ talks:
   - id: brandon_lucia
     name: Brandon Lucia
     affiliation: CMU
-    url: ~
     bio: 'Brandon is a Professor at Carnegie Mellon University working on hardware
       and software computer systems to answer the question: "How capable can a computing
       system be, given physical restrictions on its form factor, input power, energy
@@ -464,7 +455,6 @@ talks:
   - id: keno_fischer
     name: Keno Fischer
     affiliation: Julia Computing
-    url: ~
     bio: Keno Fischer is a core developer of the Julia programming language and co-founder
       and CTO at Julia Computing. Keno has been working on Julia for most of the past
       8 years, contributing major parts of the compiler, REPL and binary package management
@@ -481,6 +471,7 @@ talks:
   time1: Mon 11/16  4am EST
   time2: Tue 11/17  10am EST
   hashtags: Logic
+  video_id: Km2peSYvIyA
   abstract: 'This talk will give a general introduction to Gillian, a multi-language
     platform for symbolic program analysis being developed by my team at Imperial
     College London. Gillian currently supports three types of analysis: whole-program
@@ -502,7 +493,6 @@ talks:
   - id: philippa_gardner
     name: Philippa Gardner
     affiliation: Imperial College London
-    url: ~
     bio: Philippa Gardner professes at Imperial College and holds a UK Research and
       Innovation Established Fellowship.  She is known for her work on program specification
       and verification. Her group is credited with bringing logical abstraction and
@@ -534,7 +524,6 @@ talks:
   - id: mathieu_boespflug
     name: Mathieu Boespflug
     affiliation: Tweag I/O
-    url: ~
     bio: Mathieu is the CEO of Tweag I/O, an independent industrial lab helping startups
       and research groups within the enterprise boldly ship high-risk, high-reward
       digital products. He was involved in European initiatives for exascale storage,
@@ -549,6 +538,7 @@ talks:
   time1: Sun 11/15 2pm EST
   time2: Mon 11/16 12am EST
   hashtags: Probabilistic
+  video_id: cvD9DnTDxmY
   abstract: f(x) = y, but y = 5. What's the probability that x =1? Probabilistic programming
     is the idea of describing probabilistic models as programs, to then automatically
     infer how our beliefs about model parameters change given observed data. In recent
@@ -562,7 +552,6 @@ talks:
   - id: maria_gorinova
     name: Maria Gorinova
     affiliation: University of Edinburgh
-    url: ~
     bio: Maria is a Data Science PhD student at the University of Edinburgh, where
       she works on improving the expressivity and efficiency of probabilistic programming
       languages. In particular, she is interested in applying program-analysis techniques
@@ -593,7 +582,6 @@ talks:
   - id: matt_bauman
     name: Matt Bauman
     affiliation: Julia Computing
-    url: ~
     bio: Matt Bauman is a Senior Research Scientist at JuliaComputing's Chicago outpost,
       where he spends lots of time working on arrays and broadcasting. He’s been contributing
       to both the core language and multiple packages since 2014. At his previous
@@ -625,7 +613,6 @@ talks:
   - id: anindya_banerjee
     name: Anindya Banerjee
     affiliation: NSF
-    url: ~
     bio: Anindya Banerjee is a Program Director at the National Science Foundation
       in the CISE Directorate in the Division of Computing and Communication Foundations
       (CCF) where he focuses on the issues of Software and Hardware Foundations; Exploiting
@@ -666,7 +653,6 @@ talks:
   - id: gautier_hattenberger
     name: Gautier Hattenberger
     affiliation: ENAC
-    url: ~
     bio: Gautier Hattenberger is an assistant-professor at the French Civil Aviation
       University (ENAC) in Toulouse, France. As a member of the UAV Research Program,
       he is working on flight dynamics and control of micro-UAVs, modeling and simulation,
@@ -699,7 +685,6 @@ talks:
   - id: charles_zhang
     name: Charles Zhang
     affiliation: HKUST/sourcebrella
-    url: ~
     bio: My general research interest centers around the use of both static and dynamic
       programm analysis techniques for making complex software systems more secure
       and reliable.   I'm an Associate Professor and direct of the Cybersecurity Lab
@@ -744,7 +729,6 @@ talks:
   - id: emery_berger
     name: Emery Berger
     affiliation: University of Massachussetts, Amherst
-    url: ~
     bio: Emery is a Professor at the University of Massachusetts Amherst. He researches
       languages, runtime systems, and operating systems, with a particular focus on
       systems that transparently improve reliability, security, and performance. Emery
@@ -762,6 +746,7 @@ talks:
   time1: Tue 11/17  2pm EST
   time2: Wed 11/18  2am EST
   hashtags: Mathematica
+  video_id: O_Cu2T-6Eoo
   abstract: The Wolfram Language is a high level computation language used in many
     technical, scientific, engineering, mathematical, and computing fields. It is
     widely used in practice and, in particular, it is the foundation of Wolfram Mathematica
@@ -779,7 +764,6 @@ talks:
   - id: tom_wickham-jones
     name: Tom Wickham-Jones
     affiliation: Wolfram Research, Inc.
-    url: ~
     bio: 'Tom Wickham-Jones has worked for Wolfram Research on the implementation
       of Mathematica since 1990. He is currently the Director of Kernel Technology.
       He has worked on many details of the Mathematica programming language, as well
@@ -793,8 +777,8 @@ talks:
   title: 'Tales from the Frontlines: Startup War Stories'
   type: talk
   time1: Wed 11/18  6pm EST
-  time2: Thu 11/19  6am EST
   hashtags: Hotspot
+  video_id: B9xSwr5fXAE
   abstract: Can one build the Hotspot VM, the Azul GC and the H20 big data engine
     without getting into the occasional battle and making a mistake or two? This talk
     distill the lessons of success and wrings wisdom out of failures over three decades
@@ -803,7 +787,6 @@ talks:
   - id: cliff_click
     name: Cliff Click
     affiliation: Self
-    url: ~
     bio: Cliff Click was the CTO and Co-Founder of H2O, makers of H2O, the open source
       math and machine learning engine for Big Data. Cliff wrote his first compiler
       when he was 15 (Pascal to TRS Z-80!), although Cliff’s most famous compiler
@@ -841,7 +824,6 @@ talks:
   - id: francesco_zappa_nardelli
     name: Francesco Zappa Nardelli
     affiliation: Facebook
-    url: ~
     bio: Francesco is a research scientist in FLaRr, the Facebook Language Research
       group. His work is at boundaries between programming languages, system programming,
       and computer architectures. It ranges from understanding hardware relaxed memory
@@ -856,6 +838,7 @@ talks:
   type: talk
   time1: Sun 11/15 10am EST
   hashtags: Nim
+  video_id: zPlBZkWvuug
   abstract: This talk explains Nim's move semantics and their connection to reference
     counting, how Nim's model differs from C++/Rust and why move semantics can offer
     superior performance. It is explained how to leverage this technology to make
@@ -865,7 +848,6 @@ talks:
   - id: andreas_rumpf
     name: Andreas Rumpf
     affiliation: Freelancer
-    url: ~
     bio: Andreas is the designer of the Nim programming language, which he develops
       full-time with a team of developers and the help of an enthusiastic open source
       community. He has programmed in various languages over the years (including
@@ -877,8 +859,9 @@ talks:
   title: 'Towards the tower of Babel: a Polyglot Language VM in Java'
   type: talk
   time1: Tue 11/17  12pm EST
-  time2: Thu 11/19  8am EST
+  time2: Thu 11/19  2am EST
   hashtags: Graal
+  video_id: O4icaN9khp4
   abstract: Meet the GraalVM, a technology you can use to build composable high-performance
     language implementations and tools. Most production-level virtual machines duplicate
     their target language's semantics in the interpreter, in the compiler, and in
@@ -893,7 +876,6 @@ talks:
   - id: christian_humer
     name: Christian Humer
     affiliation: Oracle Labs Zurich
-    url: ~
     bio: Christian Humer is a researcher at Oracle Labs in Zurich, working on the
       GraalVM project. He develops the Truffle framework which aims to make all programming
       languages fast, composable and embeddable. His research interests include virtual
@@ -908,6 +890,7 @@ talks:
   time1: Sun 11/15 4pm EST
   time2: Mon 11/16 2am EST
   hashtags: NewSpeak
+  video_id: x1FoTYnJxeY
   abstract: 'The ideas of APL and its successors, the array programming languages,
     were two generations ahead of their time.  These languages are based on  the notion
     that everything is a tensor, and all operations are  rank-polymorphic: they extend
@@ -920,7 +903,6 @@ talks:
   - id: gilad_bracha
     name: Gilad Bracha
     affiliation: F5 Networks
-    url: ~
     bio: Gilad Bracha is the creator of the Newspeak programming language and a well
       known researcher in the area of object-oriented programming languages. He was
       awarded the senior Dahl-Nygaard prize in 2017. Previously, he has worked at
@@ -948,7 +930,6 @@ talks:
   - id: erik_ernst
     name: Erik Ernst
     affiliation: Google
-    url: ~
     bio: rik Ernst is a member of the Dart language team at Google, maintaining the
       language specification. He has been an associate professor at Aarhus University.
       He has published research on virtual classes, establishing that they can be
@@ -962,6 +943,7 @@ talks:
   type: talk
   time1: Wed 11/18  12pm EST
   hashtags: Transformers
+  video_id: TkPy7aLTtAw
   abstract: "Borrowing from Thomas Kuhn's definition of a paradigm, Robert Floyd introduced
     the notion of a programming paradigm in his 1978 Turing Award acceptance speech.
     Ever since, this idea has infected the software world, becoming an organizing
@@ -999,7 +981,6 @@ talks:
   - id: jimmy_miller
     name: Jimmy Miller
     affiliation: Adzerk
-    url: ~
     bio: Jimmy is a Senior Software Engineer at Adzerk where he uses Clojure to build
       data transformation and analysis systems. In his spare time he enjoys exploring
       programming language theory, reading analytic philosophy, and writing code that
@@ -1011,6 +992,7 @@ talks:
   type: talk
   time1: Wed 11/18  2pm EST
   hashtags: ML
+  video_id: Tzoig3ckV_s
   abstract: Because of deep learning, there has been a surge in interest in automatic
     differentiation, especially from the functional programming community. As a result
     there are many recent papers that look at AD from a Category Theory perspective.
@@ -1024,7 +1006,6 @@ talks:
   - id: erik_meijer
     name: Erik Meijer
     affiliation: Facebook
-    url: ~
     bio: Erik Meijer has been trying to bridge the ridge between theory and practice
       for most of his career. He is perhaps best known for his work on, amongst others,
       Haskell, C#, Visual Basic, and Dart programming languages, as well as for his
@@ -1038,6 +1019,7 @@ talks:
   type: talk
   time1: Tue 11/17  4am EST
   hashtags: SQL
+  video_id: lCaGWSk5K3I
   abstract: This talk presents our work on automatic testing of Database Management
     Systems (DBMS), part of which we found over 400 bugs in widely-used DBMS such
     as SQLite, MySQL, and PostgreSQL. While crash bugs in DBMS can be detected via
@@ -1053,7 +1035,6 @@ talks:
   - id: manuel_rigger
     name: Manuel Rigger
     affiliation: ETHZ
-    url: ~
     bio: Manuel Rigger is a postdoctoral researcher in the Advanced Software Technologies
       (AST) Lab at ETH Zurich, mentored by Zhendong Su. He is working on programming
       language implementation, software reliability, and systems. In his recent work,

@@ -295,3 +295,18 @@
   margin-left: rem-calc(20px);
   line-height: 1.5rem;
 }
+
+.box__video {
+  width: 290px;
+  height: 163px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 168px;
+  border: 4px solid $color-paragraph;
+  margin-bottom: 2em;
+}
+
+.box__youtube {
+  font-size: 4em;
+  color: #ff0000;
+}

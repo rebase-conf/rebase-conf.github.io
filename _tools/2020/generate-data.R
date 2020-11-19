@@ -31,7 +31,9 @@ make_session_id <- function(title) {
         str_to_lower()
 }
 
-is_empty_string <- function(x) typeof(x) == "character" && nchar(x) == 0
+is_empty_string <- function(x) {
+  is.na(x) || is.null(x) || (typeof(x) == "character" && nchar(x) == 0)
+}
 
 strip_names <- function(x) {
   names(x) <- NULL
@@ -60,20 +62,26 @@ create_speaker <- function(x) {
 }
 
 create_talk <- function(x) {
-    f <- x[[1]]
+    y <- x[[1]]
     list(
-      id=f$talk_id,
-      title=f$title,
-      type=f$type,
-      time1=f$first,
-      time2=f$second,
-      hashtags=create_hashtags(f$hashtags),
-      video=f$video,
-      abstract=f$abstract,
-      excerpt=f$excerpt,
+      id=y$talk_id,
+      title=y$title,
+      type=y$type,
+      time1=y$first,
+      time2=y$second,
+      hashtags=create_hashtags(y$hashtags),
+      video_id=y$video_id,
+      abstract=y$abstract,
+      excerpt=y$excerpt,
       speakers=map(x, create_speaker)
     ) %>%
     discard(is_empty_string)
+}
+
+args <- commandArgs(trailingOnly=TRUE)
+video_file <- NULL
+if (length(args) == 1) {
+  video_file <- args[1]
 }
 
 talks_raw <- sheets_read(SHEET_ID, sheet="Speakers", trim_ws=T, na="???")
@@ -83,7 +91,6 @@ options(dplyr.width = Inf)
 
 talks_df <-
     talks_raw %>%
-    # from some reason the na argument at sheets_read does not work
     mutate_all(replace_na, replace="") %>%
     mutate(
         show=if_else(show == "yes", TRUE, FALSE),
@@ -106,8 +113,21 @@ schedule_df <-
       second=`Second talk`
     )
 
+video_df <- if (!is.null(video_file)) {
+  library(jsonlite)
+  tmp <- fromJSON(video_file)$item$snippet
+  tibble(
+    title=tmp$title,
+    video_id=tmp$resourceId$videoId
+  )
+} else {
+  tibble(title=NA, video_id=NA)
+}
+
 talks_df <-
-  left_join(talks_df, schedule_df, by="name")
+  talks_df %>%
+  left_join(schedule_df, by="name") %>%
+  left_join(video_df, by="title")
 
 missing <- filter(talks_df, is.na(first))
 if (nrow(missing) != 0) {

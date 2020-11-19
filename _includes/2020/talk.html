@@ -31,6 +31,13 @@
     </a>
   </p>
 </div>
+{% if talk.video_id %}
+<div style="background: url('https://i.ytimg.com/vi/{{ talk.video_id }}/mqdefault.jpg');" class="box__video">
+    <a href="https://www.youtube.com/watch?v={{ talk.video_id }}&list=PLyrlk8Xaylp6aNlOgiyE4W30X7DpXx74m" target="_blank" class="box__youtube">
+      <span class="fab fa-youtube" aria-hidden="true"></span>
+    </a>
+</div>
+{% endif %}
 <div class="box__people">
   {% for speaker in talk.speakers %}
   {% include {{ year }}/person.html person=speaker %}
