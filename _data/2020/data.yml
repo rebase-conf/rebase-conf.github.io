@@ -1083,25 +1083,24 @@ talks:
   - id: jan_vitek
     name: Jan Vitek
     affiliation: Northeastern University / Czech Technical University
-    bio: "Jan Vitek is a Professor of Computer Science at Northeastern University.\n
-      Dr. Vitek was born in Czechoslovakia and educated in Switzerland. Over \nthe
-      years, he worked on topics related to programming languages, their \ndesign,
-      use, and implementation. With Noble and Potter, he proposed the \nnotion of
-      flexible alias control which became know as Ownership Types. \nHe led the Ovm
-      project which produced the first real-time Java virtual \nmachine to be flight
-      tested on a ScanEagle drone (he claims no one was \nharmed). Outcomes of this
-      project include the Schism real-time garbage \ncollector and the FijiVM – a
-      production VM for embedded systems. More \nrecently, he worked on dynamic languages,
-      trying to make sense of \nJavaScript and to design a new language called, Thorn.
-      Nowadays, he \nspends his time with statisticians and data scientists. Jan believes
-      \nthat his 2012 election as Chair of SIGPLAN was an accident; since has \nbeen
-      busy trying to rock the boat to ensure this does not happen again. \nIn his
-      spare time, Jan enjoys organizing conferences and sitting on PCs \n(over 25
-      in the last decade). He founded the MOS (mobile objects), IWACO\n (alias control),
-      STOP (gradual typing), and TRANSACT (transactional \nmemory) workshop series.
-      He was the first program chair of VEE and \nchaired ESOP, ECOOP, Coordination
-      and TOOLS. He was the general chair of\n PLDI (in Beijing!), ISMM and LCTES.
-      He may still be sitting on the \nsteering committees of ECOOP, JTRES, ICFP,
-      OOPLSA, POPL, PLDI, LCTES, \nESOP."
+    bio: "Jan Vitek is a Professor of Computer Science at Northeastern University.
+      Dr. Vitek was born in Czechoslovakia and educated in Switzerland. Over the years,
+      he worked on topics related to programming languages, their design, use, and
+      implementation. With Noble and Potter, he proposed the notion of flexible alias
+      control which became know as Ownership Types. He led the Ovm project which produced
+      the first real-time Java virtual machine to be flight tested on a ScanEagle
+      drone (he claims no one was harmed). Outcomes of this project include the Schism
+      real-time garbage collector and the FijiVM – a production VM for embedded systems.
+      More recently, he worked on dynamic languages, trying to make sense of JavaScript
+      and to design a new language called, Thorn. Nowadays, he spends his time with
+      statisticians and data scientists. Jan believes that his 2012 election as Chair
+      of SIGPLAN was an accident; since has been busy trying to rock the boat to ensure
+      this does not happen again. In his spare time, Jan enjoys organizing conferences
+      and sitting on PCs (over 25 in the last decade). He founded the MOS (mobile
+      objects), IWACO (alias control), STOP (gradual typing), and TRANSACT (transactional
+      memory) workshop series. He was the first program chair of VEE and \nchaired
+      ESOP, ECOOP, Coordination and TOOLS. He was the general chair of PLDI (in Beijing!),
+      ISMM and LCTES. He may still be sitting on the steering committees of ECOOP,
+      JTRES, ICFP, OOPLSA, POPL, PLDI, LCTES, ESOP."
     twitter: j_v_66
     website: http://janvitek.org/
