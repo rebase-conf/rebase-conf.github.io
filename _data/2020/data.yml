@@ -1104,3 +1104,36 @@ talks:
       JTRES, ICFP, OOPLSA, POPL, PLDI, LCTES, ESOP."
     twitter: j_v_66
     website: http://janvitek.org/
+- id: 100
+  title: Catching More Bugs with Fewer False Alarms
+  type: talk
+  time1: Mon 11/16  10am EST
+  time2: Mon 11/16  10pm EST
+  hashtags: Testing
+  video_id: MbajYvQVB30
+  abstract: |-
+    The line between high-assurance and general-purpose software is increasingly blurred, as nowadays nearly any insecure or buggy software can have severe economic consequences. When developers release software, it is critical that there be as few defects (and vulnerabilities) as possible. To check the quality of their code, developers typically write and run test cases, and some may also use static analyses that inspect their code. Yet code is still released with bugs and critical vulnerabilities: testing can not prove the absence of defects, and static analyses often overwhelm developers with false positive reports, making them difficult for the average developer to use. I argue that new dynamic program analyses can act as a force multiplier for developers’ test suites: increasing the number of defects that tests can find without burdening developers with false positive reports. In this talk, I will describe some of my recent work building dynamic analysis systems for taint tracking and checkpointing of JVM-based systems, along with several examples of how these analyses can be integrated with developer-written tests to improve the reliability and fault finding power of those tests.
+
+    **This talk is given by the recipient of the Dahl Nygaard Junior prize.**
+  speakers:
+  - id: jonathan_bell
+    name: Jonathan Bell
+    affiliation: Northeastern University
+    bio: Jon is an Assistant Professor directing research in Software Engineering
+      and Software Systems at Northeastern University. His research makes it easier
+      for developers to create reliable and secure software by improving software
+      testing and program analysis. Jon’s work on accelerating software testing has
+      been recognized with an ACM SIGSOFT Distinguished Paper Award (ICSE ’14 – Unit
+      Test Virtualization with VMVM), and was the basis for an industrial collaboration
+      with Electric Cloud. His program analysis research has resulted in several widely
+      adopted runtime systems for the JVM, including the Phosphor taint tracking system
+      (OOPSLA ’14) and CROCHET checkpoint/rollback tool (ECOOP ’18). His research
+      has been funded by the NSA and the NSF, and he is the recipient of the NSF CAREER
+      award. At George Mason, Jon taught courses in distributed systems, web development,
+      and program analysis. His teaching at GMU has been recognized with a departmental
+      award. Jon serves on a variety of program committees and was recently co-chair
+      of the PLDI 2020 Artifact Evaluation Committee. As part of his efforts to broaden
+      the participation of underrepresented groups in computing, Jon co-organizes
+      the PL/SE mentoring workshop at SPLASH (in 2017, 2018, 2019 and 2020).
+    twitter: _jon_bell_
+    website: https://jonbell.net
