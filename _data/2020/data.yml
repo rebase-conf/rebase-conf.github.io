@@ -5,7 +5,7 @@ talks:
   time1: Tue 11/17  6pm EST
   time2: Wed 11/18  6am EST
   hashtags: Ethics
-  video_id: EnMfP8HLrOk
+  video_id: PHEbdsCxp8E
   abstract: Judging by the experiences of Robert Grimm and a close confidante, both
     academe and industry have long given up even trying to conduct their business
     in an ethical fashion. In this talk, the author will detail some of the most egregious
@@ -191,8 +191,8 @@ talks:
   title: Variant analysis
   type: talk
   time1: Fri 11/20  2pm EST
-  time2: Sat 11/21  2am EST
   hashtags: CodeQL
+  video_id: 31UD57d5Qdw
   abstract: In security, ‘variant analysis’ is the process of searching for variants
     of known vulnerabilities. This used to be done with grep and painstaking manual
     code audits, but it can be automated with a powerful semantic query language like
@@ -229,6 +229,7 @@ talks:
   type: talk
   time1: Thu 11/19  2pm EST
   hashtags: GoogleBrain
+  video_id: BzuEGdGHKjc
   abstract: JAX is a system for high-performance machine learning research and numerical
     computing. It offers the familiarity of Python+NumPy together with hardware acceleration,
     and it enables the definition and composition of user-wielded function transformations
@@ -259,6 +260,7 @@ talks:
   type: talk
   time1: Thu 11/19  4pm EST
   hashtags: NASA
+  video_id: hdP_LAfB_48
   abstract: 'In recent years, mishaps in commercial aviation have been predominantly
     due to software; meanwhile software continues to grow more complex. Combining
     this with the on-going trend toward converting aviation hardware and mechanical
@@ -338,6 +340,7 @@ talks:
   time1: Fri 11/20  8am EST
   time2: Fri 11/20  8pm EST
   hashtags: HCI
+  video_id: r05q5M1HtK0
   abstract: 'Programming Languages (PL), Human-Computer Interaction (HCI), and Software
     Engineering (SE) have a key overlapping interest: getting computers to do what
     we want. Each field has a different balance of methods and beneficiaries, from
@@ -371,6 +374,7 @@ talks:
   time1: Fri 11/20  12pm EST
   time2: Sat 11/21  12am EST
   hashtags: HPC
+  video_id: BHRYRPkUFh8
   abstract: High-performance computing (HPC) systems are designed for pursuing extreme-scale
     parallelism and computational power to accelerate various computational-expensive
     applications in scientific computing. HPC software stack is deep and wide, mainly
@@ -410,6 +414,7 @@ talks:
   type: talk
   time1: Thu 11/19  12pm EST
   hashtags: Architecture
+  video_id: 7fgWgzw8DrE
   abstract: 'Intermittent computing is an emerging computational model that allows
     software to operate reliably on devices that harvest energy from their environment.  Energy-harvesting
     frees devices from the need for batteries, battery replacements, tethered power,
@@ -443,6 +448,7 @@ talks:
   type: talk
   time1: Mon 11/16  4pm EST
   hashtags: Julia
+  video_id: mQnSRfseu0c
   abstract: Non-local, semantic compiler transformations such as Automatic Differentiation
     and certain Bayesian Inference algorithms pose particular challenges for dynamic
     dispatch systems, where non-local information may not necessarily be computable
@@ -510,6 +516,7 @@ talks:
   time1: Wed 11/18  8am EST
   time2: Wed 11/18  8pm EST
   hashtags: Nix
+  video_id: RIvgBlXyEqc
   abstract: 'Like science, software is in reproducibility crisis. All too often, "steps
     to reproduce" in bug reports don''t work or are too long and complicated. They
     shouldn''t be necessary to begin with. Fleets of servers suffer from constant
@@ -598,6 +605,7 @@ talks:
   time1: Thu 11/19  10am EST
   time2: Thu 11/19  10pm EST
   hashtags: OOP
+  video_id: V9m2QOiLwF0
   abstract: 'Relational properties arise in many settings: relating two versions of
     a program that use different data representations, noninterference properties
     for security, conditional equivalence in program transformations, etc. How might
@@ -633,10 +641,11 @@ talks:
     twitter: N/A
     website: https://www.nsf.gov/staff/staff_bio.jsp?lan=abanerje&org=NSF&from_org=NSF
 - id: 20
-  title: Paparazzi, an open source UAV for research
+  title: Paparazzi, An Open Source UAV for Research
   type: talk
   time1: Mon 11/16  12pm EST
   hashtags: UAV
+  video_id: PcQUeOjRkok
   abstract: Unmanned Aerial Systems have rapidly reached the maturity allowing them
     to be used in many civil applications. Open-source communities and research laboratories
     have played an important role to this breakthrough in aviation history. I will
@@ -671,6 +680,7 @@ talks:
   time1: Thu 11/19  6pm EST
   time2: Fri 11/20  6am EST
   hashtags: Analysis
+  video_id: Nid5828YNIA
   abstract: Despite years of research and practice, modern static analysis techniques
     still cannot detect oldest and extremely well understood software bugs such as
     the Heartbleed, one of the most "spectacular" security flaws of the recent decade.
@@ -699,6 +709,7 @@ talks:
   time1: Fri 11/20  10am EST
   time2: Fri 11/20  10pm EST
   hashtags: Coz
+  video_id: bzU-VEP9s78
   abstract: Performance clearly matters to users. For example, the most common software
     update on the AppStore is "Bug fixes and performance enhancements." Now that Moore's
     Law has ended, programmers have to work hard to get high performance for their
@@ -805,6 +816,7 @@ talks:
   time1: Mon 11/16  8am EST
   time2: Mon 11/16  8pm EST
   hashtags: Performance
+  video_id: PESekIIvHSU
   abstract: Debug information is a hidden and obscure component of our computing infrastructure
     obviously used by debuggers, but also playing a key role in program analysis tools,
     and, most surprisingly, in the runtime of programming languages. For instance
