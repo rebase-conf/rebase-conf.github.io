@@ -68,3 +68,17 @@ JS arrays. DOM manipulation uses [jQuery](https://jquery.com/). Please see `reso
 - SVG logos are highly recommended. You can use [SVGOMG](https://jakearchibald.github.io/svgomg/) to optimise files.
 - There are reasonable defaults for logo sizes, however they do not work well for some aspect ratios (e.g. logos
 too square-ish). You can use `resources/<year>/css/_sponsors.scss` to tweak them.
+
+## Generate data
+
+### Videos
+
+Go to [YouTube data API](https://developers.google.com/youtube/v3/docs/playlistItems/list?apix=true&apix_params=%7B%22part%22%3A%5B%22id%22%2C%22snippet%22%5D%2C%22maxResults%22%3A50%2C%22playlistId%22%3A%22PLyrlk8Xaylp6aNlOgiyE4W30X7DpXx74m%22%7D) and save the query result to `videos.json`.
+
+After run:
+
+```sh
+./_tools/2020/generate-data.R videos.json
+```
+
+to regenerate `data.yml` file.
