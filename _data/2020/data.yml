@@ -161,6 +161,7 @@ talks:
   time1: Tue 11/17  4pm EST
   time2: Wed 11/18  4am EST
   hashtags: Idris
+  video_id: CF5gGs_8kKE
   abstract: Dependent types allow us to express precisely *what* a function is intended
     to do.  Recent work on Quantitative Type Theory (QTT) extends dependent type systems
     with *linearity*, also allowing precision in expressing *when* a function can
@@ -575,6 +576,7 @@ talks:
   type: talk
   time1: Fri 11/20  4pm EST
   hashtags: Julia
+  video_id: rF2QAJLM730
   abstract: Fully incorporating differentiable programming (∂P) into the Julia language
     has enabled composability between modern machine learning techniques and existing
     high performance computing (HPC) modeling and simulation without sacrificing expressivity.
