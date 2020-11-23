@@ -297,16 +297,16 @@
 }
 
 .box__video {
-  width: 290px;
-  height: 163px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 168px;
   border: 4px solid $color-paragraph;
   margin-bottom: 2em;
+  position: relative;
 }
 
-.box__youtube {
+.box__youtube .fab {
   font-size: 4em;
   color: #ff0000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
