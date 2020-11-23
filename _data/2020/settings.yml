@@ -15,16 +15,17 @@ venue_url: https://2020.splashcon.org/room/splash-2020-venue-rebase
 cfp: hidden
 cfp_date: Feb 20th
 cfp_form: https://docs.google.com/forms/d/e/1FAIpQLSf4-GLOcJwqmJBv4vk7WzLIziXZDn6hHmbBaShqJ85SsHeptQ/viewform?usp=sf_link
-registration: active
+registration: hidden # active, inactive, hidden
 registration_url: https://2020.splashcon.org/attending/Registration
 registration_date: Open
 
 # Control different sections on the HP
-show_talks: true
-show_stream: true
-show_sponsors: true
+show_about: true
 show_organizers: true
-show_schedule: true
+show_schedule: false
+show_sponsors: true
+show_stream: false
+show_talks: true
 
 # Footer contact details. Comment out to hide
 footer_email: rebaseconf@gmail.com
