@@ -127,7 +127,9 @@ video_df <- if (!is.null(video_file)) {
 talks_df <-
   talks_df %>%
   left_join(schedule_df, by="name") %>%
-  left_join(video_df, by="title")
+  left_join(video_df, by="title") %>%
+  mutate(video_id=ifelse(is.na(video_id.x) | video_id.x == "", video_id.y, video_id.x)) %>%
+  select(-video_id.x, -video_id.y)
 
 missing <- filter(talks_df, is.na(first))
 if (nrow(missing) != 0) {
