@@ -1055,3 +1055,53 @@ talks:
       PostgreSQL, MariaDB, and CockroachDB.
     twitter: RiggerManuel
     website: https://www.manuelrigger.at/
+- id: 99
+  title: Fitzcarraldo — or How to Hack Academia to Build Stuff
+  type: talk
+  time1: Sun 11/15  8:20am EST
+  time2: Sun 11/15  8:20pm EST
+  hashtags: Compilers
+  video_id: LaaUKWXHpNs
+  abstract: "What does a movie about a monomaniacal quest to build an opera house
+    in the Amazon Basin has to do with science? \n\nProgramming language research
+    is at a crossroads. While formal language techniques are advancing steadily, the
+    transfer of ideas to practice is much slower. Applied research is based on experimentation
+    which is becoming prohibitively onerous. To evaluate any novel idea requires dealing
+    with the complex language ecosystems of the day. Even the simplest innovation
+    may take years of work to try out. Without a realistic evaluation, papers are
+    rejected, and underlying hypotheses remain untested. Academic researchers are
+    in a particularly precarious position. On the one hand, they must compete with
+    industrial R&D teams with massively more resources, and on the other hand, they
+    are beholden to an incentive system that rewards copious publication rates at
+    select conferences. How can we build stuff that matters in such an environment?
+    Are we doomed to failure? In this talk I argue that trying to build stuff is the
+    necessary starting point, failure is expected and should be embraced, as, without
+    it, we are not working on anything that matters. Based on my experience it is
+    possible to navigate the academic system and come up with ideas that occasionally
+    matter.\n\n**This talk is given by the recipient of the Dahl Nygaard Senior prize.**"
+  speakers:
+  - id: jan_vitek
+    name: Jan Vitek
+    affiliation: Northeastern University / Czech Technical University
+    bio: "Jan Vitek is a Professor of Computer Science at Northeastern University.\n
+      Dr. Vitek was born in Czechoslovakia and educated in Switzerland. Over \nthe
+      years, he worked on topics related to programming languages, their \ndesign,
+      use, and implementation. With Noble and Potter, he proposed the \nnotion of
+      flexible alias control which became know as Ownership Types. \nHe led the Ovm
+      project which produced the first real-time Java virtual \nmachine to be flight
+      tested on a ScanEagle drone (he claims no one was \nharmed). Outcomes of this
+      project include the Schism real-time garbage \ncollector and the FijiVM – a
+      production VM for embedded systems. More \nrecently, he worked on dynamic languages,
+      trying to make sense of \nJavaScript and to design a new language called, Thorn.
+      Nowadays, he \nspends his time with statisticians and data scientists. Jan believes
+      \nthat his 2012 election as Chair of SIGPLAN was an accident; since has \nbeen
+      busy trying to rock the boat to ensure this does not happen again. \nIn his
+      spare time, Jan enjoys organizing conferences and sitting on PCs \n(over 25
+      in the last decade). He founded the MOS (mobile objects), IWACO\n (alias control),
+      STOP (gradual typing), and TRANSACT (transactional \nmemory) workshop series.
+      He was the first program chair of VEE and \nchaired ESOP, ECOOP, Coordination
+      and TOOLS. He was the general chair of\n PLDI (in Beijing!), ISMM and LCTES.
+      He may still be sitting on the \nsteering committees of ECOOP, JTRES, ICFP,
+      OOPLSA, POPL, PLDI, LCTES, \nESOP."
+    twitter: j_v_66
+    website: http://janvitek.org/
