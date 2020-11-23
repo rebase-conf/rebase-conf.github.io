@@ -64,7 +64,8 @@
     {% for talk in talks %}
     talks['{{ talk.title | slugify }}'] = {
       abstract: {{ talk.abstract | markdownify | jsonify }},
-    speakers: [],
+      video_id: {{ talk.video_id | jsonify }},
+      speakers: [],
     };
     {% for speaker in talk.speakers %}
     talks['{{ talk.title | slugify }}'].speakers.push({
