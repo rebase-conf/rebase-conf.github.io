@@ -1,0 +1,9 @@
+@mixin section {
+  padding-top: rem-calc(80px);
+  padding-bottom: rem-calc(100px);
+
+  @include media-breakpoint-up(md)  {
+    padding-top: rem-calc(120px);
+    padding-bottom: rem-calc(150px);
+  }
+}

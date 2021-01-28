@@ -1,0 +1,77 @@
+{% assign keynotes = data.talks | where: "type", "keynote" %}
+{% assign presentations = data.talks | where: "type", "talk" | sort: "id" %}
+<section class="talks" id="talks">
+    <div class="container">
+        <!-- <h2 class="talks__heading">Highlights</h2>
+             <div class="row talks__list talks__list--keynotes row">
+             {% for talk in keynotes %}
+             <div class="talks__talk col-lg-6">
+             {% comment %}
+             Add class like box--fancy-talk and then add
+             .box--fancy-talk {
+             background-color: #fc0fc0;
+             }
+             to resources/2021/css/_box.scss
+             {% endcomment %}
+             <article class="box box--large" data-id="{{ talk.title | slugify }}">
+             {% include {{ year }}/talk.html excerpt=true %}
+             </article>
+             </div>
+             {% endfor %}
+             </div> -->
+
+      <h2 class="talks__heading">Talks</h2>
+      <div class="talks__list talks__list--presentations row">
+        {% for talk in presentations %}
+        <div class="talks__talk col-md-6 col-xl-4">
+          <article class="box" data-id="{{ talk.title | slugify }}">
+            {% include {{ year }}/talk.html excerpt=false %}
+          </article>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <div class="overlay overlay--person">
+    <section class="overlay__content">
+      <div class="overlay__content-scroll">
+        <article class="box box--large box--overlay">
+          <div class="box__person">
+          </div>
+          <div class="box__text">
+            <div class="box__text-content">
+            </div>
+        </article>
+      </div>
+      <a href="#" class="overlay__close"></a>
+    </section>
+  </div>
+  <div class="overlay overlay--talk">
+    <section class="overlay__content">
+      <div class="overlay__content-scroll">
+        <article class="box box--large box--overlay">
+        </article>
+      </div>
+      <a href="#" class="overlay__close"></a>
+    </section>
+  </div>
+  <script>
+    var speakers = {};
+    {% for speaker in featured_speakers %}
+    speakers['{{ speaker.id }}'] = {{ speaker.bio | markdownify | jsonify }};
+    {% endfor %}
+    var talks = {};
+    {% for talk in talks %}
+    talks['{{ talk.title | slugify }}'] = {
+      abstract: {{ talk.abstract | markdownify | jsonify }},
+      video_id: {{ talk.video_id | jsonify }},
+      speakers: [],
+    };
+    {% for speaker in talk.speakers %}
+    talks['{{ talk.title | slugify }}'].speakers.push({
+      name: '{{ speaker.name }}',
+      bio: {{ speaker.bio | markdownify | jsonify }},
+    });
+    {% endfor %}
+    {% endfor %}
+  </script>
