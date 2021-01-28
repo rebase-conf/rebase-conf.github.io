@@ -1,0 +1,59 @@
+<div class="box__text">
+  {% if talk.hashtags.size %}
+  <p class="box__text-hashtags">
+    {% for hashtag in talk.hashtags %}
+    <span>#{{ hashtag }}</span>
+    {% endfor %}
+  </p>
+  {% endif %}
+  <a href="#{{ talk.title | slugify }}" data-overlay="talk">
+    <h3 class="box__text-heading">
+      {{ talk.title }}
+    </h3>
+  </a>
+  {% if include.excerpt %}
+  <div class="box__text-content">
+    {{ talk.excerpt | markdownify }}
+  </div>
+  {% endif %}
+  <p class="box__text-links">
+    {% if talk.video %}
+    <a href="{{ talk.video }}" target="_blank" class="youtube">
+      <span class="fab fa-youtube" aria-hidden="true"></span>
+      watch
+    </a>
+    {% endif %}
+    <a href="#{{ talk.title | slugify }}" data-overlay="talk">
+      {% if talk.abstract %}
+        <span class="fab fa-readme" aria-hidden="true"></span>
+        abstract
+      {% endif  %}
+    </a>
+  </p>
+</div>
+{% if talk.video_id %}
+<div class="box__video">
+    <a href="https://www.youtube.com/watch?v={{ talk.video_id }}&list=PLyrlk8Xaylp6aNlOgiyE4W30X7DpXx74m" target="_blank" class="box__youtube">
+      <img width="100%" src="https://i.ytimg.com/vi/{{ talk.video_id }}/mqdefault.jpg" />
+      <span class="fab fa-youtube" aria-hidden="true"></span>
+    </a>
+</div>
+{% endif %}
+<div class="box__people">
+  {% for speaker in talk.speakers %}
+  {% include {{ year }}/person.html person=speaker %}
+  {% endfor %}
+</div>
+{% if talk.time1 %}
+<div class="box__talk-info">
+  <span class="box__talk-datetime">
+    <span class="far fa-clock"></span>
+    {{ talk.time1 | normalize_whitespace | replace: " ", "&nbsp;" }}
+{% if talk.time2 %}
+    <br/>
+    <span class="far fa-clock"></span>
+    {{ talk.time2 | normalize_whitespace | replace: " ", "&nbsp;" }}
+{% endif  %%}
+  </span>
+</div>
+{% endif  %%}

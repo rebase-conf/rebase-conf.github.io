@@ -1,0 +1,33 @@
+.about {
+  @include section;
+  background: $color-background-dark;
+}
+
+.about__heading {
+  @extend .heading1;
+  margin-bottom: (40em / 46);
+  color: $color-heading;
+}
+
+.about__content {
+  @include text-content;
+  color: $color-paragraph-secondary;
+  font-size: 1.45rem;
+  text-align: justify;
+
+  strong {
+    letter-spacing: 0.1em;
+    font-family: $font-family-heading-alternative;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+}
+
+.about__ecoop {
+  width: rem-calc(400px);
+  max-width: 100%;
+  margin: rem-calc(20px) auto;
+  display: block;
+}
