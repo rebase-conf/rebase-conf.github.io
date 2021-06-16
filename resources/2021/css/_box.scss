@@ -130,9 +130,27 @@
   }
 }
 
+.box__people {
+  display: flex;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.box__people .box__people-panel-text {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: .5rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  font-family: $font-family-heading;
+  font-weight: bold;
+}
+
 .box__person {
   display: flex;
   align-items: center;
+  margin-right: 1.5em;
   margin-bottom: rem-calc(15px);
 
   @include media-breakpoint-up(md) {
@@ -294,6 +312,11 @@
 .box__talk-datetime {
   margin-left: rem-calc(20px);
   line-height: 1.5rem;
+
+  a {
+    color: $color-active;
+    font-size: .8em;
+  }
 }
 
 .box__video {

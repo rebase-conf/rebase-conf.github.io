@@ -103,7 +103,7 @@ fillTalkOverlay = function($talkEl) {
   talk = talks[$talkEl.attr('data-id')];
   $text.append('<h3>Abstract</h3>');
   $text.append(talk.abstract);
-  if (talk.video_id != "") {
+  if (talk.video_id) {
     $text.append('<h3>Video</h3>');
     $text.append('<iframe width="560" height="315" src="https://www.youtube.com/embed/' + talk.video_id + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
   }

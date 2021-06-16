@@ -14,7 +14,7 @@ layout: 2021/default
   <img src="{{ imgs_baseurl }}/logo-white.svg" alt="Rebase" class="intro__logo" />
   <h2 class="intro__subheading">{{ settings.city }} • {{ settings.conference_dates }}</h2>
   <p class="intro__text">
-    An unusual non-profit conference
+    Discussions on programming language related topics
     connecting industry and academia.
   </p>
   <div class="intro__buttons">
@@ -38,7 +38,7 @@ layout: 2021/default
     {% if settings.show_talks %}
     <span class="intro__button">
       <a href="#talks" class="button" rel="smooth-scroll">
-        Talks
+        Discussions
       </a>
     </span>
     {% endif %}
@@ -80,29 +80,29 @@ layout: 2021/default
   {% endif %}
   <!-- <a href="#about" class="intro__next" rel="smooth-scroll"></a> -->
 </section>
-<section class="about" id="about">
-  <div class="container">
-    <!-- <h2 class="about__heading">About</h2> -->
-    <div class="about__content">
-      <!-- TODO can we make the rebase text "ff-market-web",cursive; or something like that? -->
-      <p>
-        <strong>Rebase</strong> is a new conference for and by practitioners who want to engage academics about tomorrow's technologies while fondly recalling the achievements of yesterday.
-      </p>
-      <br/>
-      <p>
-        This year, <strong>Rebase</strong> is planned to occur twice, once in Aarhus
-        with the <a href="https://2021.ecoop.org/">ECOOP</a> conference and
-        once in Chicago with the <a href="https://2021.splashcon.org/">SPLASH</a> conference.
-      </p>
-    </div>
-  </div>
-</section>
 {% if settings.show_stream %}
   {% include {{ year }}/stream.html %}
 {% endif %}
 {% if settings.show_talks %}
   {% include {{ year }}/talks.html %}
 {% endif %}
+<section class="about" id="about">
+  <div class="container">
+    <!-- <h2 class="about__heading">About</h2> -->
+    <div class="about__content">
+      <!-- TODO can we make the rebase text "ff-market-web",cursive; or something like that? -->
+      <p>
+        At <strong>Rebase</strong> practitioners engage with academics about tomorrow's technologies while fondly recalling the achievements of yesterday in a series of discussions on various PL-related topics.
+      </p>
+      <br/>
+      <p>
+        This year, <strong>Rebase</strong> is planned to occur twice, first virtually
+        with the <a href="https://2021.ecoop.org/">ECOOP</a> conference and
+        later both virtually and physically in Chicago collocated with the <a href="https://2021.splashcon.org/">SPLASH</a> conference.
+      </p>
+    </div>
+  </div>
+</section>
 {% if settings.show_sponsors %}
   {% include {{ year }}/sponsors.html %}
 {% endif %}

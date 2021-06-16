@@ -1,3 +1,5 @@
+{% assign speakers = talk.persons | where: "type", "speaker" %}
+{% assign panelists = talk.persons | where: "type", "panelist" %}
 <div class="box__text">
   {% if talk.hashtags.size %}
   <p class="box__text-hashtags">
@@ -40,20 +42,21 @@
 </div>
 {% endif %}
 <div class="box__people">
-  {% for speaker in talk.speakers %}
-  {% include {{ year }}/person.html person=speaker %}
+  {% for p in speakers %}
+  {% include {{ year }}/person.html person=p %}
   {% endfor %}
+  {% if panelists.size > 0 %}
+  <span class="box__people-panel-text">discussing with</span>
+  {% for p in panelists %}
+  {% include {{ year }}/person.html person=p %}
+  {% endfor %}
+  {% endif %}
 </div>
-{% if talk.time1 %}
+{% if talk.time %}
 <div class="box__talk-info">
   <span class="box__talk-datetime">
     <span class="far fa-clock"></span>
-    {{ talk.time1 | normalize_whitespace | replace: " ", "&nbsp;" }}
-{% if talk.time2 %}
-    <br/>
-    <span class="far fa-clock"></span>
-    {{ talk.time2 | normalize_whitespace | replace: " ", "&nbsp;" }}
-{% endif  %%}
+    {{ talk.time | normalize_whitespace | replace: " ", "&nbsp;" }} CEST (<a href="https://www.inyourowntime.zone/2021-07-11_{{ talk.time }}_Europe.Prague">my timezone</a>)
   </span>
 </div>
 {% endif  %%}

@@ -1,6 +1,6 @@
 city: On-Line
 year: 2021
-conference_dates: July 11<sup>th</sup> 2021
+conference_dates: Sunday, July 11<sup>th</sup> 2021
 venue_url: https://2021.ecoop.org/venue/ecoop-issta-2021-venue
 past_editions:
   - 2020
@@ -12,11 +12,11 @@ past_editions:
 # active and sold_out (for registration only). cfp_date
 # and registration_date is displayed below the button if
 # present and the state is set to inactive
-cfp: active
+cfp: hidden
 cfp_date: Feb 20th
 cfp_form: https://docs.google.com/forms/d/e/1FAIpQLSfSJA-U_sXBXCOK6nDwx5964Qx4LkW7D1krOnno2fTEciMW5w/viewform
-registration: hidden # active, inactive, hidden
-registration_url:
+registration: active # active, inactive, hidden
+registration_url: https://2021.ecoop.org/attending/registration
 registration_date: Open
 
 # Control different sections on the HP
@@ -25,14 +25,11 @@ show_organizers: true
 show_schedule: false
 show_sponsors: false
 show_stream: false
-show_talks: false
+show_talks: true
 
 # Footer contact details. Comment out to hide
 footer_email: rebaseconf@gmail.com
 footer_twitter: rebase_conf
-
-featured_speakers:
-- lars_bak
 
 # Liquid can't create arrays
 empty_array: []
