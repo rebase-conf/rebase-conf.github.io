@@ -108,8 +108,10 @@ fillTalkOverlay = function($talkEl) {
     $text.append('<iframe width="560" height="315" src="https://www.youtube.com/embed/' + talk.video_id + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
   }
   talk.speakers.forEach(function(speaker) {
-    $text.append('<h3>About ' + speaker.name + '</h3>');
-    $text.append(speaker.bio);
+    if (speaker.bio != "\n") {
+      $text.append('<h3>About ' + speaker.name + '</h3>');
+      $text.append(speaker.bio);
+    }
   });
   $box.append($text);
 };
