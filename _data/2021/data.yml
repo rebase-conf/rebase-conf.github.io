@@ -49,9 +49,9 @@ talks:
     affiliation: feenk.com
     twitter: girba
     website: https://feenk.com/
-    bio: |-
-      Tudor is the CEO of [feenk.com](https://feenk.com),
-       a company focused on making the inside of software systems explainable. They invented Moldable Development, a new way of programming, and they make it practical through Glamorous Toolkit.
+    bio: Tudor is the CEO of [feenk.com](https://feenk.com), a company focused on
+      making the inside of software systems explainable. They invented Moldable Development,
+      a new way of programming, and they make it practical through Glamorous Toolkit.
   - name: Alexandre Bergel
     id: alexandre_bergel
     type: panelist
@@ -98,6 +98,7 @@ talks:
     id: shaz_qadeer
     type: speaker
     affiliation: Facebook
+    website: https://scholar.google.com/citations?user=EqIVfYcAAAAJ
   - name: Andreas Rossberg
     id: andreas_rossberg
     type: panelist
@@ -174,6 +175,12 @@ talks:
     affiliation: Facebook
     twitter: headinthebox
     website: https://en.wikipedia.org/wiki/Erik_Meijer_(computer_scientist)
+    bio: "Erik Meijer has been trying to bridge the ridge between theory and practice
+      for most of his career.\n\nHe is perhaps best known for his work on, amongst
+      others, the Haskell, C#, Visual Basic, and Dart programming languages,as well
+      as for his contributions to LINQ and the Reactive Framework (Rx). \n\nMost recently
+      he is on a quest to make uncertainty a first-class citizen in mainstream programming
+      languages."
   - name: Aleksandar Prokopec
     id: aleksandar_prokopec
     type: panelist

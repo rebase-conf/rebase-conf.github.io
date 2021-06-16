@@ -37,7 +37,6 @@
     </section>
   </div>
   <script>
-    var speakers = {};
     {% for speaker in featured_speakers %}
     speakers['{{ speaker.id }}'] = {{ speaker.bio | markdownify | jsonify }};
     {% endfor %}
@@ -46,12 +45,13 @@
     talks['{{ talk.title | slugify }}'] = {
       abstract: {{ talk.abstract | markdownify | jsonify }},
       video_id: {{ talk.video_id | jsonify }},
-      speakers: [],
+      speakers: []
     };
-    {% for speaker in talk.speakers %}
+    {% assign speakers = talk.persons | where: "type", "speaker" %}
+    {% for speaker in speakers %}
     talks['{{ talk.title | slugify }}'].speakers.push({
-      name: '{{ speaker.name }}',
-      bio: {{ speaker.bio | markdownify | jsonify }},
+      name: "{{ speaker.name }}",
+      bio: {{ speaker.bio | markdownify | jsonify }}
     });
     {% endfor %}
     {% endfor %}
