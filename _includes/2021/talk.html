@@ -56,7 +56,7 @@
 <div class="box__talk-info">
   <span class="box__talk-datetime">
     <span class="far fa-clock"></span>
-    {{ talk.time | normalize_whitespace | replace: " ", "&nbsp;" }} CEST (<a href="https://www.inyourowntime.zone/2021-07-11_{{ talk.time }}_Europe.Prague">my timezone</a>)
+    {{ talk.time | normalize_whitespace | replace: " ", "&nbsp;" }} CEST (<a href="https://www.inyourowntime.zone/2021-07-11_{{ talk.time | replace: ":", "." }}_Europe.Prague">my timezone</a>)
   </span>
 </div>
 {% endif  %%}

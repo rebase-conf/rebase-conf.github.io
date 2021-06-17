@@ -1,6 +1,6 @@
 talks:
 - title: Ubiquitous Omniscient Debugging
-  time: 11am
+  time: '11:00'
   abstract: "True omniscient debugging is a lofty goal: record a program execution,
     efficiently reproduce any desired program state from the recording, visualize
     those states across time, explore connections between states  (e.g. data flow),
@@ -26,7 +26,7 @@ talks:
     twitter: AndreasZeller
     website: https://andreas-zeller.info/
 - title: Molding Knowledge
-  time: 1pm
+  time: '13:00'
   abstract: "The experience of handling computation is highly fragmented today. For
     \nexample, consider how APIs expose interfaces to computation, but \nexploring
     their details is either cumbersome or handled through \ndedicated tools. At the
@@ -65,7 +65,7 @@ talks:
     twitter: onierstrasz
     website: http://scg.unibe.ch/staff/oscar
 - title: Students can't test. Or can they?
-  time: 3pm
+  time: '15:00'
   abstract: 'Students often tackle programming problems with a flawed understanding.  One
     classic intervention is to ask them to hone their understanding by  constructing
     examples first. Yet, this can reinforce misunderstandings:  if a misunderstanding
@@ -84,7 +84,7 @@ talks:
     twitter: tenellous
     website: https://jack.wrenn.fyi/
 - title: The Move language for the Diem Blockchain
-  time: 5pm
+  time: '17:00'
   abstract: "Move is a language originally designed for programming Diem (https://github.com/diem/diem),
     \na peer-to-peer network for replicated computation (also known as a blockchain
     in some circles).\nThe Move programming framework provides:\n(1) a compiler that
@@ -105,7 +105,7 @@ talks:
     affiliation: Max Planck Institute
     website: https://people.mpi-sws.org/~rossberg/
 - title: AA - Yet Another New Language
-  time: 7pm
+  time: '19:00'
   abstract: 'I am developing a new language [aa](https://github.com/cliffclick/aa),
     to explore: a new way to type programs (full type inference and dataflow typing),
     the limits of terse syntax (no keywords), and support for high performance and
@@ -137,7 +137,7 @@ talks:
     twitter: clattner_llvm
     website: http://nondot.org/sabre/
 - title: Variational Calculus for Dummies
-  time: 9pm
+  time: '21:00'
   abstract: "The goal of deep learning is to find an intensional function f expressed
     as a “neural network” of weights and activation functions that minimizes a loss
     function over a set of input/output pairs. This training data serves an extensional
