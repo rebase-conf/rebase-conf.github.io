@@ -27,3 +27,6 @@ run:
 
 stop:
 	docker stop $(CONTAINER_NAME)
+
+data:
+	./_tools/2021/generate-data.R
