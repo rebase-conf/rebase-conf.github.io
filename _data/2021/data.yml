@@ -108,7 +108,7 @@ talks:
   - name: Andreas Rossberg
     id: andreas_rossberg
     type: panelist
-    affiliation: Max Planck Institute
+    affiliation: Dfinity
     website: https://people.mpi-sws.org/~rossberg/
   - name: Manuel Chakravarty
     id: manuel_chakravarty
