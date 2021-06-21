@@ -58,8 +58,8 @@ talks:
     affiliation: University of Chile
     twitter: alexbergel
     website: http://scg.unibe.ch/staff/oscar
-  - name: Oscar Nierstatz
-    id: oscar_nierstatz
+  - name: Oscar Nierstrasz
+    id: oscar_nierstrasz
     type: panelist
     affiliation: University of Bern
     twitter: onierstrasz
@@ -83,6 +83,12 @@ talks:
     affiliation: Brown University
     twitter: tenellous
     website: https://jack.wrenn.fyi/
+  - name: Gregor Kiczales
+    id: gregor_kiczales
+    type: panelist
+    affiliation: University of British Columbia
+    twitter: gregork
+    website: https://www.cs.ubc.ca/~gregor/
 - title: The Move language for the Diem Blockchain
   time: '17:00'
   abstract: "Move is a language originally designed for programming Diem (https://github.com/diem/diem),
@@ -104,6 +110,12 @@ talks:
     type: panelist
     affiliation: Max Planck Institute
     website: https://people.mpi-sws.org/~rossberg/
+  - name: Manuel Chakravarty
+    id: manuel_chakravarty
+    type: panelist
+    affiliation: IOHK
+    twitter: TacticalGrace
+    website: https://justtesting.org
 - title: AA - Yet Another New Language
   time: '19:00'
   abstract: 'I am developing a new language [aa](https://github.com/cliffclick/aa),
