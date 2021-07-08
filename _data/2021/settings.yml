@@ -15,7 +15,7 @@ past_editions:
 cfp: hidden
 cfp_date: Feb 20th
 cfp_form: https://docs.google.com/forms/d/e/1FAIpQLSfSJA-U_sXBXCOK6nDwx5964Qx4LkW7D1krOnno2fTEciMW5w/viewform
-registration: active # active, inactive, hidden
+registration: hidden # active, inactive, hidden
 registration_url: https://2021.ecoop.org/attending/registration
 registration_date: Open
 
@@ -25,6 +25,7 @@ show_organizers: true
 show_schedule: false
 show_sponsors: false
 show_stream: false
+show_zoom: true
 show_talks: true
 
 # Footer contact details. Comment out to hide
