@@ -1,0 +1,201 @@
+talks:
+- title: Ubiquitous Omniscient Debugging
+  time: '11:00'
+  abstract: "True omniscient debugging is a lofty goal: record a program execution,
+    efficiently reproduce any desired program state from the recording, visualize
+    those states across time, explore connections between states  (e.g. data flow),
+    and make it all work for real developers of real  applications. In fact, this
+    has actually been achieved --- subject to  various constraints --- and users report
+    large productivity gains. The  next grand challenge is to make this technology
+    ubiquitous by relaxing \nthose constraints. I will present an overview of the
+    design space, the  current state of the art, and what has to be done in the areas
+    of hardware, operating systems and programming language implementations as  well
+    as debuggers to get closer to all developers having access to  omniscient debugging
+    at all times."
+  persons:
+  - name: Robert O'Callahan
+    id: robert_o'callahan
+    type: speaker
+    affiliation: Pernosco
+    twitter: rocallahan
+    website: https://robert.ocallahan.org/
+  - name: Andreas Zeller
+    id: andreas_zeller
+    type: panelist
+    affiliation: Saarland University
+    twitter: AndreasZeller
+    website: https://andreas-zeller.info/
+- title: Molding Knowledge
+  time: '13:00'
+  abstract: "The experience of handling computation is highly fragmented today. For
+    \nexample, consider how APIs expose interfaces to computation, but \nexploring
+    their details is either cumbersome or handled through \ndedicated tools. At the
+    same time, development environments offer \nintegrated interactions for code,
+    but developers have a hard time \nunderstanding software systems. Notebooks provide
+    executable and \nexplanatory narratives, but they are isolated and not debuggable.
+    \nKnowledge management platforms provide linked narratives, but they are \nnot
+    executable.\n\nThese spaces appear to be distinct, an appearance reinforced by
+    the \ndistinct tools we experience them through. We argue that they are not \ndistinct.
+    That they are one and the same. That they are merely different\n facets of capturing
+    and representing knowledge. And we argue that they \ncan be served through an
+    experience that is both unified and contextual.\nA moldable experience.\n\nIn
+    this talk, we exemplify this message through live demos of [Glamorous Toolkit](gtoolkit.com)\n
+    and we show how rethinking the experience has the potential of \ntransforming
+    the act of constructing and relating to knowledge in all \nits different forms."
+  persons:
+  - name: Tudor Girba
+    id: tudor_girba
+    type: speaker
+    affiliation: feenk.com
+    twitter: girba
+    website: https://feenk.com/
+    bio: Tudor is the CEO of [feenk.com](https://feenk.com), a company focused on
+      making the inside of software systems explainable. They invented Moldable Development,
+      a new way of programming, and they make it practical through Glamorous Toolkit.
+  - name: Alexandre Bergel
+    id: alexandre_bergel
+    type: panelist
+    affiliation: University of Chile
+    twitter: alexbergel
+    website: http://scg.unibe.ch/staff/oscar
+  - name: Oscar Nierstrasz
+    id: oscar_nierstrasz
+    type: panelist
+    affiliation: University of Bern
+    twitter: onierstrasz
+    website: http://scg.unibe.ch/staff/oscar
+- title: Students can't test. Or can they?
+  time: '15:00'
+  abstract: 'Students often tackle programming problems with a flawed understanding.  One
+    classic intervention is to ask them to hone their understanding by  constructing
+    examples first. Yet, this can reinforce misunderstandings:  if a misunderstanding
+    is consistently represented in both one''s tests and implementation, running tests
+    won''t reveal issues.  In this talk, I show how to provide students with timely,
+    actionable feedback about their problem understanding long before they start coding.
+    To do so, instructors construct hidden correct and incorrect implementations,
+    which the students'' IDEs then use to assess the validity and thoroughness of
+    their tests. I implement this in Pyret and show that this feedback  drastically
+    improves the quality of test cases and, in some cases, implementations.'
+  persons:
+  - name: Jack Wrenn
+    id: jack_wrenn
+    type: speaker
+    affiliation: Brown University
+    twitter: tenellous
+    website: https://jack.wrenn.fyi/
+  - name: Gregor Kiczales
+    id: gregor_kiczales
+    type: panelist
+    affiliation: University of British Columbia
+    twitter: gregork
+    website: https://www.cs.ubc.ca/~gregor/
+- title: The Move language for the Diem Blockchain
+  time: '17:00'
+  abstract: "Move is a language originally designed for programming Diem (https://github.com/diem/diem),
+    \na peer-to-peer network for replicated computation (also known as a blockchain
+    in some circles).\nThe Move programming framework provides:\n(1) a compiler that
+    lowers the code to bytecode, \n(2) a verifier that guarantees type and memory
+    safety even in the presence of untrusted code, and \n(3) a prover capable of verifying
+    functional correctness of compiled bytecode against deep safety specifications.\nThis
+    talk will provide an overview of the language, the bytecode verifier, and the
+    prover.\nIf time permits, I will speculate on new applications for Move."
+  persons:
+  - name: Shaz Qadeer
+    id: shaz_qadeer
+    type: speaker
+    affiliation: Facebook
+    website: https://scholar.google.com/citations?user=EqIVfYcAAAAJ
+  - name: Andreas Rossberg
+    id: andreas_rossberg
+    type: panelist
+    affiliation: Dfinity
+    website: https://people.mpi-sws.org/~rossberg/
+  - name: Manuel Chakravarty
+    id: manuel_chakravarty
+    type: panelist
+    affiliation: IOHK
+    twitter: TacticalGrace
+    website: https://justtesting.org
+- title: AA - Yet Another New Language
+  time: '19:00'
+  abstract: 'I am developing a new language [aa](https://github.com/cliffclick/aa),
+    to explore: a new way to type programs (full type inference and dataflow typing),
+    the limits of terse syntax (no keywords), and support for high performance and
+    systems'' coding.  This is a very early preview talk, to discuss the typing system
+    and goals for ''aa''.  There is no execution engine (yet!), but many interesting
+    program fragments can be typed.  Open questions include: the exceptions, concurrency,  typed-assembly,
+    and modules (at least).  For systems'' coders: both AOT and JIT technologies are
+    options, and both optional GC and a rust-style memory lifetime typing.  I hope
+    this talk sparks a discussion on  language features  of interest to people who
+    write e.g. operating  systems and GCs.'
+  persons:
+  - name: Cliff Click
+    id: cliff_click
+    type: speaker
+    twitter: cliff_click
+    website: http://cliffc.org/blog/
+    bio: "Cliff Click was the CTO of Neurensic (now successfully exited), and CTO
+      \nand Co-Founder of h2o.ai, builders of large-scale real-time ML & \nanalytics.
+      He wrote his first compiler at 15, and the HotSpot Server \nCompiler a bit later.
+      He helped Azul Systems build an 864 core pure-Java\n mainframe that keeps GC
+      pauses on a TB heap to under 10ms.   He wrote \naward-winning compilers on PowerPC
+      and HP hardware, worked at HP Labs, \nspeaks regularly at industry and academic
+      conferences and published many\n papers about HotSpot technology. He hold a
+      PhD from Rice and over 20 \npatents."
+  - name: Chris Lattner
+    id: chris_lattner
+    type: panelist
+    affiliation: SiFive
+    twitter: clattner_llvm
+    website: http://nondot.org/sabre/
+- title: Variational Calculus for Dummies
+  time: '21:00'
+  abstract: "The goal of deep learning is to find an intensional function f expressed
+    as a “neural network” of weights and activation functions that minimizes a loss
+    function over a set of input/output pairs. This training data serves an extensional
+    representation of the desired function. The goal of the calculus of variations
+    is to find a function f that minimizes a higher-order function H(f) that typically
+    represents the modeler's understanding of the physical world. \n\nIn physics applications,
+    H[f] = ∫L(x, f(x), f’(x))dx is defined in terms of a Lagrangian L that relates
+    the kinetic and potential energy of the system being modelled. In that case, the
+    function f that minimizes H[f] describes the natural evolution of the system over
+    time. But the calculus of variations is not limited to physics as it also covers
+    the deep learning case by defining H[f]= ∑loss(f(xi)-yi) using a standard loss
+    function such as squared error. Furthermore, there are many further applications
+    of variational calculus in computer graphics, economics, and optimal control.
+    Hence there are plenty of reasons for computer scientists to explore what is often
+    considered one of the most beautiful branches of mathematics, and as we will show,
+    has many deep ties to pure functional programming.\n\nAs Euler and Lagrange have
+    shown 1755, to find stationary values of higher-order functions like H[f] = ∫L(x,
+    f(x), f’(x))dx, we need to extend multivariate calculus from finite vectors to
+    infinite vectors, or in other words functions. In many cases it is possible to
+    solve H[f] analytically, but to search for stationary values of H[f] numerically
+    like we do for neural nets, we must perform gradient descent in function space.
+    To efficiently implement this, we rely on a concrete representation of the function
+    value we are searching, such as a polynomial approximation or neural net over
+    a set of weights, and implement function updating by updating the weights of the
+    representation. This closes the circle with training neural nets using first-order
+    gradient descent.\n\nIn this fun & informal talk we will develop the elementary
+    calculus of variations via nilpotent infinitesimals and show that everything we
+    know from regular calculus on finite vectors carries over directly to variational
+    calculus on infinite vectors/functions. We will not assume any knowledge beyond
+    basic high-school calculus and straightforward equational reasoning."
+  persons:
+  - name: Erik Meijer
+    id: erik_meijer
+    type: speaker
+    affiliation: Facebook
+    twitter: headinthebox
+    website: https://en.wikipedia.org/wiki/Erik_Meijer_(computer_scientist)
+    bio: "Erik Meijer has been trying to bridge the ridge between theory and practice
+      for most of his career.\n\nHe is perhaps best known for his work on, amongst
+      others, the Haskell, C#, Visual Basic, and Dart programming languages,as well
+      as for his contributions to LINQ and the Reactive Framework (Rx). \n\nMost recently
+      he is on a quest to make uncertainty a first-class citizen in mainstream programming
+      languages."
+  - name: Aleksandar Prokopec
+    id: aleksandar_prokopec
+    type: panelist
+    affiliation: Oracle
+    twitter: alexprokopec
+    website: http://aleksandar-prokopec.com/

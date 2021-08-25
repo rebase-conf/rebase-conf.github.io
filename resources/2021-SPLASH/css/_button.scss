@@ -1,0 +1,24 @@
+.button {
+  display: inline-block;
+  background: $color-active;
+  color: $color-button-text;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+    padding: 1.2rem 2rem;
+  }
+
+  &:not(.button--inactive):hover {
+    background: darken($color-active, 10);
+  }
+}
+
+.button--inactive {
+  background: rgba($color-active, 0.5);
+  color: rgba($color-button-text, 0.5);
+  cursor: default;
+}
