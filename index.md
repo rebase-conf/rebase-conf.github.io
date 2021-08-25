@@ -1,5 +1,5 @@
 ---
-current_year: 2021
+current_year: 2021-ECOOP
 ---
 <html>
   <head>

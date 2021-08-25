@@ -12,7 +12,7 @@ library(yaml)
 SHEET_ID <- "1xfJcyL8KEf0nQeLd-yJ5-QJ80VkL1d9o-KLlul6kiTw"
 
 # where the images should go
-DATA_FILE <- file.path(system2("git", c("rev-parse", "--show-toplevel"), stdout=TRUE), "_data/2021/data.yml")
+DATA_FILE <- file.path(system2("git", c("rev-parse", "--show-toplevel"), stdout=TRUE), "_data/2021-ECOOP/data.yml")
 
 make_speaker_id <- Vectorize(function(name) {
     name %>%

@@ -1,5 +1,5 @@
 ---
-layout: 2021/single
+layout: 2021-ECOOP/single
 heading: Sponsorships
 title: Sponsorships | Rebase Conf 2021
 ---

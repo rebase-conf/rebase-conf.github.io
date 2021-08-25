@@ -3,7 +3,7 @@
 // I couldn't find any way how to use relative imports
 // and because we have multiple editions, the sass_dir
 // directive in _config.yml needs to be set to /resources
-{% assign year = "2021" %}
+{% assign year = "2021-ECOOP" %}
 $year: "{{ year }}";
 $imgs_baseurl: "{{ site.baseurl }}/resources/{{ year }}/img";
 

@@ -1,5 +1,5 @@
 ---
-layout: 2021/single
+layout: 2021-ECOOP/single
 heading: Call for Presentations
 title: Call for Presentations | Rebase Conf 2021
 ---

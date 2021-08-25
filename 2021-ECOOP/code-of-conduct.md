@@ -1,5 +1,5 @@
 ---
-layout: 2021/single
+layout: 2021-ECOOP/single
 heading: Code of Conduct
 title: Code of Conduct | Rebase Conf 2021
 ---

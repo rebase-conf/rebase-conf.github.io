@@ -29,4 +29,4 @@ stop:
 	docker stop $(CONTAINER_NAME)
 
 data:
-	./_tools/2021/generate-data.R
+	./_tools/2021-ECOOP/generate-data.R
