@@ -10,6 +10,7 @@ library(yaml)
 
 # input spreadsheet
 SHEET_ID <- "1xfJcyL8KEf0nQeLd-yJ5-QJ80VkL1d9o-KLlul6kiTw"
+SHEET_NAME <- "Chicago"
 
 # where the images should go
 DATA_FILE <- file.path(system2("git", c("rev-parse", "--show-toplevel"), stdout=TRUE), "_data/2021-SPLASH/data.yml")
@@ -78,7 +79,7 @@ create_talk <- function(x) {
     discard(is_empty_string)
 }
 
-talks_raw <- sheets_read(SHEET_ID, sheet="Speakers", trim_ws=T)
+talks_raw <- read_sheet(SHEET_ID, sheet=SHEET_NAME, trim_ws=T)
 
 options(dplyr.width = Inf)
 
