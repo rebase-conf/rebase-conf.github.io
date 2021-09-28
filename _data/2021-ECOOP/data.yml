@@ -1,5 +1,6 @@
 talks:
 - title: Ubiquitous Omniscient Debugging
+  video_id: DikyuIq3cLs
   time: '11:00'
   abstract: "True omniscient debugging is a lofty goal: record a program execution,
     efficiently reproduce any desired program state from the recording, visualize
@@ -26,6 +27,7 @@ talks:
     twitter: AndreasZeller
     website: https://andreas-zeller.info/
 - title: Molding Knowledge
+  video_id: HjBYwcJBrk0
   time: '13:00'
   abstract: "The experience of handling computation is highly fragmented today. For
     \nexample, consider how APIs expose interfaces to computation, but \nexploring
@@ -90,6 +92,7 @@ talks:
     twitter: gregork
     website: https://www.cs.ubc.ca/~gregor/
 - title: The Move language for the Diem Blockchain
+  video_id: 954QaME4GF4
   time: '17:00'
   abstract: "Move is a language originally designed for programming Diem (https://github.com/diem/diem),
     \na peer-to-peer network for replicated computation (also known as a blockchain
@@ -117,6 +120,7 @@ talks:
     twitter: TacticalGrace
     website: https://justtesting.org
 - title: AA - Yet Another New Language
+  video_id: cUdfRjX54JY
   time: '19:00'
   abstract: 'I am developing a new language [aa](https://github.com/cliffclick/aa),
     to explore: a new way to type programs (full type inference and dataflow typing),
@@ -149,6 +153,7 @@ talks:
     twitter: clattner_llvm
     website: http://nondot.org/sabre/
 - title: Variational Calculus for Dummies
+  video_id: pfQtjnb0eKo
   time: '21:00'
   abstract: "The goal of deep learning is to find an intensional function f expressed
     as a “neural network” of weights and activation functions that minimizes a loss
