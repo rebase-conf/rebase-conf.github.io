@@ -54,6 +54,10 @@
   }
 }
 
+.intro__text_1 {
+  font-size: 2rem;
+}
+
 .intro__buttons {
   @include media-breakpoint-down(md) {
     display: flex;
