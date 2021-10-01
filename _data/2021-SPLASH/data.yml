@@ -39,7 +39,7 @@ talks:
     affiliation: Strumenta
     twitter: ftomasse
     website: https://tomassetti.me/
-- title: Static/dynamic
+- title: The F# view on the Static / Dynamic divide
   time: '11:00'
   persons:
   - name: Don Syme
