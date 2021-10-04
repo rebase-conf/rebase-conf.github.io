@@ -17,8 +17,8 @@ talks:
     on the technical aspects of Hedy. For example, a set of increasingly complex grammars,
     rather than one grammar, poses new challenges for language design."
   persons:
-  - name: Fellienne Hermans
-    id: fellienne_hermans
+  - name: Felienne Hermans
+    id: felienne_hermans
     type: speaker
     affiliation: Leiden University
     twitter: Felienne
