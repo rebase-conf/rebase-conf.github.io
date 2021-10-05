@@ -1,6 +1,6 @@
 talks:
 - title: 'Hedy: Creating a gradual programming language'
-  time: '09:00'
+  time: '10:00'
   abstract: "Hedy is a gradual programming language to make learning programming easier.
     The core idea of Hedy is that it uses different language levels. In level 1, there
     is hardly any syntax at all, for example printing is done with: `print hello REBASE
@@ -40,7 +40,7 @@ talks:
     twitter: ftomasse
     website: https://tomassetti.me/
 - title: The F# view on the Static / Dynamic divide
-  time: '11:00'
+  time: '11:50'
   persons:
   - name: Don Syme
     id: don_syme
@@ -58,7 +58,7 @@ talks:
       a PhD from the University of Cambridge and a BSc. from the \nAustralian National
       University."
 - title: A Retrospective on the Design of the Swift Programming Language
-  time: '13:00'
+  time: '14:50'
   persons:
   - name: Dave Abrahams
     id: dave_abrahams
@@ -79,7 +79,7 @@ talks:
     twitter: den_sh
     website: https://github.com/densh
 - title: A Brief History of API Design Revisited
-  time: '15:00'
+  time: '16:40'
   persons:
   - name: Josh Bloch
     id: josh_bloch
@@ -100,7 +100,7 @@ talks:
     twitter: douglea
     website: https://en.wikipedia.org/wiki/Doug_Lea
 - title: Fragmentation of Machine Architecture
-  time: '17:00'
+  time: '18:30'
   persons:
   - name: Sean Parent
     id: sean_parent
