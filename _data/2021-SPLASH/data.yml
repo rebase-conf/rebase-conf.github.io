@@ -41,6 +41,14 @@ talks:
     website: https://tomassetti.me/
 - title: The F# view on the Static / Dynamic divide
   time: '11:50'
+  abstract: "Programming languages come with increasingly powerful type-level programming
+    features and meta-programming facilities\n – both of which shift part of the computation
+    from dynamic (our traditional notion of “run-time”) to static (what often think
+    of as \n“compile-time”). This boundary is being blurred as compilation increasingly
+    happens at run-time and computations are staged.   This \nmeans we have to start
+    thinking about debuggers and profilers for our type systems. But we must also
+    ask whether that additional expressive \npower is actually a net positive. Where
+    is the point of diminishing returns?"
   persons:
   - name: Don Syme
     id: don_syme
@@ -59,6 +67,9 @@ talks:
       University."
 - title: A Retrospective on the Design of the Swift Programming Language
   time: '14:50'
+  abstract: |-
+    How swiftly did Swift become Swift? What were the main roadblocks and challenges? Where is the language going next? These
+     and many other Swift-related questions will be discussed by the speakers. Audience interaction is welcome.
   persons:
   - name: Dave Abrahams
     id: dave_abrahams
@@ -66,6 +77,25 @@ talks:
     affiliation: Google
     twitter: DaveAbrahams
     website: https://daveabrahams.com/
+    bio: "Dave Abrahams is a specialist in programming language and library \ndesign
+      and a recognized leader in the Swift and C++ programming language\n communities.
+      He is a principal designer of the Swift programming \nlanguage, a founding member
+      of Boost.org, a former longstanding member \nof the ISO C++ standardization
+      committee, and co-author of a book in \nBjarne Stroustrup’s “C++ In Depth” series.
+      Dave is a natural \ncollaborator known for his insights into hard problems and
+      is an \nin-demand speaker at conferences all over the world. His mission is
+      to \nfix software development. \nMost recently (since 2013), Dave was at Apple
+      developing the Swift \nlanguage and standard library, and then the SwiftUI declarative
+      UI \nframework. He remained an active member of the Swift core team, guiding
+      \nthe language’s evolution, throughout. \nDave’s range of experience in industry
+      includes application software \ndevelopment, framework design, embedded systems,
+      and natural language \nprocessing. He is the author of eight Boost libraries
+      and has made \ncontributions to numerous others. \nDave’s first major accomplishment
+      in the C++ community was to create \nand promote an understanding of exception-safety
+      that is still the \nstandard today. Known as the “Abrahams Guarantees.” this
+      framework is \nnow part of the standard library. In 2001 he founded Boost Consulting
+      \n(now Boostpro Computing) to realize the promise of advanced, open-source\n
+      C++ libraries."
   - name: Roman Elizarov
     id: roman_elizarov
     type: panelist
@@ -80,6 +110,12 @@ talks:
     website: https://github.com/densh
 - title: A Brief History of API Design Revisited
   time: '16:40'
+  abstract: "How do we design interfaces? What is a good \ndesign? How can we tell
+    that something is wrong? Josh Bloch has many \nyears of hands on experience working
+    on the Java Collection framework as\n well as the math library. He will engage
+    us into a discussion of keys \nprinciples. Josh has also been active on the legal
+    front, battling for \nthe right to reimplement interfaces. He will update us on
+    the latest \ndevelopments."
   persons:
   - name: Josh Bloch
     id: josh_bloch
@@ -101,6 +137,14 @@ talks:
     website: https://en.wikipedia.org/wiki/Doug_Lea
 - title: Fragmentation of Machine Architecture
   time: '18:30'
+  abstract: Not too many years ago, the machine architecture supported by consumer
+    devices looked to be converging on a largely uniform model, the Intel x86 instruction
+    set & OpenCL/GL GPU computation. But now, hardware architecture is increasingly
+    fragmented and complex, while at the same time, the marketplace is demanding higher
+    performance and interactivity across a more extensive range of devices. This talk
+    looks at how we got here, the challenges of supporting these architectures from
+    software applications, and an opening to discuss how software languages will play
+    a role in making sense of the chaos.
   persons:
   - name: Sean Parent
     id: sean_parent
