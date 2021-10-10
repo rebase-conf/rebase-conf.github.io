@@ -74,7 +74,7 @@ talks:
   - name: Dave Abrahams
     id: dave_abrahams
     type: speaker
-    affiliation: Google
+    affiliation: Adobe
     twitter: DaveAbrahams
     website: https://daveabrahams.com/
     bio: "Dave Abrahams is a specialist in programming language and library \ndesign
