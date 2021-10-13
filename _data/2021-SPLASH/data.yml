@@ -65,6 +65,12 @@ talks:
       \naspects of object-oriented, asynchronous and parallel programming. He \nhas
       a PhD from the University of Cambridge and a BSc. from the \nAustralian National
       University."
+  - name: Nicholas Matsakis
+    id: nicholas_matsakis
+    type: panelist
+    affiliation: Amazon
+    twitter: nikomatsakis
+    website: https://smallcultfollowing.com/babysteps/
 - title: A Retrospective on the Design of the Swift Programming Language
   time: '14:50'
   abstract: |-
