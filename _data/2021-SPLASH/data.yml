@@ -1,6 +1,6 @@
 talks:
 - title: 'Hedy: Creating a gradual programming language'
-  time: '10:00'
+  time: '8:30'
   abstract: "Hedy is a gradual programming language to make learning programming easier.
     The core idea of Hedy is that it uses different language levels. In level 1, there
     is hardly any syntax at all, for example printing is done with: `print hello REBASE
@@ -40,7 +40,7 @@ talks:
     twitter: ftomasse
     website: https://tomassetti.me/
 - title: The F# view on the Static / Dynamic divide
-  time: '11:50'
+  time: '10:00'
   abstract: "Programming languages come with increasingly powerful type-level programming
     features and meta-programming facilities\n – both of which shift part of the computation
     from dynamic (our traditional notion of “run-time”) to static (what often think
@@ -72,7 +72,7 @@ talks:
     twitter: nikomatsakis
     website: https://smallcultfollowing.com/babysteps/
 - title: A Retrospective on the Design of the Swift Programming Language
-  time: '14:50'
+  time: '11:50'
   abstract: |-
     How swiftly did Swift become Swift? What were the main roadblocks and challenges? Where is the language going next? These
      and many other Swift-related questions will be discussed by the speakers. Audience interaction is welcome.
@@ -115,7 +115,7 @@ talks:
     twitter: den_sh
     website: https://github.com/densh
 - title: A Brief History of API Design Revisited
-  time: '16:40'
+  time: '14:50'
   abstract: "How do we design interfaces? What is a good \ndesign? How can we tell
     that something is wrong? Josh Bloch has many \nyears of hands on experience working
     on the Java Collection framework as\n well as the math library. He will engage
@@ -142,7 +142,7 @@ talks:
     twitter: douglea
     website: https://en.wikipedia.org/wiki/Doug_Lea
 - title: Fragmentation of Machine Architecture
-  time: '18:30'
+  time: '16:40'
   abstract: Not too many years ago, the machine architecture supported by consumer
     devices looked to be converging on a largely uniform model, the Intel x86 instruction
     set & OpenCL/GL GPU computation. But now, hardware architecture is increasingly
