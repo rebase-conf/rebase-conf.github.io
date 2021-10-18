@@ -24,7 +24,7 @@ show_organizers: true
 show_recordings: true
 show_sponsors: false
 show_stream: false
-show_zoom: false
+show_zoom: true
 show_talks: true
 
 # Footer contact details. Comment out to hide
