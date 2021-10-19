@@ -23,7 +23,7 @@ show_about: true
 show_organizers: true
 show_recordings: true
 show_sponsors: false
-show_stream: false
+show_stream: true
 show_zoom: true
 show_talks: true
 
