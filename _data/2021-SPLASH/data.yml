@@ -1,6 +1,7 @@
 talks:
 - title: 'Hedy: Creating a gradual programming language'
   time: '8:30'
+  video_id: 4x0gMG4yGl8
   abstract: "Hedy is a gradual programming language to make learning programming easier.
     The core idea of Hedy is that it uses different language levels. In level 1, there
     is hardly any syntax at all, for example printing is done with: `print hello REBASE
@@ -41,6 +42,7 @@ talks:
     website: https://tomassetti.me/
 - title: The F# view on the Static / Dynamic divide
   time: '10:00'
+  video_id: Gq41S6TfJK0
   abstract: I will focus on how the design of F# and in particular F# type providers
     gives some different perspectives on the static/dynamic divide and dig into these
     topics in an informal way. Instead of "making statically typed languages more
@@ -75,6 +77,7 @@ talks:
     website: https://smallcultfollowing.com/babysteps/
 - title: A Retrospective on the Design of the Swift Programming Language
   time: '11:50'
+  video_id: 6JYAXADQmNQ
   abstract: |-
     How swiftly did Swift become Swift? What were the main roadblocks and challenges? Where is the language going next? These
      and many other Swift-related questions will be discussed by the speakers. Audience interaction is welcome.
@@ -118,6 +121,7 @@ talks:
     website: https://github.com/densh
 - title: A Brief History of API Design Revisited
   time: '14:50'
+  video_id: nL0hVIgUOoY
   abstract: "How do we design interfaces? What is a good \ndesign? How can we tell
     that something is wrong? Josh Bloch has many \nyears of hands on experience working
     on the Java Collection framework as\n well as the math library. He will engage
@@ -145,6 +149,7 @@ talks:
     website: https://en.wikipedia.org/wiki/Doug_Lea
 - title: Fragmentation of Machine Architecture
   time: '16:40'
+  video_id: lqBzUBKLal0
   abstract: Not too many years ago, the machine architecture supported by consumer
     devices looked to be converging on a largely uniform model, the Intel x86 instruction
     set & OpenCL/GL GPU computation. But now, hardware architecture is increasingly
