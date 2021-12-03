@@ -90,10 +90,6 @@
     @extend .icon-link;
     font-size: rem-calc(16px);
 
-    &.youtube {
-      color: $color-active-secondary;
-    }
-
     &:not(:last-child) {
       margin-right: rem-calc(15px);
 

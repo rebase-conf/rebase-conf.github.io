@@ -19,8 +19,8 @@
   </div>
   {% endif %}
   <p class="box__text-links">
-    {% if talk.video %}
-    <a href="{{ talk.video }}" target="_blank" class="youtube">
+    {% if talk.video_id %}
+    <a href="https://www.youtube.com/watch?v={{ talk.video_id }}&list=PLyrlk8Xaylp6aNlOgiyE4W30X7DpXx74m" target="_blank" class="youtube">
       <span class="fab fa-youtube" aria-hidden="true"></span>
       watch
     </a>
@@ -37,14 +37,6 @@
     <!-- </a> -->
   </p>
 </div>
-{% if talk.video_id %}
-<div class="box__video">
-    <a href="https://www.youtube.com/watch?v={{ talk.video_id }}&list=PLyrlk8Xaylp6aNlOgiyE4W30X7DpXx74m" target="_blank" class="box__youtube">
-      <img width="100%" src="https://i.ytimg.com/vi/{{ talk.video_id }}/mqdefault.jpg" />
-      <span class="fab fa-youtube" aria-hidden="true"></span>
-    </a>
-</div>
-{% endif %}
 <div class="box__people">
   {% for p in speakers %}
   {% include {{ year }}/person.html person=p %}
