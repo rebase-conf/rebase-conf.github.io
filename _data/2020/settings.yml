@@ -28,8 +28,8 @@ show_stream: false
 show_talks: true
 
 # Footer contact details. Comment out to hide
-footer_email: rebaseconf@gmail.com
-footer_twitter: rebase_conf
+footer_email: krikava@gmail.com
+#footer_twitter: rebase_conf
 
 featured_speakers:
 - lars_bak

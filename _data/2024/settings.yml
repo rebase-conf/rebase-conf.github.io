@@ -1,10 +1,11 @@
-city: On-Line
-year: 2021-SPLASH
-conference_dates: Tuesday, October 19<sup>th</sup> 2021
-venue_url: https://2021.splashcon.org/venue/splash-2021-venue
+city: Pasadena, California, US
+year: 2024-SPLASH
+conference_dates: Wednesday, October 23<sup>th</sup> 2024
+venue_url: https://2024.splashcon.org/venue/splash-2024-venue
 past_editions:
   - 2020
   - 2021-ECOOP
+  - 2021-SPLASH
 #  - 2015
 
 # Possible states for cfp and registration: hidden, inactive,
@@ -14,8 +15,9 @@ past_editions:
 cfp: hidden
 cfp_date: Feb 20th
 cfp_form: https://docs.google.com/forms/d/e/1FAIpQLSfSJA-U_sXBXCOK6nDwx5964Qx4LkW7D1krOnno2fTEciMW5w/viewform
-registration: hidden # active, inactive, hidden
-registration_url: https://2021.ecoop.org/attending/registration
+
+registration: active # active, inactive, hidden
+registration_url: https://2024.splashcon.org/
 registration_date: Open
 
 # Control different sections on the HP
@@ -25,7 +27,7 @@ show_recordings: true
 show_sponsors: false
 show_stream: false
 show_zoom: false
-show_talks: true
+show_talks: false
 
 # Footer contact details. Comment out to hide
 footer_email: krikava@gmail.com

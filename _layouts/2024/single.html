@@ -1,0 +1,19 @@
+---
+layout: 2024/default
+---
+{% include 2024/variables.html %}
+<section class="simple-heading">
+  <div class="container">
+    <a href="/{{ year }}/">
+      <img src="{{ imgs_baseurl }}/logo-white.svg" alt="Rebase" class="simple-heading__logo" />
+    </a>
+  </div>
+</section>
+<section class="single">
+  <div class="container">
+    <div class="single__content">
+      <h1 class="single__heading">{{ page.heading }}</h1>
+      {{ content }}
+    </div>
+  </div>
+</section>

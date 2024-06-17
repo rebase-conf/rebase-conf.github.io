@@ -28,8 +28,8 @@ show_zoom: true
 show_talks: true
 
 # Footer contact details. Comment out to hide
-footer_email: rebaseconf@gmail.com
-footer_twitter: rebase_conf
+footer_email: krikava@gmail.com
+#footer_twitter: rebase_conf
 
 # Liquid can't create arrays
 empty_array: []

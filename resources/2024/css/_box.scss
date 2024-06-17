@@ -1,0 +1,336 @@
+.box {
+  background: darken($color: $color-background, $amount: 1.5);
+  padding: rem-calc(20px);
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(md) {
+    padding: rem-calc(25px) rem-calc(30px);
+  }
+
+  &:not(.box--overlay) {
+    height: 100%;
+  }
+}
+
+.box--large {
+  @include media-breakpoint-up(md) {
+    padding: rem-calc(30px) rem-calc(40px);
+  }
+}
+
+.box--overlay {
+  @include media-breakpoint-down(md) {
+    min-height: 100%;
+  }
+}
+
+.box__text {
+  &:not(:last-child) {
+    margin-bottom: rem-calc(20px);
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: rem-calc(30px);
+    }
+  }
+}
+
+.box__text-hashtags {
+  font-size: rem-calc(14px);
+  margin-bottom: 10px;
+
+  @include media-breakpoint-up(md) {
+    font-size: rem-calc(16px);
+  }
+}
+
+.box__text-heading {
+  font-family: $font-family-heading;
+  font-size: rem-calc(22px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-heading;
+  margin-bottom: 7px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 10px;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: rem-calc(26px);
+  }
+
+  .box--large & {
+    font-size: rem-calc(26px);
+
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(32px);
+    }
+  }
+
+  .box--overlay & {
+    padding-right: rem-calc(40px);
+  }
+}
+
+.box__text-content {
+  @include formatted-text;
+}
+
+.box__text-links {
+  &:not(:last-child) {
+    margin-bottom: rem-calc(15px);
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: rem-calc(20px);
+    }
+  }
+
+  a {
+    @extend .icon-link;
+    font-size: rem-calc(16px);
+
+    &:not(:last-child) {
+      margin-right: rem-calc(15px);
+
+      @include media-breakpoint-up(md) {
+        margin-right: rem-calc(20px);
+      }
+    }
+  }
+}
+
+.box:not(.box--overlay) .box__people {
+  flex-grow: 1;
+  margin-bottom: rem-calc(-15px);
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: rem-calc(-20px);
+  }
+
+  &:not(:last-child) {
+    padding-bottom: rem-calc(25px);
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: rem-calc(30px);
+    }
+  }
+}
+
+.box--overlay .box__people {
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.box__people {
+  display: flex;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.box__people .box__people-panel-text {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: .5rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  font-family: $font-family-heading;
+  font-weight: bold;
+}
+
+.box--overlay .box__people-panel-text {
+  width: 100%;
+}
+
+.box__person {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5em;
+  margin-bottom: rem-calc(15px);
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: rem-calc(20px);
+  }
+
+  .box--speaker & {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.box--overlay .box__person {
+  @include media-breakpoint-up(md) {
+    width: calc(50% - #{rem-calc(15px)});
+  }
+}
+
+.box__person-img {
+  border-radius: 50%;
+  width: rem-calc(65px);
+  height: rem-calc(65px);
+  margin-right: rem-calc(10px);
+
+  @include media-breakpoint-up(md) {
+    width: rem-calc(70px);
+    height: rem-calc(70px);
+    margin-right: rem-calc(15px);
+  }
+
+  .box--large & {
+    width: rem-calc(70px);
+    height: rem-calc(70px);
+    margin-right: rem-calc(15px);
+
+    @include media-breakpoint-up(md) {
+      width: rem-calc(90px);
+      height: rem-calc(90px);
+      margin-right: rem-calc(20px);
+    }
+  }
+
+  .box--speaker & {
+    width: rem-calc(200px);
+    height: rem-calc(200px);
+    margin-right: 0;
+    margin-bottom: rem-calc(30px);
+
+    @include media-breakpoint-up(xl) {
+      width: rem-calc(250px);
+      height: rem-calc(250px);
+    }
+  }
+}
+
+.box__person-name {
+  font-family: $font-family-heading;
+  font-size: rem-calc(20px);
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none !important;
+  color: $color-heading;
+  margin: -5px 0 3px;
+
+  @include media-breakpoint-up(md) {
+    font-size: rem-calc(22px);
+  }
+
+  .box--large & {
+    font-size: rem-calc(22px);
+
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(26px);
+    }
+  }
+
+  .box--speaker & {
+    font-size: rem-calc(26px);
+    margin-bottom: rem-calc(5px);
+
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(32px);
+    }
+  }
+}
+
+.box__person-affiliation {
+  font-family: $font-family-heading;
+  font-size: rem-calc(16px);
+  font-weight: 300;
+  line-height: 1;
+  color: $color-heading;
+
+  @include media-breakpoint-up(md) {
+    font-size: rem-calc(18px);
+  }
+
+  .box--large & {
+    font-size: rem-calc(18px);
+
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(22px);
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: rem-calc(7px);
+  }
+
+  .box--speaker & {
+    font-size: rem-calc(22px);
+
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(26px);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem-calc(15px);
+    }
+  }
+}
+
+.box__person-links {
+  .box--speaker & {
+    font-size: rem-calc(16px);
+
+    @include media-breakpoint-up(md) {
+      font-size: rem-calc(20px);
+    }
+  }
+
+  a {
+    @extend .icon-link;
+
+    &:not(:last-child) {
+      margin-right: rem-calc(15px);
+    }
+  }
+}
+
+.box__talk-info {
+  display: flex;
+  color: $color-paragraph-secondary;
+  font-weight: bold;
+  margin-bottom: rem-calc(20px);
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: rem-calc(-5px);
+    }
+  }
+}
+
+.box__talk-datetime {
+  margin-left: rem-calc(20px);
+  line-height: 1.5rem;
+
+  a {
+    color: $color-active;
+    font-size: .8em;
+  }
+}
+
+.box__video {
+  border: 4px solid $color-paragraph;
+  margin-bottom: 2em;
+  position: relative;
+  max-width: 320px;
+}
+
+.box__youtube .fab {
+  font-size: 4em;
+  color: #ff0000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

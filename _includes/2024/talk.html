@@ -1,0 +1,58 @@
+{% assign speakers = talk.persons | where: "type", "speaker" %}
+{% assign panelists = talk.persons | where: "type", "panelist" %}
+<div class="box__text">
+  {% if talk.hashtags.size %}
+  <p class="box__text-hashtags">
+    {% for hashtag in talk.hashtags %}
+    <span>#{{ hashtag }}</span>
+    {% endfor %}
+  </p>
+  {% endif %}
+  <a href="#{{ talk.title | slugify }}" data-overlay="talk">
+    <h3 class="box__text-heading">
+      {{ talk.title }}
+    </h3>
+  </a>
+  {% if include.excerpt %}
+  <div class="box__text-content">
+    {{ talk.excerpt | markdownify }}
+  </div>
+  {% endif %}
+  <p class="box__text-links">
+    {% if talk.video_id %}
+    <a href="https://www.youtube.com/watch?v={{ talk.video_id }}&list=PLOrgCEPN9Za81oUzjzJALqBdcdHdjk6rs" target="_blank" class="youtube">
+      <span class="fab fa-youtube" aria-hidden="true"></span>
+      watch
+    </a>
+    {% endif %}
+    <a href="#{{ talk.title | slugify }}" data-overlay="talk">
+      {% if talk.abstract %}
+        <span class="fab fa-readme" aria-hidden="true"></span>
+        abstract
+      {% endif  %}
+    </a>
+    <!-- <a href="https://aarhusuniversity.zoom.us/my/ecoop.rebase"> -->
+    <!--   <span class="fa fa-video" aria-hidden="true"></span> -->
+    <!--   zoom -->
+    <!-- </a> -->
+  </p>
+</div>
+<div class="box__people">
+  {% for p in speakers %}
+  {% include {{ year }}/person.html person=p %}
+  {% endfor %}
+  {% if panelists.size > 0 %}
+  <span class="box__people-panel-text">discussing with</span>
+  {% for p in panelists %}
+  {% include {{ year }}/person.html person=p %}
+  {% endfor %}
+  {% endif %}
+</div>
+{% if talk.time %}
+<div class="box__talk-info">
+  <span class="box__talk-datetime">
+    <span class="far fa-clock"></span>
+    {{ talk.time | normalize_whitespace | replace: " ", "&nbsp;" }} EST (<a href="https://www.inyourowntime.zone/2024-10-23_{{ talk.time | replace: ":", "." }}_America.New_York">my timezone</a>)
+  </span>
+</div>
+{% endif  %%}

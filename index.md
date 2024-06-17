@@ -1,5 +1,5 @@
 ---
-current_year: 2021-SPLASH
+current_year: 2024
 ---
 <html>
   <head>
