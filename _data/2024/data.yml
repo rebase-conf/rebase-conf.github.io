@@ -1,180 +1,121 @@
 talks:
-- title: 'Hedy: Creating a gradual programming language'
-  time: '8:30'
-  video_id: 4x0gMG4yGl8
-  abstract: "Hedy is a gradual programming language to make learning programming easier.
-    The core idea of Hedy is that it uses different language levels. In level 1, there
-    is hardly any syntax at all, for example printing is done with: `print hello REBASE
-    conf`\nIn every level, new syntax and concepts are added, until kids are doing
-    a subset of Python in level 22 with conditions, loops, variables and lists. The
-    leveled approach means that learners do not have to learn all syntax rules at
-    once. Hedy is aimed at children that want to get started with textual programming
-    languages, but for whom starting with Python might still be too complex. Hedy
-    is open source, runs in the browser, is free to use, and available in fifteen
-    different languages (Including English, Spanish, Chinese and Hindi). Hedy was
-    launched in early 2020 and since then almost 1.5 million Hedy programs have been
-    created by children worldwide. Try Hedy at [www.hedycode.com](www.hedycode.com).
-    \n\nIn this talk, Felienne will dive into the pedagogy behind Hedy, but also expand
-    on the technical aspects of Hedy. For example, a set of increasingly complex grammars,
-    rather than one grammar, poses new challenges for language design."
-  persons:
-  - name: Felienne Hermans
-    id: felienne_hermans
-    type: speaker
-    affiliation: Leiden University
-    twitter: Felienne
-    website: https://www.felienne.com/
-    bio: "Felienne is associate professor at the Leiden Institute of Advanced \nComputer
-      Science at Leiden University, where she heads the Programming \nEducation Research
-      Lab (PERL). Felienne’s work focuses on the question \nhow to best teach programming
-      to kids and students, investigating \nmisconceptions, didactic strategies and
-      programming environments. \nFelienne is a co-editor of the ACM journal Transactions
-      on Computing \nEducation, and a host at the IEEE podcast SE Radio, one of the
-      most \npopular software engineering podcasts on the web. She writes a monthly
-      \ncolumn for Dutch IT magazine AG Connect and she ran the Joy of Coding \nconference
-      for 6 years. When she is not coding, blogging or teaching, \nshe is probably
-      knitting, running or playing a (board)game.\n\nFelienne blogs at [felienne.com](felienne.com)"
-  - name: Federico Tomassetti
-    id: federico_tomassetti
-    type: panelist
-    affiliation: Strumenta
-    twitter: ftomasse
-    website: https://tomassetti.me/
-- title: The F# view on the Static / Dynamic divide
-  time: '10:00'
-  video_id: Gq41S6TfJK0
-  abstract: I will focus on how the design of F# and in particular F# type providers
-    gives some different perspectives on the static/dynamic divide and dig into these
-    topics in an informal way. Instead of "making statically typed languages more
-    dynamic" or vice versa, the theme is "moderate static typing, but applied it more
-    broadly, to external data sources and interoperability". This gives rise to a
-    many issues like "What type should data have anyway?" and "Can automated type
-    synthesis allow statically and dynamically typed languages to interoperate" (e.g.
-    interop from F# to R using the RTypeProvider) and helps illuminate arguments about
-    type-level programming more generally. I'll talk thematically but give examples
-    and pose some research problems.
-  persons:
-  - name: Don Syme
-    id: don_syme
-    type: speaker
-    affiliation: Microsoft
-    twitter: dsymetweets
-    website: https://fsharp.org/
-    bio: "Don Syme is a Senior Research at Microsoft Research, UK, and is \nresponsible
-      for the design of the F# programming language. He has \ncontributed extensively
-      to the design of the .NET platform through the \ndesign and implementation of
-      .NET and C# generics. His research focuses \non the technical aspects of programming
-      language design and \nimplementation needed to make functional languages that
-      are simpler to \nuse, interoperate well with other languages and which incorporate
-      \naspects of object-oriented, asynchronous and parallel programming. He \nhas
-      a PhD from the University of Cambridge and a BSc. from the \nAustralian National
-      University."
-  - name: Nicholas Matsakis
-    id: nicholas_matsakis
-    type: panelist
-    affiliation: Amazon
-    twitter: nikomatsakis
-    website: https://smallcultfollowing.com/babysteps/
-- title: A Retrospective on the Design of the Swift Programming Language
-  time: '11:50'
-  video_id: 6JYAXADQmNQ
-  abstract: |-
-    How swiftly did Swift become Swift? What were the main roadblocks and challenges? Where is the language going next? These
-     and many other Swift-related questions will be discussed by the speakers. Audience interaction is welcome.
-  persons:
-  - name: Dave Abrahams
-    id: dave_abrahams
-    type: speaker
-    affiliation: Adobe
-    twitter: DaveAbrahams
-    website: https://daveabrahams.com/
-    bio: "Dave Abrahams is a specialist in programming language and library \ndesign
-      and a recognized leader in the Swift and C++ programming language\n communities.
-      He is a principal designer of the Swift programming \nlanguage, a founding member
-      of Boost.org, a former longstanding member \nof the ISO C++ standardization
-      committee, and co-author of a book in \nBjarne Stroustrup’s “C++ In Depth” series.
-      Dave is a natural \ncollaborator known for his insights into hard problems and
-      is an \nin-demand speaker at conferences all over the world. His mission is
-      to \nfix software development. \nMost recently (since 2013), Dave was at Apple
-      developing the Swift \nlanguage and standard library, and then the SwiftUI declarative
-      UI \nframework. He remained an active member of the Swift core team, guiding
-      \nthe language’s evolution, throughout. \nDave’s range of experience in industry
-      includes application software \ndevelopment, framework design, embedded systems,
-      and natural language \nprocessing. He is the author of eight Boost libraries
-      and has made \ncontributions to numerous others. \nDave’s first major accomplishment
-      in the C++ community was to create \nand promote an understanding of exception-safety
-      that is still the \nstandard today. Known as the “Abrahams Guarantees.” this
-      framework is \nnow part of the standard library. In 2001 he founded Boost Consulting
-      \n(now Boostpro Computing) to realize the promise of advanced, open-source\n
-      C++ libraries."
-  - name: Roman Elizarov
-    id: roman_elizarov
-    type: panelist
-    affiliation: JetBrains
-    twitter: relizarov
-    website: https://elizarov.medium.com/
-  - name: Denys Shabalin
-    id: denys_shabalin
-    type: panelist
-    affiliation: Google
-    twitter: den_sh
-    website: https://github.com/densh
-- title: A Brief History of API Design Revisited
-  time: '14:50'
-  video_id: nL0hVIgUOoY
-  abstract: "How do we design interfaces? What is a good \ndesign? How can we tell
-    that something is wrong? Josh Bloch has many \nyears of hands on experience working
-    on the Java Collection framework as\n well as the math library. He will engage
-    us into a discussion of keys \nprinciples. Josh has also been active on the legal
-    front, battling for \nthe right to reimplement interfaces. He will update us on
-    the latest \ndevelopments."
-  persons:
-  - name: Josh Bloch
-    id: josh_bloch
-    type: speaker
-    affiliation: CMU
-    twitter: joshbloch
-    website: https://en.wikipedia.org/wiki/Joshua_Bloch
-    bio: "Joshua Bloch is a professor at Carnegie Mellon \nUniversity. He was formerly
-      the chief Java architect at Google, a \ndistinguished engineer at Sun Microsystems,
-      and a senior systems \ndesigner at Transarc. He led the design and implementation
-      of numerous \nJava platform features, including the JDK 5.0 language enhancements
-      and \nthe Java Collections Framework. He holds a Ph.D. in computer science \nfrom
-      Carnegie Mellon University and a B.S. in computer science from \nColumbia University."
-  - name: Doug Lea
-    id: doug_lea
-    type: panelist
-    affiliation: State University of New York at Oswego
-    twitter: douglea
-    website: https://en.wikipedia.org/wiki/Doug_Lea
-- title: Fragmentation of Machine Architecture
-  time: '16:40'
-  video_id: lqBzUBKLal0
-  abstract: Not too many years ago, the machine architecture supported by consumer
-    devices looked to be converging on a largely uniform model, the Intel x86 instruction
-    set & OpenCL/GL GPU computation. But now, hardware architecture is increasingly
-    fragmented and complex, while at the same time, the marketplace is demanding higher
-    performance and interactivity across a more extensive range of devices. This talk
-    looks at how we got here, the challenges of supporting these architectures from
-    software applications, and an opening to discuss how software languages will play
-    a role in making sense of the chaos.
-  persons:
-  - name: Sean Parent
-    id: sean_parent
-    type: speaker
-    affiliation: Adobe
-    twitter: SeanParent
-    website: https://stlab.cc/
-    bio: "Sean Parent is a senior principal scientist and software architect for \nAdobe’s
-      mobile digital imaging group and Photoshop. Sean has been at \nAdobe since 1993
-      when he joined as a senior engineer working on \nPhotoshop and later managed
-      Adobe’s Software Technology Lab. In 2009 \nSean spent a year at Google working
-      on Chrome OS before returning to \nAdobe. From 1988 through 1993 Sean worked
-      at Apple, where he was part of\n the system software team that developed the
-      technologies allowing \nApple’s successful transition to PowerPC."
-  - name: Mario Wolczko
-    id: mario_wolczko
-    type: panelist
-    affiliation: Oracle Labs
-    twitter: mwolczko
-    website: http://www.wolczko.com/
+  - title: "Interview with Alan Kay"
+    video_id: Bk4DNU-DNrU
+    abstract: "Gilad Bracha will interview Alan Kay followed by live Q&A."
+    persons:
+      - name: Alan Kay
+        id: alan_kay
+        type: speaker
+        affiliation: Viewpoints Research Institute
+        website: http://www.vpri.org/
+        bio: "Alan was elected a Fellow of the American Academy of Arts and Sciences, the National Academy of Engineering, and the Royal Society of Arts. He is best known for his pioneering work on object-oriented programming and windowing graphical user interface design. He is the president of the Viewpoints Research Institute, and an adjunct professor of computer science at the University of California, Los Angeles. He is also on the advisory board of TTI/Vanguard. Until mid-2005, he was a senior fellow at HP Labs, a visiting professor at Kyoto University, and an adjunct professor at the Massachusetts Institute of Technology (MIT). Kay is also a former professional jazz guitarist, composer, and theatrical designer, and an amateur classical pipe organist."
+      - name: Gilad Bracha
+        id: gilad_bracha
+        type: speaker
+        affiliation: F5
+        twitter: Gilad_Bracha
+        website: https://bracha.org/
+        bio: "Gilad Bracha is the creator of the Newspeak programming language and a well known researcher in the area of object-oriented programming languages. He was awarded the senior Dahl-Nygaard prize in 2017. He is currently a Technical Fellow at F5, and has held positions at Google, SAP Labs, Cadence, and Sun. He has authored or co-authored several books including the Java Language and Virtual Machine Specifications, and the Dart Programming Language. Prior to joining Sun, he worked on Strongtalk, the Animorphic Smalltalk System. He received his B.Sc in Mathematics and Computer Science from Ben Gurion University in Israel and a Ph.D. in Computer Science from the University of Utah."
+
+  - title: "Fil-C: memory safety with fanatical C/C++ compatibility"
+    video_id: yyFI7NgyySE
+    abstract: "Fil-C is a garbage collected, capability-based variant of C and C++ that achieves complete memory safety with zero unsafe escape hatches while retaining enough compatibility that lots of existing programs compile and run with no changes. Fil-C can run things like CPython and OpenSSH. This talk describes the goals and key insights of Fil-C and shows preliminary performance data."
+    persons:
+      - name: Filip Pizlo
+        id: filip_pizlo
+        type: speaker
+        affiliation: Epic Games
+        website: http://www.filpizlo.com/
+        bio: ""
+
+  - title: "Lessons Learned from Building GitHub Copilot(s)"
+    video_id: -bwRPulxGow
+    abstract: |
+      In recent years, AI developer tools have progressed from research projects to critical parts of the developer toolset. Today, there are over 1.8 million paid subscribers to GitHub Copilot, Google reports that 50% of their code is written with AI assistance, and TabNine estimates that 5% of all code is written by AI. These numbers will only increase as these tools continue to improve and gain further traction among developers.
+
+      Researchers in the machine learning, programming languages, and software engineering communities continue to push the boundaries of what is possible, but turning promising research results into tools that are useful at scale is hard. It involves determining the right use cases, designing the right UX, evaluating and improving quality, and many other factors.
+
+      In this talk, Eddie Aftandilian will discuss how to bridge the demo-to-real-world gap via lessons learned from building several AI developer tools at GitHub, including the original GitHub Copilot, Copilot for Docs, and Copilot Workspace.
+    persons:
+      - name: Eddie Aftandilian
+        id: eddie_aftandilian
+        type: speaker
+        affiliation: GitHub Next
+        twitter: eaftandilian
+        website: https://github.com/eaftan
+        bio: |
+          Eddie Aftandilian is a Principal Researcher in GitHub Next, where he works on AI-powered developer tools. Through these tools, he aims to help developers become happier and more productive.
+
+          While in GitHub Next, he helped create the original GitHub Copilot, led development of Copilot for Docs, and currently leads development of Copilot Workspace.
+
+          Previously, Eddie led the Java Tools and JVM teams at Google. While at Google, he worked on:
+
+          Error Prone, Google’s static analysis tool for Java
+          Fixbot/Graph2Diff, an ML-powered build repair tool integrated into Google’s code review system
+          Tricorder, Google’s static analysis platform
+          Bazel, Google’s build system
+
+  - title: "From AI Software Engineers to AI Knowledge Workers"
+    video_id: rp6-1dFr1wg
+    abstract: |
+      The current hype in academia and industry is to use AI to augment, or even replace, traditional software engineers. But we should ask ourselves: is this putting the cart before the horse? The raison d’être for many software engineers is to create enterprise software that makes end-users more productive. What if we cut out the middleman and used AI to empower end-users to create their own automations directly?
+
+      In this talk, we will explore how to build a novel programming platform for end-user programming by treating LLMs as neural computers (Automind), with a Prolog-like reasoning language called Universalis as its Mentalese. If we are going to let end-users run AI-generated code autonomously, we must design safety and correctness into the language. That’s why Universalis is kept simple by design, enabling the creation of provably correct software—seen by many as the only path to controllable AGI."
+    persons:
+      - name: Erik Meijer
+        id: erik_meijer
+        type: speaker
+        affiliation: Facebook
+        twitter: headinthebox
+        bio: "Erik Meijer has been trying to bridge the ridge between theory and practice for most of his career. He is perhaps best known for his work on, amongst others, Haskell, C#, Visual Basic, and Dart programming languages, as well as for his contributions to LINQ and the Reactive Framework (Rx). Most recently he is on a quest to make uncertainty a first-class citizen in mainstream programming languages."
+
+  - title: "Apps and their Stores: An Alternative History"
+    video_id: rCB3yfAZmJ0
+    abstract: "This talk is about the history of apps and their stores (in both senses of the word), individually and collectively. It presents a vision of a world where apps are not silo’ed, are secure, are always local-first, always available and always up-to-date. Parts of this world have been described before, under the heading of “objects as software services”, but much of the history has never been shared before. A much simpler model of apps is possible by combining decades old technologies that have been largely neglected by the mainstream, including object capabilities, orthogonal persistence, dynamic software update and others. We’ll show you how that vision came about, how it failed, how it might be updated and made relevant today."
+    persons:
+      - name: Gilad Bracha
+        id: gilad_bracha
+        type: speaker
+        affiliation: F5
+        twitter: Gilad_Bracha
+        website: https://bracha.org/
+        bio: "Gilad Bracha is the creator of the Newspeak programming language and a well known researcher in the area of object-oriented programming languages. He was awarded the senior Dahl-Nygaard prize in 2017. He is currently a Technical Fellow at F5, and has held positions at Google, SAP Labs, Cadence, and Sun. He has authored or co-authored several books including the Java Language and Virtual Machine Specifications, and the Dart Programming Language. Prior to joining Sun, he worked on Strongtalk, the Animorphic Smalltalk System. He received his B.Sc in Mathematics and Computer Science from Ben Gurion University in Israel and a Ph.D. in Computer Science from the University of Utah."
+
+  - title: "Verse - a new functional logic language"
+    video_id: F1n7bBanKYQ
+    abstract: "Verse is the new programming language, designed at Epic Games as language of the metaverse. The talk will be a whirlwind tour of Verse and some of its unusual features."
+    persons:
+      - name: Lennart Augustsson
+        id: lennart_augustsson
+        type: speaker
+        affiliation: Epic Games
+
+  - title: "Panel: JavaScript virtual machine evolution"
+    video_id:
+    abstract: "The main JavaScript engine vendors share their opinion on the evolution of the JavaScript engines."
+    persons:
+      - name: Manuel Serrano
+        id: manuel_serrano
+        type: speaker
+        affiliation: Inria, Université Côte d’Azur
+        website: http://www-sop.inria.fr/members/Manuel.Serrano/
+      - name: Saam Barati
+        id: saam_barati
+        type: speaker
+        affiliation: Epic Games
+        twitter: saambarati
+        website: https://saambarati.org
+      - name: Shu-yu Guo
+        id: shu_yu_guo
+        type: speaker
+        affiliation: Google
+        website: http://rfrn.org/~shu/
+      - name: Matthew Gaudet
+        id: matthew_gaudet
+        type: speaker
+        affiliation: Mozilla
+        website: https://www.mgaudet.ca/
+        bio: |
+          I'm a programmer in Canada, currently working for Mozilla (thoughts and posts are mine, not Mozilla’s) on the SpiderMonkey Javascript engine.
+
+          In general, my interests lie in the region just above hardware and below individual programmers– compilers and Runtime systems so far. To that end, I keep track of jobs in this area at Compiler Jobs

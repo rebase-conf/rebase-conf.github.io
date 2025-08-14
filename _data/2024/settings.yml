@@ -16,7 +16,7 @@ cfp: hidden
 cfp_date: Feb 20th
 cfp_form: https://docs.google.com/forms/d/e/1FAIpQLSfSJA-U_sXBXCOK6nDwx5964Qx4LkW7D1krOnno2fTEciMW5w/viewform
 
-registration: active # active, inactive, hidden
+registration: hidden # active, inactive, hidden
 registration_url: https://2024.splashcon.org/
 registration_date: Open
 
@@ -27,10 +27,10 @@ show_recordings: true
 show_sponsors: false
 show_stream: false
 show_zoom: false
-show_talks: false
+show_talks: true
 
 # Footer contact details. Comment out to hide
-footer_email: krikava@gmail.com
+footer_email: filip.krikava@fit.cvut.cz, btitzer@andrew.cmu.edu
 #footer_twitter: rebase_conf
 
 # Liquid can't create arrays

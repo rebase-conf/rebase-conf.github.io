@@ -13,9 +13,9 @@
       {{ talk.title }}
     </h3>
   </a>
-  {% if include.excerpt %}
+  {% if talk.abstract %}
   <div class="box__text-content">
-    {{ talk.excerpt | markdownify }}
+    {{ talk.abstract | markdownify }}
   </div>
   {% endif %}
   <p class="box__text-links">
@@ -28,7 +28,7 @@
     <a href="#{{ talk.title | slugify }}" data-overlay="talk">
       {% if talk.abstract %}
         <span class="fab fa-readme" aria-hidden="true"></span>
-        abstract
+        more
       {% endif  %}
     </a>
     <!-- <a href="https://aarhusuniversity.zoom.us/my/ecoop.rebase"> -->
