@@ -91,7 +91,7 @@ talks:
         affiliation: Epic Games
 
   - title: "Panel: JavaScript virtual machine evolution"
-    video_id:
+    video_id: _VF3pISRYRc&t=22301
     abstract: "The main JavaScript engine vendors share their opinion on the evolution of the JavaScript engines."
     persons:
       - name: Manuel Serrano
