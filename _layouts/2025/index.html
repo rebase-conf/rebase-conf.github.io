@@ -1,0 +1,119 @@
+---
+layout: 2025/default
+---
+{% include 2025/variables.html %}
+{% assign talks = data.talks %}
+{% assign featured_speakers = settings.empty_array %}
+{% for talk in talks %}
+    {% for featured_speaker in settings.featured_speakers %}
+        {% assign speaker = talk.speakers | where: "id", featured_speaker %}
+        {% assign featured_speakers = featured_speakers | concat: speaker %}
+    {% endfor %}
+{% endfor %}
+<section class="intro">
+  <img src="{{ imgs_baseurl }}/logo-white.svg" alt="Rebase" class="intro__logo" />
+  <h2 class="intro__subheading">{{ settings.city }} • {{ settings.conference_dates }}</h2>
+  <p class="intro__text intro__text_1">
+  Discussions on programming language related topics<br/>
+    connecting industry and academia.
+  </p>
+  <p class="intro__text">
+    <strong>Part of the <a href="https://2025.splashcon.org/">ACM SPLASH conference</a>!</strong>
+  </p>
+  <div class="intro__buttons">
+    {% if settings.cfp != "hidden" %}
+    <span class="intro__button">
+      <a href="call-for-presentations.html" class="button {% if settings.cfp != "active" %}button--inactive{% endif %}">
+        Call for presentations
+      </a>
+      {% if settings.cfp_date and settings.cfp == "inactive" %}
+      <span class="intro__button-date">starting {{ settings.cfp_date }}</span>
+      {% endif %}
+    </span>
+    {% endif %}
+    {% if settings.show_talks %}
+    <span class="intro__button">
+      <a href="#talks" class="button" rel="smooth-scroll">
+        Talks
+      </a>
+    </span>
+    {% endif %}
+    {% if settings.show_about %}
+    <span class="intro__button">
+      <a href="#about" class="button" rel="smooth-scroll">
+        About
+      </a>
+    </span>
+    {% endif %}
+    {% if settings.show_zoom %}
+    <span class="intro__button">
+      <a href="https://acm-org.zoom.us/j/2934789259" class="button" target="_blank">
+        Zoom 
+      </a>
+    </span>
+    {% endif %}
+    {% if settings.show_stream %}
+    <span class="intro__button">
+      <a href="#stream" class="button" rel="smooth-scroll">
+        Live stream
+      </a>
+    </span>
+    {% endif %}
+    {% if settings.registration != "hidden" %}
+    <span class="intro__button">
+      <a href="{{ settings.registration_url }}" class="button {% if settings.registration != "active" %}button--inactive{% endif %}">
+        Registration
+      </a>
+      {% if settings.registration_date and settings.registration == "inactive" %}
+      <span class="intro__button-date">{{ settings.registration_date }}</span>
+      {% elsif settings.registration == "sold_out" %}
+      <span class="intro__button-date">sold out</span>
+      {% endif %}
+    </span>
+    {% endif %}
+    {% if settings.show_recordings %}
+    <span class="intro__button">
+      <a href="https://www.youtube.com/watch?v=F1n7bBanKYQ&list=PLyrlk8Xaylp7WN3-3e4E95MNbB4wyNAue" class="button">
+        Recordings
+      </a>
+    </span>
+    {% endif %}
+  </div>
+  {% if settings.past_editions.size %}
+  <p class="intro__past-editions">
+    Past editions:
+    {% for edition in settings.past_editions %}
+    <a href="{{ site.baseurl }}/{{ edition }}">{{ edition }}</a>
+    {% endfor %}
+  </p>
+  {% endif %}
+
+  <!-- <a href="#about" class="intro__next" rel="smooth-scroll"></a> -->
+</section>
+{% if settings.show_stream %}
+  {% include {{ year }}/stream.html %}
+{% endif %}
+{% if settings.show_talks %}
+  {% include {{ year }}/talks.html %}
+{% endif %}
+<section class="about" id="about">
+  <div class="container">
+    <!-- <h2 class="about__heading">About</h2> -->
+    <div class="about__content">
+      <!-- TODO can we make the rebase text "ff-market-web",cursive; or something like that? -->
+      <p>
+        At <strong>Rebase</strong> practitioners engage with academics about
+        tomorrow's technologies while fondly recalling the achievements of
+        yesterday in a series of discussions on various PL-related topics.
+      </p>
+      <br/>
+      <p>
+        This year, <strong>Rebase</strong> is back at <a href="https://2025.splashcon.org/">SPLASH</a> conference!
+      </p>
+    </div>
+  </div>
+</section>
+
+{% if settings.show_sponsors %}
+  {% include {{ year }}/sponsors.html %}
+{% endif %}

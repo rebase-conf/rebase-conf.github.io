@@ -1,0 +1,58 @@
+{% assign presentations = data.talks | sort: "id" %}
+<section class="talks" id="talks">
+    <div class="container">
+      <h2 class="talks__heading">Talks</h2>
+      <div class="talks__list talks__list--presentations row">
+        {% for talk in presentations %}
+        <div class="talks__talk col-md-12">
+          <article class="box" data-id="{{ talk.title | slugify }}">
+            {% include {{ year }}/talk.html excerpt=false %}
+          </article>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <div class="overlay overlay--person">
+    <section class="overlay__content">
+      <div class="overlay__content-scroll">
+        <article class="box box--large box--overlay">
+          <div class="box__person">
+          </div>
+          <div class="box__text">
+            <div class="box__text-content">
+            </div>
+        </article>
+      </div>
+      <a href="#" class="overlay__close"></a>
+    </section>
+  </div>
+  <div class="overlay overlay--talk">
+    <section class="overlay__content">
+      <div class="overlay__content-scroll">
+        <article class="box box--large box--overlay">
+        </article>
+      </div>
+      <a href="#" class="overlay__close"></a>
+    </section>
+  </div>
+  <script>
+    {% for speaker in featured_speakers %}
+    speakers['{{ speaker.id }}'] = {{ speaker.bio | markdownify | jsonify }};
+    {% endfor %}
+    var talks = {};
+    {% for talk in talks %}
+    talks['{{ talk.title | slugify }}'] = {
+      abstract: {{ talk.abstract | markdownify | jsonify }},
+      video_id: {{ talk.video_id | jsonify }},
+      speakers: []
+    };
+    {% assign speakers = talk.persons | where: "type", "speaker" %}
+    {% for speaker in speakers %}
+    talks['{{ talk.title | slugify }}'].speakers.push({
+      name: "{{ speaker.name }}",
+      bio: {{ speaker.bio | markdownify | jsonify }}
+    });
+    {% endfor %}
+    {% endfor %}
+  </script>

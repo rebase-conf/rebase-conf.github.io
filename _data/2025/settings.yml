@@ -1,0 +1,37 @@
+city: Singapore
+year: 2025
+conference_dates: Saturday, October 18<sup>th</sup> 2025
+venue_url: https://2025.splashcon.org/venue/splash-2025-venue
+past_editions:
+  - 2020
+  - 2021-ECOOP
+  - 2021-SPLASH
+  - 2024
+
+# Possible states for cfp and registration: hidden, inactive,
+# active and sold_out (for registration only). cfp_date
+# and registration_date is displayed below the button if
+# present and the state is set to inactive
+cfp: hidden
+cfp_date: Feb 20th
+cfp_form: https://docs.google.com/forms/d/e/1FAIpQLSfSJA-U_sXBXCOK6nDwx5964Qx4LkW7D1krOnno2fTEciMW5w/viewform
+
+registration: active # active, inactive, hidden
+registration_url: https://2025.splashcon.org/attending/registration
+registration_date: Open
+
+# Control different sections on the HP
+show_about: true
+show_organizers: true
+show_recordings: false
+show_sponsors: false
+show_stream: false
+show_zoom: false
+show_talks: false
+
+# Footer contact details. Comment out to hide
+footer_email: filip.krikava@fit.cvut.cz, btitzer@andrew.cmu.edu
+#footer_twitter: rebase_conf
+
+# Liquid can't create arrays
+empty_array: []
