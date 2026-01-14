@@ -1,1 +1,75 @@
 talks:
+  - title: "Carbon: from C++ to Memory Safety"
+    abstract: |
+        The Carbon Language is an experimental C++ successor. It is designed to bring the most large-scale and brownfield of C++ systems incrementally towards memory safety through seamless C++ interop and migration. This talk will show why we feel like a new language is needed here, despite the inherent costs it incurs. It will introduce the audience to the core of Carbon, including showing both how it improves on C++ but without creating fundamental impedance mismatches between the designs.
+
+        It will also dive into how we expect to apply memory safety on top of this platform. We will showcase how we are making significantly different tradeoffs in Carbon compared to Rust, and how those tradeoffs lead to a smoother transition when starting from memory unsafe C++ code and APIs. Finally, we will cover the concrete C++ interop story, and how existing C++ code and ecosystems are available in Carbon without friction or overhead.
+    persons:
+      - name: Chandler Carruth
+        id: chandler_carruth
+        type: speaker
+        affiliation: Google
+        website: https://chandlerc.blog/
+
+
+  - title: "From Facts to Theories: Deductive Databases with Mangle Datalog"
+    video_id: UjOEHSZDBH8
+    abstract: |
+        Building robust software involves creating a “theory”—a deep understanding that allows us to explain and predict a system’s behavior. In a world of constant change, adapting these theories is crucial. While extensibility is often about adding new features, we rarely address how to evolve data models and queries while maintaining a faithful connection to reality.
+
+        This talk introduces a powerful alternative: declarative “theory building” using Deductive Databases, specifically Datalog. Datalog elegantly unites logic programming with data representation, allowing us to explicitly construct our system’s theory. Data is represented as facts (observations) and rules that derive new knowledge. A fixpoint computation then logically deduces all consequences.
+
+        Datalog’s declarative and recursive nature makes it ideal for complex graph problems. We see this in domains like static analysis, used to find live variables, and in systems like Rust’s Polonius borrow checker, which uses Datalog to prove memory safety at compile-time. Our approach, Mangle Datalog, extends this to cover all forms of data engineering.
+
+        Mangle includes a static type system, blending the benefits of static checking with the flexibility of a declarative approach. By embedding Mangle, the database definition becomes an API boundary, enabling a new level of extensibility and data integration.
+
+        We’ll demonstrate this approach in cybersecurity. We’ll show how disparate security logs (facts) can be transformed into a “theory of a cyberattack”. We use rules to identify emergent patterns—like lateral movement, privilege escalation, and data exfiltration—that are often invisible to traditional query tools. This method allows us to discover sophisticated threats by looking for logical connections.
+
+        The payoff of Mangle Datalog is significant: it creates models that gracefully adapt to new data without costly schema migrations. It provides a clear yet flexible separation of logic from data and gives us the ability to discover emergent patterns in complex, graph-heavy systems. By moving beyond procedural scripting, Mangle Datalog empowers us to build powerful, declarative theories of our most intricate systems.
+    persons:
+      - name: Burak Emir
+        id: burak_emir
+        type: speaker
+        affiliation: Google
+        website: https://burakemir.ch/about/
+
+  - title: "On creating a virtual machine for Verse, a language for programming in a shared real-time 3D simulation"
+    video_id: EHJQK8amYjQ
+    abstract: |
+        Verse is a programming language created by Epic for programming in a shared real-time 3D simulation. Verse is designed to support multiple paradigms: functional, logic, object oriented, imperative, and transactional. I’ll present on our work of creating AutoRTFM: a custom Clang fork and specialized runtime used to implement software transactional memory in C++, allowing us to automatically transactionalize most of Unreal Engine’s C++ code. Before RTFM, only a tiny fraction of C++-backed Verse functions were transactional. Now, they all are. I’ll also present on our work of creating a bespoke VM for making Verse fast, debuggable, feature rich, and integrate well with Unreal Engine. The VM’s runtime, object model, and bytecode interpreter are designed from scratch to support all of Verse’s paradigms. Our new VM already runs Verse code 5x faster than our old VM, with lots of headroom for future performance optimizations.
+
+    persons:
+      - name: Saam Barati
+        id: saam_barati
+        type: speaker
+        affiliation: Epic Games
+        twitter: saambarati
+        website: https://saambarati.org
+
+  - title: "ZJIT: Building a New JIT Compiler for Ruby"
+    video_id: zPrSG2e10Ig
+    abstract: |
+        The Ruby programming language has achieved a 2-3x speedup in real-world application benchmarks through its JIT compiler, YJIT. For the upcoming Ruby 3.5 release, we are developing a new JIT compiler, ZJIT.
+
+        In this talk, we’ll discuss the challenges of speeding up this highly dynamic programming language and how we are altering the compiler design to address these challenges more effectively.
+    persons:
+      - name: Takashi Kokubun
+        id: takashi_kokubun
+        type: speaker
+        affiliation: Shopify
+        twitter: k0kubun
+        website: https://github.com/k0kubun
+
+  - title: "The Saga of Multicore OCaml"
+    video_id: 6VeJdUNhay4
+    abstract: |
+        In December 2022, after nearly a decade of development, OCaml 5 was released with a multi-core capable garbage collector. This was an exciting milestone, finally making it possible to write shared-memory parallel programs in OCaml. The new runtime was designed to be easy to adopt: it didn’t disturb OCaml’s FFI, and performance was meant to be only a couple of percentage points slower in single-core mode.
+
+        Despite those promising beginnings, moving to the new runtime was harder than we expected. Indeed, We’ve only managed to switch to it this year, after 18 months of research and engineering effort to overcome a significant number of serious performance problems we uncovered.
+
+        This talk is essentially about technology transfer: about what it takes to move an academic result from theory into practice. We’ll talk about some of what we learned, both about GC design, and about how to analyze and fix subtle performance regressions in a complex ecosystem.
+    persons:
+      - name: Yaron Minsky
+        id: yaron_minsky
+        type: speaker
+        website: https://blog.janestreet.com/author/yminsky/

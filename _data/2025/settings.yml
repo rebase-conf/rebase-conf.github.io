@@ -27,7 +27,7 @@ show_recordings: false
 show_sponsors: false
 show_stream: false
 show_zoom: false
-show_talks: false
+show_talks: true
 
 # Footer contact details. Comment out to hide
 footer_email: filip.krikava@fit.cvut.cz, btitzer@andrew.cmu.edu
