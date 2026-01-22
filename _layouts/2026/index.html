@@ -1,0 +1,34 @@
+---
+layout: 2026/default
+---
+{% include 2026/variables.html %}
+<section class="intro">
+  <img src="{{ imgs_baseurl }}/logo-white.svg" alt="Rebase" class="intro__logo" />
+  <h2 class="intro__subheading">{{ settings.city }} • {{ settings.conference_dates }}</h2>
+  <p class="intro__text intro__text_1">
+  Discussions on programming language related topics<br/>
+    connecting industry and academia.
+  </p>
+  <p class="intro__text">
+    <strong>Part of the <a href="https://2026.splashcon.org/">ACM SPLASH/ISSTA conference</a>!</strong>
+  </p>
+  <div class="intro__buttons">
+    {% if settings.show_about %}
+    <span class="intro__button">
+      <a href="{{ settings.venue_url }}" class="button" target="_blank">
+        About
+      </a>
+    </span>
+    {% endif %}
+  </div>
+  {% if settings.past_editions.size %}
+  <p class="intro__past-editions">
+    Past editions:
+    {% for edition in settings.past_editions %}
+    <a href="{{ site.baseurl }}/{{ edition }}">{{ edition }}</a>
+    {% endfor %}
+  </p>
+  {% endif %}
+
+  <!-- <a href="#about" class="intro__next" rel="smooth-scroll"></a> -->
+</section>

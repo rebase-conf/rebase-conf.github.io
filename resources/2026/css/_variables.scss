@@ -1,0 +1,25 @@
+$font-family-default: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$font-family-heading: "Open Sans Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$font-family-heading-alternative: "Signika", $font-family-heading;
+
+// Background colors
+$color-background: #2e3261;
+$color-background-dark: darken($color: $color-background, $amount: 5);
+// Heading color
+$color-heading: #ffffff;
+// Text colors
+$color-paragraph: #6c788d;
+$color-paragraph-secondary: #8796B0;
+$color-active: #ce325f;
+$color-active-secondary: #dd0000;
+// Button colors (button background is $color-active)
+$color-button-text: #fbebe6;
+
+$global-font-size: 16px;
+
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);

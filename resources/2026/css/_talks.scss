@@ -1,0 +1,21 @@
+.talks {
+  @include section;
+  background: $color-background;
+  color: $color-paragraph;
+}
+
+.talks__list {
+  margin-bottom: rem-calc(-30px);
+
+  &:not(:last-child) {
+    padding-bottom: rem-calc(120px);
+  }
+}
+
+.talks__talk {
+  margin-bottom: rem-calc(30px);
+}
+
+.talks__heading {
+  @extend .heading1;
+}

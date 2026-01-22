@@ -1,5 +1,5 @@
 ---
-current_year: 2025
+current_year: 2026
 ---
 
 <html>

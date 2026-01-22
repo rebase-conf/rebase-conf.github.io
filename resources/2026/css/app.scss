@@ -1,0 +1,29 @@
+---
+---
+// I couldn't find any way how to use relative imports
+// and because we have multiple editions, the sass_dir
+// directive in _config.yml needs to be set to /resources
+{% assign year = "2024" %}
+$year: "{{ year }}";
+$imgs_baseurl: "{{ site.baseurl }}/resources/{{ year }}/img";
+
+@import "{{ year }}/css/vendor/tinyreset.min";
+@import "{{ year }}/css/vendor/bootstrap-grid.min";
+
+@import "{{ year }}/css/variables";
+@import "{{ year }}/css/rem-calc";
+@import "{{ year }}/css/mixins";
+@import "{{ year }}/css/base";
+@import "{{ year }}/css/typography";
+@import "{{ year }}/css/layout";
+@import "{{ year }}/css/overlay";
+@import "{{ year }}/css/button";
+@import "{{ year }}/css/box";
+@import "{{ year }}/css/intro";
+@import "{{ year }}/css/about";
+@import "{{ year }}/css/talks";
+@import "{{ year }}/css/sponsors";
+@import "{{ year }}/css/stream";
+@import "{{ year }}/css/footer";
+@import "{{ year }}/css/simple-heading";
+@import "{{ year }}/css/single";
