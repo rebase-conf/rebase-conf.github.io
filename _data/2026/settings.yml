@@ -13,9 +13,9 @@ past_editions:
 # active and sold_out (for registration only). cfp_date
 # and registration_date is displayed below the button if
 # present and the state is set to inactive
-cfp: hidden
-cfp_date:
-cfp_form:
+cfp: active
+cfp_date: July 1st, 2026, AoE
+cfp_form: https://forms.gle/vu2kzXV3hbhqVMWz5
 
 registration: hidden
 registration_url:
