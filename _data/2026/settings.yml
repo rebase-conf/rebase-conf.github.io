@@ -31,7 +31,7 @@ show_zoom: false
 show_talks: false
 
 # Footer contact details. Comment out to hide
-footer_email: aftandilian@gmail.com, dlehmann@google.com, filip.krikava@fit.cvut.cz
+footer_email: aftandilian@gmail.com, account-rebase@dlehmann.eu, filip.krikava@fit.cvut.cz
 #footer_twitter: rebase_conf
 
 # Liquid can't create arrays
